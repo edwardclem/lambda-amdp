@@ -60,7 +60,7 @@ public class LambdaBurlap {
             //definite article
             js.eval("(define the (lambda (predicate) (satisfiesPredicate predicate initialState)))");
 
-            //is the grounding being called every time?
+            //is the determiner being called on every application of the LambdaSC? or just once when the predicate is evaluated?
             //depends on how the evaluation works
             String pred = "(lambda (state) (in (the basket) (the (lambda (x s) (and (red x s) (room x s) ))) state))";
 

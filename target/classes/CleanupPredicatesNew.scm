@@ -4,7 +4,6 @@
 
 ;rather than handling objects directly,
 ;determiners and functions will deal with states and IDs
-;handling determiner definitions + a little bit more easily
 
 (define classType
     (lambda (type)
