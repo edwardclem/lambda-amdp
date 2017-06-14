@@ -10,6 +10,7 @@ type=nf.eisner id=nfValidator
 # Parse filter
 type=parsefilter.lambda.simple id=parseFilter syntax=S
 # CKY Parser
-type=parser.cky.multi id=parser parseFilter=parseFilter beam=%{gBeam} preChartPruning=true pruneLexicalCells=true rules=ruleComp,ruleApp,ruleRaiseComp,ruleThatless,rulePluralExists,shiftPP executor=executor nfValidator=nfValidator wordSkipping=simple
+#removed preChartPruning=true, shouldn't use for gradient descent
+type=parser.cky.multi id=parser parseFilter=parseFilter beam=%{gBeam} pruneLexicalCells=true rules=ruleComp,ruleApp,ruleRaiseComp,ruleThatless,rulePluralExists,shiftPP executor=executor nfValidator=nfValidator wordSkipping=simple
 # Parsing filter
 type=parser.filter.supervised id=filterFactory

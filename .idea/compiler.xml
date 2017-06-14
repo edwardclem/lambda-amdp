@@ -9,7 +9,7 @@
         <module name="lambda-mdp" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
+    <bytecodeTargetLevel target="1.8">
       <module name="lambda-mdp" target="1.8" />
     </bytecodeTargetLevel>
   </component>

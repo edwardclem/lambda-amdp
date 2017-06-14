@@ -4,6 +4,6 @@ types=../../../resources/burlap.types
 seedlex=../../../resources/burlap.seed.lex
 gBeam=50
 lexbeam=100
-gIter=50
+gIter=20
 wordSkippingCost=-1.0
 trainingMaxSentenceLength=50
