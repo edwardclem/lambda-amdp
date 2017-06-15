@@ -118,7 +118,7 @@ public class BurlapExpSimple {
 		// //////////////////////////////////////////
 
 		final File resourceDir = new File("ccg/resources/");
-		final File dataDir = new File("ccg/experiments/data");
+		final File dataDir = new File("ccg/experiments/data/RSS");
 
 		// //////////////////////////////////////////
 		// Use tree hash vector
@@ -294,10 +294,9 @@ public class BurlapExpSimple {
 		// Load training and testing data
 		// //////////////////////////////////////////////////
 
-		//TODO: stop testing on training data
 
-		String trainPath = "initialCorpus.ccg";
-		String testPath = "simplePreds.ccg";
+		String trainPath = "train.ccg";
+		String testPath = "test.ccg";
 
 		final List<IDataCollection<? extends SingleSentence>> folds = new ArrayList<IDataCollection<? extends SingleSentence>>(
 				1);
@@ -306,7 +305,7 @@ public class BurlapExpSimple {
 					.read(new File(dataDir, trainPath)));
 		}
 		final CompositeDataCollection<SingleSentence> train = new CompositeDataCollection<SingleSentence>(folds);
-		final IDataCollection<? extends SingleSentence> test = folds.get(0);
+		final IDataCollection<? extends SingleSentence> test = SingleSentenceCollection.read(new File(dataDir, testPath));
 
 		// //////////////////////////////////////////////////
 		// Learner

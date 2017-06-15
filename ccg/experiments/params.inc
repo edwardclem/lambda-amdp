@@ -4,6 +4,8 @@ types=../../../resources/burlap.types
 seedlex=../../../resources/burlap.seed.lex
 gBeam=50
 lexbeam=100
-gIter=20
+#not sure why UBL wants iter instead of gIter?
+gIter=10
+iter=10
 wordSkippingCost=-1.0
 trainingMaxSentenceLength=50

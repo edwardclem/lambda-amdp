@@ -150,19 +150,18 @@
     (lambda (state)
         (lambda (predicate measurement)
             (do
-                ((i 0 (+ i 1)) (maxObj #null) (currentObj (.name (.get (.objects state) 0)) (.name (.get (.objects state) i)))
+                ((i 0 (+ i 1)) (maxObj #null) (currentObj (.name (.get (.objects state) 0)) (.name (.get (.objects state) i))))
                 ((= i (.size (.objects state))) maxObj)
                     (if (predicate currentObj state)
                         (cond
                             ((.equals maxObj #null) (set! maxObj currentObj))
-                            ((> (measurement currentObj state) (measurement maxObj state)) (set! maxObj CurrentObj)))))))))
+                            ((> (measurement currentObj state) (measurement maxObj state)) (set! maxObj CurrentObj))))))))
 
 
 ;room size function
-(define roomSize
-    (lambda (roomID)
+(define (roomSize roomID)
         (lambda (state)
-            (let (roomProps (.objects state roomID))
+            (let ((roomProps (.object state roomID)))
                 (*
-                    (- (.get entityProps {right}) (.get entityProps {left})
-                    (- (.get entityProps {top}) (.get entityProps {bottom}))))))))
+                    (- (.get roomProps {right}) (.get roomProps {left}))
+                    (- (.get roomProps {top}) (.get roomProps {bottom}))))))

@@ -78,7 +78,7 @@ public class LambdaTest3 {
 
             //testing room size function
 
-            SchemeProcedure rsize = (SchemeProcedure)js.call("roomSize", "room0");
+            SchemeProcedure rsize = (SchemeProcedure)js.eval("(roomSize {room0})");
 
             System.out.println(js.call(rsize, state));
 
