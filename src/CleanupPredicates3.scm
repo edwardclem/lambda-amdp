@@ -52,7 +52,7 @@
     (color {green}))
 
 (define shape
-    (checkAttribute {colour}))
+    (checkAttribute {shape}))
 
 (define basket
     (shape {basket}))
