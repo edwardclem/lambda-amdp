@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4a158f18-824a-4a44-8d5e-76c181d0b5e5" name="Default" comment="switching to ExPlat, still a difference in performance between explat and simpleexp">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/lambdas/LambdaPlanning/LambdaBurlap.class" afterPath="$PROJECT_DIR$/target/classes/lambdas/LambdaPlanning/LambdaBurlap.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CleanupPredicates3.scm" afterPath="$PROJECT_DIR$/src/CleanupPredicates3.scm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/lambdas/LambdaPlanning/LambdaBurlap.java" afterPath="$PROJECT_DIR$/src/lambdas/LambdaPlanning/LambdaBurlap.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/lambdas/LambdaPlanning/LambdaTest3.java" afterPath="$PROJECT_DIR$/src/lambdas/LambdaPlanning/LambdaTest3.java" />
-    </list>
+    <list default="true" id="4a158f18-824a-4a44-8d5e-76c181d0b5e5" name="Default" comment="switching to ExPlat, still a difference in performance between explat and simpleexp" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
