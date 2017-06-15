@@ -49,6 +49,12 @@ public class LambdaTest3 {
 
             System.out.println(js.call((SchemeProcedure)js.eval("(red {room0})"), state));
 
+            System.out.println("testing room");
+            //System.out.println(js.call((SchemeProcedure)js.eval("(the (lambda ($1) (and (green $1) (room $1))))"), state));
+
+            System.out.println("testing basket");
+            System.out.println(js.call((SchemeProcedure)js.eval("(basket {block0})"), state));
+
             //test and function
 
             SchemeProcedure and_pred = (SchemeProcedure)js.eval("(and_state (blue {room0}) (room {room0}))");
@@ -61,8 +67,11 @@ public class LambdaTest3 {
 
             SchemeProcedure agent = (SchemeProcedure)js.eval("agent");
 
+            SchemeProcedure blueroom = (SchemeProcedure)js.eval("(lambda ($1) (and (blue $1) (room $1)))");
 
             System.out.println(js.call(the, agent));
+            System.out.println("testing blue room");
+            System.out.println(js.call(the, blueroom));
 
             //testing spatial functions
 
