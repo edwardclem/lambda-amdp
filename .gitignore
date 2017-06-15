@@ -1,2 +1,5 @@
 *.class
 target/*
+*.log
+*.out
+*.sp

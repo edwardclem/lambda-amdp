@@ -1,19 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4a158f18-824a-4a44-8d5e-76c181d0b5e5" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ccg/experiments/unification/RSS/learn.inc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ccg/experiments/unification/RSS/rss.exp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ccg/experiments/unification/genlex.inc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ccg/experiments/unification/init.inc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ccg/experiments/unification/jobs.inc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ccg/experiments/unification/learn.inc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ccg/experiments/unification/model.inc" />
+    <list default="true" id="4a158f18-824a-4a44-8d5e-76c181d0b5e5" name="Default" comment="fixed Scheme bugs">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ccg/experiments/params.inc" afterPath="$PROJECT_DIR$/ccg/experiments/params.inc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CleanupPredicates3.scm" afterPath="$PROJECT_DIR$/src/CleanupPredicates3.scm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/lambdas/LambdaPlanning/LambdaTest3.java" afterPath="$PROJECT_DIR$/src/lambdas/LambdaPlanning/LambdaTest3.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/parsing/BurlapExpSimple.java" afterPath="$PROJECT_DIR$/src/parsing/BurlapExpSimple.java" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -28,7 +18,7 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.17610921">
+    <splitter split-orientation="horizontal" split-proportion="0.66211605">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="params.inc" pinned="false" current-in-tab="false">
@@ -44,7 +34,7 @@
           <file leaf-file-name="BurlapExpSimple.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/parsing/BurlapExpSimple.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="399">
+                <state relative-caret-position="-681">
                   <caret line="299" column="0" lean-forward="true" selection-start-line="299" selection-start-column="0" selection-end-line="299" selection-end-column="0" />
                   <folding>
                     <element signature="imports" expanded="true" />
@@ -56,11 +46,74 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="test.out" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/ccg/experiments/unification/RSS/logs/test.out">
+          <file leaf-file-name="workspace.xml" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="20">
-                  <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+                <state relative-caret-position="-15">
+                  <caret line="1401" column="17" lean-forward="true" selection-start-line="1401" selection-start-column="17" selection-end-line="1401" selection-end-column="17" />
+                  <folding>
+                    <marker date="1497563814230" expanded="true" signature="94617:94659" ph="..." />
+                    <marker date="1497563814230" expanded="true" signature="94617:94677" ph="..." />
+                    <marker date="1497563814230" expanded="true" signature="94617:94690" ph="..." />
+                    <marker date="1497563814230" expanded="true" signature="94617:94705" ph="..." />
+                    <marker date="1497563814230" expanded="true" signature="94740:97265" ph="..." />
+                    <marker date="1497563814230" expanded="true" signature="94753:97250" ph="..." />
+                    <marker date="1497563814230" expanded="true" signature="94807:95102" ph="..." />
+                    <marker date="1497563814230" expanded="true" signature="94826:95087" ph="..." />
+                    <marker date="1497563814230" expanded="true" signature="94889:95067" ph="..." />
+                    <marker date="1497563814230" expanded="true" signature="94929:95033" ph="..." />
+                    <marker date="1497563814230" expanded="true" signature="94950:95011" ph="..." />
+                    <marker date="1497563814230" expanded="true" signature="95152:95479" ph="..." />
+                    <marker date="1497563814230" expanded="true" signature="95171:95464" ph="..." />
+                    <marker date="1497563814230" expanded="true" signature="95266:95444" ph="..." />
+                    <marker date="1497563814230" expanded="true" signature="95306:95410" ph="..." />
+                    <marker date="1497563814230" expanded="true" signature="95327:95388" ph="..." />
+                    <marker date="1497563814230" expanded="true" signature="95530:95795" ph="..." />
+                    <marker date="1497563814230" expanded="true" signature="95549:95780" ph="..." />
+                    <marker date="1497563814230" expanded="true" signature="95582:95760" ph="..." />
+                    <marker date="1497563814230" expanded="true" signature="95622:95726" ph="..." />
+                    <marker date="1497563814230" expanded="true" signature="95643:95704" ph="..." />
+                    <marker date="1497563814230" expanded="true" signature="95838:96144" ph="..." />
+                    <marker date="1497563814230" expanded="true" signature="95857:96129" ph="..." />
+                    <marker date="1497563814230" expanded="true" signature="95931:96109" ph="..." />
+                    <marker date="1497563814230" expanded="true" signature="95971:96075" ph="..." />
+                    <marker date="1497563814230" expanded="true" signature="95992:96053" ph="..." />
+                    <marker date="1497563814230" expanded="true" signature="96195:96508" ph="..." />
+                    <marker date="1497563814230" expanded="true" signature="96214:96493" ph="..." />
+                    <marker date="1497563814230" expanded="true" signature="96295:96473" ph="..." />
+                    <marker date="1497563814230" expanded="true" signature="96335:96439" ph="..." />
+                    <marker date="1497563814230" expanded="true" signature="96356:96417" ph="..." />
+                    <marker date="1497563814230" expanded="true" signature="96543:96849" ph="..." />
+                    <marker date="1497563814230" expanded="true" signature="96562:96834" ph="..." />
+                    <marker date="1497563814230" expanded="true" signature="96636:96814" ph="..." />
+                    <marker date="1497563814230" expanded="true" signature="96676:96780" ph="..." />
+                    <marker date="1497563814230" expanded="true" signature="96697:96758" ph="..." />
+                    <marker date="1497563814230" expanded="true" signature="96901:97236" ph="..." />
+                    <marker date="1497563814230" expanded="true" signature="96920:97221" ph="..." />
+                    <marker date="1497563814230" expanded="true" signature="97023:97201" ph="..." />
+                    <marker date="1497563814230" expanded="true" signature="97063:97167" ph="..." />
+                    <marker date="1497563814230" expanded="true" signature="97084:97145" ph="..." />
+                    <marker date="1497563814230" expanded="true" signature="97310:97349" ph="..." />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/.gitignore">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="80">
+                  <caret line="4" column="4" lean-forward="false" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="CleanupPredicatesNew.scm" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/CleanupPredicatesNew.scm">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="317">
+                  <caret line="30" column="13" lean-forward="false" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
                   <folding />
                 </state>
               </provider>
@@ -71,16 +124,6 @@
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="184">
                   <caret line="457" column="0" lean-forward="false" selection-start-line="457" selection-start-column="0" selection-end-line="457" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="parser.inc" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/ccg/experiments/parser.inc">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="320">
-                  <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -126,40 +169,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="jobs.inc" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/ccg/experiments/unification/jobs.inc">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="40">
-                  <caret line="2" column="38" lean-forward="false" selection-start-line="2" selection-start-column="38" selection-end-line="2" selection-end-column="38" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
         </leaf>
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="global.log" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/ccg/experiments/template/RSS/logs/global.log">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="322">
-                  <caret line="64" column="19" lean-forward="true" selection-start-line="64" selection-start-column="19" selection-end-line="64" selection-end-column="19" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="init.log" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/ccg/experiments/template/RSS/logs/init.log">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="0">
-                  <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
           <file leaf-file-name="BurlapResourceRepo.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/parsing/BurlapResourceRepo.java">
               <provider selected="true" editor-type-id="text-editor">
@@ -180,11 +193,21 @@
               </provider>
             </entry>
           </file>
+          <file leaf-file-name="BurlapParsingExp.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/parsing/BurlapParsingExp.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="144">
+                  <caret line="163" column="13" lean-forward="false" selection-start-line="163" selection-start-column="13" selection-end-line="163" selection-end-column="13" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
           <file leaf-file-name="CleanupPredicates3.scm" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/CleanupPredicates3.scm">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="397">
-                  <caret line="163" column="37" lean-forward="false" selection-start-line="163" selection-start-column="37" selection-end-line="163" selection-end-column="37" />
+                <state relative-caret-position="254">
+                  <caret line="153" column="20" lean-forward="false" selection-start-line="153" selection-start-column="20" selection-end-line="153" selection-end-column="20" />
                   <folding />
                 </state>
               </provider>
@@ -196,35 +219,6 @@
                 <state relative-caret-position="394">
                   <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
                   <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="log.post.log" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/ccg/experiments/template/RSS/logs/log.post.log">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="0">
-                  <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="test.out" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/ccg/experiments/template/RSS/logs/test.out">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="20">
-                  <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="train.log" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/ccg/experiments/template/RSS/logs/train.log">
-              <provider selected="true" editor-type-id="LargeFileEditor">
-                <state relative-caret-position="-151062">
-                  <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
                 </state>
               </provider>
             </entry>
@@ -300,7 +294,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/LambdaInterface/LambdaSC.java" />
         <option value="$PROJECT_DIR$/src/LambdaBurlap.java" />
         <option value="$PROJECT_DIR$/src/LambdaPlanning/LambdaTest.java" />
         <option value="$PROJECT_DIR$/src/LambdaPlanning/LambdaBurlap.java" />
@@ -309,7 +302,6 @@
         <option value="$PROJECT_DIR$/src/CleanupPredicates.scm" />
         <option value="$PROJECT_DIR$/src/lambdas/LambdaPlanning/LambdaTest.java" />
         <option value="$PROJECT_DIR$/src/lambdas/LambdaInterface/LambdaSC.java" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/lambdas/LambdaPlanning/LambdaBurlap.java" />
         <option value="$PROJECT_DIR$/data/annotated/cleanup.types" />
         <option value="$PROJECT_DIR$/data/annotated/initial50.ccg" />
@@ -351,6 +343,8 @@
         <option value="$PROJECT_DIR$/src/parsing/BurlapExpSimple.java" />
         <option value="$PROJECT_DIR$/src/CleanupPredicates3.scm" />
         <option value="$PROJECT_DIR$/src/lambdas/LambdaPlanning/LambdaTest3.java" />
+        <option value="$PROJECT_DIR$/.idea/workspace.xml" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -387,7 +381,9 @@
     <option name="width" value="1920" />
     <option name="height" value="1108" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <OptionsSetting value="false" id="Update" />
+  </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
@@ -449,7 +445,79 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lambdas" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LambdaPlanning" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lambda-mdp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lambda-amdp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lambdas" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lambda-mdp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lambda-amdp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lambda-mdp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lambda-amdp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ccg" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lambda-mdp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lambda-amdp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ccg" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="experiments" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -980,10 +1048,10 @@
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.50210714" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32969216" sideWeight="0.50213444" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32924226" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4001986" sideWeight="0.49789283" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32969216" sideWeight="0.49786553" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4001986" sideWeight="0.49573106" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969216" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -997,11 +1065,34 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3997735" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.50210714" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32924226" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3997735" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28316832" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24528302" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4001986" sideWeight="0.49789283" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969216" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21824974" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969216" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1057,40 +1148,10 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ccg/experiments/template/test1/learn.inc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="5" column="2" lean-forward="false" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ccg/experiments/template/test1/logs/train.log">
-      <provider selected="true" editor-type-id="LargeFileEditor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ccg/resources/burlap.seed.lex">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="11" column="42" lean-forward="false" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ccg/experiments/template/test1/logs/train.out">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1098,7 +1159,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1106,7 +1166,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="192">
           <caret line="201" column="0" lean-forward="false" selection-start-line="201" selection-start-column="0" selection-end-line="201" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1114,7 +1173,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
           <caret line="5" column="12" lean-forward="false" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1130,31 +1188,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="274">
           <caret line="186" column="26" lean-forward="false" selection-start-line="186" selection-start-column="26" selection-end-line="186" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ccg/experiments/template/RSS/logs/init.out">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ccg/experiments/template/RSS/logs/log.post.out">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/ccg/experiments/template/RSS/logs/init.out" />
+    <entry file="file://$PROJECT_DIR$/ccg/experiments/template/RSS/logs/log.post.out" />
     <entry file="file://$PROJECT_DIR$/ccg/experiments/template/model.inc">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="260">
           <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1162,7 +1204,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
           <caret line="7" column="7" lean-forward="false" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1170,7 +1211,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="20">
           <caret line="1" column="53" lean-forward="false" selection-start-line="1" selection-start-column="53" selection-end-line="1" selection-end-column="53" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1178,7 +1218,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="40">
           <caret line="2" column="50" lean-forward="false" selection-start-line="2" selection-start-column="50" selection-end-line="2" selection-end-column="50" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1186,23 +1225,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ccg/experiments/unification/RSS/logs/global.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-952">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/ccg/experiments/unification/RSS/logs/global.log" />
     <entry file="file://$PROJECT_DIR$/ccg/experiments/unification/RSS/learn.inc">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
           <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1210,7 +1240,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1218,7 +1247,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="194">
           <caret line="205" column="0" lean-forward="false" selection-start-line="205" selection-start-column="0" selection-end-line="205" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1226,17 +1254,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="302">
           <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/parsing/BurlapParsingExp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="165" column="0" lean-forward="false" selection-start-line="165" selection-start-column="0" selection-end-line="165" selection-end-column="0" />
-          <folding>
-            <element signature="e#3376#3392#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="144">
+          <caret line="163" column="13" lean-forward="false" selection-start-line="163" selection-start-column="13" selection-end-line="163" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1244,7 +1269,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="184">
           <caret line="203" column="0" lean-forward="false" selection-start-line="203" selection-start-column="0" selection-end-line="203" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1263,7 +1287,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="40">
           <caret line="2" column="38" lean-forward="false" selection-start-line="2" selection-start-column="38" selection-end-line="2" selection-end-column="38" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1271,7 +1294,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="320">
           <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1325,7 +1347,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/parsing/BurlapExpSimple.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
+        <state relative-caret-position="-681">
           <caret line="299" column="0" lean-forward="true" selection-start-line="299" selection-start-column="0" selection-end-line="299" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1336,117 +1358,33 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ccg/experiments/unification/RSS/logs/test.out">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ccg/experiments/template/RSS/logs/log.pre.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ccg/experiments/template/RSS/logs/log.pre.out">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ccg/experiments/template/RSS/logs/save.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ccg/experiments/template/RSS/logs/save.out">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ccg/experiments/template/RSS/logs/test.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/ccg/experiments/unification/RSS/logs/test.out" />
+    <entry file="file://$PROJECT_DIR$/ccg/experiments/template/RSS/logs/log.pre.log" />
+    <entry file="file://$PROJECT_DIR$/ccg/experiments/template/RSS/logs/log.pre.out" />
+    <entry file="file://$PROJECT_DIR$/ccg/experiments/template/RSS/logs/save.log" />
+    <entry file="file://$PROJECT_DIR$/ccg/experiments/template/RSS/logs/save.out" />
+    <entry file="file://$PROJECT_DIR$/ccg/experiments/template/RSS/logs/test.log" />
     <entry file="file://$PROJECT_DIR$/ccg/experiments/template/RSS/learn.inc">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ccg/experiments/template/RSS/logs/train.out">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ccg/experiments/template/RSS/logs/train.log">
-      <provider selected="true" editor-type-id="LargeFileEditor">
-        <state relative-caret-position="-151062">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ccg/experiments/template/RSS/logs/global.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="64" column="19" lean-forward="true" selection-start-line="64" selection-start-column="19" selection-end-line="64" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ccg/experiments/template/RSS/logs/init.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ccg/experiments/template/RSS/logs/test.out">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/ccg/experiments/template/RSS/logs/train.out" />
+    <entry file="file://$PROJECT_DIR$/ccg/experiments/template/RSS/logs/train.log" />
+    <entry file="file://$PROJECT_DIR$/ccg/experiments/template/RSS/logs/global.log" />
+    <entry file="file://$PROJECT_DIR$/ccg/experiments/template/RSS/logs/init.log" />
+    <entry file="file://$PROJECT_DIR$/ccg/experiments/template/RSS/logs/test.out" />
     <entry file="file://$PROJECT_DIR$/src/CleanupPredicatesNew.scm">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1118">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="317">
+          <caret line="30" column="13" lean-forward="false" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ccg/experiments/template/RSS/logs/log.post.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/ccg/experiments/template/RSS/logs/log.post.log" />
     <entry file="file://$PROJECT_DIR$/src/lambdas/LambdaInterface/LambdaSC.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="394">
@@ -1473,8 +1411,75 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/CleanupPredicates3.scm">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="397">
-          <caret line="163" column="37" lean-forward="false" selection-start-line="163" selection-start-column="37" selection-end-line="163" selection-end-column="37" />
+        <state relative-caret-position="254">
+          <caret line="153" column="20" lean-forward="false" selection-start-line="153" selection-start-column="20" selection-end-line="153" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lambdas/LambdaPlanning/LambdaBurlap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="73" column="41" lean-forward="true" selection-start-line="73" selection-start-column="41" selection-end-line="73" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-15">
+          <caret line="1401" column="17" lean-forward="true" selection-start-line="1401" selection-start-column="17" selection-end-line="1401" selection-end-column="17" />
+          <folding>
+            <marker date="1497563814230" expanded="true" signature="94617:94659" ph="..." />
+            <marker date="1497563814230" expanded="true" signature="94617:94677" ph="..." />
+            <marker date="1497563814230" expanded="true" signature="94617:94690" ph="..." />
+            <marker date="1497563814230" expanded="true" signature="94617:94705" ph="..." />
+            <marker date="1497563814230" expanded="true" signature="94740:97265" ph="..." />
+            <marker date="1497563814230" expanded="true" signature="94753:97250" ph="..." />
+            <marker date="1497563814230" expanded="true" signature="94807:95102" ph="..." />
+            <marker date="1497563814230" expanded="true" signature="94826:95087" ph="..." />
+            <marker date="1497563814230" expanded="true" signature="94889:95067" ph="..." />
+            <marker date="1497563814230" expanded="true" signature="94929:95033" ph="..." />
+            <marker date="1497563814230" expanded="true" signature="94950:95011" ph="..." />
+            <marker date="1497563814230" expanded="true" signature="95152:95479" ph="..." />
+            <marker date="1497563814230" expanded="true" signature="95171:95464" ph="..." />
+            <marker date="1497563814230" expanded="true" signature="95266:95444" ph="..." />
+            <marker date="1497563814230" expanded="true" signature="95306:95410" ph="..." />
+            <marker date="1497563814230" expanded="true" signature="95327:95388" ph="..." />
+            <marker date="1497563814230" expanded="true" signature="95530:95795" ph="..." />
+            <marker date="1497563814230" expanded="true" signature="95549:95780" ph="..." />
+            <marker date="1497563814230" expanded="true" signature="95582:95760" ph="..." />
+            <marker date="1497563814230" expanded="true" signature="95622:95726" ph="..." />
+            <marker date="1497563814230" expanded="true" signature="95643:95704" ph="..." />
+            <marker date="1497563814230" expanded="true" signature="95838:96144" ph="..." />
+            <marker date="1497563814230" expanded="true" signature="95857:96129" ph="..." />
+            <marker date="1497563814230" expanded="true" signature="95931:96109" ph="..." />
+            <marker date="1497563814230" expanded="true" signature="95971:96075" ph="..." />
+            <marker date="1497563814230" expanded="true" signature="95992:96053" ph="..." />
+            <marker date="1497563814230" expanded="true" signature="96195:96508" ph="..." />
+            <marker date="1497563814230" expanded="true" signature="96214:96493" ph="..." />
+            <marker date="1497563814230" expanded="true" signature="96295:96473" ph="..." />
+            <marker date="1497563814230" expanded="true" signature="96335:96439" ph="..." />
+            <marker date="1497563814230" expanded="true" signature="96356:96417" ph="..." />
+            <marker date="1497563814230" expanded="true" signature="96543:96849" ph="..." />
+            <marker date="1497563814230" expanded="true" signature="96562:96834" ph="..." />
+            <marker date="1497563814230" expanded="true" signature="96636:96814" ph="..." />
+            <marker date="1497563814230" expanded="true" signature="96676:96780" ph="..." />
+            <marker date="1497563814230" expanded="true" signature="96697:96758" ph="..." />
+            <marker date="1497563814230" expanded="true" signature="96901:97236" ph="..." />
+            <marker date="1497563814230" expanded="true" signature="96920:97221" ph="..." />
+            <marker date="1497563814230" expanded="true" signature="97023:97201" ph="..." />
+            <marker date="1497563814230" expanded="true" signature="97063:97167" ph="..." />
+            <marker date="1497563814230" expanded="true" signature="97084:97145" ph="..." />
+            <marker date="1497563814230" expanded="true" signature="97310:97349" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="4" column="4" lean-forward="false" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
           <folding />
         </state>
       </provider>
