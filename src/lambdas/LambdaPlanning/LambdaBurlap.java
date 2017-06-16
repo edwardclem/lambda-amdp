@@ -45,7 +45,7 @@ public class LambdaBurlap {
 
         //create JScheme evaluator
 
-        String preds = "src/CleanupPredicates3.scm";
+        String preds = "src/CleanupPredicates.scm";
 
         JScheme js = new JScheme();
 

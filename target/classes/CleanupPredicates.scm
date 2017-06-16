@@ -2,92 +2,166 @@
 (import "amdp.cleanup.state.*")
 (import "amdp.cleanup.CleanupDomain")
 
-;predicates handling objects directly
+;now working with assumption that "state" parameter will be "hidden"
+;entity is implemented as a string object ID, essentially a pointer to an object
+;this requires a slight modification to the type system:
+;all functions of the type <e, t> are instead "collapsed" functions of the type <e, <s, t>>
+;t' == <s, t>, state dependent truth value
+;which implies a state-dependent truth value that maps to a boolean when applied to a state
+;instead of defining new evaluation environment for subexpressions, simply evaluate stateful predicates
+;with respect to the correct state
 
-(define getStateObjects
-    (lambda (state)
-        (.objects state)))
-;base function for class name predicates
-(define classType
-    (lambda (className)
-        (lambda (object)
-            (.equals (.className object) className))))
-;some class predicates
+
+;not actually that different from CleanupPredicatesNew.scm, separating out lambda (state)
+
+(define class
+    (lambda (type)
+        (lambda (entity)
+            (lambda (state)
+                (.equals (.className (.object state entity)) type)))))
+
+;class predicates
 (define door
-    (classType {door}))
+    (class {door}))
 (define agent
-    (classType {agent}))
+    (class {agent}))
 (define block
-    (classType {block}))
+    (class {block}))
 (define room
-    (classType {room}))
-;base function for attribute predicates
-;essentially re-implementing PF_IsColor
-;TODO: handle types, use Burlap types to inform attribute values
+    (class {room}))
+
+;<attrib, <val, <e, <s, t>>>> == <attrib, <val, <e, t'>>>
 (define checkAttribute
     (lambda (attribute)
         (lambda (value)
-            (lambda (object)
-                (if (.contains (.variableKeys object) attribute)
-                (.equals (.get object attribute) value)
-                #f)))))
+            (lambda (objID)
+                (lambda (state)
+                    (let ((object (.object state objID)))
+                    (if (.contains (.variableKeys object) attribute)
+                    (.equals (.get object attribute) value)
+                    #f)))))))
+
 (define color
     (checkAttribute {colour}))
+
 (define red
     (color {red}))
 (define blue
     (color {blue}))
 (define green
     (color {green}))
-;Spatial prop functions
+
+(define shape
+    (checkAttribute {shape}))
+
+(define basket
+    (shape {basket}))
+
+;spatial functions
 (define in
-    (lambda (object room)
-        (CleanupDomain.regionContainsPoint room (.get object {x}) (.get object {y}) #f)))
-;TODO: probabilistic test for "near"
-;determiners
-;define a determiner relative to a state, then re-define determiner if state changes!
-;enables temporal determiners
-;finds a state object that satisfies the predicate
+    (lambda (entity region)
+        (lambda (state)
+            (let ((objectProps (.object state entity)) (regionProps (.object state region)))
+                (CleanupDomain.regionContainsPoint regionProps (.get objectProps {x}) (.get objectProps {y}) #f)))))
 
-;Testing iteration over all items in a Java List
-;starting at end of list, going down
-;messy iteration b/c "first" and "rest" don't work with Java lists
-(define iterateFrom
-    (lambda (JList index)
-        (write (.get JList index))
-        (if (> index 0) (iterateFrom JList (- index 1)))))
-;iterate through all
-(define iterate
-    (lambda (JList)
-         (iterateFrom JList (- (.size JList) 1) )))
+;distance function
+;<e, <e, n>> == <e, <e, <s, n>>>
 
-;finds an (the first for now) element in the list that satisfies a predicate
-;TODO: re-write this as a MapReduce procedure?
-;Would need to convert Java List to Scheme list or write Map and Reduce procedures
-;for Java Lists in scheme, or use Java ForEach followed by a reduction
-;maybe more trouble than it's worth here
-(define satisfiesPredicateFrom
-    (lambda (predicate JList index)
-        (if (predicate (.get JList index))
-            (.get JList index)
-            (if (= index 0)
-                #null
-                (satisfiesPredicateFrom predicate JList (- index 1))))))
+(define (2_norm nums)
+    (sqrt (apply + (map (lambda (x) (* x x)) nums))))
 
-(define satisfiesPredicate
-    (lambda (predicate JList)
-        (satisfiesPredicateFrom predicate JList (- (.size JList) 1))))
+;mean
+(define (mean_1d . nums)
+    (/ (apply + nums) (length nums)))
 
-(define getAgent
-    (lambda (JList)
-        (satisfiesPredicate agent JList)))
+;takes in an instance of a door or room, returns the center point as a list of coords
+(define (centerPoint entityProps)
+    (let
+        ((x (mean_1d (.get entityProps {right}) (.get entityProps {left})))
+         (y (mean_1d (.get entityProps {top}) (.get entityProps {bottom}))))
+         (list x y)))
 
-;TODO: use object types to inform search space
-;TODO: include param with respect to object types?
-(define determiner
+;TODO: ensure this works for every object type
+;TODO: define this accurately with respect to doors and rooms (some kind of argmin with respect to the other entities? or just center for now)
+;TODO: safe to use instances or should I use IDs + states?
+;returns list of coordinates, using centerpoint if room or door
+(define (getLocation entityProps)
+    (let
+        ((entityClass (.className entityProps)))
+        (if
+            (or (.equals entityClass {agent}) (.equals entityClass {block}))
+            (list (.get entityProps {x}) (.get entityProps {y}))
+            (centerPoint entityProps))))
+
+
+(define (dist e1 e2)
     (lambda (state)
-            (lambda (predicate)
-                (satisfiesPredicate predicate (.objects state)))))
+        (let ((e1Props (.object state e1)) (e2Props (.object state e2)))
+            (2_norm
+                (map (lambda (x1 x2) (- x1 x2))
+                    (getLocation e1Props) (getLocation e2Props))))))
+
+;list helpers
+
+(define (first lst) (car lst))
+
+(define (rest lst) (cdr lst))
+
+;defining conjunctions w.r.t. state-dependent truth values
+;arguments: arbitrary number, each arg is map from <s, t>
+;args is the list of predicates
+
+;use andmap function  - much shorter!
+(define (and_ . preds)
+    (lambda (state)
+        (andmap (lambda (pred) (pred state)) preds)))
 
 
+;single-argument andmap implementation
+;short-circuiting behavior as well
+(define (andmap pred lst)
+    (if (null? lst)
+        #t
+        (if (pred (first lst))
+            (andmap pred (rest lst))
+            #f)))
 
+
+;definite determiner helpers
+
+(define (iterateJavaList javaList)
+    (do ((i 0 (+ i 1)))
+        ((= i (.size javaList)) {done})  (.println System.out$ (.get javaList i) )))
+
+
+;the update doesn't seem to work for currentObj? using set! instead
+;TODO: update to resemble argmax
+(define satisfiesPredicate
+    (lambda (state)
+        (lambda (predicate)
+            (do ( (i 0 (+ i 1)) (correctObj {}))
+                ((or (= i (.size (.objects state))) (not (equal? correctObj {}))) correctObj)
+                (if ((predicate (.name (.get (.objects state) i))) state)
+                        (set! correctObj (.name (.get (.objects state) i))))))))
+
+;argmax/min
+;initialized wrt some state, then applied
+(define argmax
+    (lambda (state)
+        (lambda (predicate measurement)
+            (do
+                ((i 0 (+ i 1)) (maxObj {}) (currentObj (.name (.get (.objects state) 0)) (.name (.get (.objects state) i))))
+                ((= i (.size (.objects state))) maxObj)
+                    (if ((predicate currentObj) state)
+                        (cond
+                            ((.equals maxObj {}) (set! maxObj currentObj))
+                            ((> ((measurement currentObj) state) ((measurement maxObj) state)) (set! maxObj CurrentObj))))))))
+
+
+;room size function
+(define (roomSize roomID)
+        (lambda (state)
+            (let ((roomProps (.object state roomID)))
+                (*
+                    (- (.get roomProps {right}) (.get roomProps {left}))
+                    (- (.get roomProps {top}) (.get roomProps {bottom}))))))
