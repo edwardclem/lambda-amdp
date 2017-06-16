@@ -100,7 +100,7 @@ public class LambdaBurlap {
             Episode ea = PolicyUtils.rollout(P,env,100);
 
             //TODO: change this path
-            Visualizer v = CleanupVisualiser.getVisualizer("/Users/mrhee/Documents/cs/amdp/data/resources/robotImages");
+            Visualizer v = CleanupVisualiser.getVisualizer("data/robotImages");
 
             new EpisodeSequenceVisualizer(v, domain, Arrays.asList(ea));
 
