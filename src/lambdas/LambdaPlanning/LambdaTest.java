@@ -21,7 +21,6 @@ public class LambdaTest {
     public static void main(String [] args){
         //create CleanupDomain state
 
-
         State s = CleanupDomain.getClassicState(true);
         //cast to CleanupState
         CleanupState state = (CleanupState)s;

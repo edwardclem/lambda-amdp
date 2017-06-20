@@ -63,7 +63,7 @@ public class LambdaBurlap {
 
             //is the determiner being called on every application of the LambdaSC? or just once when the predicate is evaluated?
             //depends on how the evaluation works
-            String parsedCommand = "(in:<e,<e,t>> (the:<<e,t>,e> (lambda $0:e (block:<e,t> $0))) (the:<<e,t>,e> (lambda $1:e (and:<t*,t> (green:<e,t> $1) (room:<e,t> $1)))))";
+            String parsedCommand = "(in:<e,<e,t>> (the:<<e,t>,e> (lambda $0:e (agent:<e,t> $0))) (the:<<e,t>,e> (lambda $1:e (and:<t*,t> (blue:<e,t> $1) (room:<e,t> $1)))))";
            //parsedCommand =  "(and:<t*,t> (in:<e,<e,t>> (the:<<e,t>,e> (lambda $0:e (agent:<e,t> $0))) (the:<<e,t>,e> (lambda $1:e (and:<t*,t> (blue:<e,t> $1) (room:<e,t> $1))))) (in:<e,<e,t>> (the:<<e,t>,e> (lambda $2:e (block:<e,t> $2))) (the:<<e,t>,e> (lambda $3:e (and:<t*,t> (green:<e,t> $3) (room:<e,t> $3))))))";
             String pred = LambdaConverter.convert(parsedCommand);
             System.out.println(pred);
@@ -99,7 +99,6 @@ public class LambdaBurlap {
 
             Episode ea = PolicyUtils.rollout(P,env,100);
 
-            //TODO: change this path
             Visualizer v = CleanupVisualiser.getVisualizer("data/robotImages");
 
             new EpisodeSequenceVisualizer(v, domain, Arrays.asList(ea));

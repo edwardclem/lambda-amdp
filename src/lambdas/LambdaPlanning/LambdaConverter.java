@@ -32,6 +32,13 @@ public class LambdaConverter {
             lindex = schemeCommand.indexOf("lambda", lindex + 1);
         }
 
+        //change ands
+        int aindex = schemeCommand.indexOf("and");
+        while(aindex != -1) {
+            schemeCommand.insert(aindex + 3, "_");
+            aindex = schemeCommand.indexOf("and", aindex + 1);
+        }
+
 
         return  schemeCommand.toString();
     }
