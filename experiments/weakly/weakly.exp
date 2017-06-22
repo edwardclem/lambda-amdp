@@ -1,0 +1,9 @@
+#global parameters
+include=../params.inc
+outputDir=logs
+globalLog=logs/global.log
+
+#resources
+type=data.ipp id=debug file=../../data/weakdebug/simplePreds.ipp
+
+#jobs

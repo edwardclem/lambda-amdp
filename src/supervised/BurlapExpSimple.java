@@ -14,13 +14,12 @@
  * this program; if not, write to the Free Software Foundation, Inc., 51
  * Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
  *******************************************************************************/
-package parsing;
+package supervised;
 
 import edu.cornell.cs.nlp.spf.base.hashvector.HashVectorFactory;
 import edu.cornell.cs.nlp.spf.base.hashvector.HashVectorFactory.Type;
 import edu.cornell.cs.nlp.spf.base.hashvector.KeyArgs;
 import edu.cornell.cs.nlp.spf.ccg.categories.syntax.Syntax;
-import edu.cornell.cs.nlp.spf.ccg.lexicon.ILexicon;
 import edu.cornell.cs.nlp.spf.ccg.lexicon.LexicalEntry;
 import edu.cornell.cs.nlp.spf.ccg.lexicon.LexicalEntry.Origin;
 import edu.cornell.cs.nlp.spf.ccg.lexicon.Lexicon;
@@ -49,9 +48,7 @@ import edu.cornell.cs.nlp.spf.mr.lambda.ccg.SimpleFullParseFilter;
 import edu.cornell.cs.nlp.spf.mr.language.type.TypeRepository;
 import edu.cornell.cs.nlp.spf.parser.ccg.cky.CKYBinaryParsingRule;
 import edu.cornell.cs.nlp.spf.parser.ccg.cky.CKYUnaryParsingRule;
-import edu.cornell.cs.nlp.spf.parser.ccg.cky.logger.ChartLogger;
 import edu.cornell.cs.nlp.spf.parser.ccg.cky.single.CKYParser;
-import edu.cornell.cs.nlp.spf.parser.ccg.cky.multi.MultiCKYParser;
 import edu.cornell.cs.nlp.spf.parser.ccg.cky.sloppy.BackwardSkippingRule;
 import edu.cornell.cs.nlp.spf.parser.ccg.cky.sloppy.ForwardSkippingRule;
 import edu.cornell.cs.nlp.spf.parser.ccg.cky.sloppy.SimpleWordSkippingLexicalGenerator;

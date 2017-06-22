@@ -14,7 +14,7 @@
  * this program; if not, write to the Free Software Foundation, Inc., 51
  * Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
  *******************************************************************************/
-package parsing;
+package supervised;
 
 import edu.cornell.cs.nlp.spf.ccg.lexicon.factored.lambda.FactoredLexicon;
 import edu.cornell.cs.nlp.spf.data.collection.CompositeDataCollection;

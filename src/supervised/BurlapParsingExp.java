@@ -14,16 +14,14 @@
  * this program; if not, write to the Free Software Foundation, Inc., 51
  * Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
  *******************************************************************************/
-package parsing;
+package supervised;
 
 import edu.cornell.cs.nlp.spf.base.hashvector.HashVectorFactory;
 import edu.cornell.cs.nlp.spf.base.hashvector.HashVectorFactory.Type;
-import edu.cornell.cs.nlp.spf.ccg.lexicon.ILexicon;
 import edu.cornell.cs.nlp.spf.ccg.lexicon.LexicalEntry;
 import edu.cornell.cs.nlp.spf.ccg.lexicon.LexicalEntry.Origin;
 import edu.cornell.cs.nlp.spf.ccg.lexicon.Lexicon;
 import edu.cornell.cs.nlp.spf.ccg.lexicon.factored.lambda.FactoredLexicalEntry;
-import edu.cornell.cs.nlp.spf.ccg.lexicon.factored.lambda.FactoredLexicon;
 import edu.cornell.cs.nlp.spf.ccg.lexicon.factored.lambda.FactoringServices;
 import edu.cornell.cs.nlp.spf.data.sentence.Sentence;
 import edu.cornell.cs.nlp.spf.data.singlesentence.SingleSentence;
