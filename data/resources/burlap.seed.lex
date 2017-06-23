@@ -7,7 +7,6 @@ block :- N : block:<e,t>
 room :- N : room:<e,t>
 //door :- N : door:<e,t>
 
-
 //adjectives
 red :- N/N : (lambda $0:<e,t> (lambda $1:e (and:<t*,t> (red:<e,t> $1) ($0 $1) )))
 blue :- N/N : (lambda $0:<e,t> (lambda $1:e (and:<t*,t> (blue:<e,t> $1) ($0 $1) )))
@@ -23,13 +22,13 @@ the :- N/N : (lambda $0:<e,t> $0)
 in :- PP/NP : (lambda $0:e (lambda $1:e (in:<e,<e,t>> $1 $0)))
 
 //quantifiers
-largest :- NP/N : (lambda $0:<e,t> (argmax:<<e,t>,<<e,n>,e>> $0 size:<e,n>))
-smallest :- NP/N : (lambda $0:<e,t> (argmin:<<e,t>,<<e,n>,e>> $0 size:<e,n>))
-closest to :- (NP\N)/NP : (lambda $0:e (lambda $1:<e,t> (argmin:<<e,t>,<<e,n>,e>> $1 (dist:<e,<e,n>> $0))))
-nearest to :- (NP\N)/NP : (lambda $0:e (lambda $1:<e,t> (argmin:<<e,t>,<<e,n>,e>> $1 (dist:<e,<e,n>> $0))))
+//largest :- NP/N : (lambda $0:<e,t> (argmax:<<e,t>,<<e,n>,e>> $0 size:<e,n>))
+//smallest :- NP/N : (lambda $0:<e,t> (argmin:<<e,t>,<<e,n>,e>> $0 size:<e,n>))
+//closest to :- (NP\N)/NP : (lambda $0:e (lambda $1:<e,t> (argmin:<<e,t>,<<e,n>,e>> $1 (dist:<e,<e,n>> $0))))
+//nearest to :- (NP\N)/NP : (lambda $0:e (lambda $1:<e,t> (argmin:<<e,t>,<<e,n>,e>> $1 (dist:<e,<e,n>> $0))))
 //"get the nearest block" - implied referent is the agent
-nearest :- NP\N : (lambda $0:<e,t> (argmin:<<e,t>,<<e,n>,e>> $0 (dist:<e,<e,n>> (the:<<e,t>,e> agent:<e,t>))))
-closest :- NP\N : (lambda $0:<e,t> (argmin:<<e,t>,<<e,n>,e>> $0 (dist:<e,<e,n>> (the:<<e,t>,e> agent:<e,t>))))
+//nearest :- NP\N : (lambda $0:<e,t> (argmin:<<e,t>,<<e,n>,e>> $0 (dist:<e,<e,n>> (the:<<e,t>,e> agent:<e,t>))))
+//closest :- NP\N : (lambda $0:<e,t> (argmin:<<e,t>,<<e,n>,e>> $0 (dist:<e,<e,n>> (the:<<e,t>,e> agent:<e,t>))))
 //TODO: "nearest block to you"
 
 //imperative

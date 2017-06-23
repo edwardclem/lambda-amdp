@@ -18,14 +18,14 @@ import java.util.stream.Collectors;
  * Created by edwardwilliams on 6/21/17.
  * Derived from the InstructionTraceDataset file in the navi repo.
  */
-public class InstructionPrecondPostcondDataset implements IDataCollection<InstructionPrecondPostcond> {
-    private final List<InstructionPrecondPostcond>items;
+public class BurlapDemonstrationDataset implements IDataCollection<BurlapDemonstration> {
+    private final List<BurlapDemonstration>items;
 
-    public InstructionPrecondPostcondDataset(List<InstructionPrecondPostcond> items){
+    public BurlapDemonstrationDataset(List<BurlapDemonstration> items){
         this.items = items;
     }
     //loading from file
-    public static InstructionPrecondPostcondDataset readFromFile(File f) throws IOException{
+    public static BurlapDemonstrationDataset readFromFile(File f) throws IOException{
         final String fileString = FileUtils.readFile(f); //using SPF
 
         List<String> splitString = Arrays.asList(fileString.split("\n\n"));
@@ -33,16 +33,16 @@ public class InstructionPrecondPostcondDataset implements IDataCollection<Instru
         //Java has Map now, I guess?
         //This is kind of grody, but probably easier to read than Yoav's code.
         //Less informative exceptions, though.
-        List<InstructionPrecondPostcond> processed = splitString.stream()
-                .map(s -> InstructionPrecondPostcond.parse(s))
+        List<BurlapDemonstration> processed = splitString.stream()
+                .map(s -> BurlapDemonstration.parse(s))
                 .collect(Collectors.toList());
 
-        return new InstructionPrecondPostcondDataset(processed);
+        return new BurlapDemonstrationDataset(processed);
     }
 
 
     @Override
-    public Iterator<InstructionPrecondPostcond> iterator(){
+    public Iterator<BurlapDemonstration> iterator(){
         return items.iterator();
     }
 
@@ -53,7 +53,7 @@ public class InstructionPrecondPostcondDataset implements IDataCollection<Instru
 
     @Override
     public String toString() {
-        final Iterator<InstructionPrecondPostcond> iterator = items.iterator();
+        final Iterator<BurlapDemonstration> iterator = items.iterator();
         final StringBuilder sb = new StringBuilder();
         while (iterator.hasNext()) {
             sb.append(iterator.next().toString());
@@ -64,12 +64,12 @@ public class InstructionPrecondPostcondDataset implements IDataCollection<Instru
         return sb.toString();
     }
 
-    public static class Creator implements IResourceObjectCreator<InstructionPrecondPostcondDataset>{
+    public static class Creator implements IResourceObjectCreator<BurlapDemonstrationDataset>{
 
         @Override
-        public InstructionPrecondPostcondDataset create(Parameters params, IResourceRepository repo){
+        public BurlapDemonstrationDataset create(Parameters params, IResourceRepository repo){
             try {
-                return InstructionPrecondPostcondDataset.readFromFile(params.getAsFile("file"));
+                return BurlapDemonstrationDataset.readFromFile(params.getAsFile("file"));
             } catch (final IOException e){
                 throw new RuntimeException(e);
             }
@@ -77,12 +77,12 @@ public class InstructionPrecondPostcondDataset implements IDataCollection<Instru
 
         @Override
         public String type(){
-            return "data.ipp"; //"instruction precond postcond"
+            return "data.bdm"; //"burlap demonstration"
         }
 
         @Override
         public ResourceUsage usage(){
-            return new ResourceUsage.Builder(type(), InstructionPrecondPostcondDataset.class)
+            return new ResourceUsage.Builder(type(), BurlapDemonstrationDataset.class)
                     .setDescription("dataset of instructions paired with precondition and postcondition OO-MDP states.")
                     .addParam("file", "file", "Dataset file.")
                     .addParam("genlex", "id", "lexical generator.").build(); //not sure why GENLEX is needed.

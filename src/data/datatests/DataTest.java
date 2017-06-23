@@ -2,19 +2,9 @@ package data.datatests;
 
 import amdp.cleanup.CleanupDomain;
 import amdp.cleanup.state.CleanupState;
-import burlap.mdp.core.oo.state.OOState;
-import burlap.mdp.core.oo.state.ObjectInstance;
-import burlap.mdp.core.state.State;
-import burlap.mdp.core.state.StateUtilities;
 
-import java.util.List;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
-
+import data.BurlapDemonstration;
 import data.DataHelpers;
-import data.InstructionPrecond;
-import data.InstructionPrecondPostcond;
-import edu.cornell.cs.nlp.spf.data.sentence.Sentence;
 import org.junit.Assert;
 
 /**
@@ -41,12 +31,12 @@ public class DataTest {
         ;
         String testString = new StringBuilder().append("Don't even bother.").append("\n").append(stateString).append("\n").append(stateString).toString();
 
-        InstructionPrecondPostcond testIPP = InstructionPrecondPostcond.parse(testString);
+        BurlapDemonstration testIPP = BurlapDemonstration.parse(testString);
 
         System.out.println(stateString);
 
 
-        Assert.assertEquals("InstructionPrecondPostcond parsing and printing correctly", testString, testIPP.toString());
+        Assert.assertEquals("BurlapDemonstration parsing and printing correctly", testString, testIPP.toString());
     }
 
 

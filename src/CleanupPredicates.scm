@@ -57,12 +57,19 @@
 (define basket
     (shape {basket}))
 
+;;internal helper function
+(define (isRegion entity state)
+    (or ((door entity) state) ((room entity) state)))
+
 ;spatial functions
+;type-checking!!! limited vocab for now
 (define in
     (lambda (entity region)
         (lambda (state)
             (let ((objectProps (.object state entity)) (regionProps (.object state region)))
-                (CleanupDomain.regionContainsPoint regionProps (.get objectProps {x}) (.get objectProps {y}) #f)))))
+                (if (and (isRegion region state) (not (isRegion entity state)))
+                (CleanupDomain.regionContainsPoint regionProps (.get objectProps {x}) (.get objectProps {y}) #f)
+                #f)))))
 
 ;distance function
 ;<e, <e, n>> == <e, <e, <s, n>>>

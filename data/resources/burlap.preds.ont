@@ -1,5 +1,4 @@
 (
-
 red:<e,t>
 blue:<e,t>
 green:<e,t>
@@ -8,13 +7,12 @@ room:<e,t>
 door:<e,t>
 block:<e,t>
 agent:<e,t>
-argmin:<<e,t>,<<e,n>,e>>
-argmax:<<e,t>,<<e,n>,e>>
-dist:<e,<e,n>>
-size:<e,n>
+//argmin:<<e,t>,<<e,n>,e>>
+//argmax:<<e,t>,<<e,n>,e>>
+//dist:<e,<e,n>>
+//size:<e,n>
 the:<<e,t>,e>
 in:<e,<e,t>>
-next_to:<e,<e,t>>
+//next_to:<e,<e,t>>
 exists:<<e,t>,t> //I guess I need this?
-
 )

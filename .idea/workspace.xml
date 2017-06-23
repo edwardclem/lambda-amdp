@@ -1,50 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6413b0c6-0d4f-4257-8850-2a3f95d81789" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/weakdebug/simplePreds.ipp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/experiments/weakly/jobs.inc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/experiments/weakly/weakly.exp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data/DataHelpers.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data/InstructionPrecond.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data/InstructionPrecondPostcond.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data/InstructionPrecondPostcondDataset.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data/datatests/DataTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/experiments/LambdaExpRunner.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/experiments/explat/LambdaExperiment.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/experiments/explat/LambdaResourceRepo.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ccg/experiments/data/RSS/test.ccg" afterPath="$PROJECT_DIR$/data/RSS/test.ccg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ccg/experiments/data/RSS/train.ccg" afterPath="$PROJECT_DIR$/data/RSS/train.ccg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ccg/experiments/data/initialCorpus.ccg" afterPath="$PROJECT_DIR$/data/debug/initialCorpus.ccg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ccg/experiments/data/simplePreds.ccg" afterPath="$PROJECT_DIR$/data/debug/simplePreds.ccg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ccg/experiments/params.inc" afterPath="$PROJECT_DIR$/experiments/params.inc" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ccg/experiments/parser.inc" afterPath="$PROJECT_DIR$/experiments/parser.inc" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ccg/experiments/template/RSS/learn.inc" afterPath="$PROJECT_DIR$/experiments/template/RSS/learn.inc" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ccg/experiments/template/RSS/rss.exp" afterPath="$PROJECT_DIR$/experiments/template/RSS/rss.exp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ccg/experiments/template/genlex.inc" afterPath="$PROJECT_DIR$/experiments/template/genlex.inc" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ccg/experiments/template/init.inc" afterPath="$PROJECT_DIR$/experiments/template/init.inc" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ccg/experiments/template/jobs.inc" afterPath="$PROJECT_DIR$/experiments/template/jobs.inc" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ccg/experiments/template/model.inc" afterPath="$PROJECT_DIR$/experiments/template/model.inc" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ccg/experiments/template/test1/learn.inc" afterPath="$PROJECT_DIR$/experiments/template/test1/learn.inc" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ccg/experiments/template/test1/test.exp" afterPath="$PROJECT_DIR$/experiments/template/test1/test.exp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ccg/experiments/unification/RSS/learn.inc" afterPath="$PROJECT_DIR$/experiments/unification/RSS/learn.inc" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ccg/experiments/unification/RSS/rss.exp" afterPath="$PROJECT_DIR$/experiments/unification/RSS/rss.exp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ccg/experiments/unification/genlex.inc" afterPath="$PROJECT_DIR$/experiments/unification/genlex.inc" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ccg/experiments/unification/init.inc" afterPath="$PROJECT_DIR$/experiments/unification/init.inc" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ccg/experiments/unification/jobs.inc" afterPath="$PROJECT_DIR$/experiments/unification/jobs.inc" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ccg/experiments/unification/learn.inc" afterPath="$PROJECT_DIR$/experiments/unification/learn.inc" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ccg/experiments/unification/model.inc" afterPath="$PROJECT_DIR$/experiments/unification/model.inc" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ccg/experiments/validation.inc" afterPath="$PROJECT_DIR$/experiments/validation.inc" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ccg/resources/burlap.preds.ont" afterPath="$PROJECT_DIR$/data/resources/burlap.preds.ont" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ccg/resources/burlap.seed.lex" afterPath="$PROJECT_DIR$/data/resources/burlap.seed.lex" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ccg/resources/burlap.types" afterPath="$PROJECT_DIR$/data/resources/burlap.types" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ccg/resources/init.weights" afterPath="$PROJECT_DIR$/data/resources/init.weights" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/parsing/BurlapExpSimple.java" afterPath="$PROJECT_DIR$/src/supervised/BurlapExpSimple.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/parsing/BurlapParsingExp.java" afterPath="$PROJECT_DIR$/src/supervised/BurlapParsingExp.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/parsing/BurlapResourceRepo.java" afterPath="$PROJECT_DIR$/src/supervised/BurlapResourceRepo.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/parsing/SPFMain.java" afterPath="$PROJECT_DIR$/src/supervised/SPFMain.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+    <list default="true" id="6413b0c6-0d4f-4257-8850-2a3f95d81789" name="Default" comment="Basic SPF ExPlat support, dummy annotated data">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/experiments/weakly/genlex.inc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/experiments/weakly/init.inc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/experiments/weakly/init.weights" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/experiments/weakly/learn.inc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/experiments/weakly/model.inc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/experiments/weakly/parser.inc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/experiments/weakly/validation.inc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/genlex/TemplateCoarseGenlexWeakLabel.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/validation/validationtests/ValidationTester.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/validation/BurlapDemonstration.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/validation/BurlapInstruction.java" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/data/weakdebug/simplePreds.ipp" afterPath="$PROJECT_DIR$/data/weakdebug/simplePreds.bdm" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/data/InstructionPrecond.java" afterPath="$PROJECT_DIR$/src/data/BurlapInstruction.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/data/InstructionPrecondPostcond.java" afterPath="$PROJECT_DIR$/src/data/BurlapDemonstration.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/data/InstructionPrecondPostcondDataset.java" afterPath="$PROJECT_DIR$/src/data/BurlapDemonstrationDataset.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/resources/burlap.preds.ont" afterPath="$PROJECT_DIR$/data/resources/burlap.preds.ont" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/resources/burlap.seed.lex" afterPath="$PROJECT_DIR$/data/resources/burlap.seed.lex" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/experiments/weakly/jobs.inc" afterPath="$PROJECT_DIR$/experiments/weakly/jobs.inc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/experiments/weakly/weakly.exp" afterPath="$PROJECT_DIR$/experiments/weakly/weakly.exp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CleanupPredicates.scm" afterPath="$PROJECT_DIR$/src/CleanupPredicates.scm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/data/datatests/DataTest.java" afterPath="$PROJECT_DIR$/src/data/datatests/DataTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/experiments/explat/LambdaExperiment.java" afterPath="$PROJECT_DIR$/src/experiments/explat/LambdaExperiment.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/experiments/explat/LambdaResourceRepo.java" afterPath="$PROJECT_DIR$/src/experiments/explat/LambdaResourceRepo.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/validation/BurlapValidator.java" afterPath="$PROJECT_DIR$/src/validation/BurlapValidator.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -57,8 +39,28 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="jobs.inc" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/experiments/weakly/jobs.inc">
+      <file leaf-file-name="CleanupPredicates.scm" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/CleanupPredicates.scm">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="155">
+              <caret line="156" column="19" lean-forward="true" selection-start-line="156" selection-start-column="19" selection-end-line="156" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="burlap.seed.lex" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/resources/burlap.seed.lex">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="33" column="12" lean-forward="true" selection-start-line="33" selection-start-column="12" selection-end-line="33" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="burlap.types" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/resources/burlap.types">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -67,31 +69,61 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="global.log" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/experiments/weakly/logs/global.log">
+      <file leaf-file-name="simplePreds.bdm" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/weakdebug/simplePreds.bdm">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="14" column="22" lean-forward="true" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+            <state relative-caret-position="441">
+              <caret line="60" column="29" lean-forward="true" selection-start-line="60" selection-start-column="29" selection-end-line="60" selection-end-column="29" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="params.inc" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/experiments/params.inc">
+      <file leaf-file-name="burlap.preds.ont" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/resources/burlap.preds.ont">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="3" column="19" lean-forward="false" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
+            <state relative-caret-position="240">
+              <caret line="12" column="12" lean-forward="true" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LambdaExpRunner.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/experiments/LambdaExpRunner.java">
+      <file leaf-file-name="learn.inc" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/experiments/weakly/learn.inc">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="96">
-              <caret line="11" column="40" lean-forward="true" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
+            <state relative-caret-position="80">
+              <caret line="4" column="34" lean-forward="false" selection-start-line="4" selection-start-column="34" selection-end-line="4" selection-end-column="34" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="train.log" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/experiments/weakly/logs/train.log">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="361">
+              <caret line="42" column="74" lean-forward="true" selection-start-line="42" selection-start-column="74" selection-end-line="42" selection-end-column="74" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="genlex.inc" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/experiments/weakly/genlex.inc">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="40">
+              <caret line="2" column="37" lean-forward="false" selection-start-line="2" selection-start-column="37" selection-end-line="2" selection-end-column="37" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LambdaResourceRepo.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/experiments/explat/LambdaResourceRepo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="462">
+              <caret line="88" column="79" lean-forward="false" selection-start-line="88" selection-start-column="79" selection-end-line="88" selection-end-column="79" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -99,61 +131,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="weakly.exp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/experiments/weakly/weakly.exp">
+      <file leaf-file-name="validation.inc" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/experiments/weakly/validation.inc">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="20">
-              <caret line="1" column="8" lean-forward="false" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="8" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="init.inc" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/experiments/template/init.inc">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="simplePreds.ipp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/weakdebug/simplePreds.ipp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="16" column="22" lean-forward="false" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="learn.inc" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/experiments/template/test1/learn.inc">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="rss.exp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/experiments/template/RSS/rss.exp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="parser.inc" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/experiments/parser.inc">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <caret line="1" column="34" lean-forward="false" selection-start-line="1" selection-start-column="34" selection-end-line="1" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -172,6 +154,11 @@
     <findStrings>
       <find>tf</find>
       <find>String</find>
+      <find>ontology</find>
+      <find>genlex</find>
+      <find>argmax</find>
+      <find>n</find>
+      <find>next</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -190,29 +177,47 @@
         <option value="$PROJECT_DIR$/src/lambdas/LambdaPlanning/LambdaBurlap.java" />
         <option value="$PROJECT_DIR$/src/validation/BurlapValidation.java" />
         <option value="$PROJECT_DIR$/src/validation/BurlapInstruction.java" />
-        <option value="$PROJECT_DIR$/src/validation/BurlapValidator.java" />
         <option value="$PROJECT_DIR$/src/validation/BurlapDemonstration.java" />
         <option value="$PROJECT_DIR$/src/data/DataHelpers.java" />
-        <option value="$PROJECT_DIR$/src/data/InstructionPrecond.java" />
-        <option value="$PROJECT_DIR$/src/data/InstructionPrecondPostcond.java" />
         <option value="$PROJECT_DIR$/src/lambdas/LambdaPlanning/LambdaTest.java" />
         <option value="$PROJECT_DIR$/src/data/InstructionPrecondPostcondDataset.java" />
-        <option value="$PROJECT_DIR$/src/experiments/explat/LambdaResourceRepo.java" />
-        <option value="$PROJECT_DIR$/src/data/datatests/DataTest.java" />
         <option value="$PROJECT_DIR$/data/weaksuperTest/simplePreds.ipp" />
         <option value="$PROJECT_DIR$/src/experiments/LambdaExpRunner.java" />
         <option value="$PROJECT_DIR$/experiments/weakly/logs/global.log" />
-        <option value="$PROJECT_DIR$/src/experiments/explat/LambdaExperiment.java" />
-        <option value="$PROJECT_DIR$/experiments/weakly/weakly.exp" />
+        <option value="$PROJECT_DIR$/experiments/weakly/parser.inc" />
+        <option value="$PROJECT_DIR$/src/data/old/BurlapInstruction.java" />
+        <option value="$PROJECT_DIR$/src/data/InstructionPrecond.java" />
+        <option value="$PROJECT_DIR$/src/data/InstructionPrecondPostcond.java" />
+        <option value="$PROJECT_DIR$/src/data/BurlapDemonstrationDataset.java" />
+        <option value="$PROJECT_DIR$/experiments/weakly/validation.inc" />
+        <option value="$PROJECT_DIR$/src/data/datatests/DataTest.java" />
         <option value="$PROJECT_DIR$/experiments/params.inc" />
+        <option value="$PROJECT_DIR$/experiments/weakly/init.weights" />
+        <option value="$PROJECT_DIR$/experiments/weakly/weakly.exp" />
+        <option value="$PROJECT_DIR$/experiments/weakly/init.inc" />
+        <option value="$PROJECT_DIR$/experiments/weakly/jobs.inc" />
+        <option value="$PROJECT_DIR$/src/data/BurlapInstruction.java" />
+        <option value="$PROJECT_DIR$/src/experiments/explat/LambdaExperiment.java" />
+        <option value="$PROJECT_DIR$/src/validation/validationtests/ValidationTester.java" />
+        <option value="$PROJECT_DIR$/src/validation/BurlapValidator.java" />
+        <option value="$PROJECT_DIR$/src/data/BurlapDemonstration.java" />
+        <option value="$PROJECT_DIR$/src/learning/ValidationPerceptronCoarse.java" />
+        <option value="$PROJECT_DIR$/src/genlex/TemplateCoarseGenlexBurlap.java" />
+        <option value="$PROJECT_DIR$/src/genlex/TemplateCoarseGenlexWeakLabel.java" />
+        <option value="$PROJECT_DIR$/src/experiments/explat/LambdaResourceRepo.java" />
+        <option value="$PROJECT_DIR$/experiments/weakly/genlex.inc" />
+        <option value="$PROJECT_DIR$/experiments/weakly/learn.inc" />
+        <option value="$PROJECT_DIR$/src/CleanupPredicates.scm" />
+        <option value="$PROJECT_DIR$/data/resources/burlap.seed.lex" />
+        <option value="$PROJECT_DIR$/data/resources/burlap.preds.ont" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="3904" />
-    <option name="y" value="-11" />
-    <option name="width" value="1857" />
-    <option name="height" value="1092" />
+    <option name="x" value="3905" />
+    <option name="y" value="-4" />
+    <option name="width" value="1855" />
+    <option name="height" value="1084" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -230,9 +235,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="Scratches" />
       <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -255,7 +260,245 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lambda-amdp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lambda-amdp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="validation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lambda-amdp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lambda-amdp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="validation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="validationtests" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lambda-amdp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lambda-amdp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="genlex" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lambda-amdp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lambda-amdp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="experiments" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lambda-amdp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lambda-amdp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="experiments" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="explat" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lambda-amdp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lambda-amdp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lambda-amdp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lambda-amdp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="experiments" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lambda-amdp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lambda-amdp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="experiments" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="weakly" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lambda-amdp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lambda-amdp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="experiments" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="weakly" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="logs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lambda-amdp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lambda-amdp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="weakdebug" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lambda-amdp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lambda-amdp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lambda-amdp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lambda-amdp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="robotImages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lambda-amdp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lambda-amdp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -266,18 +509,27 @@
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$NAVI_REPO$" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="SearchEverywhereHistoryKey" value="template&#9;FILE&#9;jar:///home/edwardwilliams/research/lambda-amdp/lib/spf-2.0.jar!/edu/cornell/cs/nlp/spf/genlex/ccg/template/coarse/TemplateCoarseGenlex.class" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="validation" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/data/weaksuperTest" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/data/test" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/data" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/experiments/weakly" />
+      <recent name="$PROJECT_DIR$/data/weaksuperTest" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="genlex" />
+      <recent name="learning" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="validation" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -336,7 +588,7 @@
     <configuration default="false" name="BurlapValidator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="validation.*" />
+          <option name="PATTERN" value="data.old.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -681,10 +933,19 @@
       <option name="presentableId" value="Default" />
       <updated>1497627381104</updated>
     </task>
+    <task id="LOCAL-00001" summary="Basic SPF ExPlat support, dummy annotated data">
+      <created>1498173378280</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1498173378280</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="3904" y="-11" width="1857" height="1092" extended-state="6" />
+    <frame x="3905" y="-4" width="1855" height="1084" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -695,18 +956,19 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32881" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32985386" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32997763" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18186843" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18850194" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32985386" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39979124" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -714,7 +976,6 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -745,11 +1006,28 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
     </layout-to-restore>
   </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.inc" />
+  </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Basic SPF ExPlat support, dummy annotated data" />
+    <option name="LAST_COMMIT_MESSAGE" value="Basic SPF ExPlat support, dummy annotated data" />
+  </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$PROJECT_DIR$/lib/spf-2.0.jar!/edu/cornell/cs/nlp/spf/parser/ccg/cky/AbstractCKYParser.class</url>
+          <line>229</line>
+          <properties />
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="4" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="antWorkspaceConfiguration">
@@ -757,307 +1035,11 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/data/RSS/test.ccg">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-420">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/lambdas/LambdaPlanning/LambdaConverter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="668">
-          <caret line="39" column="46" lean-forward="true" selection-start-line="39" selection-start-column="46" selection-end-line="39" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/supervised/SPFMain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/CleanupPredicates.scm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2740">
-          <caret line="137" column="32" lean-forward="false" selection-start-line="137" selection-start-column="32" selection-end-line="137" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/lambdas/LambdaPlanning/LambdaBurlap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="63" column="34" lean-forward="true" selection-start-line="63" selection-start-column="34" selection-end-line="63" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/supervised/BurlapExpSimple.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="891">
-          <caret line="435" column="0" lean-forward="false" selection-start-line="435" selection-start-column="0" selection-end-line="435" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/supervised/BurlapParsingExp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2220">
-          <caret line="165" column="0" lean-forward="false" selection-start-line="165" selection-start-column="0" selection-end-line="165" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/resources/burlap.seed.lex">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/debug/initialCorpus.ccg">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1280">
-          <caret line="127" column="229" lean-forward="false" selection-start-line="127" selection-start-column="0" selection-end-line="127" selection-end-column="229" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/lambdas/LambdaInterface/LambdaSC.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="54" lean-forward="true" selection-start-line="16" selection-start-column="54" selection-end-line="16" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/lambdas/LambdaPlanning/LambdaBurlap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/lambdas/LambdaPlanning/LambdaBurlap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lambda-amdp.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="9" lean-forward="true" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/lambdas/LambdaPlanning/LambdaConverter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="668">
-          <caret line="46" column="46" lean-forward="false" selection-start-line="46" selection-start-column="46" selection-end-line="46" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/CleanupPredicates.scm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2740">
-          <caret line="137" column="32" lean-forward="false" selection-start-line="137" selection-start-column="32" selection-end-line="137" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/validation/BurlapDemonstration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/validation/BurlapInstruction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="19" lean-forward="true" selection-start-line="0" selection-start-column="19" selection-end-line="0" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/validation/BurlapValidator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" column="1" lean-forward="false" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/amdp.jar!/burlap/mdp/core/state/State.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="9" column="24" lean-forward="true" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/amdp.jar!/burlap/mdp/core/oo/state/OOStateUtilities.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="112" column="0" lean-forward="true" selection-start-line="112" selection-start-column="0" selection-end-line="112" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/lambdas/LambdaInterface/LambdaSC.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="54" lean-forward="false" selection-start-line="16" selection-start-column="54" selection-end-line="16" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/amdp.jar!/amdp/cleanup/CleanupDomain.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1398">
-          <caret line="384" column="22" lean-forward="true" selection-start-line="384" selection-start-column="22" selection-end-line="384" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/amdp.jar!/burlap/mdp/core/state/StateUtilities.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/amdp.jar!/amdp/cleanup/FixedDoorCleanupEnv.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="20" column="11" lean-forward="false" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/rt.jar!/java/lang/String.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="1072" column="0" lean-forward="false" selection-start-line="1072" selection-start-column="0" selection-end-line="1072" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/spf-2.0.jar!/edu/cornell/cs/nlp/spf/data/sentence/Sentence.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="30" column="34" lean-forward="true" selection-start-line="30" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/spf-2.0.jar!/edu/cornell/cs/nlp/spf/data/situated/sentence/SituatedSentence.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="14" column="34" lean-forward="true" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/data/InstructionPrecond.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="12" column="44" lean-forward="false" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/amdp.jar!/amdp/cleanup/state/CleanupState.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3031">
-          <caret line="290" column="0" lean-forward="false" selection-start-line="290" selection-start-column="0" selection-end-line="290" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/data/DataHelpers.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1820">
-          <caret line="100" column="14" lean-forward="false" selection-start-line="100" selection-start-column="14" selection-end-line="100" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/data/InstructionPrecondPostcond.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="760">
-          <caret line="46" column="29" lean-forward="false" selection-start-line="46" selection-start-column="29" selection-end-line="46" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/lambdas/LambdaPlanning/LambdaBurlap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="760">
-          <caret line="63" column="34" lean-forward="false" selection-start-line="63" selection-start-column="34" selection-end-line="63" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/lambdas/LambdaPlanning/LambdaTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/spf-2.0.jar!/edu/cornell/cs/nlp/utils/collections/ListUtils.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1560">
-          <caret line="145" column="39" lean-forward="false" selection-start-line="145" selection-start-column="39" selection-end-line="145" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/data/InstructionPrecondPostcondDataset.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1380">
-          <caret line="89" column="0" lean-forward="false" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/data/datatests/DataTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="45" column="39" lean-forward="false" selection-start-line="45" selection-start-column="39" selection-end-line="45" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ccg/experiments/fully_supervised" />
-    <entry file="file://$PROJECT_DIR$/src/experiments/explat/LambdaResourceRepo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="13" column="81" lean-forward="false" selection-start-line="13" selection-start-column="81" selection-end-line="13" selection-end-column="81" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/spf-2.0.jar!/edu/cornell/cs/nlp/utils/log/Logger.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="25" column="23" lean-forward="false" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
-          <folding>
-            <element signature="e#729#730#0" expanded="true" />
-            <element signature="e#769#770#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/experiments/explat/LambdaExperiment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="427">
-          <caret line="44" column="20" lean-forward="false" selection-start-line="44" selection-start-column="20" selection-end-line="44" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/experiments/template/init.inc">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1065,7 +1047,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1073,6 +1054,24 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/experiments/weakly/params.inc" />
+    <entry file="file://$PROJECT_DIR$/src/experiments/LambdaExpRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="11" column="40" lean-forward="true" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data/datatests/DataTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1081,67 +1080,429 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/experiments/weakly/weakly.exp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="1" column="8" lean-forward="false" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/experiments/weakly/logs/global.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="14" column="22" lean-forward="true" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/experiments/weakly/jobs.inc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/experiments/weakly/params.inc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/experiments/params.inc">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="4" column="8" lean-forward="false" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/spf-2.0.jar!/edu/cornell/cs/nlp/spf/explat/IResourceRepository.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/experiments/weakly/parser.inc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="13" column="71" lean-forward="false" selection-start-line="13" selection-start-column="71" selection-end-line="13" selection-end-column="71" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/spf-2.0.jar!/edu/cornell/cs/nlp/spf/explat/ParameterizedExperiment.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="37" column="31" lean-forward="false" selection-start-line="37" selection-start-column="31" selection-end-line="37" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/spf-2.0.jar!/edu/cornell/cs/nlp/spf/data/singlesentence/SingleSentence.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/spf-2.0.jar!/edu/cornell/cs/nlp/spf/data/sentence/SentenceLengthFilter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="15" column="33" lean-forward="false" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/experiments/weakly/model.inc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/spf-2.0.jar!/edu/cornell/cs/nlp/spf/data/situated/sentence/SituatedSentence.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="10" column="48" lean-forward="true" selection-start-line="10" selection-start-column="45" selection-end-line="10" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/experiments/weakly/init.inc">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
-          <caret line="3" column="19" lean-forward="false" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
+          <caret line="3" column="91" lean-forward="false" selection-start-line="3" selection-start-column="91" selection-end-line="3" selection-end-column="91" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/weakdebug/simplePreds.ipp">
+    <entry file="file://$PROJECT_DIR$/experiments/weakly/logs/init.out">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="16" column="22" lean-forward="false" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/experiments/LambdaExpRunner.java">
+    <entry file="file://$PROJECT_DIR$/experiments/weakly/logs/init.log">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="11" column="40" lean-forward="true" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
+        <state relative-caret-position="-2008">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/spf-2.0.jar!/edu/cornell/cs/nlp/spf/learn/ILearner.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="11" column="17" lean-forward="false" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/spf-2.0.jar!/edu/cornell/cs/nlp/utils/log/Logger.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="93" column="0" lean-forward="false" selection-start-line="93" selection-start-column="0" selection-end-line="93" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/spf-2.0.jar!/edu/cornell/cs/nlp/spf/parser/ccg/cky/AbstractCKYParser.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="625">
+          <caret line="239" column="33" lean-forward="true" selection-start-line="239" selection-start-column="33" selection-end-line="239" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/spf-2.0.jar!/edu/cornell/cs/nlp/utils/composites/Pair.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="15" column="12" lean-forward="false" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/spf-2.0.jar!/edu/cornell/cs/nlp/spf/data/sentence/Sentence.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/experiments/weakly/init.weights">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data/old/BurlapInstruction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data/old/BurlapDemonstration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/validation/validationtests/ValidationTester.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="668">
+          <caret line="40" column="10" lean-forward="false" selection-start-line="40" selection-start-column="10" selection-end-line="40" selection-end-column="10" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/experiments/weakly/logs/global.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="65">
+          <caret line="61" column="37" lean-forward="false" selection-start-line="61" selection-start-column="37" selection-end-line="61" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/spf-2.0.jar!/edu/cornell/cs/nlp/spf/genlex/ccg/template/coarse/TemplateCoarseGenlex.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2440">
+          <caret line="182" column="0" lean-forward="false" selection-start-line="182" selection-start-column="0" selection-end-line="182" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/experiments/weakly/weakly.exp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="23" column="16" lean-forward="false" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/experiments/weakly/jobs.inc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="4" column="19" lean-forward="false" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/validation/BurlapValidator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="22" column="3" lean-forward="false" selection-start-line="22" selection-start-column="3" selection-end-line="22" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/experiments/weakly/logs/train.out">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data/BurlapDemonstrationDataset.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="20" column="66" lean-forward="false" selection-start-line="20" selection-start-column="51" selection-end-line="20" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/spf-2.0.jar!/edu/cornell/cs/nlp/spf/data/ILabeledDataItem.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/learning/ValidationPerceptronCoarse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="65">
+          <caret line="72" column="13" lean-forward="false" selection-start-line="72" selection-start-column="13" selection-end-line="72" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data/BurlapInstruction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="10" column="42" lean-forward="false" selection-start-line="10" selection-start-column="42" selection-end-line="10" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/experiments/explat/LambdaExperiment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2420">
+          <caret line="204" column="0" lean-forward="true" selection-start-line="204" selection-start-column="0" selection-end-line="204" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data/BurlapDemonstration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="15" column="52" lean-forward="true" selection-start-line="15" selection-start-column="44" selection-end-line="15" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/genlex/TemplateCoarseGenlexWeakLabel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="289" column="50" lean-forward="false" selection-start-line="289" selection-start-column="50" selection-end-line="289" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/experiments/weakly/validation.inc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="1" column="34" lean-forward="false" selection-start-line="1" selection-start-column="34" selection-end-line="1" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/experiments/weakly/genlex.inc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="2" column="37" lean-forward="false" selection-start-line="2" selection-start-column="37" selection-end-line="2" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/experiments/explat/LambdaResourceRepo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="88" column="79" lean-forward="false" selection-start-line="88" selection-start-column="79" selection-end-line="88" selection-end-column="79" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/weakdebug/simplePreds.bdm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="441">
+          <caret line="60" column="29" lean-forward="true" selection-start-line="60" selection-start-column="29" selection-end-line="60" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/resources/burlap.seed.lex">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="33" column="12" lean-forward="true" selection-start-line="33" selection-start-column="12" selection-end-line="33" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/resources/burlap.preds.ont">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="12" column="12" lean-forward="true" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CleanupPredicates.scm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="156" column="19" lean-forward="true" selection-start-line="156" selection-start-column="19" selection-end-line="156" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/resources/burlap.types">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/experiments/weakly/learn.inc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="4" column="34" lean-forward="false" selection-start-line="4" selection-start-column="34" selection-end-line="4" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/experiments/weakly/logs/train.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="42" column="74" lean-forward="true" selection-start-line="42" selection-start-column="74" selection-end-line="42" selection-end-column="74" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.7</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>lambda-amdp</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>lib</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>
