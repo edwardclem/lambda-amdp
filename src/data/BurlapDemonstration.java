@@ -44,7 +44,8 @@ public class BurlapDemonstration implements ILabeledDataItem<Sentence, Pair<Clea
     }
 
     @Override
-    //TODO: figure out what this is for?
+    //TODO: this won't quite work in the way it's intended
+    // it's supposed to be comparing the parsing output (or some byproduct like the trace) that's the same type as the label
     public boolean isCorrect(Pair<CleanupState, CleanupState> conditions) {
         return true;
     }

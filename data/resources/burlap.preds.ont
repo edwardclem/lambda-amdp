@@ -1,4 +1,5 @@
 (
+
 red:<e,t>
 blue:<e,t>
 green:<e,t>
@@ -15,4 +16,5 @@ the:<<e,t>,e>
 in:<e,<e,t>>
 //next_to:<e,<e,t>>
 exists:<<e,t>,t> //I guess I need this?
+
 )

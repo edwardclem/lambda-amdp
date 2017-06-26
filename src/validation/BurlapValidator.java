@@ -42,13 +42,25 @@ public class BurlapValidator implements IValidator<BurlapDemonstration, LogicalE
 
     @Override
     public boolean isValid(BurlapDemonstration dataItem, LogicalExpression parse) {
-        String pred = LambdaConverter.convert(parse.toString());
-        CleanupState initialState = dataItem.getLabel().first();
-        js.setGlobalValue("initialState", (CleanupState) initialState);
-        js.eval("(define the (satisfiesPredicate initialState))");
-        CleanupState after = dataItem.getLabel().second();
-        SchemeProcedure pf = (SchemeProcedure)js.eval(pred);
-        return (Boolean) js.call(pf,after);
+        String parse_string = parse.toString();
+
+        //preprocessing - removing abstract lexical templates
+        //TODO: this is a crude pruning - see if a bug is happening in GENLEX.
+        if (!parse_string.contains("#")){
+            String pred = LambdaConverter.convert(parse.toString());
+            CleanupState initialState = dataItem.getLabel().first();
+            js.setGlobalValue("initialState", (CleanupState) initialState);
+            js.eval("(define the (satisfiesPredicate initialState))");
+            CleanupState after = dataItem.getLabel().second();
+            SchemeProcedure pf = (SchemeProcedure)js.eval(pred);
+            return (Boolean) js.call(pf,after);
+        }
+        else{
+            return false;
+        }
+
+
+
     }
 
     public static class Creator implements IResourceObjectCreator<BurlapValidator>{

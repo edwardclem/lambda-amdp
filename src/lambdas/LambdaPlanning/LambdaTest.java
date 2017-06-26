@@ -112,6 +112,21 @@ public class LambdaTest {
             Assert.assertEquals("testing argmax on rooms", "room0" ,js.call(argmax, js.eval("room"), js.eval("roomSize")));
             System.out.println("passed ");
 
+
+            //testing null function
+
+            SchemeProcedure yellow = (SchemeProcedure)js.eval("yellow");
+
+            System.out.println(js.call(the, yellow).equals(""));
+
+            //defining determiner wrt initial state:
+            js.setGlobalValue("initialState", state);
+            js.eval("(define the (satisfiesPredicate initialState))");
+
+            SchemeProcedure inNull = (SchemeProcedure)js.eval("(in (the yellow) (the red))");
+
+            System.out.println(js.call(inNull, state));
+
         } catch (FileNotFoundException e){
             System.out.println(e.getMessage());
         }

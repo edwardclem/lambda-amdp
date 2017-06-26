@@ -1,5 +1,7 @@
 //seed lexicon for BURLAP CleanupDomain predicates
 
+//TODO: make sure syntactic types are correct
+
 //nouns
 //leaving out some predicates to test for lexical induction?
 agent :- N : agent:<e,t>
@@ -19,7 +21,7 @@ the :- NP/N : (lambda $0:<e,t> (the:<<e,t>,e> $0))
 the :- N/N : (lambda $0:<e,t> $0)
 
 //spatial prepositions
-in :- PP/NP : (lambda $0:e (lambda $1:e (in:<e,<e,t>> $1 $0)))
+in :- PP/NP\NP : (lambda $0:e (lambda $1:e (in:<e,<e,t>> $1 $0)))
 
 //quantifiers
 //largest :- NP/N : (lambda $0:<e,t> (argmax:<<e,t>,<<e,n>,e>> $0 size:<e,n>))

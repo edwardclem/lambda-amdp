@@ -38,8 +38,8 @@ public class LambdaConverter {
             schemeCommand.insert(aindex + 3, "_");
             aindex = schemeCommand.indexOf("and", aindex + 1);
         }
-
-
+        //System.out.println(command);
+        //System.out.println(schemeCommand.toString());
         return  schemeCommand.toString();
     }
 

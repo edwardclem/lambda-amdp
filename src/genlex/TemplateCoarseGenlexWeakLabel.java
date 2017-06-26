@@ -61,7 +61,7 @@ import java.util.*;
  * fine-grained lexical entries using all the constants in the original
  * ontologies. These entries are then returned by the generator.
  *
- * Modified to accept ILabeledDataItems.
+ * Modified to accept ILabeledDataItems by Edward Williams.
  *
  * @author Yoav Artzi
  * @param <DI>

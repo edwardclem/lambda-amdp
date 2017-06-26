@@ -50,6 +50,8 @@
     (color {blue}))
 (define green
     (color {green}))
+(define yellow
+    (color {yellow}))
 
 (define shape
     (checkAttribute {shape}))
@@ -57,12 +59,20 @@
 (define basket
     (shape {basket}))
 
+;;internal helper function
+(define (isRegion entity state)
+    (or ((door entity) state) ((room entity) state)))
+
 ;spatial functions
+;type-checking!!! limited vocab for now
+;return false for if either is null
 (define in
     (lambda (entity region)
         (lambda (state)
-            (let ((objectProps (.object state entity)) (regionProps (.object state region)))
-                (CleanupDomain.regionContainsPoint regionProps (.get objectProps {x}) (.get objectProps {y}) #f)))))
+            (if (and (not (.equals entity {})) (not (.equals region {})) (isRegion region state) (not (isRegion entity state)) )
+                (let ((objectProps (.object state entity)) (regionProps (.object state region)))
+                (CleanupDomain.regionContainsPoint regionProps (.get objectProps {x}) (.get objectProps {y}) #f))
+                #f))))
 
 ;distance function
 ;<e, <e, n>> == <e, <e, <s, n>>>
