@@ -2,33 +2,31 @@ package validation;
 
 import amdp.cleanup.state.*;
 import burlap.mdp.core.state.State;
-import data.BurlapDemonstration;
+import edu.cornell.cs.nlp.spf.data.ILabeledDataItem;
+import edu.cornell.cs.nlp.spf.data.utils.IValidator;
 import edu.cornell.cs.nlp.spf.explat.IResourceRepository;
 import edu.cornell.cs.nlp.spf.explat.ParameterizedExperiment;
 import edu.cornell.cs.nlp.spf.explat.resources.IResourceObjectCreator;
 import edu.cornell.cs.nlp.spf.explat.resources.usage.ResourceUsage;
 import edu.cornell.cs.nlp.spf.mr.lambda.LogicalExpression;
+import edu.cornell.cs.nlp.utils.composites.Pair;
 import jscheme.JScheme;
 import jscheme.SchemeProcedure;
-
 import java.io.FileNotFoundException;
 import java.io.FileReader;
-
-import edu.cornell.cs.nlp.spf.data.utils.IValidator;
 import lambdas.LambdaPlanning.LambdaConverter;
 
 /**
  * Validates logical expression by testing whether or not it accepts the provided termination state as a termination state.
  * @author Mina Rhee and Edward Williams
  */
+public class BurlapSingleValidator<DI extends ILabeledDataItem<?, Pair<State, State>>, MR extends LogicalExpression> implements IValidator<DI, MR> {
 
-public class BurlapValidator implements IValidator<BurlapDemonstration, LogicalExpression> {
-
-    //TODO: initialize this "executor" as a resource instead
+    //TODO: initialize this "executor" as a resource instead probably?
     private static JScheme js;
     private String preds = "src/CleanupPredicates.scm";
 
-    public BurlapValidator() {
+    public BurlapSingleValidator() {
         js = new JScheme();
 
         try{
@@ -41,17 +39,17 @@ public class BurlapValidator implements IValidator<BurlapDemonstration, LogicalE
     }
 
     @Override
-    public boolean isValid(BurlapDemonstration dataItem, LogicalExpression parse) {
+    public boolean isValid(DI dataItem, MR parse) {
         String parse_string = parse.toString();
 
         //preprocessing - removing abstract lexical templates
         //TODO: this is a crude pruning - see if a bug is happening in GENLEX.
         if (!parse_string.contains("#")){
             String pred = LambdaConverter.convert(parse.toString());
-            CleanupState initialState = dataItem.getLabel().first();
+            State initialState = dataItem.getLabel().first();
             js.setGlobalValue("initialState", (CleanupState) initialState);
             js.eval("(define the (satisfiesPredicate initialState))");
-            CleanupState after = dataItem.getLabel().second();
+            State after = dataItem.getLabel().second();
             SchemeProcedure pf = (SchemeProcedure)js.eval(pred);
             return (Boolean) js.call(pf,after);
         }
@@ -63,21 +61,21 @@ public class BurlapValidator implements IValidator<BurlapDemonstration, LogicalE
 
     }
 
-    public static class Creator implements IResourceObjectCreator<BurlapValidator>{
+    public static class Creator implements IResourceObjectCreator<BurlapSingleValidator>{
 
         @Override
-        public BurlapValidator create(ParameterizedExperiment.Parameters params, IResourceRepository repo){
-            return new BurlapValidator();
+        public BurlapSingleValidator create(ParameterizedExperiment.Parameters params, IResourceRepository repo){
+            return new BurlapSingleValidator();
         }
 
         @Override
         public String type(){
-            return "validator.burlap";
+            return "validator.burlap.single";
         }
 
         @Override
         public ResourceUsage usage(){
-            return new ResourceUsage.Builder(type(), BurlapValidator.class)
+            return new ResourceUsage.Builder(type(), BurlapSingleValidator.class)
                     .setDescription("validator that checks if the logical expression correctly evaluates on the pre - and post- condition states given in the demonstration.")
                     .build();
         }

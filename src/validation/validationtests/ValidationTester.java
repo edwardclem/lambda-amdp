@@ -3,7 +3,7 @@ package validation.validationtests;
 import amdp.cleanup.CleanupDomain;
 import amdp.cleanup.state.*;
 import burlap.mdp.core.state.State;
-import validation.BurlapValidator;
+import validation.BurlapSingleValidator;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -39,7 +39,7 @@ public class ValidationTester {
         blocks.add(block1);
         CleanupState afterState = new CleanupState(agent, blocks, doors, rooms);
         //BurlapDemonstration demonstration = new BurlapDemonstration("put the block in the green room",s, afterState);
-        BurlapValidator v = new BurlapValidator();
+        BurlapSingleValidator v = new BurlapSingleValidator();
         //System.out.println(v.isValid(demonstration, parsedCommand));
     }
 }

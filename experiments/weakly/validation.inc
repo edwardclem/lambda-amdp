@@ -1,2 +1,2 @@
 #validation
-type=validator.burlap id=validator
+type=validator.burlap.single id=validator
