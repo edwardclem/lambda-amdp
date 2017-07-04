@@ -1,8 +1,10 @@
 package test.stats;
 
 import edu.cornell.cs.nlp.spf.data.ILabeledDataItem;
+import edu.cornell.cs.nlp.spf.data.sentence.Sentence;
 import edu.cornell.cs.nlp.spf.data.utils.IValidator;
 import edu.cornell.cs.nlp.spf.test.stats.IStatistics;
+import edu.cornell.cs.nlp.spf.test.stats.SimpleStats;
 import edu.cornell.cs.nlp.utils.log.ILogger;
 import edu.cornell.cs.nlp.utils.log.LoggerFactory;
 
@@ -18,8 +20,13 @@ public class ValidationTestingStatistics<SAMPLE, LABEL, MR, DI extends ILabeledD
     protected final IStatistics<SAMPLE> stats;
     protected final IValidator<DI, MR> validator;
 
+    private static final String DEFAULT_METRIC_NAME =  "VALIDATOR_STATS";
+
     public static final ILogger LOG	= LoggerFactory.create(ValidationTestingStatistics.class);
 
+    public ValidationTestingStatistics(IValidator<DI, MR> validator){
+        this(null, DEFAULT_METRIC_NAME, new SimpleStats<SAMPLE>(DEFAULT_METRIC_NAME), validator);
+    }
 
     public ValidationTestingStatistics(String prefix, String metricName, IStatistics<SAMPLE> stats, IValidator<DI, MR> validator){
         this.prefix = prefix;

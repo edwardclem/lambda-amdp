@@ -29,7 +29,7 @@ import java.util.List;
  * Created by edwardwilliams on 6/26/17.
  * Testing parser using provided validation function. derived from SPF Tester class.
  */
-public class ValidationTester<SAMPLE extends IDataItem<?>, LABEL extends IDataItem<?>, MR, DI extends ILabeledDataItem<SAMPLE, LABEL>>
+public class ValidationTester<SAMPLE extends IDataItem<?>, LABEL, MR, DI extends ILabeledDataItem<SAMPLE, LABEL>>
         implements IValidationTester<SAMPLE, LABEL, MR, DI>{
     public static final ILogger LOG = LoggerFactory.create(ValidationTester.class.getName());
 

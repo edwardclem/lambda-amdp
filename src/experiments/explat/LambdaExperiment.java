@@ -1,5 +1,7 @@
 package experiments.explat;
 
+import amdp.cleanup.state.CleanupState;
+import burlap.mdp.core.state.State;
 import data.BurlapDemonstration;
 import data.BurlapInstruction;
 import edu.cornell.cs.nlp.spf.base.hashvector.HashVectorFactory;
@@ -24,11 +26,14 @@ import edu.cornell.cs.nlp.spf.parser.ccg.model.IModelInit;
 import edu.cornell.cs.nlp.spf.parser.ccg.model.Model;
 import edu.cornell.cs.nlp.spf.parser.ccg.model.ModelLogger;
 import edu.cornell.cs.nlp.utils.collections.ListUtils;
+import edu.cornell.cs.nlp.utils.composites.Pair;
 import edu.cornell.cs.nlp.utils.log.ILogger;
 import edu.cornell.cs.nlp.utils.log.LogLevel;
 import edu.cornell.cs.nlp.utils.log.Logger;
 import edu.cornell.cs.nlp.utils.log.LoggerFactory;
 import org.xml.sax.SAXException;
+import test.ValidationTester;
+import test.stats.ValidationTestingStatistics;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -125,14 +130,12 @@ public class LambdaExperiment extends DistributedExperiment {
             return createModelInitJob(params);
         } else if (type.equals("log")) {
             return createModelLoggingJob(params);
-        } else if (type.equals("train")){
+        } else if (type.equals("train")) {
             return createTrainJob(params);
-//        else if (type.equals("test")) {
-//            return createTestJob(params);
-//        } else if (type.equals("save")) {
-//            return createSaveJob(params);
-//        } else if ("init".equals(type)) {
-//            return createModelInitJob(params);
+        } else if (type.equals("test")) {
+            return createTestJob(params);
+        } else if (type.equals("save")) {
+            return createSaveJob(params);
         } else {
             throw new RuntimeException("Unsupported job type: " + type);
         }
@@ -188,7 +191,8 @@ public class LambdaExperiment extends DistributedExperiment {
                 .get("model"));
 
         // The learning - I think the types line up here
-        final ILearner<Sentence, BurlapDemonstration, Model<Sentence, LogicalExpression>> learner = (ILearner<Sentence, BurlapDemonstration, Model<Sentence, LogicalExpression>>) get(params
+        final ILearner<Sentence, BurlapDemonstration, Model<Sentence, LogicalExpression>> learner =
+                (ILearner<Sentence, BurlapDemonstration, Model<Sentence, LogicalExpression>>) get(params
                 .get("learner"));
 
         return new Job(params.get("id"), new HashSet<String>(
@@ -215,6 +219,77 @@ public class LambdaExperiment extends DistributedExperiment {
 
                 // Job completed
                 LOG.info("============ (Job %s completed)", getId());
+
+            }
+        };
+    }
+
+    private Job createTestJob(Parameters params) throws FileNotFoundException{
+        //TODO: switch all uses of CleanupState to State
+        //TODO: initialize this as a resource?
+        final ValidationTestingStatistics<Sentence, Pair<State, State>, LogicalExpression, BurlapDemonstration> stats =
+                new ValidationTestingStatistics<>(get(params.get("validator")));
+
+        //get tester
+        final ValidationTester<Sentence, Pair<State, State>, LogicalExpression, BurlapDemonstration> tester =
+                get(params.get("tester"));
+        //get model
+        final Model<Sentence, LogicalExpression> model =
+                get(params.get("model"));
+
+        // Create and return the job
+        return new Job(params.get("id"), new HashSet<String>(
+                params.getSplit("dep")), this,
+                createJobOutputFile(params.get("id")),
+                createJobLogFile(params.get("id"))) {
+
+            @Override
+            protected void doJob() {
+
+                // Record start time
+                final long startTime = System.currentTimeMillis();
+
+                // Job started
+                LOG.info("============ (Job %s started)", getId());
+
+                tester.test(model, stats);
+                LOG.info("%s", stats);
+
+                // Output total run time
+                LOG.info("Total run time %.4f seconds",
+                        (System.currentTimeMillis() - startTime) / 1000.0);
+
+                // Output machine readable stats
+                getOutputStream().println(stats.toTabDelimitedString());
+
+                // Job completed
+                LOG.info("============ (Job %s completed)", getId());
+            }
+        };
+
+    }
+
+    private Job createSaveJob(final Parameters params)
+            throws FileNotFoundException {
+        return new Job(params.get("id"), new HashSet<String>(
+                params.getSplit("dep")), this,
+                createJobOutputFile(params.get("id")),
+                createJobLogFile(params.get("id"))) {
+
+            @SuppressWarnings("unchecked")
+            @Override
+            protected void doJob() {
+                // Save the model to file.
+                try {
+                    LOG.info("Saving model (id=%s) to: %s",
+                            params.get("model"), params.getAsFile("file")
+                                    .getAbsolutePath());
+                    Model.write((Model<Sentence, LogicalExpression>) get(params
+                            .get("model")), params.getAsFile("file"));
+                } catch (final IOException e) {
+                    LOG.error("Failed to save model to: %s", params.get("file"));
+                    throw new RuntimeException(e);
+                }
 
             }
         };

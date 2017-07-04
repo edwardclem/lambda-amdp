@@ -82,27 +82,23 @@ public class LambdaResourceRepo extends ResourceCreatorRepository {
         registerResourceCreator(new FactoredLexicon.Creator());
 
         //register validator
-
         registerResourceCreator(new BurlapSingleValidator.Creator());
 
         //register genlex resources
-        registerResourceCreator(new TemplateCoarseGenlex.Creator<>());
+        //registerResourceCreator(new TemplateCoarseGenlex.Creator<>());
         registerResourceCreator(new TemplateCoarseGenlexWeakLabel.Creator<>());
 
         //register learning algorithm resources
-        registerResourceCreator(
-                new SentenceLengthFilter.Creator<BurlapInstruction>());
+        registerResourceCreator(new SentenceLengthFilter.Creator<Sentence>());
 
-        //Okay, I think the types should line up - BurlapInstruction implements getSample, which is all that's needed for parsing.
-        //only the validation function ever uses both.
-        //if we want to condition on the initial state, then we'll need to change the parsing model
+        //TODO: will need to change if we start conditioning on initial state
         registerResourceCreator(new ValidationPerceptron.Creator<Sentence, BurlapDemonstration, LogicalExpression>());
 
         //register initializer
         registerResourceCreator(new WeightInit.Creator<>());
 
         //add tester! Yay!
-
+        //this should be everything?
         registerResourceCreator(new ValidationTester.Creator<>());
 
 

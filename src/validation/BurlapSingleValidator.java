@@ -46,10 +46,11 @@ public class BurlapSingleValidator<DI extends ILabeledDataItem<?, Pair<State, St
         //TODO: this is a crude pruning - see if a bug is happening in GENLEX.
         if (!parse_string.contains("#")){
             String pred = LambdaConverter.convert(parse.toString());
-            State initialState = dataItem.getLabel().first();
-            js.setGlobalValue("initialState", (CleanupState) initialState);
+            CleanupState initialState = (CleanupState) dataItem.getLabel().first();
+            js.setGlobalValue("initialState", initialState);
+            //set determiner with respect to initial state
             js.eval("(define the (satisfiesPredicate initialState))");
-            State after = dataItem.getLabel().second();
+            CleanupState after = (CleanupState) dataItem.getLabel().second();
             SchemeProcedure pf = (SchemeProcedure)js.eval(pred);
             return (Boolean) js.call(pf,after);
         }
