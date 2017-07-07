@@ -1,13 +1,10 @@
 package data;
 
-import amdp.cleanup.state.CleanupState;
 import burlap.mdp.core.oo.state.OOState;
 import burlap.mdp.core.state.State;
 import edu.cornell.cs.nlp.spf.data.ILabeledDataItem;
 import edu.cornell.cs.nlp.spf.data.sentence.Sentence;
 import edu.cornell.cs.nlp.utils.composites.Pair;
-
-import static edu.cornell.cs.nlp.utils.composites.Pair.of;
 
 /**
  * Created by edwardwilliams on 6/21/17.
@@ -29,8 +26,8 @@ public class BurlapDemonstration implements ILabeledDataItem<Sentence, Pair<Stat
     public static BurlapDemonstration parse(String string){
         final String[] split = string.split("\n");
         final Sentence sentence = new Sentence(split[0]);
-        final State precondition = DataHelpers.loadStateFromString(split[1]);
-        final State postcondition = DataHelpers.loadStateFromString(split[2]);
+        final State precondition = DataHelpers.loadStateFromStringCompact(split[1]);
+        final State postcondition = DataHelpers.loadStateFromStringCompact(split[2]);
         return new BurlapDemonstration(sentence, precondition, postcondition);
     }
 

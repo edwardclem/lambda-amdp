@@ -56,10 +56,104 @@ public class DataHelpers {
         return buf.toString();
     }
 
+    /**
+     * Loading state from the default output of State.toString()
+     * @param stateString
+     * @return
+     */
     public static CleanupState loadStateFromString(String stateString){
+
 
         //initializing objects
 
+        List<CleanupRoom> rooms = new ArrayList<CleanupRoom>();
+        List<CleanupDoor> doors = new ArrayList<CleanupDoor>();
+        List<CleanupBlock> blocks = new ArrayList<CleanupBlock>();
+        CleanupAgent agent = null;
+
+        //trim first and last character
+        String trimmed = stateString.substring(1, stateString.length() - 1);
+
+        //rough split into objects
+        String[] objects = trimmed.split("\n}\n");
+
+        //object name and type regex
+        String objRegex = "(?<id>\\S+) \\((?<type>\\S+)\\): \\{";
+        String propRegex = "(?<key>\\S+): \\{(?<val>\\S+?)\\}";
+
+        Pattern objPattern = Pattern.compile(objRegex);
+        Pattern propPattern = Pattern.compile(propRegex);
+
+        Matcher objMatcher;
+
+        Matcher propMatcher;
+
+        String id = "";
+
+        String type = "";
+
+        for (String obj: objects){
+
+            objMatcher = objPattern.matcher(obj.trim());
+
+            //System.out.println(obj.trim());
+            while (objMatcher.find()){
+                id = objMatcher.group("id");
+                type = objMatcher.group("type");
+            }
+
+            //System.out.println("");
+
+            //property hashmap
+            HashMap<String, String> props = new HashMap<>();
+
+            propMatcher = propPattern.matcher(obj.trim());
+            while (propMatcher.find()){
+                String key = propMatcher.group("key");
+                String val = propMatcher.group("val");
+                props.put(key, val);
+            }
+//            System.out.println(type);
+//            System.out.println(props);
+
+            switch (type) {
+                case "agent":
+                    agent = new CleanupAgent(id, Integer.parseInt(props.get("x")), Integer.parseInt(props.get("y")));
+                    agent.directional = true;
+                    agent.currentDirection = props.get("direction");
+                    break;
+                case "room":
+                    CleanupRoom r = new CleanupRoom(id, Integer.parseInt(props.get("top")), Integer.parseInt(props.get("left")), Integer.parseInt(props.get("bottom")), Integer.parseInt(props.get("right")), props.get("colour"));
+                    rooms.add(r);
+                    break;
+                case "door":
+                    CleanupDoor d = new CleanupDoor(id, Integer.parseInt(props.get("locked")),Integer.parseInt(props.get("top")), Integer.parseInt(props.get("left")), Integer.parseInt(props.get("bottom")), Integer.parseInt(props.get("right")), Boolean.parseBoolean(props.get("canBeLocked")));
+                    doors.add(d);
+                    break;
+                case "block":
+                    CleanupBlock b = new CleanupBlock(id, Integer.parseInt(props.get("x")), Integer.parseInt(props.get("y")), props.get("shape"), props.get("colour"));
+                    blocks.add(b);
+                    break;
+                default:
+                    //System.out.println("invalid object. ignoring.");
+                    break;
+            }
+
+            type = ""; //reset to avoid weird bugs
+
+        }
+
+        return new CleanupState(agent, blocks, doors, rooms);
+    }
+
+    /**
+     * loading state from compact (single-line) representation of a CleanupState.
+     * @param stateString
+     * @return
+     */
+    public static CleanupState loadStateFromStringCompact(String stateString){
+
+        //initializing objects
         List<CleanupRoom> rooms = new ArrayList<CleanupRoom>();
         List<CleanupDoor> doors = new ArrayList<CleanupDoor>();
         List<CleanupBlock> blocks = new ArrayList<CleanupBlock>();
@@ -102,28 +196,49 @@ public class DataHelpers {
 
             //add to different list, based on object type.
 
-            if (type.equals("agent")){
-                agent = new CleanupAgent(id, Integer.parseInt(props.get("x")), Integer.parseInt(props.get("y")));
-                agent.directional = true;
-                agent.currentDirection = props.get("direction");
-            } else if (type.equals("room")){
-                CleanupRoom r = new CleanupRoom(id, Integer.parseInt(props.get("top")), Integer.parseInt(props.get("left")), Integer.parseInt(props.get("bottom")), Integer.parseInt(props.get("right")), props.get("colour"));
-                rooms.add(r);
-
-            } else if (type.equals("door")){
-                CleanupDoor d = new CleanupDoor(id, Integer.parseInt(props.get("locked")),Integer.parseInt(props.get("top")), Integer.parseInt(props.get("left")), Integer.parseInt(props.get("bottom")), Integer.parseInt(props.get("right")), Boolean.parseBoolean(props.get("canBeLocked")));
-                doors.add(d);
-
-            } else if (type.equals("block")){
-                CleanupBlock b = new CleanupBlock(id, Integer.parseInt(props.get("x")), Integer.parseInt(props.get("y")), props.get("shape"), props.get("colour"));
-                blocks.add(b);
-            } else{
-                System.out.println("invalid object. ignoring.");
+            switch (type) {
+                case "agent":
+                    agent = new CleanupAgent(id, Integer.parseInt(props.get("x")), Integer.parseInt(props.get("y")));
+                    agent.directional = true;
+                    agent.currentDirection = props.get("direction");
+                    break;
+                case "room":
+                    CleanupRoom r = new CleanupRoom(id, Integer.parseInt(props.get("top")), Integer.parseInt(props.get("left")), Integer.parseInt(props.get("bottom")), Integer.parseInt(props.get("right")), props.get("colour"));
+                    rooms.add(r);
+                    break;
+                case "door":
+                    CleanupDoor d = new CleanupDoor(id, Integer.parseInt(props.get("locked")),Integer.parseInt(props.get("top")), Integer.parseInt(props.get("left")), Integer.parseInt(props.get("bottom")), Integer.parseInt(props.get("right")), Boolean.parseBoolean(props.get("canBeLocked")));
+                    doors.add(d);
+                    break;
+                case "block":
+                    CleanupBlock b = new CleanupBlock(id, Integer.parseInt(props.get("x")), Integer.parseInt(props.get("y")), props.get("shape"), props.get("colour"));
+                    blocks.add(b);
+                    break;
+                default:
+                    System.out.println("invalid object. ignoring.");
+                    break;
             }
+
+//            if (type.equals("agent")){
+//                agent = new CleanupAgent(id, Integer.parseInt(props.get("x")), Integer.parseInt(props.get("y")));
+//                agent.directional = true;
+//                agent.currentDirection = props.get("direction");
+//            } else if (type.equals("room")){
+//                CleanupRoom r = new CleanupRoom(id, Integer.parseInt(props.get("top")), Integer.parseInt(props.get("left")), Integer.parseInt(props.get("bottom")), Integer.parseInt(props.get("right")), props.get("colour"));
+//                rooms.add(r);
+//
+//            } else if (type.equals("door")){
+//                CleanupDoor d = new CleanupDoor(id, Integer.parseInt(props.get("locked")),Integer.parseInt(props.get("top")), Integer.parseInt(props.get("left")), Integer.parseInt(props.get("bottom")), Integer.parseInt(props.get("right")), Boolean.parseBoolean(props.get("canBeLocked")));
+//                doors.add(d);
+//
+//            } else if (type.equals("block")){
+//                CleanupBlock b = new CleanupBlock(id, Integer.parseInt(props.get("x")), Integer.parseInt(props.get("y")), props.get("shape"), props.get("colour"));
+//                blocks.add(b);
+//            } else{
+//                System.out.println("invalid object. ignoring.");
+//            }
         }
 
-        CleanupState state = new CleanupState(agent, blocks, doors, rooms);
-
-        return state;
+        return new CleanupState(agent, blocks, doors, rooms);
     }
 }

@@ -23,7 +23,7 @@ public class DataTest {
         //System.out.println(state);
         String stateString = DataHelpers.ooStateToStringCompact(initialState);
 
-        CleanupState reconstructed = DataHelpers.loadStateFromString(stateString);
+        CleanupState reconstructed = DataHelpers.loadStateFromStringCompact(stateString);
 
         //System.out.println(reconstructed);
 
