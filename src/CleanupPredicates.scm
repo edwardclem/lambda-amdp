@@ -175,3 +175,12 @@
                 (*
                     (- (.get roomProps {right}) (.get roomProps {left}))
                     (- (.get roomProps {top}) (.get roomProps {bottom}))))))
+
+;simple near function - if distance between two objects is 1, then near
+;TODO: move this to Java? move others to java, use Scheme predicates as wrappers?
+;checking null value
+(define (near obj1 obj2)
+    (lambda (state)
+        (if (not (or (.equals obj1 {}) (.equals obj2 {})))
+        (= ((dist obj1 obj2) state) 1.0)
+        #f)))

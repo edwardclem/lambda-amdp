@@ -14,7 +14,7 @@ agent:<e,t>
 //size:<e,n>
 the:<<e,t>,e>
 in:<e,<e,t>>
-//next_to:<e,<e,t>>
+near:<e,<e,t>>
 exists:<<e,t>,t> //I guess I need this?
 
 )
