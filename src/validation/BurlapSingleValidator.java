@@ -22,7 +22,7 @@ import lambdas.LambdaPlanning.LambdaConverter;
  */
 public class BurlapSingleValidator<DI extends ILabeledDataItem<?, Pair<State, State>>, MR extends LogicalExpression> implements IValidator<DI, MR> {
 
-    //TODO: initialize this "executor" as a resource instead probably?
+    //TODO: initialize this as a resource + specify predicates in experiment file
     private static JScheme js;
     private String preds = "src/CleanupPredicates.scm";
 
@@ -46,13 +46,14 @@ public class BurlapSingleValidator<DI extends ILabeledDataItem<?, Pair<State, St
         //TODO: this is a crude pruning - see if a bug is happening in GENLEX.
         if (!parse_string.contains("#")){
             String pred = LambdaConverter.convert(parse.toString());
-            CleanupState initialState = (CleanupState) dataItem.getLabel().first();
-            js.setGlobalValue("initialState", initialState);
+            CleanupState before = (CleanupState) dataItem.getLabel().first();
+            js.setGlobalValue("initialState", before);
             //set determiner with respect to initial state
             js.eval("(define the (satisfiesPredicate initialState))");
             CleanupState after = (CleanupState) dataItem.getLabel().second();
             SchemeProcedure pf = (SchemeProcedure)js.eval(pred);
-            return (Boolean) js.call(pf,after);
+            //should also be false during the before state!!!!!
+            return ((Boolean) js.call(pf,after)) && !((Boolean) js.call(pf,before));
         }
         else{
             return false;

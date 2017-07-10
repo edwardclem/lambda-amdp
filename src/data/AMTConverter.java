@@ -23,7 +23,7 @@ import java.util.Map;
  */
 public class AMTConverter {
     /**
-     * Loads all demonstrations from a CSV file.
+     * Loads all demonstrations from a CSV file. Creates MultiDemonstration
      * @param file_location
      * @return
      * @throws IOException
@@ -37,7 +37,7 @@ public class AMTConverter {
             for (CSVRecord rec: parser){
                 Map<String, String> recordMap = rec.toMap();
 
-                allDemonstrations.addAll(recordToDemonstrationList(recordMap, 3));
+                allDemonstrations.add(recordToMultiDemonstration(recordMap, 3));
 
             }
 
@@ -73,7 +73,6 @@ public class AMTConverter {
      * @return
      */
     public static List<String> recordToDemonstrationList(Map<String, String> record, Integer numPairs){
-
         ArrayList<String> demonstrationList = new ArrayList<>(3);
         String command = record.get("Answer.command").replace(".", ""); //removing punctuation
         for (int i = 1; i<= numPairs; i++){
@@ -101,8 +100,41 @@ public class AMTConverter {
         }
 
         return demonstrationList;
-
     }
+
+    public static String recordToMultiDemonstration(Map<String, String> record, Integer numPairs){
+        ArrayList<String> demonstrationList = new ArrayList<>(3);
+        String command = record.get("Answer.command").replace(".", ""); //removing punctuation
+        for (int i = 1; i<= numPairs; i++){
+            String beforeImg = record.get("Input.before" + Integer.toString(i));
+            String beforeFile = beforeImg.replaceAll("png", "txt"); //get corresponding state file
+
+            String afterImg = record.get("Input.after" + Integer.toString(i));
+            String afterFile = afterImg.replaceAll("png", "txt");
+
+            //load Burlap states
+            try{
+                CleanupState beforeState = URLToState(beforeFile);
+                CleanupState afterState = URLToState(afterFile);
+
+                //combine pre- and post- condition states
+                String appended = DataHelpers.ooStateToStringCompact(beforeState) + "\n" +
+                        DataHelpers.ooStateToStringCompact(afterState) + "\n" + "true";
+
+                demonstrationList.add(appended);
+
+            } catch(IOException e){
+                e.printStackTrace();
+            }
+
+        }
+
+        String multiDemonstration = command + "\n" + String.join("\n---\n", demonstrationList);
+
+        return multiDemonstration;
+    }
+
+
 
     public static void saveDemonstrations(String filename, List<String> demonstrations) throws IOException{
 
@@ -144,7 +176,7 @@ public class AMTConverter {
 
             Pair<List<String>, List<String>> split = trainTestSplit(demonstrations, 0.8);
 
-            String fileRoot = "data/amt/amt_test_1";
+            String fileRoot = "data/amt/amt_test_1_multi";
 
             String trainFilename = fileRoot + "/train.bdm";
 
