@@ -50,8 +50,15 @@ public class BurlapMultiValidator<DI extends ILabeledDataItem<Sentence,List<Trip
                 CleanupState after = (CleanupState) triple.second();
                 SchemeProcedure pf = (SchemeProcedure)js.eval(pred);
                 Boolean istrue = (boolean) js.call(pf,after);
-                if(istrue != triple.third()) {
-                    return false;
+                if(triple.third()) {
+                    if(!istrue || (boolean) js.call(pf,initialState)) {
+                        return false;
+                    }
+                }
+                else {
+                    if(istrue) {
+                        return false;
+                    }
                 }
             }
             return true;

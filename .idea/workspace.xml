@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6413b0c6-0d4f-4257-8850-2a3f95d81789" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/data/BurlapMultiDemonstration.java" afterPath="$PROJECT_DIR$/src/data/BurlapMultiDemonstration.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/data/BurlapMultiDemonstrationDataset.java" afterPath="$PROJECT_DIR$/src/data/BurlapMultiDemonstrationDataset.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/data/datatests/MultiDataTest.java" afterPath="$PROJECT_DIR$/src/data/datatests/MultiDataTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/validation/BurlapMultiValidator.java" afterPath="$PROJECT_DIR$/src/validation/BurlapMultiValidator.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/validation/validationtests/MultiValidationTester.java" afterPath="$PROJECT_DIR$/src/validation/validationtests/MultiValidationTester.java" />
     </list>
@@ -19,11 +16,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="BurlapMultiValidator.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="BurlapMultiValidator.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/validation/BurlapMultiValidator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="37" column="68" lean-forward="true" selection-start-line="37" selection-start-column="68" selection-end-line="37" selection-end-column="68" />
+            <state relative-caret-position="-136">
+              <caret line="36" column="15" lean-forward="true" selection-start-line="36" selection-start-column="15" selection-end-line="36" selection-end-column="15" />
               <folding />
             </state>
           </provider>
@@ -32,8 +29,8 @@
       <file leaf-file-name="test.bdm" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/data/amt/amt_test_1_multi/test.bdm">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+            <state relative-caret-position="288">
+              <caret line="16" column="4" lean-forward="true" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -69,11 +66,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MultiValidationTester.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MultiValidationTester.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/validation/validationtests/MultiValidationTester.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="486">
-              <caret line="60" column="10" lean-forward="false" selection-start-line="60" selection-start-column="10" selection-end-line="60" selection-end-column="10" />
+            <state relative-caret-position="432">
+              <caret line="54" column="10" lean-forward="false" selection-start-line="54" selection-start-column="10" selection-end-line="54" selection-end-column="10" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -190,8 +187,8 @@
         <option value="$PROJECT_DIR$/src/data/datatests/MultiDataTest.java" />
         <option value="$PROJECT_DIR$/src/data/BurlapMultiDemonstrationDataset.java" />
         <option value="$PROJECT_DIR$/src/data/BurlapMultiDemonstration.java" />
-        <option value="$PROJECT_DIR$/src/validation/BurlapMultiValidator.java" />
         <option value="$PROJECT_DIR$/src/validation/validationtests/MultiValidationTester.java" />
+        <option value="$PROJECT_DIR$/src/validation/BurlapMultiValidator.java" />
       </list>
     </option>
   </component>
@@ -818,7 +815,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.10091743" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32997763" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26236558" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26236558" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1181,16 +1178,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/data/amt/amt_test_1_multi/test.bdm">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/validation/BurlapMultiValidator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="37" column="68" lean-forward="true" selection-start-line="37" selection-start-column="68" selection-end-line="37" selection-end-column="68" />
+        <state relative-caret-position="288">
+          <caret line="16" column="4" lean-forward="true" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
           <folding />
         </state>
       </provider>
@@ -1205,11 +1194,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/validation/validationtests/MultiValidationTester.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="60" column="10" lean-forward="false" selection-start-line="60" selection-start-column="10" selection-end-line="60" selection-end-column="10" />
+        <state relative-caret-position="432">
+          <caret line="54" column="10" lean-forward="false" selection-start-line="54" selection-start-column="10" selection-end-line="54" selection-end-column="10" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/validation/BurlapMultiValidator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-136">
+          <caret line="36" column="15" lean-forward="true" selection-start-line="36" selection-start-column="15" selection-end-line="36" selection-end-column="15" />
+          <folding />
         </state>
       </provider>
     </entry>
