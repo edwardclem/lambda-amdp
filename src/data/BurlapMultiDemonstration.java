@@ -39,7 +39,7 @@ public class BurlapMultiDemonstration implements ILabeledDataItem<Sentence, List
         final String[] split = s.split("\n");
         Sentence sentence = new Sentence(split[0]);
         List<Triplet<State,State,Boolean>> items = new ArrayList<>();
-        for(int i = 1; i < split.length - 3; i = i + 4) {
+        for(int i = 1; i < split.length ; i = i + 4) {
             State pre = DataHelpers.loadStateFromStringCompact(split[i]);
             State post = DataHelpers.loadStateFromStringCompact(split[i + 1]);
             Boolean isTrue = Boolean.parseBoolean(split[i + 2]);
@@ -52,10 +52,15 @@ public class BurlapMultiDemonstration implements ILabeledDataItem<Sentence, List
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
-        for(Triplet<State,State,Boolean> t : dataset) {
+        sb.append(instruction.toString()).append("\n");
+        for(int i = 0; i < dataset.size(); i++) {
+            Triplet<State,State,Boolean> t = dataset.get(i);
             sb.append(DataHelpers.ooStateToStringCompact((OOState)t.first())).append("\n");
             sb.append(DataHelpers.ooStateToStringCompact((OOState)t.second())).append("\n");
-            sb.append(t.third()).append("\n---\n");
+            sb.append(t.third()).append("\n");
+            if(i < dataset.size() - 1) {
+                sb.append("---\n");
+            }
         }
         return sb.toString();
     }

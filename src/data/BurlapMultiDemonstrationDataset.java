@@ -51,7 +51,7 @@ public class BurlapMultiDemonstrationDataset implements IDataCollection<BurlapMu
         while (iterator.hasNext()) {
             sb.append(iterator.next().toString());
             if (iterator.hasNext()) {
-                sb.append("\n\n");
+                sb.append("\n");
             }
         }
         return sb.toString();

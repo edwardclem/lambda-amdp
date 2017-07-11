@@ -34,7 +34,7 @@ public class BurlapMultiValidator<DI extends ILabeledDataItem<Sentence,List<Trip
         }
     }
 
-    @Override
+    //@Override
     public boolean isValid(BurlapMultiDemonstration var2, MR var1) {
 
         String parse_string = var1.toString();
@@ -49,7 +49,8 @@ public class BurlapMultiValidator<DI extends ILabeledDataItem<Sentence,List<Trip
                 js.eval("(define the (satisfiesPredicate initialState))");
                 CleanupState after = (CleanupState) triple.second();
                 SchemeProcedure pf = (SchemeProcedure)js.eval(pred);
-                if((Boolean) js.call(pf,after) != triple.third()) {
+                Boolean istrue = (boolean) js.call(pf,after);
+                if(istrue != triple.third()) {
                     return false;
                 }
             }
