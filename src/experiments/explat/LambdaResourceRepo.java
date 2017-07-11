@@ -3,6 +3,7 @@ package experiments.explat;
 import data.BurlapDemonstration;
 import data.BurlapDemonstrationDataset;
 import data.BurlapInstruction;
+import data.BurlapMultiDemonstrationDataset;
 import edu.cornell.cs.nlp.spf.ccg.lexicon.factored.lambda.FactoredLexicon;
 import edu.cornell.cs.nlp.spf.data.sentence.Sentence;
 import edu.cornell.cs.nlp.spf.data.sentence.SentenceLengthFilter;
@@ -33,6 +34,7 @@ import edu.cornell.cs.nlp.spf.parser.ccg.rules.primitivebinary.application.Appli
 import edu.cornell.cs.nlp.spf.parser.ccg.rules.primitivebinary.composition.CompositionCreator;
 import genlex.TemplateCoarseGenlexWeakLabel;
 import test.ValidationTester;
+import validation.BurlapMultiValidator;
 import validation.BurlapSingleValidator;
 
 /**
@@ -44,6 +46,8 @@ public class LambdaResourceRepo extends ResourceCreatorRepository {
     public LambdaResourceRepo(){
         //register data collection
         registerResourceCreator(new BurlapDemonstrationDataset.Creator());
+
+        registerResourceCreator(new BurlapMultiDemonstrationDataset.Creator());
 
         //register parsing resources
         registerResourceCreator(new ApplicationCreator<LogicalExpression>());
@@ -83,6 +87,7 @@ public class LambdaResourceRepo extends ResourceCreatorRepository {
 
         //register validator
         registerResourceCreator(new BurlapSingleValidator.Creator());
+        registerResourceCreator(new BurlapMultiValidator.Creator());
 
         //register genlex resources
         //registerResourceCreator(new TemplateCoarseGenlex.Creator<>());

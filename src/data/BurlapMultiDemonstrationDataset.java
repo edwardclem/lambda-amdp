@@ -70,7 +70,7 @@ public class BurlapMultiDemonstrationDataset implements IDataCollection<BurlapMu
 
         @Override
         public String type(){
-            return "data.bdm"; //"burlap demonstration"
+            return "data.multi.bdm"; //"burlap demonstration"
         }
 
         @Override
