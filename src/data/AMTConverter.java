@@ -176,11 +176,11 @@ public class AMTConverter {
 
             Pair<List<String>, List<String>> split = trainTestSplit(demonstrations, 0.8);
 
-            String fileRoot = "data/amt/amt_test_1_multi";
+            String fileRoot = "data/amt/amt_test_2";
 
-            String trainFilename = fileRoot + "/train.bdm";
+            String trainFilename = fileRoot + "/train2.bdm";
 
-            String testFileName = fileRoot + "/test.bdm";
+            String testFileName = fileRoot + "/test2.bdm";
 
             saveDemonstrations(trainFilename, split.first());
             saveDemonstrations(testFileName, split.second());
