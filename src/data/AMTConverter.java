@@ -1,11 +1,14 @@
 package data;
 
 import amdp.cleanup.state.CleanupState;
+import edu.cornell.cs.nlp.spf.data.sentence.Sentence;
 import edu.cornell.cs.nlp.utils.composites.Pair;
+import edu.cornell.cs.nlp.utils.composites.Triplet;
 import org.apache.commons.csv.CSVFormat;
 import org.apache.commons.csv.CSVParser;
 import org.apache.commons.csv.CSVRecord;
 import org.apache.commons.io.FileUtils;
+import burlap.mdp.core.state.State;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -13,10 +16,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.URL;
 import java.nio.charset.Charset;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 /**
  * Created by edwardwilliams on 7/7/17.
@@ -45,6 +45,36 @@ public class AMTConverter {
 
     }
 
+    public static List<String> loadMultiDemonstrationFromReverseCSV(String file) throws IOException {
+        File csvData = new File(file);
+        CSVParser parser = CSVParser.parse(csvData, Charset.defaultCharset(), CSVFormat.RFC4180.withFirstRecordAsHeader());
+
+        Map<String, BurlapMultiDemonstration> demoMap = new HashMap<>();
+
+        for(CSVRecord rec: parser) {
+            Map<String,String> recMap = rec.toMap();
+            List<BurlapMultiDemonstration> demosFromRec = getMultiFromReverseCSV(recMap,3);
+            for(BurlapMultiDemonstration bmd : demosFromRec) {
+                if(demoMap.containsKey(bmd.getSample().getString())) {
+                    BurlapMultiDemonstration demo = demoMap.get(bmd.getSample().getString());
+                    for(Triplet<State,State,Boolean> instance : bmd.getLabel()) {
+                        demo.addInstance(instance);
+                    }
+                } else {
+                    demoMap.put(bmd.getSample().getString(),bmd);
+                }
+            }
+        }
+
+        List<String> allDemos = new ArrayList<>();
+
+        for(BurlapMultiDemonstration bdm : demoMap.values()) {
+            allDemos.add(bdm.toString());
+        }
+
+        return allDemos;
+    }
+
     /**
      * Get a CleanupState from a URL
      * @param loc
@@ -64,6 +94,7 @@ public class AMTConverter {
 
         return DataHelpers.loadStateFromString(beforeStateString1.toString());
     }
+
 
     /**
      * Converts a CSV record to a list of natural language commands paired with pre- and post- conditions
@@ -100,6 +131,25 @@ public class AMTConverter {
         }
 
         return demonstrationList;
+    }
+
+    public static List<BurlapMultiDemonstration> getMultiFromReverseCSV(Map<String, String> record, int recnum) {
+        List<BurlapMultiDemonstration> recordDemos = new ArrayList<>(recnum);
+
+        for(int i = 1; i <= recnum; i++) {
+            Sentence instruction = new Sentence(record.get("Input.command" + i));
+            try {
+                State beforeState = URLToState(record.get("Input.before" + i).replaceAll("png","txt"));
+                State afterState = URLToState(record.get("Input.after" + i).replaceAll("png","txt"));
+                Boolean isTrue = Boolean.valueOf(record.get("Answer.Q" + i + "Answer"));
+                List<Triplet<State,State,Boolean>> tList = new ArrayList<>(1);
+                tList.add(new Triplet<>(beforeState,afterState,isTrue));
+                recordDemos.add(new BurlapMultiDemonstration(instruction, tList));
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+        return recordDemos;
     }
 
     public static String recordToMultiDemonstration(Map<String, String> record, Integer numPairs){
@@ -171,12 +221,13 @@ public class AMTConverter {
     public static void main(String[] args){
         //TODO: exception handling
         String file_location = args[0];
+        file_location = "data/amt/amt_test_reverse1.csv";
         try{
-            List<String> demonstrations = loadDemonstrationsFromCSV(file_location);
+            List<String> demonstrations = loadMultiDemonstrationFromReverseCSV(file_location);
 
             Pair<List<String>, List<String>> split = trainTestSplit(demonstrations, 0.8);
 
-            String fileRoot = "data/amt/amt_test_2";
+            String fileRoot = "data/amt/amt_test_reverse1";
 
             String trainFilename = fileRoot + "/train2.bdm";
 

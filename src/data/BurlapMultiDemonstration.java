@@ -49,6 +49,10 @@ public class BurlapMultiDemonstration implements ILabeledDataItem<Sentence, List
         return new BurlapMultiDemonstration(sentence,items);
     }
 
+    public void addInstance(Triplet<State, State, Boolean> instance) {
+        dataset.add(instance);
+    }
+
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
