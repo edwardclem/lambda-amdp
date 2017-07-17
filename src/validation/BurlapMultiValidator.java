@@ -51,6 +51,8 @@ public class BurlapMultiValidator<DI extends ILabeledDataItem<Sentence,List<Trip
 
         String parse_string = var1.toString();
 
+        LOG.info("Starting validation of " + dataItem.getSample().toString() + " with form " + var1.toString());
+
         if (!parse_string.contains("#")){
             String pred = LambdaConverter.convert(var1.toString());
             List<Triplet<State,State,Boolean>> dataset = dataItem.getLabel();
