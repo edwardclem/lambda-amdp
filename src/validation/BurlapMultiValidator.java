@@ -2,8 +2,10 @@ package validation;
 
 
 import amdp.cleanup.state.CleanupState;
+import burlap.mdp.core.oo.state.OOState;
 import burlap.mdp.core.state.State;
 import data.BurlapMultiDemonstration;
+import data.DataHelpers;
 import edu.cornell.cs.nlp.spf.data.ILabeledDataItem;
 import edu.cornell.cs.nlp.spf.data.sentence.Sentence;
 import edu.cornell.cs.nlp.spf.data.utils.IValidator;
@@ -14,10 +16,13 @@ import edu.cornell.cs.nlp.spf.explat.resources.usage.ResourceUsage;
 import edu.cornell.cs.nlp.spf.mr.lambda.LogicalExpression;
 import edu.cornell.cs.nlp.utils.composites.Pair;
 import edu.cornell.cs.nlp.utils.composites.Triplet;
+import edu.cornell.cs.nlp.utils.log.ILogger;
+import edu.cornell.cs.nlp.utils.log.LoggerFactory;
 import jscheme.JScheme;
 import jscheme.SchemeProcedure;
 import lambdas.LambdaPlanning.LambdaConverter;
 import supervised.BurlapResourceRepo;
+import test.ValidationTester;
 
 import java.io.FileNotFoundException;
 import java.io.FileReader;
@@ -27,6 +32,7 @@ public class BurlapMultiValidator<DI extends ILabeledDataItem<Sentence,List<Trip
 
     private static JScheme js;
     private String preds = "src/CleanupPredicates.scm";
+    public static final ILogger LOG = LoggerFactory.create(BurlapMultiValidator.class);
 
     public BurlapMultiValidator() {
         js = new JScheme();
@@ -58,15 +64,25 @@ public class BurlapMultiValidator<DI extends ILabeledDataItem<Sentence,List<Trip
                 Boolean istrue = (boolean) js.call(pf,after);
                 if(triple.third()) {
                     if(!istrue || (boolean) js.call(pf,initialState)) {
+                        LOG.info("instance failed to validate: \n%s\n%s\n%s ",
+                                DataHelpers.ooStateToStringCompact( (OOState) triple.first()),
+                                DataHelpers.ooStateToStringCompact( (OOState) triple.second()), triple.third());
                         return false;
                     }
                 }
                 else {
                     if(istrue) {
+                        LOG.info("instance failed to validate:\n%s\n%s\n%s ",
+                                DataHelpers.ooStateToStringCompact( (OOState) triple.first()),
+                                DataHelpers.ooStateToStringCompact( (OOState) triple.second()), triple.third());
                         return false;
                     }
                 }
+                LOG.info("instance validated:\n%s\n%s\n%s",
+                        DataHelpers.ooStateToStringCompact( (OOState) triple.first()),
+                        DataHelpers.ooStateToStringCompact( (OOState) triple.second()), triple.third());
             }
+            LOG.info("VALIDATED");
             return true;
         }
         else{

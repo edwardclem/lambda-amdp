@@ -61,9 +61,9 @@ public class BurlapMultiDemonstration implements ILabeledDataItem<Sentence, List
             Triplet<State,State,Boolean> t = dataset.get(i);
             sb.append(DataHelpers.ooStateToStringCompact((OOState)t.first())).append("\n");
             sb.append(DataHelpers.ooStateToStringCompact((OOState)t.second())).append("\n");
-            sb.append(t.third()).append("\n");
+            sb.append(t.third());
             if(i < dataset.size() - 1) {
-                sb.append("---\n");
+                sb.append("\n---\n");
             }
         }
         return sb.toString();
