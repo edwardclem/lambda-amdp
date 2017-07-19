@@ -81,18 +81,73 @@ public class AMTConverter {
      * @return
      */
     public static CleanupState URLToState(String loc) throws IOException{
-        URL url = new URL(loc);
-
-        BufferedReader in = new BufferedReader(new InputStreamReader(url.openStream()));
-        StringBuilder beforeStateString1 = new StringBuilder();
-        String str;
-        while ((str = in.readLine()) != null) {
-            beforeStateString1.append(str + "\n");
+        if(loc.equals("http://cs.brown.edu/~ngopalan/groundingImages/imagesForDataCollection/TakeTheBlockToTheBlueRoom/2/pre.txt")) {
+            String stateString = "{\n" +
+                    "agent0 (agent): {\n" +
+                    "x: {2}\n" +
+                    "y: {2}\n" +
+                    "direction: {south}\n" +
+                    "}\n" +
+                    "door0 (door): {\n" +
+                    "locked: {0}\n" +
+                    "top: {4}\n" +
+                    "left: {6}\n" +
+                    "bottom: {4}\n" +
+                    "right: {6}\n" +
+                    "canBeLocked: {false}\n" +
+                    "}\n" +
+                    "door1 (door): {\n" +
+                    "locked: {0}\n" +
+                    "top: {4}\n" +
+                    "left: {2}\n" +
+                    "bottom: {4}\n" +
+                    "right: {2}\n" +
+                    "canBeLocked: {false}\n" +
+                    "}\n" +
+                    "block0 (block): {\n" +
+                    "x: {6}\n" +
+                    "y: {2}\n" +
+                    "shape: {chair}\n" +
+                    "colour: {blue}\n" +
+                    "}\n" +
+                    "room0 (room): {\n" +
+                    "top: {4}\n" +
+                    "left: {0}\n" +
+                    "bottom: {0}\n" +
+                    "right: {4}\n" +
+                    "colour: {green}\n" +
+                    "}\n" +
+                    "room1 (room): {\n" +
+                    "top: {4}\n" +
+                    "left: {4}\n" +
+                    "bottom: {0}\n" +
+                    "right: {8}\n" +
+                    "colour: {red}\n" +
+                    "}\n" +
+                    "room2 (room): {\n" +
+                    "top: {8}\n" +
+                    "left: {0}\n" +
+                    "bottom: {4}\n" +
+                    "right: {8}\n" +
+                    "colour: {blue}\n" +
+                    "}\n" +
+                    "}";
+            return DataHelpers.loadStateFromString(stateString);
         }
+        else {
+            URL url = new URL(loc);
 
-        in.close();
+            BufferedReader in = new BufferedReader(new InputStreamReader(url.openStream()));
+            StringBuilder beforeStateString1 = new StringBuilder();
+            String str;
+            while ((str = in.readLine()) != null) {
+                beforeStateString1.append(str + "\n");
+            }
 
-        return DataHelpers.loadStateFromString(beforeStateString1.toString());
+            in.close();
+
+            return DataHelpers.loadStateFromString(beforeStateString1.toString());
+        }
     }
 
 
@@ -221,17 +276,17 @@ public class AMTConverter {
     public static void main(String[] args){
         //TODO: exception handling
         String file_location = args[0];
-        file_location = "data/amt/amt_test_reverse1.csv";
+        file_location = "data/amt/amt_test_3.csv";
         try{
-            List<String> demonstrations = loadMultiDemonstrationFromReverseCSV(file_location);
+            List<String> demonstrations = loadDemonstrationsFromCSV(file_location);
 
             Pair<List<String>, List<String>> split = trainTestSplit(demonstrations, 0.8);
 
-            String fileRoot = "data/amt/amt_test_reverse1";
+            String fileRoot = "data/amt/amt_test_3";
 
-            String trainFilename = fileRoot + "/train2.bdm";
+            String trainFilename = fileRoot + "/train.bdm";
 
-            String testFileName = fileRoot + "/test2.bdm";
+            String testFileName = fileRoot + "/test.bdm";
 
             saveDemonstrations(trainFilename, split.first());
             saveDemonstrations(testFileName, split.second());

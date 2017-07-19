@@ -20,6 +20,7 @@ import edu.cornell.cs.nlp.spf.parser.ccg.features.basic.RuleUsageFeatureSet;
 import edu.cornell.cs.nlp.spf.parser.ccg.features.basic.scorer.ExpLengthLexicalEntryScorer;
 import edu.cornell.cs.nlp.spf.parser.ccg.features.basic.scorer.SkippingSensitiveLexicalEntryScorer;
 import edu.cornell.cs.nlp.spf.parser.ccg.features.basic.scorer.UniformScorer;
+import edu.cornell.cs.nlp.spf.parser.ccg.features.lambda.LogicalExpressionCooccurrenceFeatureSet;
 import edu.cornell.cs.nlp.spf.parser.ccg.features.lambda.LogicalExpressionCoordinationFeatureSet;
 import edu.cornell.cs.nlp.spf.parser.ccg.model.LexiconModelInit;
 import edu.cornell.cs.nlp.spf.parser.ccg.model.Model;
@@ -81,6 +82,7 @@ public class LambdaResourceRepo extends ResourceCreatorRepository {
                 new RuleUsageFeatureSet.Creator<Sentence, LogicalExpression>());
         registerResourceCreator(
                 new LexiconModelInit.Creator<Sentence, LogicalExpression>());
+        registerResourceCreator(new LogicalExpressionCooccurrenceFeatureSet.Creator<Sentence>());
 
         //register lexicon resources
         registerResourceCreator(new FactoredLexicon.Creator());
