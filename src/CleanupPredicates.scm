@@ -111,6 +111,26 @@
                 (map (lambda (x1 x2) (- x1 x2))
                     (getLocation e1Props) (getLocation e2Props))))))
 
+
+(define (right e1 e2)
+    (lambda (state)
+        (let ((e1Props (.object state e1)) (e2Props (.object state e2)))
+            (if
+            (and (= (.get e1Props {y}) (.get e2Props {y})) (= (.get e1Props {x}) (+ (.get e2Props {x}) 1)))
+                #t
+                #f))))
+
+(define (left e1 e2)
+    (lambda (state)
+        (let ((e1Props (.object state e1)) (e2Props (.object state e2)))
+            (if
+            (and (= (.get e1Props {y}) (.get e2Props {y})) (= (.get e1Props {x}) (- (.get e2Props {x}) 1)))
+                #t
+                #f))))
+
+
+
+
 ;list helpers
 
 (define (first lst) (car lst))

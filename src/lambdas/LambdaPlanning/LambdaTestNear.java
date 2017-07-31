@@ -27,6 +27,59 @@ public class LambdaTestNear {
 
         CleanupState targetState = DataHelpers.loadStateFromStringCompact(targetStateString);
 
+        String stateString = "{\n" +
+                "agent0 (agent): {\n" +
+                "x: {5}\n" +
+                "y: {2}\n" +
+                "direction: {south}\n" +
+                "}\n" +
+                "door0 (door): {\n" +
+                "locked: {0}\n" +
+                "top: {4}\n" +
+                "left: {6}\n" +
+                "bottom: {4}\n" +
+                "right: {6}\n" +
+                "canBeLocked: {false}\n" +
+                "}\n" +
+                "door1 (door): {\n" +
+                "locked: {0}\n" +
+                "top: {4}\n" +
+                "left: {2}\n" +
+                "bottom: {4}\n" +
+                "right: {2}\n" +
+                "canBeLocked: {false}\n" +
+                "}\n" +
+                "block0 (block): {\n" +
+                "x: {6}\n" +
+                "y: {2}\n" +
+                "shape: {chair}\n" +
+                "colour: {blue}\n" +
+                "}\n" +
+                "room0 (room): {\n" +
+                "top: {4}\n" +
+                "left: {0}\n" +
+                "bottom: {0}\n" +
+                "right: {4}\n" +
+                "colour: {green}\n" +
+                "}\n" +
+                "room1 (room): {\n" +
+                "top: {4}\n" +
+                "left: {4}\n" +
+                "bottom: {0}\n" +
+                "right: {8}\n" +
+                "colour: {red}\n" +
+                "}\n" +
+                "room2 (room): {\n" +
+                "top: {8}\n" +
+                "left: {0}\n" +
+                "bottom: {4}\n" +
+                "right: {8}\n" +
+                "colour: {blue}\n" +
+                "}\n" +
+                "}";
+
+        CleanupState testState = DataHelpers.loadStateFromString(stateString);
+
         String preds = "src/CleanupPredicates.scm";
         JScheme js = new JScheme();
 
@@ -37,6 +90,12 @@ public class LambdaTestNear {
             SchemeProcedure dist = (SchemeProcedure)js.eval("(near {agent0} {block0})");
 
             System.out.println(js.call(dist, initialState));
+
+            SchemeProcedure left = (SchemeProcedure)js.eval("(left {agent0} {block0})");
+            System.out.println(js.call(left, testState));
+
+            SchemeProcedure right = (SchemeProcedure)js.eval("(right {block0} {agent0})");
+            System.out.println(js.call(right, testState));
 
 
         } catch (FileNotFoundException e) {
