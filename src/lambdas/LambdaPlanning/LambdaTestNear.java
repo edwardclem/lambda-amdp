@@ -97,6 +97,12 @@ public class LambdaTestNear {
             SchemeProcedure right = (SchemeProcedure)js.eval("(right {block0} {agent0})");
             System.out.println(js.call(right, testState));
 
+            SchemeProcedure notRight = (SchemeProcedure)js.eval("(right {door0} {agent0})");
+            System.out.println(js.call(notRight, testState));
+
+            SchemeProcedure notLeft = (SchemeProcedure)js.eval("(left {door0} {room0})");
+            System.out.println(js.call(notLeft, testState));
+
 
         } catch (FileNotFoundException e) {
             System.out.println("ERROR");

@@ -7,7 +7,7 @@ globalLog=amtlog2coordination/global.log
 #parser - same feature set but no supervised parser filter
 include=parser.inc
 #model
-include=model2.inc
+include=model.inc
 #validation function
 include=validation.inc
 #genlex

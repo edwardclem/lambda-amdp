@@ -114,23 +114,19 @@
 
 (define (right e1 e2)
     (lambda (state)
-    (if (and (not (.equals e1 {})) (not (.equals e2 {})))
         (let ((e1Props (.object state e1)) (e2Props (.object state e2)))
             (if
-            (and (or ((block e1) state) ((agent e1) state)) (or ((block e2) state) ((agent e2) state)) (= (.get e1Props {y}) (.get e2Props {y})) (= (.get e1Props {x}) (+ (.get e2Props {x}) 1)))
+            (and (= (.get e1Props {y}) (.get e2Props {y})) (= (.get e1Props {x}) (+ (.get e2Props {x}) 1)))
                 #t
-                #f))
-                #f)))
+                #f))))
 
 (define (left e1 e2)
     (lambda (state)
-     (if (and (not (.equals e1 {})) (not (.equals e2 {})))
         (let ((e1Props (.object state e1)) (e2Props (.object state e2)))
             (if
-            (and (or ((block e1) state) ((agent e1) state)) (or ((block e2) state) ((agent e2) state)) (= (.get e1Props {y}) (.get e2Props {y})) (= (.get e1Props {x}) (- (.get e2Props {x}) 1)))
+            (and (= (.get e1Props {y}) (.get e2Props {y})) (= (.get e1Props {x}) (- (.get e2Props {x}) 1)))
                 #t
-                #f))
-                #f)))
+                #f))))
 
 
 

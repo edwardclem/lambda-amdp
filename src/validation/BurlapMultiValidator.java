@@ -51,7 +51,7 @@ public class BurlapMultiValidator<DI extends ILabeledDataItem<Sentence,List<Trip
 
         String parse_string = var1.toString();
 
-        LOG.info("Starting validation of " + dataItem.getSample().toString() + " with form " + var1.toString());
+        //LOG.info("Starting validation of " + dataItem.getSample().toString() + " with form " + var1.toString());
 
         if (!parse_string.contains("#")){
             String pred = LambdaConverter.convert(var1.toString());
@@ -66,25 +66,25 @@ public class BurlapMultiValidator<DI extends ILabeledDataItem<Sentence,List<Trip
                 Boolean istrue = (boolean) js.call(pf,after);
                 if(triple.third()) {
                     if(!istrue || (boolean) js.call(pf,initialState)) {
-                        LOG.info("instance failed to validate: \n%s\n%s\n%s ",
-                                DataHelpers.ooStateToStringCompact( (OOState) triple.first()),
-                                DataHelpers.ooStateToStringCompact( (OOState) triple.second()), triple.third());
+                        //LOG.info("instance failed to validate: \n%s\n%s\n%s ",
+                            //    DataHelpers.ooStateToStringCompact( (OOState) triple.first()),
+                              //  DataHelpers.ooStateToStringCompact( (OOState) triple.second()), triple.third());
                         return false;
                     }
                 }
                 else {
                     if(istrue) {
-                        LOG.info("instance failed to validate:\n%s\n%s\n%s ",
-                                DataHelpers.ooStateToStringCompact( (OOState) triple.first()),
-                                DataHelpers.ooStateToStringCompact( (OOState) triple.second()), triple.third());
+                        //LOG.info("instance failed to validate:\n%s\n%s\n%s ",
+                              //  DataHelpers.ooStateToStringCompact( (OOState) triple.first()),
+                                //DataHelpers.ooStateToStringCompact( (OOState) triple.second()), triple.third());
                         return false;
                     }
                 }
-                LOG.info("instance validated:\n%s\n%s\n%s",
-                        DataHelpers.ooStateToStringCompact( (OOState) triple.first()),
-                        DataHelpers.ooStateToStringCompact( (OOState) triple.second()), triple.third());
+                //LOG.info("instance validated:\n%s\n%s\n%s",
+                      //  DataHelpers.ooStateToStringCompact( (OOState) triple.first()),
+                       // DataHelpers.ooStateToStringCompact( (OOState) triple.second()), triple.third());
             }
-            LOG.info("VALIDATED");
+            //LOG.info("VALIDATED");
             return true;
         }
         else{
