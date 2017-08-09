@@ -239,6 +239,31 @@ public class AMTConverter {
         return multiDemonstration;
     }
 
+    public static BurlapMultiDemonstration readSingleMultiDemonstration(Map<String, String> record, Integer numPairs) {
+        ArrayList<Triplet<State,State,Boolean>> demos = new ArrayList<>(numPairs);
+        Sentence instruction = new Sentence(record.get("Answer.command").replace(".", ""));
+        for(int i = 1; i <= numPairs; i++) {
+            String beforeImg = record.get("Input.before" + Integer.toString(i));
+            String beforeFile = beforeImg.replaceAll("png", "txt"); //get corresponding state file
+
+            String afterImg = record.get("Input.after" + Integer.toString(i));
+            String afterFile = afterImg.replaceAll("png", "txt");
+
+            //load Burlap states
+            try{
+                State beforeState = URLToState(beforeFile);
+                State afterState = URLToState(afterFile);
+
+                demos.add(new Triplet<>(beforeState,afterState,Boolean.TRUE));
+
+            } catch(IOException e){
+                System.out.println("error in loading");
+            }
+        }
+
+        return new BurlapMultiDemonstration(instruction,demos);
+    }
+
 
 
     public static void saveDemonstrations(String filename, List<String> demonstrations) throws IOException{
@@ -246,6 +271,47 @@ public class AMTConverter {
         String allDemonstrations = String.join("\n\n", demonstrations);
         FileUtils.writeStringToFile(new File(filename), allDemonstrations, Charset.defaultCharset());
 
+    }
+
+    public static List<String> forwardtoReverse(String forwardcsv, String reversecsv) throws IOException {
+        File forwardFile = new File(forwardcsv);
+        CSVParser parser = CSVParser.parse(forwardFile, Charset.defaultCharset(), CSVFormat.RFC4180.withFirstRecordAsHeader());
+        Map<String, BurlapMultiDemonstration> demoMap = new HashMap<>();
+
+        for(CSVRecord rec: parser) {
+            BurlapMultiDemonstration singleDemo = readSingleMultiDemonstration(rec.toMap(), 3);
+            BurlapMultiDemonstration demoInMap = demoMap.get(singleDemo.getSample().toString());
+            if(demoInMap == null) {
+                demoMap.put(singleDemo.getSample().toString(), singleDemo);
+            } else {
+                for(Triplet<State,State,Boolean> triple : singleDemo.getLabel()) {
+                    demoInMap.addInstance(triple);
+                }
+            }
+        }
+
+        File reverseFile = new File(reversecsv);
+        CSVParser parser1 = CSVParser.parse(reverseFile, Charset.defaultCharset(), CSVFormat.RFC4180.withFirstRecordAsHeader());
+
+        for(CSVRecord rec: parser1) {
+            List<BurlapMultiDemonstration> demos = getMultiFromReverseCSV(rec.toMap(), 3);
+            for(BurlapMultiDemonstration demo: demos) {
+                BurlapMultiDemonstration demoInMap = demoMap.get(demo.getSample().toString());
+                if(demoInMap != null) {
+                    for(Triplet<State,State,Boolean> instance : demo.getLabel()) {
+                        demoInMap.addInstance(instance);
+                    }
+                }
+            }
+        }
+
+        List<String> allDemos = new ArrayList<>();
+
+        for(BurlapMultiDemonstration bdm : demoMap.values()) {
+            allDemos.add(bdm.toString());
+        }
+
+        return allDemos;
     }
 
     /**
@@ -275,18 +341,19 @@ public class AMTConverter {
 
     public static void main(String[] args){
         //TODO: exception handling
-        String file_location = args[0];
-        file_location = "data/amt/amt_test_3.csv";
         try{
-            List<String> demonstrations = loadDemonstrationsFromCSV(file_location);
+            List<String> demonstrations = loadDemonstrationsFromCSV("data/amt/amt_test_1.csv");
+            Collections.shuffle(demonstrations);
+
+            demonstrations = demonstrations.subList(0, 110);
 
             Pair<List<String>, List<String>> split = trainTestSplit(demonstrations, 0.8);
 
-            String fileRoot = "data/amt/amt_test_3";
+            String fileRoot = "data/amt/amt_test_combined1";
 
-            String trainFilename = fileRoot + "/train.bdm";
+            String trainFilename = fileRoot + "/train2.bdm";
 
-            String testFileName = fileRoot + "/test.bdm";
+            String testFileName = fileRoot + "/test2.bdm";
 
             saveDemonstrations(trainFilename, split.first());
             saveDemonstrations(testFileName, split.second());

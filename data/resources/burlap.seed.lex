@@ -22,9 +22,11 @@ the :- N/N : (lambda $0:<e,t> $0)
 //spatial prepositions
 in :- PP/NP\NP : (lambda $0:e (lambda $1:e (in:<e,<e,t>> $1 $0)))
 //near
-near :- PP/NP\NP : (lambda $0:e (lambda $1:e (near:<e,<e,t>> $1 $0))
-next to :- PP/NP\NP : (lambda $0:e (lambda $1:e (near:<e,<e,t>> $1 $0))
-by :- PP/NP\NP : (lambda $0:e (lambda $1:e (near:<e,<e,t>> $1 $0))
+near :- PP/NP\NP : (lambda $0:e (lambda $1:e (near:<e,<e,t>> $1 $0)))
+next to :- PP/NP\NP : (lambda $0:e (lambda $1:e (near:<e,<e,t>> $1 $0)))
+by :- PP/NP\NP : (lambda $0:e (lambda $1:e (near:<e,<e,t>> $1 $0)))
+left :- PP/NP\NP : (lambda $0:e (lambda $1:e (left:<e,<e,t>> $1 $0)))
+right :- PP/NP\NP : (lambda $0:e (lambda $1:e (right:<e,<e,t>> $1 $0)))
 
 //quantifiers
 //largest :- NP/N : (lambda $0:<e,t> (argmax:<<e,t>,<<e,n>,e>> $0 size:<e,n>))

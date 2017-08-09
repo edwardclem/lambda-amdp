@@ -2,13 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f8167cb4-0185-41ce-a9ee-7a7ccb24cde6" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lambda-mdp.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/amt/amt_test_combined1/test1.bdm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/amt/amt_test_combined1/train1.bdm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/experiments/weakly/weakly_amt_combined1.exp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/resources/burlap.preds.ont" afterPath="$PROJECT_DIR$/data/resources/burlap.preds.ont" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/experiments/weakly/weakly_amt_2_multi.exp" afterPath="$PROJECT_DIR$/experiments/weakly/weakly_amt_2_multi.exp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CleanupPredicates.scm" afterPath="$PROJECT_DIR$/src/CleanupPredicates.scm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/lambdas/LambdaPlanning/LambdaTestNear.java" afterPath="$PROJECT_DIR$/src/lambdas/LambdaPlanning/LambdaTestNear.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/validation/BurlapMultiValidator.java" afterPath="$PROJECT_DIR$/src/validation/BurlapMultiValidator.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/amt/amt_test_reverse1.csv" afterPath="$PROJECT_DIR$/data/amt/amt_test_reverse1.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/resources/burlap.seed.lex" afterPath="$PROJECT_DIR$/data/resources/burlap.seed.lex" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/experiments/params.inc" afterPath="$PROJECT_DIR$/experiments/params.inc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/data/AMTConverter.java" afterPath="$PROJECT_DIR$/src/data/AMTConverter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/data/BurlapMultiDemonstrationDataset.java" afterPath="$PROJECT_DIR$/src/data/BurlapMultiDemonstrationDataset.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -20,12 +22,77 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="weakly_amt_allforward.exp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/experiments/weakly/weakly_amt_allforward.exp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="11" column="22" lean-forward="true" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="test.out" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/experiments/weakly/amtlogs_allforward/test.out">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
-              <caret line="0" column="62" lean-forward="true" selection-start-line="0" selection-start-column="62" selection-end-line="0" selection-end-column="62" />
+              <caret line="0" column="66" lean-forward="false" selection-start-line="0" selection-start-column="66" selection-end-line="0" selection-end-column="66" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="params.inc" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/experiments/params.inc">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="5" column="10" lean-forward="false" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="burlap.seed.lex" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/resources/burlap.seed.lex">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="520">
+              <caret line="36" column="54" lean-forward="false" selection-start-line="36" selection-start-column="54" selection-end-line="36" selection-end-column="54" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LambdaResourceRepo.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/experiments/explat/LambdaResourceRepo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="144">
+              <caret line="44" column="13" lean-forward="false" selection-start-line="44" selection-start-column="13" selection-end-line="44" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LambdaExperiment.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/experiments/explat/LambdaExperiment.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="839">
+              <caret line="90" column="39" lean-forward="false" selection-start-line="90" selection-start-column="39" selection-end-line="90" selection-end-column="39" />
+              <folding>
+                <element signature="e#2352#2368#0" expanded="true" />
+                <element signature="e#4557#4576#0" expanded="true" />
+                <element signature="e#7444#7445#0" expanded="true" />
+                <element signature="e#7517#7518#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ValidationTester.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/ValidationTester.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="33" column="36" lean-forward="false" selection-start-line="33" selection-start-column="36" selection-end-line="33" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -38,8 +105,10 @@
       <find>right</find>
       <find>room</find>
       <find>left</find>
-      <find>epoch</find>
       <find>isRegion</find>
+      <find>false</find>
+      <find>epoch</find>
+      <find>Tester</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -57,21 +126,26 @@
         <option value="$PROJECT_DIR$/experiments/weakly/weakly_amt_allforward.exp" />
         <option value="$PROJECT_DIR$/experiments/weakly/weakly_amt_2_multi.exp" />
         <option value="$PROJECT_DIR$/experiments/weakly/amtlog2coordination/train.log" />
-        <option value="$PROJECT_DIR$/experiments/params.inc" />
         <option value="$PROJECT_DIR$/experiments/weakly/amtlogs_allforward/test.log" />
         <option value="$PROJECT_DIR$/src/validation/BurlapMultiValidator.java" />
-        <option value="$PROJECT_DIR$/data/resources/burlap.seed.lex" />
         <option value="$PROJECT_DIR$/data/resources/burlap.preds.ont" />
         <option value="$PROJECT_DIR$/src/lambdas/LambdaPlanning/LambdaTestNear.java" />
         <option value="$PROJECT_DIR$/src/CleanupPredicates.scm" />
         <option value="$PROJECT_DIR$/experiments/weakly/amtlogs_allforward/train.log" />
+        <option value="$PROJECT_DIR$/experiments/params.inc" />
+        <option value="$PROJECT_DIR$/data/amt/amt_test_combined1/test1.bdm" />
+        <option value="$PROJECT_DIR$/data/amt/amt_test_combined1/train1.bdm" />
+        <option value="$PROJECT_DIR$/src/data/BurlapMultiDemonstrationDataset.java" />
+        <option value="$PROJECT_DIR$/src/data/AMTConverter.java" />
+        <option value="$PROJECT_DIR$/experiments/weakly/weakly_amt_combined1.exp" />
+        <option value="$PROJECT_DIR$/data/resources/burlap.seed.lex" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="65" />
-    <option name="y" value="28" />
-    <option name="width" value="1829" />
+    <option name="x" value="125" />
+    <option name="y" value="24" />
+    <option name="width" value="1795" />
     <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -107,6 +181,12 @@
             <path>
               <item name="lambda-mdp" type="b2602c69:ProjectViewProjectNode" />
               <item name="lambda-amdp" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lambda-mdp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lambda-amdp" type="462c0819:PsiDirectoryNode" />
               <item name="experiments" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -122,12 +202,23 @@
               <item name="weakly" type="462c0819:PsiDirectoryNode" />
               <item name="amtlogs_allforward" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="lambda-mdp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lambda-amdp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lambda-mdp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lambda-amdp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="experiments" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scratches" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -155,6 +246,25 @@
       <option name="VM_PARAMETERS" value="" />
       <option name="PROGRAM_PARAMETERS" value="experiments/weakly/weakly_amt_2_multi.exp" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="lambda-mdp" />
+      <envs />
+    </configuration>
+    <configuration name="AMTConverter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="data.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="data.AMTConverter" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="ENABLE_SWING_INSPECTOR" value="false" />
@@ -291,15 +401,32 @@
       <module name="lambda-mdp" />
       <envs />
     </configuration>
-    <list size="4">
+    <configuration name="combined 1 exp" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" value="experiments.LambdaExpRunner" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="experiments/weakly/weakly_amt_combined1.exp" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="lambda-mdp" />
+      <envs />
+    </configuration>
+    <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Application.all forward exp" />
       <item index="1" class="java.lang.String" itemvalue="Application.2 forward exp" />
       <item index="2" class="java.lang.String" itemvalue="Application.Reverse1" />
-      <item index="3" class="java.lang.String" itemvalue="Application.LambdaTestNear" />
+      <item index="3" class="java.lang.String" itemvalue="Application.combined 1 exp" />
+      <item index="4" class="java.lang.String" itemvalue="Application.LambdaTestNear" />
+      <item index="5" class="java.lang.String" itemvalue="Application.AMTConverter" />
     </list>
     <recent_temporary>
-      <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="Application.LambdaTestNear" />
+      <list size="2">
+        <item index="0" class="java.lang.String" itemvalue="Application.AMTConverter" />
+        <item index="1" class="java.lang.String" itemvalue="Application.LambdaTestNear" />
       </list>
     </recent_temporary>
   </component>
@@ -320,7 +447,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="28" width="1829" height="1056" extended-state="0" />
+    <frame x="125" y="24" width="1795" height="1056" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -332,11 +459,11 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16324325" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32972974" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24986331" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24958217" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -344,11 +471,11 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -363,21 +490,10 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/data/DataHelpers.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="486">
           <caret line="27" column="26" lean-forward="true" selection-start-line="27" selection-start-column="26" selection-end-line="27" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -385,7 +501,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -393,7 +508,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -401,7 +515,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
           <caret line="12" column="32" lean-forward="false" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -409,15 +522,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/experiments/weakly/weakly_amt_allforward.exp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="22" lean-forward="true" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -425,7 +529,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -440,15 +543,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="10" column="15" lean-forward="false" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/experiments/params.inc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -456,7 +550,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
           <caret line="18" column="8" lean-forward="true" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -464,7 +557,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="51" lean-forward="false" selection-start-line="0" selection-start-column="51" selection-end-line="0" selection-end-column="51" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -472,7 +564,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="15" column="5" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -480,7 +571,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-9733">
           <caret line="19176" column="17" lean-forward="true" selection-start-line="19176" selection-start-column="17" selection-end-line="19176" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -488,7 +578,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="745">
           <caret line="106" column="0" lean-forward="true" selection-start-line="106" selection-start-column="0" selection-end-line="106" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -496,7 +585,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="850">
           <caret line="5399" column="23" lean-forward="true" selection-start-line="5399" selection-start-column="23" selection-end-line="5399" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -504,7 +592,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -516,19 +603,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/experiments/explat/LambdaExperiment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="62" column="60" lean-forward="false" selection-start-line="62" selection-start-column="60" selection-end-line="62" selection-end-column="60" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/data/resources/init.weights">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -539,19 +617,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/resources/burlap.seed.lex">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="25" column="51" lean-forward="false" selection-start-line="25" selection-start-column="51" selection-end-line="25" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/data/resources/burlap.types">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -559,7 +628,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1314">
           <caret line="101" column="76" lean-forward="true" selection-start-line="101" selection-start-column="76" selection-end-line="101" selection-end-column="76" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -567,7 +635,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="432">
           <caret line="100" column="61" lean-forward="true" selection-start-line="100" selection-start-column="61" selection-end-line="100" selection-end-column="61" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -575,6 +642,213 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="15" column="12" lean-forward="true" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/amt/amt_test_1.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/experiments/weakly/amtlogs_combined1/train.log">
+      <provider selected="true" editor-type-id="LargeFileEditor">
+        <state relative-caret-position="1270">
+          <caret line="4611" column="19" lean-forward="false" selection-start-line="4611" selection-start-column="14" selection-end-line="4611" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/experiments/weakly/amtlogs_combined1/test.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18180">
+          <caret line="1010" column="33" lean-forward="false" selection-start-line="1010" selection-start-column="33" selection-end-line="1010" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/experiments/weakly/weakly_amt_1_multi.exp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="20" lean-forward="false" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/experiments/weakly/logs/test.out">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="64" lean-forward="true" selection-start-line="0" selection-start-column="64" selection-end-line="0" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/amt/amt_test_1/train.bdm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="27" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="1918" selection-end-column="537" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data/BurlapMultiDemonstration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="44" column="0" lean-forward="false" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/amt/amt_test_1/test.bdm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2772">
+          <caret line="32" column="36" lean-forward="true" selection-start-line="32" selection-start-column="36" selection-end-line="32" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/amt/amt_test_combined1/test.bdm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="45" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="726" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/amt/amt_test_combined1/train.bdm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="4" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="2487" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/amt/amt_test_combined1/test1.bdm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="1226" column="3" lean-forward="true" selection-start-line="1226" selection-start-column="3" selection-end-line="1226" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/amt/amt_test_combined1/train1.bdm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="557">
+          <caret line="4567" column="4" lean-forward="false" selection-start-line="4567" selection-start-column="4" selection-end-line="4567" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/amt/amt_test_1_multi/test.bdm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="24" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="518" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/amt/amt_test_1_multi/train.bdm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="39" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="2078" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data/BurlapMultiDemonstrationDataset.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="424">
+          <caret line="84" column="4" lean-forward="false" selection-start-line="84" selection-start-column="4" selection-end-line="84" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/experiments/weakly/logs/global.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="76" column="10" lean-forward="false" selection-start-line="76" selection-start-column="10" selection-end-line="76" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data/AMTConverter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6174">
+          <caret line="359" column="0" lean-forward="true" selection-start-line="359" selection-start-column="0" selection-end-line="359" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/amt/amt_test_combined1/train2.bdm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2106">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/amt/amt_test_combined1/test2.bdm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4447">
+          <caret line="10" column="12" lean-forward="false" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/experiments/weakly/weakly_amt_combined1.exp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="19" column="17" lean-forward="true" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/experiments/weakly/amtlogs_combined1/global.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="82" column="32" lean-forward="true" selection-start-line="82" selection-start-column="32" selection-end-line="82" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/experiments/explat/LambdaResourceRepo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="44" column="13" lean-forward="false" selection-start-line="44" selection-start-column="13" selection-end-line="44" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/ValidationTester.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="33" column="36" lean-forward="false" selection-start-line="33" selection-start-column="36" selection-end-line="33" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/experiments/explat/LambdaExperiment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="839">
+          <caret line="90" column="39" lean-forward="false" selection-start-line="90" selection-start-column="39" selection-end-line="90" selection-end-column="39" />
+          <folding>
+            <element signature="e#2352#2368#0" expanded="true" />
+            <element signature="e#4557#4576#0" expanded="true" />
+            <element signature="e#7444#7445#0" expanded="true" />
+            <element signature="e#7517#7518#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/experiments/params.inc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="10" lean-forward="false" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/resources/burlap.seed.lex">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="520">
+          <caret line="36" column="54" lean-forward="false" selection-start-line="36" selection-start-column="54" selection-end-line="36" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/experiments/weakly/amtlogs_combined1/test.out">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/experiments/weakly/weakly_amt_allforward.exp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="22" lean-forward="true" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
           <folding />
         </state>
       </provider>
@@ -582,7 +856,7 @@
     <entry file="file://$PROJECT_DIR$/experiments/weakly/amtlogs_allforward/test.out">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="62" lean-forward="true" selection-start-line="0" selection-start-column="62" selection-end-line="0" selection-end-column="62" />
+          <caret line="0" column="66" lean-forward="false" selection-start-line="0" selection-start-column="66" selection-end-line="0" selection-end-column="66" />
           <folding />
         </state>
       </provider>
