@@ -25,9 +25,13 @@ import burlap.visualizer.Visualizer;
 import data.DataHelpers;
 import jscheme.JScheme;
 
+import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
+import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 import java.util.Random;
 
 import jscheme.SchemeProcedure;
@@ -58,33 +62,114 @@ public class PlanEpisodesForDataset {
 //
 //        JScheme js = new JScheme();
 
-        String fileName = "/workspace/lambda-amdp/data/amt/amt_allforward/test.bdm";
+        String fileName = "/home/nakul/workspace/lambda-amdp/data/amt/amt_allforward/deleteThisFile.bdm";
 
         try{
 //            FileReader f = new java.io.FileReader(preds);
 //            js.load(f);
 
-            FileReader f = new java.io.FileReader(fileName);
+
+
+            FileReader fileReader = new java.io.FileReader(fileName);
+
+            BufferedReader br = new BufferedReader(fileReader);
+
+            BDMReader reader = new BDMReader(br);
+
+            while (true){
+                //return next four lines!
+                List<String> lines = reader.readNextFourLines();
+                if(reader.endOfFile) break;
+//                System.out.println("0: " +lines.get(0));
+//                System.out.println("1: " +lines.get(1));
+//                System.out.println("2: " +lines.get(2));
+//                System.out.println("3: " +lines.get(3));
+                State startState = DataHelpers.loadStateFromStringCompact(lines.get(1));
+                State terminationState = DataHelpers.loadStateFromStringCompact(lines.get(1));
+                Episode e = PlanEpisodesForDataset.getEpisode(startState,terminationState);
+//                e.write();
+
+
+                Visualizer v = CleanupVisualiser.getVisualizer("data/robotImages");
+
+                StateConditionTest l0sc = new StateEqualityBasedConditionTest(terminationState);
+
+
+                GoalBasedRF l0rf = new GoalBasedRF(l0sc, 1., 0.);
+                GoalConditionTF l0tf = new GoalConditionTF(l0sc);
 
 
 
+                Random rand = RandomFactory.getMapped(0);
+                CleanupDomain dgen = new CleanupDomain(l0rf,l0tf, rand);
+                dgen.includeDirectionAttribute(true);
+                dgen.includePullAction(true);
+                dgen.includeWallPF_s(true);
+                dgen.includeLockableDoors(true);
+                dgen.setLockProbability(0.0);
+                OOSADomain domain = dgen.generateDomain();
+
+                new EpisodeSequenceVisualizer(v, domain, Arrays.asList(e));
+
+            }
 
 
-//            Visualizer v = CleanupVisualiser.getVisualizer("data/robotImages");
-//
-//            new EpisodeSequenceVisualizer(v, domain, Arrays.asList(ea));
 
 
 
         }catch (FileNotFoundException e){
             System.out.println(e.getMessage());
+        } catch (IOException e) {
+            e.printStackTrace();
         }
 
 
     }
 
 
-    public Episode getEpisode(State startState, State terminalState){
+
+
+    public static class BDMReader{
+        BufferedReader br;
+        public boolean endOfFile=false;
+        public BDMReader(BufferedReader br){
+            this.br=br;
+        }
+
+        public List<String> readNextFourLines() throws IOException {
+
+            ArrayList<String> stringList = new ArrayList<>();
+
+            int count=0;
+
+
+            String s=null;
+
+            while (count<4) {
+                s = br.readLine();
+                if(s == null){
+                    endOfFile=true;
+                    break;
+                }
+
+
+                if (!s.equals("")) {
+                        stringList.add(s);
+                        count++;
+                    }
+                }
+
+
+
+
+            return stringList;
+        }
+    }
+
+
+
+
+    public static Episode getEpisode(State startState, State terminalState){
 
 
         StateConditionTest l0sc = new StateEqualityBasedConditionTest(terminalState);
@@ -105,14 +190,20 @@ public class PlanEpisodesForDataset {
         OOSADomain domain = dgen.generateDomain();
 
         FixedDoorCleanupEnv env = new FixedDoorCleanupEnv(domain,startState);
-        ValueIteration vi = new ValueIteration(domain, 0.99,new SimpleHashableStateFactory(false),0.01, 500);
-        Policy policy = vi.planFromState(startState);
+//        ValueIteration vi = new ValueIteration(domain, 0.99,new SimpleHashableStateFactory(false),0.01, 5000);
+//        Policy policy = vi.planFromState(startState);
+        ConstantValueFunction heuristic = new ConstantValueFunction(1.);
+        BoundedRTDP brtd = new BoundedRTDP(domain, 0.99, new SimpleHashableStateFactory(false), new ConstantValueFunction(0.0), heuristic, 0.01, 500);
+        brtd.setMaxRolloutDepth(50);
+        brtd.toggleDebugPrinting(false);
+        Policy policy = brtd.planFromState(startState);
+
         Episode episode = PolicyUtils.rollout(policy,env,100);
         return episode;
     }
 
 
-    public class StateEqualityBasedConditionTest implements StateConditionTest{
+    public static class StateEqualityBasedConditionTest implements StateConditionTest{
         State terminalState;
         public StateEqualityBasedConditionTest(State s){
             terminalState = s;
