@@ -82,6 +82,7 @@ public class LambdaBurlap {
             dgen.setLockProbability(0.0);
             OOSADomain domain = dgen.generateDomain();
 
+
             FixedDoorCleanupEnv env = new FixedDoorCleanupEnv(domain, s);
 
             long startTime = System.currentTimeMillis();

@@ -3,6 +3,8 @@ package lambdas.LambdaPlanning;
 import amdp.cleanup.CleanupDomain;
 import amdp.cleanup.CleanupVisualiser;
 import amdp.cleanup.FixedDoorCleanupEnv;
+import amdp.cleanup.state.CleanupAgent;
+import amdp.cleanup.state.CleanupBlock;
 import amdp.cleanup.state.CleanupState;
 import burlap.behavior.policy.Policy;
 import burlap.behavior.policy.PolicyUtils;
@@ -85,7 +87,9 @@ public class PlanEpisodesForDataset {
 //                System.out.println("2: " +lines.get(2));
 //                System.out.println("3: " +lines.get(3));
                 State startState = DataHelpers.loadStateFromStringCompact(lines.get(1));
-                State terminationState = DataHelpers.loadStateFromStringCompact(lines.get(1));
+                State terminationState = DataHelpers.loadStateFromStringCompact(lines.get(2));
+
+
                 Episode e = PlanEpisodesForDataset.getEpisode(startState,terminationState);
 //                e.write();
 
@@ -204,14 +208,39 @@ public class PlanEpisodesForDataset {
 
 
     public static class StateEqualityBasedConditionTest implements StateConditionTest{
-        State terminalState;
+        CleanupState terminalState;
+        CleanupAgent agent;
+        List<CleanupBlock> blocks;
         public StateEqualityBasedConditionTest(State s){
-            terminalState = s;
+            terminalState = (CleanupState)s;
+            agent = terminalState.agent;
+            blocks = terminalState.blocks;
         }
 
         @Override
         public boolean satisfies(State state) {
-            return terminalState.equals(state);
+            CleanupState testState = (CleanupState)state;
+            List<CleanupBlock> blocksTestState = testState.blocks;
+            CleanupAgent agentTestState = testState.agent;
+
+            boolean retBool = true;
+            if(!(agentTestState.x==agent.x && agentTestState.y==agent.y)){return false;}
+            for(CleanupBlock b:blocks){
+                for(CleanupBlock bST:blocksTestState){
+                    if(b.name.equals(bST.name)){
+                        if(!(b.x==bST.x && b.y == bST.y)){
+                            return false;
+                        }
+                    }
+                }
+            }
+//            if(retBool){
+//                System.out.println(retBool);
+//            }
+
+
+            return retBool;
+
         }
     }
 

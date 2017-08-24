@@ -21,6 +21,8 @@ the :- N/N : (lambda $0:<e,t> $0)
 
 //spatial prepositions
 in :- PP/NP\NP : (lambda $0:e (lambda $1:e (in:<e,<e,t>> $1 $0)))
+into :- PP/NP\NP : (lambda $0:e (lambda $1:e (in:<e,<e,t>> $1 $0)))
+
 //near
 near :- PP/NP\NP : (lambda $0:e (lambda $1:e (near:<e,<e,t>> $1 $0)))
 next to :- PP/NP\NP : (lambda $0:e (lambda $1:e (near:<e,<e,t>> $1 $0)))
@@ -44,6 +46,7 @@ go to :- S/NP : (lambda $0:e (in:<e,<e,t>> (the:<<e,t>,e> agent:<e,t>) $0))
 go to :- S/NP : (lambda $0:e (near:<e,<e,t>> (the:<<e,t>,e> agent:<e,t>) $0))
 move near :- S/NP : (lambda $0:e (near:<e,<e,t>> (the:<<e,t>,e> agent:<e,t>) $0))
 move to :- S/NP : (lambda $0:e (in:<e,<e,t>> (the:<<e,t>,e> agent:<e,t>) $0))
+move to :- S/NP : (lambda $0:e (near:<e,<e,t>> (the:<<e,t>,e> agent:<e,t>) $0))
 //put the block (NP) in the red room (PP)
 put :- (S/PP)/NP : (lambda $0:e (lambda $1:<e,t> ($1 $0)))
 

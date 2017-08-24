@@ -10,6 +10,7 @@ import edu.cornell.cs.nlp.utils.io.FileUtils;
 import java.io.File;
 import java.io.IOException;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.Iterator;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -30,6 +31,8 @@ public class BurlapMultiDemonstrationDataset implements IDataCollection<BurlapMu
         List<BurlapMultiDemonstration> processed = splitString.stream()
                 .map(s -> BurlapMultiDemonstration.parse(s))
                 .collect(Collectors.toList());
+
+        Collections.shuffle(processed);
 
         return new BurlapMultiDemonstrationDataset(processed);
     }

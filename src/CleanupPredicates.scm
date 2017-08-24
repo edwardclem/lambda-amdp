@@ -1,6 +1,8 @@
 (import "burlap.mdp.core.oo.state.*")
 (import "amdp.cleanup.state.*")
 (import "amdp.cleanup.CleanupDomain")
+(import "java.util.Collections")
+
 
 ;now working with assumption that "state" parameter will be "hidden"
 ;entity is implemented as a string object ID, essentially a pointer to an object
@@ -173,10 +175,13 @@
 (define satisfiesPredicate
     (lambda (state)
         (lambda (predicate)
+            (let ((shuffleList (.objects state)))
+            ;TODO: fill shuffle
+            (Collections.shuffle shuffleList)
             (do ( (i 0 (+ i 1)) (correctObj {}))
-                ((or (= i (.size (.objects state))) (not (equal? correctObj {}))) correctObj)
-                (if ((predicate (.name (.get (.objects state) i))) state)
-                        (set! correctObj (.name (.get (.objects state) i))))))))
+                ((or (= i (.size (shuffleList))) (not (equal? correctObj {}))) correctObj)
+                (if ((predicate (.name (.get (shuffleList) i))) state)
+                        (set! correctObj (.name (.get (shuffleList) i)))))))))
 
 ;argmax/min
 ;initialized wrt some state, then applied

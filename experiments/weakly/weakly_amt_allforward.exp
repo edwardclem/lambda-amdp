@@ -1,7 +1,9 @@
 #global parameters
 include=../params.inc
-outputDir=amtlogs_allforward
-globalLog=amtlogs_allforward/global.log
+#outputDir=amtlogs_allforward_nakul_1
+#globalLog=amtlogs_allforward_nakul_1/global.log
+outputDir=amtlogs_allforward_nakul_2
+globalLog=amtlogs_allforward_nakul_2/global.log
 
 #resources
 #parser - same feature set but no supervised parser filter
