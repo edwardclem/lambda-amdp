@@ -2,6 +2,7 @@
 (import "amdp.cleanup.state.*")
 (import "amdp.cleanup.CleanupDomain")
 (import "java.util.Collections")
+(import "lambdas.LambdaFunctions.Determiners")
 
 
 ;now working with assumption that "state" parameter will be "hidden"
@@ -172,7 +173,7 @@
 
 ;the update doesn't seem to work for currentObj? using set! instead
 ;TODO: update to resemble argmax
-(define satisfiesPredicate
+(define satisfiesPredicateOld
     (lambda (state)
         (lambda (predicate)
             (let ((shuffleList (.objects state)))
@@ -182,6 +183,14 @@
                 ((or (= i (.size (shuffleList))) (not (equal? correctObj {}))) correctObj)
                 (if ((predicate (.name (.get (shuffleList) i))) state)
                         (set! correctObj (.name (.get (shuffleList) i)))))))))
+
+;wrapper for Determiners.satisfiesPredicate
+;re-implementing everything in Java
+
+(define satisfiesPredicate
+    (lambda (state)
+        (lambda (predicate)
+            (Determiners.satisfiesPredicate state predicate))))
 
 ;argmax/min
 ;initialized wrt some state, then applied
