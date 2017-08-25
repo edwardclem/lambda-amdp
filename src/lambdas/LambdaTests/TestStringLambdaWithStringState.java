@@ -47,7 +47,14 @@ public class TestStringLambdaWithStringState {
 
         String preStateString = "{agent0 (agent): [x: {5} y: {6} direction: {south} ] , door0 (door): [locked: {0} top: {4} left: {6} bottom: {4} right: {6} canBeLocked: {false} ] , door1 (door): [locked: {0} top: {4} left: {2} bottom: {4} right: {2} canBeLocked: {false} ] , block0 (block): [x: {2} y: {6} shape: {chair} colour: {green} ] , room0 (room): [top: {4} left: {0} bottom: {0} right: {8} colour: {green} ] , room1 (room): [top: {8} left: {0} bottom: {4} right: {4} colour: {blue} ] , room2 (room): [top: {8} left: {4} bottom: {4} right: {8} colour: {red} ] , }";
 
-        State s = DataHelpers.loadStateFromStringCompact(preStateString);
+        String leftPostcondition = "{agent0 (agent): [x: {2} y: {6} direction: {south} ] , door0 (door): [locked: {0} top: {4} left: {6} bottom: {4} right: {6} canBeLocked: {false} ] , door1 (door): [locked: {0} top: {4} left: {2} bottom: {4} right: {2} canBeLocked: {false} ] , block0 (block): [x: {3} y: {6} shape: {chair} colour: {red} ] , room0 (room): [top: {8} left: {0} bottom: {4} right: {8} colour: {blue} ] , room1 (room): [top: {4} left: {0} bottom: {0} right: {4} colour: {green} ] , room2 (room): [top: {4} left: {4} bottom: {0} right: {8} colour: {red} ] , }";
+
+        String rightPostcondition =  "{agent0 (agent): [x: {6} y: {2} direction: {south} ] , door0 (door): [locked: {0} top: {4} left: {6} bottom: {4} right: {6} canBeLocked: {false} ] , door1 (door): [locked: {0} top: {4} left: {2} bottom: {4} right: {2} canBeLocked: {false} ] , block0 (block): [x: {2} y: {6} shape: {chair} colour: {blue} ] , block1 (block): [x: {5} y: {2} shape: {chair} colour: {red} ] , room0 (room): [top: {4} left: {0} bottom: {0} right: {8} colour: {blue} ] , room1 (room): [top: {8} left: {0} bottom: {4} right: {4} colour: {green} ] , room2 (room): [top: {8} left: {4} bottom: {4} right: {8} colour: {red} ] , }";
+
+
+        //State s = DataHelpers.loadStateFromStringCompact(preStateString);
+
+        State s = DataHelpers.loadStateFromStringCompact(rightPostcondition);
 
         //create JScheme evaluator
 

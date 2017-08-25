@@ -4,7 +4,9 @@ package lambdas.LambdaTests; /**
 
 import amdp.cleanup.CleanupDomain;
 import amdp.cleanup.state.CleanupState;
+import burlap.mdp.core.oo.state.OOState;
 import burlap.mdp.core.state.State;
+import data.DataHelpers;
 import jscheme.JScheme;
 import jscheme.SchemeProcedure;
 import jsint.Scheme;
@@ -94,21 +96,53 @@ public class LambdaTest {
 
             //testing distance function
 
+            System.out.print("testing distance function...");
             SchemeProcedure dist = (SchemeProcedure)js.call("dist", "room2", "room1");
 
             //TODO: finish tests for this
 
-            System.out.println(js.call(dist, state));
+            //System.out.println(js.call(dist, state));
+
+            Assert.assertEquals("distance between room centers is 4.0", 4.0, js.call(dist, state));
+
+            System.out.println("passed");
 
 
-            //TODO: test near
+            //TODO: expand tests
+            System.out.print("testing near predicate...");
+            String nearPrecondition = "{agent0 (agent): [x: {5} y: {6} direction: {south} ] , door0 (door): [locked: {0} top: {4} left: {6} bottom: {4} right: {6} canBeLocked: {false} ] , door1 (door): [locked: {0} top: {4} left: {2} bottom: {4} right: {2} canBeLocked: {false} ] , block0 (block): [x: {2} y: {6} shape: {chair} colour: {green} ] , room0 (room): [top: {4} left: {0} bottom: {0} right: {8} colour: {green} ] , room1 (room): [top: {8} left: {0} bottom: {4} right: {4} colour: {blue} ] , room2 (room): [top: {8} left: {4} bottom: {4} right: {8} colour: {red} ] , }";
+            String nearPostcondition = "{agent0 (agent): [x: {3} y: {6} direction: {south} ] , door0 (door): [locked: {0} top: {4} left: {6} bottom: {4} right: {6} canBeLocked: {false} ] , door1 (door): [locked: {0} top: {4} left: {2} bottom: {4} right: {2} canBeLocked: {false} ] , block0 (block): [x: {2} y: {6} shape: {chair} colour: {green} ] , room0 (room): [top: {4} left: {0} bottom: {0} right: {8} colour: {green} ] , room1 (room): [top: {8} left: {0} bottom: {4} right: {4} colour: {blue} ] , room2 (room): [top: {8} left: {4} bottom: {4} right: {8} colour: {red} ] , }";
 
+            CleanupState nearPreState = DataHelpers.loadStateFromStringCompact(nearPrecondition);
+            CleanupState nearPostState = DataHelpers.loadStateFromStringCompact(nearPostcondition);
 
-            //TODO: test right
+            Assert.assertTrue("agent is not near the block in provided precondition", !(Boolean)js.call((SchemeProcedure)js.eval("(near {agent0} {block0})"), nearPreState));
+            Assert.assertTrue("agent is near block in postcondition", (Boolean)js.call((SchemeProcedure)js.eval("(near {agent0} {block0})"), nearPostState));
+            System.out.println("passed");
 
+            System.out.print("testing left predicate...");
 
+            String leftPrecondition = "{agent0 (agent): [x: {4} y: {6} direction: {south} ] , door0 (door): [locked: {0} top: {4} left: {6} bottom: {4} right: {6} canBeLocked: {false} ] , door1 (door): [locked: {0} top: {4} left: {2} bottom: {4} right: {2} canBeLocked: {false} ] , block0 (block): [x: {3} y: {6} shape: {chair} colour: {red} ] , room0 (room): [top: {8} left: {0} bottom: {4} right: {8} colour: {blue} ] , room1 (room): [top: {4} left: {0} bottom: {0} right: {4} colour: {green} ] , room2 (room): [top: {4} left: {4} bottom: {0} right: {8} colour: {red} ] , }";
+            String leftPostcondition = "{agent0 (agent): [x: {2} y: {6} direction: {south} ] , door0 (door): [locked: {0} top: {4} left: {6} bottom: {4} right: {6} canBeLocked: {false} ] , door1 (door): [locked: {0} top: {4} left: {2} bottom: {4} right: {2} canBeLocked: {false} ] , block0 (block): [x: {3} y: {6} shape: {chair} colour: {red} ] , room0 (room): [top: {8} left: {0} bottom: {4} right: {8} colour: {blue} ] , room1 (room): [top: {4} left: {0} bottom: {0} right: {4} colour: {green} ] , room2 (room): [top: {4} left: {4} bottom: {0} right: {8} colour: {red} ] , }";
 
-            //TODO: test left
+            CleanupState leftPreState = DataHelpers.loadStateFromStringCompact(leftPrecondition);
+            CleanupState leftPostState = DataHelpers.loadStateFromStringCompact(leftPostcondition);
+
+            Assert.assertTrue("agent is not left of the block in provided precondition", !(Boolean)js.call((SchemeProcedure)js.eval("(left {agent0} {block0})"), leftPreState));
+            Assert.assertTrue("agent is left of block in postcondition", (Boolean)js.call((SchemeProcedure)js.eval("(left {agent0} {block0})"), leftPostState));
+            System.out.println("passed");
+
+            System.out.print("testing right predicate");
+
+            String rightPrecondition = "{agent0 (agent): [x: {4} y: {2} direction: {south} ] , door0 (door): [locked: {0} top: {4} left: {6} bottom: {4} right: {6} canBeLocked: {false} ] , door1 (door): [locked: {0} top: {4} left: {2} bottom: {4} right: {2} canBeLocked: {false} ] , block0 (block): [x: {2} y: {6} shape: {chair} colour: {blue} ] , block1 (block): [x: {5} y: {2} shape: {chair} colour: {red} ] , room0 (room): [top: {4} left: {0} bottom: {0} right: {8} colour: {blue} ] , room1 (room): [top: {8} left: {0} bottom: {4} right: {4} colour: {green} ] , room2 (room): [top: {8} left: {4} bottom: {4} right: {8} colour: {red} ] , }";
+            String rightPostcondition =  "{agent0 (agent): [x: {6} y: {2} direction: {south} ] , door0 (door): [locked: {0} top: {4} left: {6} bottom: {4} right: {6} canBeLocked: {false} ] , door1 (door): [locked: {0} top: {4} left: {2} bottom: {4} right: {2} canBeLocked: {false} ] , block0 (block): [x: {2} y: {6} shape: {chair} colour: {blue} ] , block1 (block): [x: {5} y: {2} shape: {chair} colour: {red} ] , room0 (room): [top: {4} left: {0} bottom: {0} right: {8} colour: {blue} ] , room1 (room): [top: {8} left: {0} bottom: {4} right: {4} colour: {green} ] , room2 (room): [top: {8} left: {4} bottom: {4} right: {8} colour: {red} ] , }";
+
+            CleanupState rightPreState = DataHelpers.loadStateFromStringCompact(rightPrecondition);
+            CleanupState rightPostState = DataHelpers.loadStateFromStringCompact(rightPostcondition);
+
+            Assert.assertTrue("agent is not right of the block in provided precondition", !(Boolean)js.call((SchemeProcedure)js.eval("(right {agent0} {block1})"), rightPreState));
+            Assert.assertTrue("agent is right of block in postcondition", (Boolean)js.call((SchemeProcedure)js.eval("(right {agent0} {block1})"), rightPostState));
+            System.out.println("passed");
 
 //            //testing room size function
 //

@@ -31,6 +31,8 @@ import java.util.List;
 public class BurlapMultiValidator<DI extends ILabeledDataItem<Sentence,List<Triplet<State,State,Boolean>>>, MR extends LogicalExpression> implements IValidator<DI, MR> {
 
     private static JScheme js;
+    //updated to use java-based predicates
+    //TODO: load this from the ExPlat file
     private String preds = "src/CleanupPredicates.scm";
     public static final ILogger LOG = LoggerFactory.create(BurlapMultiValidator.class);
 

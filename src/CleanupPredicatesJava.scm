@@ -67,7 +67,13 @@
         (Relations.in entity region state)))
 
 ;left and right predicates
+(define (left obj1 obj2)
+    (lambda (state)
+        (Relations.left obj1 obj2 state)))
 
+(define (right obj1 obj2)
+    (lambda (state)
+        (Relations.right obj1 obj2 state)))
 
 
 ;numerical relations
