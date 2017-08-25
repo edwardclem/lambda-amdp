@@ -173,7 +173,7 @@
 
 ;the update doesn't seem to work for currentObj? using set! instead
 ;TODO: update to resemble argmax
-(define satisfiesPredicateOld
+(define satisfiesPredicateOldOld
     (lambda (state)
         (lambda (predicate)
             (let ((shuffleList (.objects state)))
@@ -184,13 +184,19 @@
                 (if ((predicate (.name (.get (shuffleList) i))) state)
                         (set! correctObj (.name (.get (shuffleList) i)))))))))
 
-;wrapper for Determiners.satisfiesPredicate
-;re-implementing everything in Java
-
 (define satisfiesPredicate
     (lambda (state)
         (lambda (predicate)
-            (Determiners.satisfiesPredicate state predicate))))
+            (do ( (i 0 (+ i 1)) (correctObj {}))
+                ((or (= i (.size (.objects state))) (not (equal? correctObj {}))) correctObj)
+                (if ((predicate (.name (.get (.objects state) i))) state)
+                        (set! correctObj (.name (.get (.objects state) i))))))))
+
+
+;wrapper for Determiners.satisfiesPredicate
+;re-implementing everything in Java
+
+
 
 ;argmax/min
 ;initialized wrt some state, then applied
