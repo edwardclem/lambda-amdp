@@ -1,4 +1,4 @@
-package lambdas.LambdaPlanning;
+package lambdas.LambdaTests;
 
 import amdp.cleanup.CleanupDomain;
 import amdp.cleanup.CleanupVisualiser;
@@ -28,6 +28,7 @@ import java.util.Random;
 
 import jscheme.SchemeProcedure;
 import lambdas.LambdaInterface.*;
+import lambdas.LambdaPlanning.LambdaConverter;
 
 /**
  * Created by ngopalan

@@ -1,4 +1,4 @@
-package lambdas.LambdaPlanning; /**
+package lambdas.LambdaTests; /**
  * Created by edwardwilliams on 5/10/17.
  */
 
@@ -28,7 +28,7 @@ public class LambdaTest {
         //System.out.println(state.objects());
 
         //load latest predicates
-        String PredLoc = "src/CleanupPredicates.scm";
+        String PredLoc = "src/CleanupPredicatesJava.scm";
 
 
         //create JScheme evaluator
@@ -100,32 +100,42 @@ public class LambdaTest {
 
             System.out.println(js.call(dist, state));
 
-            //testing room size function
 
-            SchemeProcedure rsize = (SchemeProcedure)js.eval("(roomSize {room0})");
-
-            System.out.println(js.call(rsize, state));
-
-            System.out.print("testing argmax... ");
-            SchemeProcedure argmax = (SchemeProcedure)js.call("argmax", state);
-            //TODO: more argmax tests
-            Assert.assertEquals("testing argmax on rooms", "room0" ,js.call(argmax, js.eval("room"), js.eval("roomSize")));
-            System.out.println("passed ");
+            //TODO: test near
 
 
-            //testing null function
+            //TODO: test right
 
-            SchemeProcedure yellow = (SchemeProcedure)js.eval("yellow");
 
-            System.out.println(js.call(the, yellow).equals(""));
 
-            //defining determiner wrt initial state:
-            js.setGlobalValue("initialState", state);
-            js.eval("(define the (satisfiesPredicate initialState))");
+            //TODO: test left
 
-            SchemeProcedure inNull = (SchemeProcedure)js.eval("(in (the yellow) (the red))");
-
-            System.out.println(js.call(inNull, state));
+//            //testing room size function
+//
+//            SchemeProcedure rsize = (SchemeProcedure)js.eval("(roomSize {room0})");
+//
+//            System.out.println(js.call(rsize, state));
+//
+//            System.out.print("testing argmax... ");
+//            SchemeProcedure argmax = (SchemeProcedure)js.call("argmax", state);
+//            //TODO: more argmax tests
+//            Assert.assertEquals("testing argmax on rooms", "room0" ,js.call(argmax, js.eval("room"), js.eval("roomSize")));
+//            System.out.println("passed ");
+//
+//
+//            //testing null function
+//
+//            SchemeProcedure yellow = (SchemeProcedure)js.eval("yellow");
+//
+//            System.out.println(js.call(the, yellow).equals(""));
+//
+//            //defining determiner wrt initial state:
+//            js.setGlobalValue("initialState", state);
+//            js.eval("(define the (satisfiesPredicate initialState))");
+//
+//            SchemeProcedure inNull = (SchemeProcedure)js.eval("(in (the yellow) (the red))");
+//
+//            System.out.println(js.call(inNull, state));
 
         } catch (FileNotFoundException e){
             System.out.println(e.getMessage());
