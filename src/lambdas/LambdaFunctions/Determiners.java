@@ -40,4 +40,43 @@ public class Determiners{
         return "";
 
     }
+
+    /**
+     * strict definite determiner - returns an object if only ONE object satisfies the predicate.
+     * Otherwise, returns null.
+     * @param state
+     * @param predicate
+     * @return
+     */
+    public static String definiteDeterminer(OOState state, SchemeProcedure predicate){
+
+        String grounding = "";
+        int numCorrect = 0; //track number of examples that satisfy the predicate
+
+
+        JScheme js = new JScheme();
+
+        List<ObjectInstance> objects = state.objects();
+        Collections.shuffle(objects);
+
+        for (ObjectInstance o: objects){
+
+            //returns a procedure that can be tested on a state
+            SchemeProcedure predicateFromName = (SchemeProcedure)js.call(predicate, o.name());
+
+            if((Boolean)js.call(predicateFromName,state)){
+                grounding = o.name();
+                numCorrect++;
+            }
+        }
+
+        if (numCorrect == 1){
+            return grounding;
+        } else{
+            return "";
+        }
+
+
+
+    }
 }

@@ -55,6 +55,12 @@
         (lambda (predicate)
             (Determiners.satisfiesPredicate state predicate))))
 
+;strict definite determiner
+(define definiteDeterminer
+    (lambda (state)
+        (lambda (predicate)
+            (Determiners.definiteDeterminer state predicate))))
+
 ;RELATIONS
 ;near predicate
 (define (near obj1 obj2)
