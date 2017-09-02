@@ -8,10 +8,10 @@ room:<e,t>
 door:<e,t>
 block:<e,t>
 agent:<e,t>
-//argmin:<<e,t>,<<e,n>,e>>
-//argmax:<<e,t>,<<e,n>,e>>
+argmin:<<e,t>,<<e,n>,e>>
+argmax:<<e,t>,<<e,n>,e>>
 //dist:<e,<e,n>>
-//size:<e,n>
+size:<e,n>
 the:<<e,t>,e>
 in:<e,<e,t>>
 near:<e,<e,t>>

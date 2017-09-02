@@ -132,7 +132,7 @@ public class LambdaTest {
             Assert.assertTrue("agent is left of block in postcondition", (Boolean)js.call((SchemeProcedure)js.eval("(left {agent0} {block0})"), leftPostState));
             System.out.println("passed");
 
-            System.out.print("testing right predicate");
+            System.out.print("testing right predicate...");
 
             String rightPrecondition = "{agent0 (agent): [x: {4} y: {2} direction: {south} ] , door0 (door): [locked: {0} top: {4} left: {6} bottom: {4} right: {6} canBeLocked: {false} ] , door1 (door): [locked: {0} top: {4} left: {2} bottom: {4} right: {2} canBeLocked: {false} ] , block0 (block): [x: {2} y: {6} shape: {chair} colour: {blue} ] , block1 (block): [x: {5} y: {2} shape: {chair} colour: {red} ] , room0 (room): [top: {4} left: {0} bottom: {0} right: {8} colour: {blue} ] , room1 (room): [top: {8} left: {0} bottom: {4} right: {4} colour: {green} ] , room2 (room): [top: {8} left: {4} bottom: {4} right: {8} colour: {red} ] , }";
             String rightPostcondition =  "{agent0 (agent): [x: {6} y: {2} direction: {south} ] , door0 (door): [locked: {0} top: {4} left: {6} bottom: {4} right: {6} canBeLocked: {false} ] , door1 (door): [locked: {0} top: {4} left: {2} bottom: {4} right: {2} canBeLocked: {false} ] , block0 (block): [x: {2} y: {6} shape: {chair} colour: {blue} ] , block1 (block): [x: {5} y: {2} shape: {chair} colour: {red} ] , room0 (room): [top: {4} left: {0} bottom: {0} right: {8} colour: {blue} ] , room1 (room): [top: {8} left: {0} bottom: {4} right: {4} colour: {green} ] , room2 (room): [top: {8} left: {4} bottom: {4} right: {8} colour: {red} ] , }";
@@ -144,17 +144,37 @@ public class LambdaTest {
             Assert.assertTrue("agent is right of block in postcondition", (Boolean)js.call((SchemeProcedure)js.eval("(right {agent0} {block1})"), rightPostState));
             System.out.println("passed");
 
-//            //testing room size function
+            //testing size function
+
+            System.out.print("testing size function...");
+
+            Assert.assertEquals("room 0 size is 32", 32.0, js.call((SchemeProcedure)js.eval("(size {room0})"), state));
+            Assert.assertEquals("room 1 size is 16", 16.0, js.call((SchemeProcedure)js.eval("(size {room1})"), state));
+            Assert.assertEquals("room 2 size is 16", 16.0, js.call((SchemeProcedure)js.eval("(size {room2})"), state));
+
+            Assert.assertEquals("block size is 2, no 'big' or 'small' specified", 2.0, js.call((SchemeProcedure)js.eval("(size {block0})"), state));
+
+            System.out.println("passed");
 //
-//            SchemeProcedure rsize = (SchemeProcedure)js.eval("(roomSize {room0})");
-//
-//            System.out.println(js.call(rsize, state));
-//
-//            System.out.print("testing argmax... ");
-//            SchemeProcedure argmax = (SchemeProcedure)js.call("argmax", state);
-//            //TODO: more argmax tests
-//            Assert.assertEquals("testing argmax on rooms", "room0" ,js.call(argmax, js.eval("room"), js.eval("roomSize")));
-//            System.out.println("passed ");
+
+            //TODO: expand tests here
+            System.out.print("testing room size argmax... ");
+            SchemeProcedure argmax = (SchemeProcedure)js.call("argmax", state);
+            SchemeProcedure rooms_argmax = (SchemeProcedure)js.call(argmax, js.eval("room"));
+
+
+            Assert.assertEquals("room0 is biggest", "room0" ,js.call(rooms_argmax, js.eval("size")));
+
+
+
+            System.out.println("passed");
+
+            System.out.print("testing room size argmin...");
+            SchemeProcedure argmin = (SchemeProcedure)js.call("argmin", state);
+            SchemeProcedure rooms_argmin = (SchemeProcedure)js.call(argmin, js.eval("room"));
+
+            Assert.assertTrue("room 1 or room2 are argmin", js.call(rooms_argmin, js.eval("size")).equals("room1") || js.call(rooms_argmin, js.eval("size")).equals("room2") );
+            System.out.println("passed");
 //
 //
 //            //testing null function

@@ -72,6 +72,7 @@ public class DataHelpers {
         CleanupAgent agent = null;
 
         //trim first and last character
+        System.out.println(stateString.length());
         String trimmed = stateString.substring(1, stateString.length() - 1);
 
         //rough split into objects

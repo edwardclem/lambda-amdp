@@ -8,9 +8,9 @@
 
 (define class
     (lambda (type)
-        (lambda (entity)
+        (lambda (object)
             (lambda (state)
-                (Attributes.checkClass type entity state)))))
+                (Attributes.checkClass type object state)))))
 
 ;class predicates
 (define door
@@ -48,6 +48,11 @@
 (define basket
     (shape {basket}))
 
+(define size
+    (lambda (object)
+        (lambda (state)
+            (Attributes.size object state))))
+
 ;DETERMINERS
 ;used for definite determiner
 (define satisfiesPredicate
@@ -60,6 +65,20 @@
     (lambda (state)
         (lambda (predicate)
             (Determiners.definiteDeterminer state predicate))))
+
+;ARGMAX/MIN
+;argmax also initialized wrt state
+(define argmax
+    (lambda (state)
+        (lambda (predicate)
+            (lambda (measure)
+                (Determiners.argmax state measure predicate)))))
+
+(define argmin
+    (lambda (state)
+        (lambda (predicate)
+            (lambda (measure)
+                (Determiners.argmin state measure predicate)))))
 
 ;RELATIONS
 ;near predicate

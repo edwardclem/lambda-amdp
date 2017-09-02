@@ -146,6 +146,9 @@ public class AMTConverter {
 
             in.close();
 
+            //System.out.println(beforeStateString1.toString());
+            System.out.println(loc);
+
             return DataHelpers.loadStateFromString(beforeStateString1.toString());
         }
     }
@@ -342,18 +345,18 @@ public class AMTConverter {
     public static void main(String[] args){
         //TODO: exception handling
         try{
-            List<String> demonstrations = loadDemonstrationsFromCSV("data/amt/amt_test_1.csv");
+            List<String> demonstrations = loadDemonstrationsFromCSV("data/dataset_2/amt_results/amt_9_1_results.csv");
             Collections.shuffle(demonstrations);
 
             demonstrations = demonstrations.subList(0, 110);
 
             Pair<List<String>, List<String>> split = trainTestSplit(demonstrations, 0.8);
 
-            String fileRoot = "data/amt/amt_test_combined1";
+            String fileRoot = "data/dataset_2/bdms";
 
-            String trainFilename = fileRoot + "/train2.bdm";
+            String trainFilename = fileRoot + "/train_9_1.bdm";
 
-            String testFileName = fileRoot + "/test2.bdm";
+            String testFileName = fileRoot + "/test_9_1.bdm";
 
             saveDemonstrations(trainFilename, split.first());
             saveDemonstrations(testFileName, split.second());

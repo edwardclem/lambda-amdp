@@ -77,4 +77,37 @@ public class Attributes {
             return Pair.of(((Integer)objInstance.get("x")).doubleValue(), ((Integer)objInstance.get("y")).doubleValue());
         }
     }
+
+    /**
+     * Returns the size of an object. If a region, use the dimensions of the region,
+     * if not, check the color attribute (blech)
+     * TODO: fix this when we fix our state description
+     * TODO: these should always be integers I think?
+     * @param obj
+     * @param state
+     * @return
+     */
+    public static double size(String obj, OOState state){
+
+        ObjectInstance objInstance = state.object(obj);
+
+        if (isRegion(obj, state)){
+            Integer right = ((Integer)objInstance.get("right"));
+            Integer left = ((Integer)objInstance.get("left"));
+            Integer top = ((Integer)objInstance.get("top"));
+            Integer bottom = ((Integer)objInstance.get("bottom"));
+
+            Integer size = (right - left)*(top - bottom);
+
+            return size.doubleValue();
+        } else {
+            String color = (String)objInstance.get("colour");
+
+            switch (color){
+                case "large": return 3.0;
+                case "small": return 1.0;
+                default: return 2.0;
+            }
+        }
+    }
 }
