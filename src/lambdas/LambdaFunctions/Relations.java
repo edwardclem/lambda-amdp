@@ -26,6 +26,7 @@ public class Relations {
     }
 
     public static Boolean in(String obj1, String obj2, OOState state){
+
         //Check conditions for valid check
         if (!obj1.equals("") && !obj2.equals("") && Attributes.isRegion(obj2, state) && !Attributes.isRegion(obj1, state)){
             //get location of first point

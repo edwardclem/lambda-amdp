@@ -31,8 +31,10 @@ left :- PP/NP\NP : (lambda $0:e (lambda $1:e (left:<e,<e,t>> $1 $0)))
 right :- PP/NP\NP : (lambda $0:e (lambda $1:e (right:<e,<e,t>> $1 $0)))
 
 //quantifiers
-//largest :- NP/N : (lambda $0:<e,t> (argmax:<<e,t>,<<e,n>,e>> $0 size:<e,n>))
-//smallest :- NP/N : (lambda $0:<e,t> (argmin:<<e,t>,<<e,n>,e>> $0 size:<e,n>))
+largest :- NP/N : (lambda $0:<e,t> (argmax:<<e,t>,<<e,n>,e>> $0 size:<e,n>))
+big :- NP/N : (lambda $0:<e,t> (argmax:<<e,t>,<<e,n>,e>> $0 size:<e,n>))
+smallest :- NP/N : (lambda $0:<e,t> (argmin:<<e,t>,<<e,n>,e>> $0 size:<e,n>))
+small :- NP/N : (lambda $0:<e,t> (argmin:<<e,t>,<<e,n>,e>> $0 size:<e,n>))
 //closest to :- (NP\N)/NP : (lambda $0:e (lambda $1:<e,t> (argmin:<<e,t>,<<e,n>,e>> $1 (dist:<e,<e,n>> $0))))
 //nearest to :- (NP\N)/NP : (lambda $0:e (lambda $1:<e,t> (argmin:<<e,t>,<<e,n>,e>> $1 (dist:<e,<e,n>> $0))))
 //"get the nearest block" - implied referent is the agent

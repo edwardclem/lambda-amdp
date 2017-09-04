@@ -159,21 +159,19 @@ public class LambdaTest {
 
             //TODO: expand tests here
             System.out.print("testing room size argmax... ");
-            SchemeProcedure argmax = (SchemeProcedure)js.call("argmax", state);
-            SchemeProcedure rooms_argmax = (SchemeProcedure)js.call(argmax, js.eval("room"));
+            SchemeProcedure argmax = (SchemeProcedure)js.call("argmaxState", state);
 
 
-            Assert.assertEquals("room0 is biggest", "room0" ,js.call(rooms_argmax, js.eval("size")));
+            Assert.assertEquals("room0 is biggest", "room0" ,js.call(argmax, js.eval("room"), js.eval("size")));
 
 
 
             System.out.println("passed");
 
             System.out.print("testing room size argmin...");
-            SchemeProcedure argmin = (SchemeProcedure)js.call("argmin", state);
-            SchemeProcedure rooms_argmin = (SchemeProcedure)js.call(argmin, js.eval("room"));
+            SchemeProcedure argmin = (SchemeProcedure)js.call("argminState", state);
 
-            Assert.assertTrue("room 1 or room2 are argmin", js.call(rooms_argmin, js.eval("size")).equals("room1") || js.call(rooms_argmin, js.eval("size")).equals("room2") );
+            Assert.assertTrue("room 1 or room2 are argmin", js.call(argmin, js.eval("room"), js.eval("size")).equals("room1") || js.call(argmin, js.eval("room"), js.eval("size")).equals("room2") );
             System.out.println("passed");
 //
 //

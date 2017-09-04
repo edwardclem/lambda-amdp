@@ -348,7 +348,7 @@ public class AMTConverter {
             List<String> demonstrations = loadDemonstrationsFromCSV("data/dataset_2/amt_results/amt_9_1_results.csv");
             Collections.shuffle(demonstrations);
 
-            demonstrations = demonstrations.subList(0, 110);
+            //demonstrations = demonstrations.subList(0, 110);
 
             Pair<List<String>, List<String>> split = trainTestSplit(demonstrations, 0.8);
 

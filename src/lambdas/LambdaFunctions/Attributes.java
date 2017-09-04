@@ -101,13 +101,21 @@ public class Attributes {
 
             return size.doubleValue();
         } else {
-            String color = (String)objInstance.get("colour");
+            //check if object is an agent
 
-            switch (color){
-                case "large": return 3.0;
-                case "small": return 1.0;
-                default: return 2.0;
+            if (checkClass("agent", obj, state)){
+                return 2.0; //default size
+            } else {
+                String color = (String)objInstance.get("colour");
+
+                switch (color){
+                    case "large": return 3.0;
+                    case "small": return 1.0;
+                    default: return 2.0;
+                }
             }
+
+
         }
     }
 }

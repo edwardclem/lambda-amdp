@@ -64,6 +64,9 @@ public class BurlapMultiValidator<DI extends ILabeledDataItem<Sentence,List<Trip
                 js.setGlobalValue("initialState", initialState);
                 //NOTE:using strict definite determiner
                 js.eval("(define the (definiteDeterminer initialState))");
+                //define argmin and argmax wrt initial state
+                js.eval("(define argmax (argmaxState initialState))");
+                js.eval("(define argmin (argminState initialState))");
                 CleanupState after = (CleanupState) triple.second();
                 SchemeProcedure pf = (SchemeProcedure)js.eval(pred);
                 Boolean istrue = (boolean) js.call(pf,after);

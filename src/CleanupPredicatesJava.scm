@@ -68,17 +68,15 @@
 
 ;ARGMAX/MIN
 ;argmax also initialized wrt state
-(define argmax
+(define argmaxState
     (lambda (state)
-        (lambda (predicate)
-            (lambda (measure)
-                (Determiners.argmax state measure predicate)))))
+        (lambda (predicate measure)
+                (Determiners.argmax state measure predicate))))
 
-(define argmin
+(define argminState
     (lambda (state)
-        (lambda (predicate)
-            (lambda (measure)
-                (Determiners.argmin state measure predicate)))))
+        (lambda (predicate measure)
+                (Determiners.argmin state measure predicate))))
 
 ;RELATIONS
 ;near predicate
