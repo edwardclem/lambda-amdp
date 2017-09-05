@@ -1,9 +1,14 @@
 package data;
 
+import amdp.cleanup.CleanupDomain;
+import amdp.cleanup.CleanupVisualiser;
 import amdp.cleanup.state.*;
 import burlap.mdp.core.oo.state.OOState;
 import burlap.mdp.core.oo.state.ObjectInstance;
 import burlap.mdp.core.state.State;
+import burlap.mdp.singleagent.oo.OOSADomain;
+import burlap.shell.visual.VisualExplorer;
+import burlap.visualizer.Visualizer;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -241,5 +246,26 @@ public class DataHelpers {
         }
 
         return new CleanupState(agent, blocks, doors, rooms);
+    }
+
+    /**
+     * Visualizes the given state as a CleanupDomain configuration.
+     * @param state
+     */
+    public static void VisualizeState(State state) {
+
+
+        CleanupDomain dgen = new CleanupDomain();
+        dgen.includeDirectionAttribute(true);
+        dgen.includePullAction(true);
+        dgen.includeWallPF_s(true);
+        dgen.includeLockableDoors(true);
+        dgen.setLockProbability(0.5);
+        OOSADomain domain = dgen.generateDomain();
+
+        Visualizer v = CleanupVisualiser.getVisualizer("/home/edwardwilliams/research/amdp/data/resources/robotImages");
+        VisualExplorer exp = new VisualExplorer(domain, v, state);
+
+        exp.initGUI();
     }
 }

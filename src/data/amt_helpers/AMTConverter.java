@@ -1,6 +1,8 @@
-package data;
+package data.amt_helpers;
 
 import amdp.cleanup.state.CleanupState;
+import data.BurlapMultiDemonstration;
+import data.DataHelpers;
 import edu.cornell.cs.nlp.spf.data.sentence.Sentence;
 import edu.cornell.cs.nlp.utils.composites.Pair;
 import edu.cornell.cs.nlp.utils.composites.Triplet;

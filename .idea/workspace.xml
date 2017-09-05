@@ -2,18 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f8167cb4-0185-41ce-a9ee-7a7ccb24cde6" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/dataset_2/bdms_small/test_9_1.bdm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/dataset_2/bdms_small/train_9_1.bdm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data/amt_helpers/AMTConverter.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/amt/amt_allforward/testFixed.bdm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/amt/amt_allforward/trainFixed.bdm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/data/AMTConverter.java" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/dataset_2/bdms/test_9_1.bdm" afterPath="$PROJECT_DIR$/data/dataset_2/bdms/test_9_1.bdm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/dataset_2/bdms/train_9_1.bdm" afterPath="$PROJECT_DIR$/data/dataset_2/bdms/train_9_1.bdm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/resources/burlap.seed.lex" afterPath="$PROJECT_DIR$/data/resources/burlap.seed.lex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CleanupPredicatesJava.scm" afterPath="$PROJECT_DIR$/src/CleanupPredicatesJava.scm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/data/AMTConverter.java" afterPath="$PROJECT_DIR$/src/data/AMTConverter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/lambdas/LambdaFunctions/Attributes.java" afterPath="$PROJECT_DIR$/src/lambdas/LambdaFunctions/Attributes.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/lambdas/LambdaFunctions/Relations.java" afterPath="$PROJECT_DIR$/src/lambdas/LambdaFunctions/Relations.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/lambdas/LambdaTests/LambdaTest.java" afterPath="$PROJECT_DIR$/src/lambdas/LambdaTests/LambdaTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/validation/BurlapMultiValidator.java" afterPath="$PROJECT_DIR$/src/validation/BurlapMultiValidator.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/data/DataHelpers.java" afterPath="$PROJECT_DIR$/src/data/DataHelpers.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -53,7 +47,7 @@
               <entry file="file://$PROJECT_DIR$/data/resources/burlap.seed.lex">
                 <provider selected="true" editor-type-id="text-editor">
                   <state relative-caret-position="453">
-                    <caret line="33" column="76" lean-forward="true" selection-start-line="33" selection-start-column="76" selection-end-line="33" selection-end-column="76" />
+                    <caret line="33" column="76" lean-forward="false" selection-start-line="33" selection-start-column="76" selection-end-line="33" selection-end-column="76" />
                     <folding />
                   </state>
                 </provider>
@@ -66,41 +60,71 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="test_9_1.bdm" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/dataset_2/bdms_small/test_9_1.bdm">
+      <file leaf-file-name="global.log" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/experiments/weakly/amtlogs_full_dataset/global.log">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="222">
-              <caret line="270" column="666" lean-forward="false" selection-start-line="270" selection-start-column="664" selection-end-line="270" selection-end-column="666" />
+            <state relative-caret-position="-1072">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="train_9_1.bdm" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/dataset_2/bdms_small/train_9_1.bdm">
+      <file leaf-file-name="merged_9_5_train.bdm" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/merged_9_5/merged_9_5_train.bdm">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="218">
-              <caret line="1127" column="15" lean-forward="true" selection-start-line="1127" selection-start-column="15" selection-end-line="1127" selection-end-column="15" />
+            <state relative-caret-position="517">
+              <caret line="21747" column="4" lean-forward="false" selection-start-line="21747" selection-start-column="4" selection-end-line="21747" selection-end-column="4" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AMTConverter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/data/AMTConverter.java">
+      <file leaf-file-name="testFixed.bdm" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/amt/amt_allforward/testFixed.bdm">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="298">
-              <caret line="357" column="0" lean-forward="true" selection-start-line="357" selection-start-column="0" selection-end-line="357" selection-end-column="0" />
+            <state relative-caret-position="198">
+              <caret line="11" column="4" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="3105" selection-end-column="4" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test_9_1.bdm" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/dataset_2/bdms/test_9_1.bdm">
+      <file leaf-file-name="trainFixed.bdm" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/amt/amt_allforward/trainFixed.bdm">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="406">
-              <caret line="2336" column="320" lean-forward="false" selection-start-line="2336" selection-start-column="320" selection-end-line="2336" selection-end-column="320" />
+            <state relative-caret-position="477">
+              <caret line="12387" column="4" lean-forward="true" selection-start-line="12387" selection-start-column="4" selection-end-line="12387" selection-end-column="4" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="testOld.bdm" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/amt/amt_allforward/testOld.bdm">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="3093" column="0" lean-forward="false" selection-start-line="3093" selection-start-column="0" selection-end-line="3093" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="trainOld.bdm" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/amt/amt_allforward/trainOld.bdm">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="611">
+              <caret line="12377" column="249" lean-forward="false" selection-start-line="12377" selection-start-column="243" selection-end-line="12377" selection-end-column="249" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GenerateOnlyWrongParses.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/amt/amt_allforward/GenerateOnlyWrongParses.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="20" column="37" lean-forward="true" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="37" />
               <folding />
             </state>
           </provider>
@@ -109,58 +133,28 @@
       <file leaf-file-name="train_9_1.bdm" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/data/dataset_2/bdms/train_9_1.bdm">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="3783" column="14" lean-forward="true" selection-start-line="3783" selection-start-column="14" selection-end-line="3783" selection-end-column="14" />
+            <state relative-caret-position="261">
+              <caret line="9346" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="9358" selection-end-column="4" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="amt_9_1_results.csv" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/dataset_2/amt_results/amt_9_1_results.csv">
+      <file leaf-file-name="merged_9_5_test.bdm" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/merged_9_5/merged_9_5_test.bdm">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="16200">
-              <caret line="900" column="1184" lean-forward="true" selection-start-line="900" selection-start-column="1184" selection-end-line="900" selection-end-column="1184" />
+            <state relative-caret-position="442">
+              <caret line="5445" column="4" lean-forward="false" selection-start-line="5445" selection-start-column="4" selection-end-line="5445" selection-end-column="4" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="train.bdm" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/amt/amt_allforward_edited_8_24/train.bdm">
+      <file leaf-file-name="test_9_1.bdm" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/dataset_2/bdms/test_9_1.bdm">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-225099">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="global.log" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/experiments/weakly/amtlogs_9_1_dataset_only/global.log">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-882">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test.out" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/experiments/weakly/amtlogs_9_1_dataset_only/test.out">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test.log" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/experiments/weakly/amtlogs_9_1_dataset_only/test.log">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="492">
+              <caret line="2338" column="4" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="2338" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -177,8 +171,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>right</find>
-      <find>room</find>
       <find>left</find>
       <find>isRegion</find>
       <find>false</find>
@@ -205,8 +197,10 @@
       <find>right of</find>
       <find>gent0</find>
       <find>{gent0 (agent)</find>
-      <find>block3</find>
+      <find>incorrect</find>
       <find>{gent0</find>
+      <find>block0</find>
+      <find>block3</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -220,12 +214,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/data/dataset_2/goToSmallestGreenRoom/3/pre.txt" />
-        <option value="$PROJECT_DIR$/data/dataset_2/goToSmallestGreenRoom/3/post.txt" />
-        <option value="$PROJECT_DIR$/data/dataset_2/goToSmallestGreenRoom/4/pre.txt" />
-        <option value="$PROJECT_DIR$/data/dataset_2/goToSmallestGreenRoom/4/post.txt" />
-        <option value="$PROJECT_DIR$/data/dataset_2/goToSmallestGreenRoom/5/pre.txt" />
-        <option value="$PROJECT_DIR$/data/dataset_2/goToSmallestGreenRoom/5/post.txt" />
         <option value="$PROJECT_DIR$/data/dataset_2/goToBiggestGreenRoom/1/pre.txt" />
         <option value="$PROJECT_DIR$/data/dataset_2/goToBiggestGreenRoom/1/post.txt" />
         <option value="$PROJECT_DIR$/data/dataset_2/goToBiggestGreenRoom/2/pre.txt" />
@@ -257,7 +245,6 @@
         <option value="$PROJECT_DIR$/data/dataset_2/test.csv" />
         <option value="$PROJECT_DIR$/data/resources/burlap.preds.ont" />
         <option value="$PROJECT_DIR$/data/resources/burlap.types" />
-        <option value="$PROJECT_DIR$/src/data/DataHelpers.java" />
         <option value="$PROJECT_DIR$/data/dataset_2/room_argmax/goToBiggestRedroom/4/post.txt" />
         <option value="$PROJECT_DIR$/data/dataset_2/room_argmax/goToTheSmallestRoom/2/pre.txt" />
         <option value="$PROJECT_DIR$/experiments/weakly/weakly_amt_9_1_dataset.exp" />
@@ -271,6 +258,13 @@
         <option value="$PROJECT_DIR$/src/data/AMTConverter.java" />
         <option value="$PROJECT_DIR$/data/dataset_2/bdms/test_9_1.bdm" />
         <option value="$PROJECT_DIR$/data/dataset_2/bdms/train_9_1.bdm" />
+        <option value="$PROJECT_DIR$/src/data/DataHelpers.java" />
+        <option value="$PROJECT_DIR$/src/data/amt_helpers/AMTConverter.java" />
+        <option value="$PROJECT_DIR$/src/data/GenerateVisualizations.java" />
+        <option value="$PROJECT_DIR$/experiments/weakly/weakly_amt_full.exp" />
+        <option value="$PROJECT_DIR$/experiments/weakly/amtlogs_full_dataset/global.log" />
+        <option value="$PROJECT_DIR$/data/merged_9_5/merged_9_5_train.bdm" />
+        <option value="$PROJECT_DIR$/data/merged_9_5/merged_9_5_test.bdm" />
       </list>
     </option>
   </component>
@@ -330,7 +324,39 @@
               <item name="lambda-amdp" type="b2602c69:ProjectViewProjectNode" />
               <item name="lambda-amdp" type="462c0819:PsiDirectoryNode" />
               <item name="data" type="462c0819:PsiDirectoryNode" />
-              <item name="weakdebug" type="462c0819:PsiDirectoryNode" />
+              <item name="amt" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lambda-amdp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lambda-amdp" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+              <item name="amt" type="462c0819:PsiDirectoryNode" />
+              <item name="amt_allforward" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lambda-amdp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lambda-amdp" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+              <item name="blue_room" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lambda-amdp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lambda-amdp" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+              <item name="dataset_2" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lambda-amdp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lambda-amdp" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+              <item name="dataset_2" type="462c0819:PsiDirectoryNode" />
+              <item name="bdms" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lambda-amdp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lambda-amdp" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+              <item name="merged_9_5" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="lambda-amdp" type="b2602c69:ProjectViewProjectNode" />
@@ -348,7 +374,7 @@
               <item name="lambda-amdp" type="462c0819:PsiDirectoryNode" />
               <item name="experiments" type="462c0819:PsiDirectoryNode" />
               <item name="weakly" type="462c0819:PsiDirectoryNode" />
-              <item name="amtlogs_9_1_dataset_only" type="462c0819:PsiDirectoryNode" />
+              <item name="amtlogs_full_dataset" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -367,14 +393,131 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/lib" />
     <property name="SearchEverywhereHistoryKey" value="OO&#9;PSI&#9;JAVA://burlap.mdp.core.oo.state.OOState&#10;recall&#9;PSI&#9;JAVA://edu.cornell.cs.nlp.spf.test.ccg.lambda.SingleSentencePartialCreditTestingStatistics#recall" />
     <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.importing" />
+    <property name="add_unversioned_files" value="$PROJECT_DIR$/experiments/weakly/amtlogs_full_dataset/global.log" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/experiments/weakly" />
+      <recent name="$PROJECT_DIR$/data/merged_9_5" />
+      <recent name="$PROJECT_DIR$/data/blue_room" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/data/dataset_2/amt_results" />
     </key>
+  </component>
+  <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
+    <UpdatedFiles>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Updated from server" />
+        <option name="myStatusName" value="Changed on server" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="CHANGED_ON_SERVER" />
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Updated" />
+          <option name="myStatusName" value="Changed" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="UPDATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lib/amdp.jar</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/lambdas/LambdaPlanning/PlanEpisodesForDataset.java</PATH>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Created" />
+          <option name="myStatusName" value="Created" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="CREATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/data/amt/amt_allforward/GenerateOnlyWrongParses.py</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/data/amt/amt_allforward/testFixed.bdm</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/data/amt/amt_allforward/trainFixed.bdm</PATH>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Deleted" />
+          <option name="myStatusName" value="Deleted" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="true" />
+          <option name="myId" value="REMOVED_FROM_REPOSITORY" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Restored" />
+          <option name="myStatusName" value="Will be restored" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="RESTORED" />
+        </FILE-GROUP>
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Modified" />
+        <option name="myStatusName" value="Modified" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MODIFIED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Skipped" />
+        <option name="myStatusName" value="Skipped" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SKIPPED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with conflicts" />
+        <option name="myStatusName" value="Will be merged with conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_CONFLICTS" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with tree conflicts" />
+        <option name="myStatusName" value="Merged with tree conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with property conflicts" />
+        <option name="myStatusName" value="Will be merged with property conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged" />
+        <option name="myStatusName" value="Will be merged" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Not in repository" />
+        <option name="myStatusName" value="Not in repository" />
+        <option name="mySupportsDeletion" value="true" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="UNKNOWN" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally added" />
+        <option name="myStatusName" value="Locally added" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_ADDED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally removed" />
+        <option name="myStatusName" value="Locally removed" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_REMOVED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Switched" />
+        <option name="myStatusName" value="Switched" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SWITCHED" />
+      </FILE-GROUP>
+    </UpdatedFiles>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -388,7 +531,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.9_1_dataset_alone">
+  <component name="RunManager" selected="Application.all_data_merged">
     <configuration name="2 forward exp" type="Application" factoryName="Application">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="experiments.LambdaExpRunner" />
@@ -420,14 +563,33 @@
     <configuration name="AMTConverter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
+          <option name="PATTERN" value="data.amt_helpers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="data.amt_helpers.AMTConverter" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="lambda-amdp" />
+      <envs />
+    </configuration>
+    <configuration name="GenerateVisualizations" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
           <option name="PATTERN" value="data.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="data.AMTConverter" />
-      <option name="VM_PARAMETERS" value="" />
-      <option name="PROGRAM_PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="MAIN_CLASS_NAME" value="data.GenerateVisualizations" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="ENABLE_SWING_INSPECTOR" value="false" />
@@ -872,6 +1034,20 @@
       <module name="lambda-amdp" />
       <envs />
     </configuration>
+    <configuration name="all_data_merged" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" value="experiments.LambdaExpRunner" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="experiments/weakly/weakly_amt_full.exp" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="lambda-amdp" />
+      <envs />
+    </configuration>
     <configuration name="combined 1 exp" type="Application" factoryName="Application">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="experiments.LambdaExpRunner" />
@@ -886,24 +1062,27 @@
       <module name="lambda-mdp" />
       <envs />
     </configuration>
-    <list size="10">
+    <list size="12">
       <item index="0" class="java.lang.String" itemvalue="Application.all forward exp" />
       <item index="1" class="java.lang.String" itemvalue="Application.9_1_dataset_alone" />
-      <item index="2" class="java.lang.String" itemvalue="Application.2 forward exp" />
-      <item index="3" class="java.lang.String" itemvalue="Application.Reverse1" />
-      <item index="4" class="java.lang.String" itemvalue="Application.combined 1 exp" />
-      <item index="5" class="java.lang.String" itemvalue="Application.LambdaTestNear" />
-      <item index="6" class="java.lang.String" itemvalue="Application.AMTConverter" />
-      <item index="7" class="java.lang.String" itemvalue="Application.TestStringLambdaWithStringState" />
-      <item index="8" class="java.lang.String" itemvalue="Application.PlanEpisodesForDataset" />
-      <item index="9" class="java.lang.String" itemvalue="Application.LambdaTest" />
+      <item index="2" class="java.lang.String" itemvalue="Application.all_data_merged" />
+      <item index="3" class="java.lang.String" itemvalue="Application.2 forward exp" />
+      <item index="4" class="java.lang.String" itemvalue="Application.Reverse1" />
+      <item index="5" class="java.lang.String" itemvalue="Application.combined 1 exp" />
+      <item index="6" class="java.lang.String" itemvalue="Application.LambdaTestNear" />
+      <item index="7" class="java.lang.String" itemvalue="Application.AMTConverter" />
+      <item index="8" class="java.lang.String" itemvalue="Application.TestStringLambdaWithStringState" />
+      <item index="9" class="java.lang.String" itemvalue="Application.PlanEpisodesForDataset" />
+      <item index="10" class="java.lang.String" itemvalue="Application.LambdaTest" />
+      <item index="11" class="java.lang.String" itemvalue="Application.GenerateVisualizations" />
     </list>
     <recent_temporary>
-      <list size="4">
-        <item index="0" class="java.lang.String" itemvalue="Application.AMTConverter" />
-        <item index="1" class="java.lang.String" itemvalue="Application.LambdaTest" />
-        <item index="2" class="java.lang.String" itemvalue="Application.TestStringLambdaWithStringState" />
-        <item index="3" class="java.lang.String" itemvalue="Application.PlanEpisodesForDataset" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Application.GenerateVisualizations" />
+        <item index="1" class="java.lang.String" itemvalue="Application.AMTConverter" />
+        <item index="2" class="java.lang.String" itemvalue="Application.LambdaTest" />
+        <item index="3" class="java.lang.String" itemvalue="Application.TestStringLambdaWithStringState" />
+        <item index="4" class="java.lang.String" itemvalue="Application.PlanEpisodesForDataset" />
       </list>
     </recent_temporary>
   </component>
@@ -954,7 +1133,14 @@
       <option name="project" value="LOCAL" />
       <updated>1504384380684</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="running experiment with new data">
+      <created>1504563746641</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1504563746641</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -962,32 +1148,32 @@
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32879582" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32946378" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34764397" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34764397" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32968128" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32879582" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17965727" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27529022" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32460734" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32460734" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="combo" />
       <window_info id="Dynamic Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -998,7 +1184,8 @@
     <MESSAGE value="right and left predicates + tests" />
     <MESSAGE value="new strict definite determiner function" />
     <MESSAGE value="new predicates + test + ontology, 9/1 AMT HIT results" />
-    <option name="LAST_COMMIT_MESSAGE" value="new predicates + test + ontology, 9/1 AMT HIT results" />
+    <MESSAGE value="running experiment with new data" />
+    <option name="LAST_COMMIT_MESSAGE" value="running experiment with new data" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1021,186 +1208,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/lambdas/LambdaTests/TestStringLambdaWithStringState.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="558">
-          <caret line="59" column="0" lean-forward="false" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/dataset_2/indefinite_determiner/takeAChairToTheRedRoom/1/pre.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="567">
-          <caret line="67" column="1" lean-forward="false" selection-start-line="67" selection-start-column="1" selection-end-line="67" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/dataset_2/indefinite_determiner/takeAChairToTheRedRoom/1/post.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="44" column="14" lean-forward="false" selection-start-line="44" selection-start-column="14" selection-end-line="44" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/dataset_2/indefinite_determiner/takeAChairToTheRedRoom/2/pre.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="567">
-          <caret line="67" column="1" lean-forward="false" selection-start-line="67" selection-start-column="1" selection-end-line="67" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/dataset_2/indefinite_determiner/takeAChairToTheRedRoom/2/post.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1206">
-          <caret line="67" column="1" lean-forward="false" selection-start-line="67" selection-start-column="1" selection-end-line="67" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/dataset_2/indefinite_determiner/takeAChairToTheRedRoom/3/pre.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="567">
-          <caret line="67" column="1" lean-forward="false" selection-start-line="67" selection-start-column="1" selection-end-line="67" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/dataset_2/indefinite_determiner/takeAChairToTheRedRoom/3/post.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="333">
-          <caret line="54" column="8" lean-forward="false" selection-start-line="54" selection-start-column="8" selection-end-line="54" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/dataset_2/indefinite_determiner/takeAChairToTheRedRoom/4/pre.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="567">
-          <caret line="55" column="1" lean-forward="false" selection-start-line="55" selection-start-column="1" selection-end-line="55" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/dataset_2/indefinite_determiner/takeAChairToTheRedRoom/4/post.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="567">
-          <caret line="55" column="1" lean-forward="false" selection-start-line="55" selection-start-column="1" selection-end-line="55" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/dataset_2/indefinite_determiner/takeAChairToTheRedRoom/5/post.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="567">
-          <caret line="55" column="1" lean-forward="false" selection-start-line="55" selection-start-column="1" selection-end-line="55" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/dataset_2/indefinite_determiner/takeAChairToTheRedRoom/5/pre.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/weakdebug/simplePreds.bdm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/dataset_2/test.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" column="81" lean-forward="false" selection-start-line="1" selection-start-column="81" selection-end-line="1" selection-end-column="81" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/resources/burlap.types">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" column="31" lean-forward="false" selection-start-line="1" selection-start-column="31" selection-end-line="1" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/data/DataHelpers.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="74" column="49" lean-forward="false" selection-start-line="74" selection-start-column="49" selection-end-line="74" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/data/BurlapMultiDemonstration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/dataset_2/room_argmax/goToBiggestRedroom/5/post.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/dataset_2/room_argmax/goToBiggestRedroom/5/post.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/dataset_2/room_argmax/goToBiggestRedroom/4/pre.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/dataset_2/room_argmax/goToBiggestRedroom/4/pre.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-199">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/dataset_2/room_argmax/goToBiggestRedroom/4/post.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/dataset_2/room_argmax/goToBiggestRedroom/4/post.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="755">
-          <caret line="49" column="1" lean-forward="false" selection-start-line="49" selection-start-column="1" selection-end-line="49" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/dataset_2/room_argmax/goToTheSmallestRoom/2/post.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/dataset_2/room_argmax/goToTheSmallestRoom/2/post.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="413">
-          <caret line="39" column="15" lean-forward="false" selection-start-line="39" selection-start-column="15" selection-end-line="39" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/data/dataset_2/room_argmax/goToTheSmallestRoom/2/pre.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -1257,7 +1264,7 @@
     <entry file="file://$PROJECT_DIR$/data/resources/burlap.seed.lex">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="453">
-          <caret line="33" column="76" lean-forward="true" selection-start-line="33" selection-start-column="76" selection-end-line="33" selection-end-column="76" />
+          <caret line="33" column="76" lean-forward="false" selection-start-line="33" selection-start-column="76" selection-end-line="33" selection-end-column="76" />
           <folding />
         </state>
       </provider>
@@ -1286,26 +1293,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/validation/BurlapMultiValidator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="68" column="67" lean-forward="false" selection-start-line="68" selection-start-column="67" selection-end-line="68" selection-end-column="67" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/lambdas/LambdaFunctions/Attributes.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="298">
           <caret line="106" column="27" lean-forward="false" selection-start-line="106" selection-start-column="27" selection-end-line="106" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/experiments/weakly/weakly_amt_9_1_dataset.exp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="19" column="67" lean-forward="false" selection-start-line="19" selection-start-column="67" selection-end-line="19" selection-end-column="67" />
           <folding />
         </state>
       </provider>
@@ -1334,30 +1325,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/dataset_2/bdms/test_9_1.bdm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="406">
-          <caret line="2336" column="320" lean-forward="false" selection-start-line="2336" selection-start-column="320" selection-end-line="2336" selection-end-column="320" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/CleanupPredicatesJava.scm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="73" column="49" lean-forward="false" selection-start-line="73" selection-start-column="42" selection-end-line="73" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/dataset_2/bdms/train_9_1.bdm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="3783" column="14" lean-forward="true" selection-start-line="3783" selection-start-column="14" selection-end-line="3783" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/data/dataset_2/bdms_small/train_9_1.bdm">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="218">
@@ -1374,22 +1341,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/data/AMTConverter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="357" column="0" lean-forward="true" selection-start-line="357" selection-start-column="0" selection-end-line="357" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/amt/amt_allforward_edited_8_24/train.bdm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-225099">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/experiments/weakly/amtlogs_9_1_dataset_only/global.log">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-882">
@@ -1398,7 +1349,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/experiments/weakly/amtlogs_9_1_dataset_only/test.log">
+    <entry file="file://$PROJECT_DIR$/experiments/weakly/amtlogs_9_1_dataset_only/test.out">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1406,9 +1357,259 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/experiments/weakly/amtlogs_9_1_dataset_only/test.out">
+    <entry file="file://$PROJECT_DIR$/experiments/weakly/amtlogs_9_1_dataset_only/test.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1234">
+          <caret line="1046" column="55" lean-forward="false" selection-start-line="1046" selection-start-column="46" selection-end-line="1046" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/experiments/params.inc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="11" lean-forward="false" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/experiments/weakly/weakly_amt_9_1_dataset.exp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="19" column="67" lean-forward="false" selection-start-line="19" selection-start-column="67" selection-end-line="19" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/amt/amt_allforward_edited_8_24/train.bdm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-223633">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data/amt_helpers/AMTConverter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="25" column="13" lean-forward="false" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/validation/validationtests/MultiValidationTester.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/validation/BurlapMultiValidator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="68" column="67" lean-forward="false" selection-start-line="68" selection-start-column="67" selection-end-line="68" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/blue_room/goToBlueRoom/pre1.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/amt/amt_allforward_edited_8_24/toBlueChair.bdm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data/BurlapDemonstration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data/BurlapDemonstrationDataset.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-234">
+          <caret line="20" column="13" lean-forward="false" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data/DataHelpers.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="413">
+          <caret line="269" column="5" lean-forward="false" selection-start-line="269" selection-start-column="5" selection-end-line="269" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data/GenerateVisualizations.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="13" column="59" lean-forward="false" selection-start-line="13" selection-start-column="59" selection-end-line="13" selection-end-column="59" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CleanupPredicatesJava.scm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="73" column="49" lean-forward="false" selection-start-line="73" selection-start-column="42" selection-end-line="73" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/amt/amt_allforward_edited_8_24/trainOld.bdm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="705">
+          <caret line="12383" column="4" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="12387" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/amt/amt_allforward_edited_8_24/testOld.bdm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="17" column="3" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="3105" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/experiments/weakly/weakly_amt_full.exp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="18" lean-forward="false" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/experiments/weakly/parser.inc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/experiments/weakly/model2.inc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data/amt_helpers/generate_HIT.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" column="75" lean-forward="true" selection-start-line="12" selection-start-column="75" selection-end-line="12" selection-end-column="75" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/experiments/weakly/model.inc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/blue_room/HIT_blue.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/amt/amt_allforward/testOld.bdm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="3093" column="0" lean-forward="false" selection-start-line="3093" selection-start-column="0" selection-end-line="3093" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/amt/amt_allforward/trainOld.bdm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="611">
+          <caret line="12377" column="249" lean-forward="false" selection-start-line="12377" selection-start-column="243" selection-end-line="12377" selection-end-column="249" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/amt/amt_allforward/GenerateOnlyWrongParses.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="20" column="37" lean-forward="true" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/dataset_2/bdms/train_9_1.bdm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="9346" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="9358" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/merged_9_5/merged_9_5_train.bdm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="517">
+          <caret line="21747" column="4" lean-forward="false" selection-start-line="21747" selection-start-column="4" selection-end-line="21747" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/amt/amt_allforward/trainFixed.bdm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="477">
+          <caret line="12387" column="4" lean-forward="true" selection-start-line="12387" selection-start-column="4" selection-end-line="12387" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/amt/amt_allforward/testFixed.bdm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="4" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="3105" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/dataset_2/bdms/test_9_1.bdm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="492">
+          <caret line="2338" column="4" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="2338" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/merged_9_5/merged_9_5_test.bdm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="5445" column="4" lean-forward="false" selection-start-line="5445" selection-start-column="4" selection-end-line="5445" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/experiments/weakly/amtlogs_full_dataset/global.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1072">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
