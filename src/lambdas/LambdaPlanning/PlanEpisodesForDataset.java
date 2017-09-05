@@ -22,15 +22,13 @@ import burlap.mdp.singleagent.common.GoalBasedRF;
 import burlap.mdp.singleagent.environment.Environment;
 import burlap.mdp.singleagent.environment.SimulatedEnvironment;
 import burlap.mdp.singleagent.oo.OOSADomain;
+import burlap.shell.visual.VisualExplorer;
 import burlap.statehashing.simple.SimpleHashableStateFactory;
 import burlap.visualizer.Visualizer;
 import data.DataHelpers;
 import jscheme.JScheme;
 
-import java.io.BufferedReader;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -64,62 +62,98 @@ public class PlanEpisodesForDataset {
 //
 //        JScheme js = new JScheme();
 
-        String fileName = "/home/nakul/workspace/lambda-amdp/data/amt/amt_allforward/deleteThisFile.bdm";
+        StateConditionTest l0sc = new StateConditionTest() {
+            @Override
+            public boolean satisfies(State state) {
+                return false;
+            }
+        };
+
+
+
+        GoalBasedRF l0rf = new GoalBasedRF(l0sc, 1., 0.);
+        GoalConditionTF l0tf = new GoalConditionTF(l0sc);
+
+
+
+        Random rand = RandomFactory.getMapped(0);
+        CleanupDomain dgen = new CleanupDomain(l0rf,l0tf, rand);
+        dgen.includeDirectionAttribute(true);
+        dgen.includePullAction(true);
+        dgen.includeWallPF_s(true);
+        dgen.includeLockableDoors(true);
+        dgen.setLockProbability(0.0);
+        OOSADomain domain = dgen.generateDomain();
+
+
+
+        String fileName = "/home/nakul/workspace/lambda-amdp/data/amt/amt_allforward/trainFixed.bdm";
 
         try{
 //            FileReader f = new java.io.FileReader(preds);
 //            js.load(f);
 
+            String basePath = "/home/nakul/workspace/lambda-amdp/data/episodesFromDataTrain/";
+
+            try (Writer writer = new BufferedWriter(new OutputStreamWriter(
+                    new FileOutputStream(basePath+"BDMWithEpisodeFilePath.txt"), "utf-8"))) {
 
 
-            FileReader fileReader = new java.io.FileReader(fileName);
+                FileReader fileReader = new java.io.FileReader(fileName);
 
-            BufferedReader br = new BufferedReader(fileReader);
+                BufferedReader br = new BufferedReader(fileReader);
 
-            BDMReader reader = new BDMReader(br);
+                BDMReader reader = new BDMReader(br);
 
-            while (true){
-                //return next four lines!
-                List<String> lines = reader.readNextFourLines();
-                if(reader.endOfFile) break;
+
+
+                boolean test = true;
+
+                int count = 0;
+
+                List<Episode> episodes = new ArrayList<>();
+
+                while (test) {
+//                test=false;
+                    //return next four lines!
+
+                    List<String> lines = reader.readNextFourLines();
+                    if (reader.endOfFile) break;
 //                System.out.println("0: " +lines.get(0));
 //                System.out.println("1: " +lines.get(1));
 //                System.out.println("2: " +lines.get(2));
 //                System.out.println("3: " +lines.get(3));
-                State startState = DataHelpers.loadStateFromStringCompact(lines.get(1));
-                State terminationState = DataHelpers.loadStateFromStringCompact(lines.get(2));
+                    State startState = DataHelpers.loadStateFromStringCompact(lines.get(1));
+                    State terminationState = DataHelpers.loadStateFromStringCompact(lines.get(2));
+
+                    if(lines.get(0).toUpperCase().matches("^[A-Z].*$")){
+                        writer.write("\n");
+                    }
+                    writer.write(lines.get(0));
+                    writer.write("\n");
+                    writer.write(lines.get(1));
+                    writer.write("\n");
+                    writer.write(lines.get(2));
+                    writer.write("\n");
+                    writer.write(lines.get(3));
+                    writer.write("\n");
+                    writer.write(basePath+count+".episode");
+                    writer.write("\n");
+
+                    Episode e = PlanEpisodesForDataset.getEpisode(startState, terminationState);
+                    e.write(basePath + count);
+                    episodes.add(e);
+                    count++;
 
 
-                Episode e = PlanEpisodesForDataset.getEpisode(startState,terminationState);
-//                e.write();
+                }
 
 
-                Visualizer v = CleanupVisualiser.getVisualizer("data/robotImages");
+//                Visualizer v = CleanupVisualiser.getVisualizer("data/robotImages");
+//                new EpisodeSequenceVisualizer(v, domain, basePath);
 
-                StateConditionTest l0sc = new StateEqualityBasedConditionTest(terminationState);
-
-
-                GoalBasedRF l0rf = new GoalBasedRF(l0sc, 1., 0.);
-                GoalConditionTF l0tf = new GoalConditionTF(l0sc);
-
-
-
-                Random rand = RandomFactory.getMapped(0);
-                CleanupDomain dgen = new CleanupDomain(l0rf,l0tf, rand);
-                dgen.includeDirectionAttribute(true);
-                dgen.includePullAction(true);
-                dgen.includeWallPF_s(true);
-                dgen.includeLockableDoors(true);
-                dgen.setLockProbability(0.0);
-                OOSADomain domain = dgen.generateDomain();
-
-                new EpisodeSequenceVisualizer(v, domain, Arrays.asList(e));
 
             }
-
-
-
-
 
         }catch (FileNotFoundException e){
             System.out.println(e.getMessage());
@@ -158,10 +192,10 @@ public class PlanEpisodesForDataset {
 
 
                 if (!s.equals("")) {
-                        stringList.add(s);
-                        count++;
-                    }
+                    stringList.add(s);
+                    count++;
                 }
+            }
 
 
 
@@ -203,6 +237,8 @@ public class PlanEpisodesForDataset {
         Policy policy = brtd.planFromState(startState);
 
         Episode episode = PolicyUtils.rollout(policy,env,100);
+//        Visualizer v = CleanupVisualiser.getVisualizer("data/robotImages");
+//        new EpisodeSequenceVisualizer(v, domain, Arrays.asList(episode));
         return episode;
     }
 
