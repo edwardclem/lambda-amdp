@@ -7,6 +7,7 @@ import edu.cornell.cs.nlp.spf.data.sentence.Sentence;
 import edu.cornell.cs.nlp.utils.composites.Triplet;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class BurlapMultiDemonstration implements ILabeledDataItem<Sentence, List<Triplet<State,State,Boolean>>> {
@@ -34,7 +35,7 @@ public class BurlapMultiDemonstration implements ILabeledDataItem<Sentence, List
         return instruction;
     }
 
-    public static BurlapMultiDemonstration parse(String s) {
+    public static BurlapMultiDemonstration parse(String s, int numToLoad) {
 
         final String[] split = s.split("\n");
         Sentence sentence = new Sentence(split[0]);
@@ -46,7 +47,12 @@ public class BurlapMultiDemonstration implements ILabeledDataItem<Sentence, List
             Triplet<State,State,Boolean> item = new Triplet<>(pre,post,isTrue);
             items.add(item);
         }
-        return new BurlapMultiDemonstration(sentence,items);
+
+        //shuffling items
+
+        Collections.shuffle(items);
+
+        return new BurlapMultiDemonstration(sentence,items.subList(0, numToLoad));
     }
 
     public void addInstance(Triplet<State, State, Boolean> instance) {

@@ -1,16 +1,13 @@
 package experiments.explat;
 
-import amdp.cleanup.state.CleanupState;
 import burlap.mdp.core.state.State;
-import data.BurlapDemonstration;
-import data.BurlapInstruction;
+import data.archive.BurlapDemonstration;
 import edu.cornell.cs.nlp.spf.base.hashvector.HashVectorFactory;
 import edu.cornell.cs.nlp.spf.ccg.lexicon.LexicalEntry;
 import edu.cornell.cs.nlp.spf.ccg.lexicon.Lexicon;
 import edu.cornell.cs.nlp.spf.ccg.lexicon.factored.lambda.FactoredLexicalEntry;
 import edu.cornell.cs.nlp.spf.ccg.lexicon.factored.lambda.FactoringServices;
 import edu.cornell.cs.nlp.spf.data.sentence.Sentence;
-import edu.cornell.cs.nlp.spf.data.singlesentence.SingleSentence;
 import edu.cornell.cs.nlp.spf.explat.DistributedExperiment;
 import edu.cornell.cs.nlp.spf.explat.Job;
 import edu.cornell.cs.nlp.spf.explat.resources.ResourceCreatorRepository;
@@ -29,7 +26,6 @@ import edu.cornell.cs.nlp.utils.collections.ListUtils;
 import edu.cornell.cs.nlp.utils.composites.Pair;
 import edu.cornell.cs.nlp.utils.log.ILogger;
 import edu.cornell.cs.nlp.utils.log.LogLevel;
-import edu.cornell.cs.nlp.utils.log.Logger;
 import edu.cornell.cs.nlp.utils.log.LoggerFactory;
 import org.xml.sax.SAXException;
 import test.ValidationTester;

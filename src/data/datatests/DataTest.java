@@ -3,7 +3,7 @@ package data.datatests;
 import amdp.cleanup.CleanupDomain;
 import amdp.cleanup.state.CleanupState;
 
-import data.BurlapDemonstration;
+import data.archive.BurlapDemonstration;
 import data.DataHelpers;
 import org.junit.Assert;
 

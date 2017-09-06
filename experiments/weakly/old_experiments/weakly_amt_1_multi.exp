@@ -1,0 +1,25 @@
+#global parameters
+include=../params.inc
+outputDir=logs
+globalLog=logs/global.log
+
+#resources
+#parser - same feature set but no supervised parser filter
+include=parser.inc
+#model
+include=model.inc
+#validation function
+include=validation.inc
+#genlex
+#not sure the impact that this will have on performance. possibly speed?
+include=genlex.inc
+#data
+type=data.multi.bdm id=train file=../../data/amt/amt_test_1_multi/train.bdm
+type=data.multi.bdm id=test file=../../data/amt/amt_test_1_multi/test.bdm
+#learner
+include=learn.inc
+#initializer
+include=init.inc
+
+#jobs
+include=jobs.inc

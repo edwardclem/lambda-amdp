@@ -23,13 +23,13 @@ public class BurlapMultiDemonstrationDataset implements IDataCollection<BurlapMu
         this.dataset = dataset;
     }
 
-    public static BurlapMultiDemonstrationDataset readFromFile(File f) throws IOException {
+    public static BurlapMultiDemonstrationDataset readFromFile(File f, int numToLoad) throws IOException {
         final String fileString = FileUtils.readFile(f); //using SPF
 
         List<String> splitString = Arrays.asList(fileString.split("\n\n"));
 
         List<BurlapMultiDemonstration> processed = splitString.stream()
-                .map(s -> BurlapMultiDemonstration.parse(s))
+                .map(s -> BurlapMultiDemonstration.parse(s, numToLoad))
                 .collect(Collectors.toList());
 
         Collections.shuffle(processed);
@@ -62,10 +62,11 @@ public class BurlapMultiDemonstrationDataset implements IDataCollection<BurlapMu
 
     public static class Creator implements IResourceObjectCreator<BurlapMultiDemonstrationDataset> {
 
+
         @Override
         public BurlapMultiDemonstrationDataset create(ParameterizedExperiment.Parameters params, IResourceRepository repo){
             try {
-                return BurlapMultiDemonstrationDataset.readFromFile(params.getAsFile("file"));
+                return BurlapMultiDemonstrationDataset.readFromFile(params.getAsFile("file"), params.getAsInteger("num", 3));
             } catch (final IOException e){
                 throw new RuntimeException(e);
             }
@@ -81,6 +82,7 @@ public class BurlapMultiDemonstrationDataset implements IDataCollection<BurlapMu
             return new ResourceUsage.Builder(type(), BurlapMultiDemonstrationDataset.class)
                     .setDescription("dataset of multi instructions paired a list of true or false pre and postcondition OO-MDP states.")
                     .addParam("file", "file", "Dataset file.")
+                    .addParam("num", "int", "number of demonstration to load out of total.")
                     .addParam("genlex", "id", "lexical generator.").build(); //not sure why GENLEX is needed.
         }
 

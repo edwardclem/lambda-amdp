@@ -1,14 +1,12 @@
 package experiments.explat;
 
-import data.BurlapDemonstration;
-import data.BurlapDemonstrationDataset;
-import data.BurlapInstruction;
+import data.archive.BurlapDemonstration;
+import data.archive.BurlapDemonstrationDataset;
 import data.BurlapMultiDemonstrationDataset;
 import edu.cornell.cs.nlp.spf.ccg.lexicon.factored.lambda.FactoredLexicon;
 import edu.cornell.cs.nlp.spf.data.sentence.Sentence;
 import edu.cornell.cs.nlp.spf.data.sentence.SentenceLengthFilter;
 import edu.cornell.cs.nlp.spf.explat.resources.ResourceCreatorRepository;
-import edu.cornell.cs.nlp.spf.genlex.ccg.template.coarse.TemplateCoarseGenlex;
 import edu.cornell.cs.nlp.spf.learn.validation.perceptron.ValidationPerceptron;
 import edu.cornell.cs.nlp.spf.mr.lambda.LogicalExpression;
 import edu.cornell.cs.nlp.spf.mr.lambda.ccg.SimpleFullParseFilter;
