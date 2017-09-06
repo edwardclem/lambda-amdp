@@ -4,3 +4,4 @@ target/
 *.out
 *.sp
 .idea/*
+.idea/workspace.xml
