@@ -8,6 +8,7 @@ import jscheme.SchemeProcedure;
 
 import java.util.Collections;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class Determiners{
 
@@ -47,7 +48,7 @@ public class Determiners{
      * @param predicate
      * @return
      */
-    public static String definiteDeterminer(OOState state, SchemeProcedure predicate){
+    public static String definiteDeterminerOld(OOState state, SchemeProcedure predicate){
 
         String grounding = "";
         int numCorrect = 0; //track number of examples that satisfy the predicate
@@ -75,6 +76,41 @@ public class Determiners{
             return "";
         }
     }
+    /**
+     * strict definite determiner - returns an object if only ONE object satisfies the predicate.
+     * Otherwise, returns null.
+     * @param state
+     * @param predicate
+     * @return
+     */
+    public static String definiteDeterminer(OOState state, SchemeProcedure predicate){
+
+        List<ObjectInstance> objectsSatisfying = getObjectsSatsifyingPredicate(state, predicate);
+
+        if (objectsSatisfying.size() == 1){
+            return objectsSatisfying.get(0).name();
+        } else{
+            return "";
+        }
+    }
+
+    /**
+     * returns a list of all objects satisfying the predicate.
+     * @param state
+     * @param predicate
+     * @return
+     */
+    public static List<ObjectInstance> getObjectsSatsifyingPredicate(OOState state, SchemeProcedure predicate){
+
+        JScheme js = new JScheme();
+
+        //get list fo all objects satisfying predicate
+        return state.objects().stream()
+                        .filter(o -> (Boolean)js.call((SchemeProcedure)js.call(predicate, o.name()),state))
+                        .collect(Collectors.toList());
+
+
+    }
 
     /**
      * Returns the argmax over the set of objects satisfying the predicate.
@@ -92,26 +128,24 @@ public class Determiners{
         //TODO: shared evaluator somehow
         JScheme js = new JScheme();
 
-        List<ObjectInstance> objects = state.objects();
-        Collections.shuffle(objects);
+        List<ObjectInstance> objectsSatisfying = getObjectsSatsifyingPredicate(state, predicate);
 
-        for (ObjectInstance o: objects){
+        if (objectsSatisfying.size() == 1){
+            return ""; // don't use argmax if there's only one
+        }
 
-            //first test if object satisfies predicate
-            SchemeProcedure predicateFromName = (SchemeProcedure)js.call(predicate, o.name());
-            if((Boolean)js.call(predicateFromName,state)){
-                if (currentMax.equals("")){
+        for (ObjectInstance o: objectsSatisfying){
+            if (currentMax.equals("")){
+                currentMax = o.name();
+                SchemeProcedure measureFromName = (SchemeProcedure)js.call(measure, o.name());
+                currentMaxValue = (Double)js.call(measureFromName, state);
+            } else {
+                //check value of new and old
+                SchemeProcedure measureFromNameNew = (SchemeProcedure) js.call(measure, o.name());
+                double currentVal = (Double) js.call(measureFromNameNew, state);
+                if (currentVal > currentMaxValue) {
                     currentMax = o.name();
-                    SchemeProcedure measureFromName = (SchemeProcedure)js.call(measure, o.name());
-                    currentMaxValue = (Double)js.call(measureFromName, state);
-                } else {
-                    //check value of new and old
-                    SchemeProcedure measureFromNameNew = (SchemeProcedure)js.call(measure, o.name());
-                    double currentVal = (Double)js.call(measureFromNameNew, state);
-                    if ( currentVal > currentMaxValue){
-                        currentMax = o.name();
-                        currentMaxValue = currentVal;
-                    }
+                    currentMaxValue = currentVal;
                 }
             }
         }
@@ -125,26 +159,24 @@ public class Determiners{
         //TODO: shared evaluator somehow
         JScheme js = new JScheme();
 
-        List<ObjectInstance> objects = state.objects();
-        Collections.shuffle(objects);
+        List<ObjectInstance> objectsSatisfying = getObjectsSatsifyingPredicate(state, predicate);
 
-        for (ObjectInstance o: objects){
+        if (objectsSatisfying.size() == 1){
+            return ""; // don't use argmax if there's only one
+        }
 
-            //first test if object satisfies predicate
-            SchemeProcedure predicateFromName = (SchemeProcedure)js.call(predicate, o.name());
-            if((Boolean)js.call(predicateFromName,state)){
-                if (currentMin.equals("")){
+        for (ObjectInstance o: objectsSatisfying){
+            if (currentMin.equals("")){
+                currentMin = o.name();
+                SchemeProcedure measureFromName = (SchemeProcedure)js.call(measure, o.name());
+                currentMinValue = (Double)js.call(measureFromName, state);
+            } else {
+                //check value of new and old
+                SchemeProcedure measureFromNameNew = (SchemeProcedure)js.call(measure, o.name());
+                double currentVal = (Double)js.call(measureFromNameNew, state);
+                if (currentVal < currentMinValue){
                     currentMin = o.name();
-                    SchemeProcedure measureFromName = (SchemeProcedure)js.call(measure, o.name());
-                    currentMinValue = (Double)js.call(measureFromName, state);
-                } else {
-                    //check value of new and old
-                    SchemeProcedure measureFromNameNew = (SchemeProcedure)js.call(measure, o.name());
-                    double currentVal = (Double)js.call(measureFromNameNew, state);
-                    if (currentVal < currentMinValue){
-                        currentMin = o.name();
-                        currentMinValue = currentVal;
-                    }
+                    currentMinValue = currentVal;
                 }
             }
         }

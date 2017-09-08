@@ -18,5 +18,5 @@ near:<e,<e,t>>
 left:<e,<e,t>>
 right:<e,<e,t>>
 exists:<<e,t>,t> //I guess I need this?
-
+eq:<e,<e,t>>
 )

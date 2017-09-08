@@ -112,6 +112,11 @@
     (lambda (state)
         (Relations.right obj1 obj2 state)))
 
+;equality check
+(define (eq obj1 obj2)
+    (lambda (state)
+        (Relations.eq obj1 obj2 state)))
+
 ;HELPER FUNCTIONS
 ;list helpers
 

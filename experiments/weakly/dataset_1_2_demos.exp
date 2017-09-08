@@ -1,7 +1,7 @@
 #global parameters
 include=../params.inc
-outputDir=../logs/dataset_1
-globalLog=../logs/dataset_1/global.log
+outputDir=../logs/dataset_1_2_demos
+globalLog=../logs/dataset_1_2_demos/global.log
 
 #resources
 #parser - same feature set but no supervised parser filter

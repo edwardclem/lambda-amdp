@@ -1,12 +1,12 @@
 #global parameters
 include=../params.inc
-outputDir=../logs/dataset_1_errordriven_1_demo
-globalLog=../logs/dataset_1_errordriven_1_demo/global.log
+outputDir=../logs/dataset_1_noblue
+globalLog=../logs/dataset_1_noblue/global.log
 
 #resources
 #parser - same feature set but no supervised parser filter
 include=inc/parser.inc
-#model
+#model, with cooc features
 include=inc/model.inc
 #validation function
 include=inc/validation.inc
@@ -14,10 +14,10 @@ include=inc/validation.inc
 #not sure the impact that this will have on performance. possibly speed?
 include=inc/genlex.inc
 #data
-type=data.multi.bdm id=train file=../../data/dataset_1/train.bdm num=1
-type=data.multi.bdm id=test file=../../data/dataset_1/test.bdm num=3
+type=data.multi.bdm id=train file=../../data/dataset_1_noblue/train.bdm num=3
+type=data.multi.bdm id=test file=../../data/dataset_1_noblue/test.bdm num=3
 #learner
-include=inc/learn_errordriven.inc
+include=inc/learn.inc
 #initializer
 include=inc/init.inc
 

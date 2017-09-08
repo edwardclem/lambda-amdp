@@ -17,7 +17,7 @@ green :- N/N : (lambda $0:<e,t> (lambda $1:e (and:<t*,t> (green:<e,t> $1) ($0 $1
 the :- NP/N : (lambda $0:<e,t> (the:<<e,t>,e> $0))
 //TODO: determiner with PP as argument
 //for quantifiers
-the :- N/N : (lambda $0:<e,t> $0)
+//the :- N/N : (lambda $0:<e,t> $0)
 
 //spatial prepositions
 in :- PP/NP\NP : (lambda $0:e (lambda $1:e (in:<e,<e,t>> $1 $0)))
@@ -30,17 +30,11 @@ by :- PP/NP\NP : (lambda $0:e (lambda $1:e (near:<e,<e,t>> $1 $0)))
 left :- PP/NP\NP : (lambda $0:e (lambda $1:e (left:<e,<e,t>> $1 $0)))
 right :- PP/NP\NP : (lambda $0:e (lambda $1:e (right:<e,<e,t>> $1 $0)))
 
-//quantifiers
-largest :- NP/N : (lambda $0:<e,t> (argmax:<<e,t>,<<e,n>,e>> $0 size:<e,n>))
-big :- NP/N : (lambda $0:<e,t> (argmax:<<e,t>,<<e,n>,e>> $0 size:<e,n>))
-smallest :- NP/N : (lambda $0:<e,t> (argmin:<<e,t>,<<e,n>,e>> $0 size:<e,n>))
-small :- NP/N : (lambda $0:<e,t> (argmin:<<e,t>,<<e,n>,e>> $0 size:<e,n>))
-//closest to :- (NP\N)/NP : (lambda $0:e (lambda $1:<e,t> (argmin:<<e,t>,<<e,n>,e>> $1 (dist:<e,<e,n>> $0))))
-//nearest to :- (NP\N)/NP : (lambda $0:e (lambda $1:<e,t> (argmin:<<e,t>,<<e,n>,e>> $1 (dist:<e,<e,n>> $0))))
-//"get the nearest block" - implied referent is the agent
-//nearest :- NP\N : (lambda $0:<e,t> (argmin:<<e,t>,<<e,n>,e>> $0 (dist:<e,<e,n>> (the:<<e,t>,e> agent:<e,t>))))
-//closest :- NP\N : (lambda $0:<e,t> (argmin:<<e,t>,<<e,n>,e>> $0 (dist:<e,<e,n>> (the:<<e,t>,e> agent:<e,t>))))
-//TODO: "nearest block to you"
+//argmax in adjectival form
+big :- N/N : (lambda $0:<e,t> (lambda $1:e (eq:<e,<e,t>> $1 (argmax:<<e,t>,<<e,n>,e>> $0 size:<e,n>))))
+biggest :- N/N : (lambda $0:<e,t> (lambda $1:e (eq:<e,<e,t>> $1 (argmax:<<e,t>,<<e,n>,e>> $0 size:<e,n>))))
+small :- N/N : (lambda $0:<e,t> (lambda $1:e (eq:<e,<e,t>> $1 (argmin:<<e,t>,<<e,n>,e>> $0 size:<e,n>))))
+smallest :- N/N : (lambda $0:<e,t> (lambda $1:e (eq:<e,<e,t>> $1 (argmin:<<e,t>,<<e,n>,e>> $0 size:<e,n>))))
 
 //imperative
 //implied subject is agent

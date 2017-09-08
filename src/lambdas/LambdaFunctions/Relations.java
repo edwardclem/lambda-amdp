@@ -21,7 +21,8 @@ public class Relations {
     public static Boolean near(String obj1, String obj2, OOState state) {
 
         //Check if any objects are null, return false if so
-        return !obj1.equals("") && !obj2.equals("") && dist(obj1, obj2, state) <= NEAR_THRESHOLD;
+        //also check if any of the attributes are a region
+        return !obj1.equals("") && !obj2.equals("")  && !Attributes.isRegion(obj1, state) && !Attributes.isRegion(obj2, state) && dist(obj1, obj2, state) <= NEAR_THRESHOLD;
 
     }
 
@@ -74,6 +75,19 @@ public class Relations {
         } else{
             return false;
         }
+    }
+
+
+    /**
+     * Used as part of argmax-based adjectives.
+     * State not used, as object ID should be sufficient.
+     * @param obj1
+     * @param obj2
+     * @param state
+     * @return
+     */
+    public static boolean eq(String obj1, String obj2, OOState state){
+        return obj1.equals(obj2);
     }
 
 
