@@ -32,6 +32,7 @@ import edu.cornell.cs.nlp.spf.parser.ccg.rules.lambda.typeshifting.PrepositionTy
 import edu.cornell.cs.nlp.spf.parser.ccg.rules.primitivebinary.application.ApplicationCreator;
 import edu.cornell.cs.nlp.spf.parser.ccg.rules.primitivebinary.composition.CompositionCreator;
 import genlex.TemplateCoarseGenlexWeakLabel;
+import genlex.TemplateCoarseValidationGenlex;
 import test.ValidationTester;
 import validation.BurlapMultiValidator;
 import validation.BurlapSingleValidator;
@@ -92,6 +93,7 @@ public class LambdaResourceRepo extends ResourceCreatorRepository {
         //register genlex resources
         //registerResourceCreator(new TemplateCoarseGenlex.Creator<>());
         registerResourceCreator(new TemplateCoarseGenlexWeakLabel.Creator<>());
+        registerResourceCreator(new TemplateCoarseValidationGenlex.Creator<>());
 
         //register learning algorithm resources
         registerResourceCreator(new SentenceLengthFilter.Creator<Sentence>());

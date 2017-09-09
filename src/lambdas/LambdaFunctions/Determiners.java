@@ -130,6 +130,9 @@ public class Determiners{
 
         List<ObjectInstance> objectsSatisfying = getObjectsSatsifyingPredicate(state, predicate);
 
+        //avoid accidental satisfaction
+        Collections.shuffle(objectsSatisfying);
+
         if (objectsSatisfying.size() == 1){
             return ""; // don't use argmax if there's only one
         }

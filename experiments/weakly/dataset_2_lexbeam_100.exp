@@ -1,0 +1,25 @@
+#global parameters
+include=../lexbeam_100_params.inc
+outputDir=../logs/dataset_2_lexbeam_100
+globalLog=../logs/dataset_2_lexbeam_100/global.log
+
+#resources
+#parser - same feature set but no supervised parser filter
+include=inc/parser.inc
+#model, with cooc features
+include=inc/model.inc
+#validation function
+include=inc/validation.inc
+#genlex
+#not sure the impact that this will have on performance. possibly speed?
+include=inc/genlex.inc
+#data
+type=data.multi.bdm id=train file=../../data/dataset_2/train.bdm num=3
+type=data.multi.bdm id=test file=../../data/dataset_2/test.bdm num=3
+#learner
+include=inc/learn.inc
+#initializer
+include=inc/init.inc
+
+#jobs
+include=inc/jobs.inc

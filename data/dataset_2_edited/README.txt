@@ -1,0 +1,1 @@
+includes argmax tasks. Edited for correctness
