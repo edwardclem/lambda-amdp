@@ -1,0 +1,36 @@
+!!burlap.behavior.singleagent.Episode
+actionSequence:
+- &id001 !!burlap.mdp.core.action.SimpleAction {name: north}
+- *id001
+- *id001
+rewardSequence: [0.0, 0.0, 1.0]
+stateSequence:
+- !!amdp.cleanup.state.CleanupState
+  agent: {currentDirection: south, directional: true, name: agent0, x: 2, y: 3}
+  blocks: &id002
+  - {colour: red, name: block0, shape: chair, x: 2, y: 2}
+  doors:
+  - &id003 {bottom: 4, canBeLocked: false, left: 6, locked: 0, name: door0, right: 6,
+    top: 4}
+  - {bottom: 4, canBeLocked: false, left: 2, locked: 0, name: door1, right: 2, top: 4}
+  rooms: &id004
+  - {bottom: 0, colour: green, left: 0, name: room0, right: 8, top: 4}
+  - {bottom: 4, colour: blue, left: 0, name: room1, right: 4, top: 8}
+  - {bottom: 4, colour: red, left: 4, name: room2, right: 8, top: 8}
+- !!amdp.cleanup.state.CleanupState
+  agent: {currentDirection: north, directional: true, name: agent0, x: 2, y: 4}
+  blocks: *id002
+  doors: &id005
+  - *id003
+  - {bottom: 4, canBeLocked: false, left: 2, locked: 0, name: door1, right: 2, top: 4}
+  rooms: *id004
+- !!amdp.cleanup.state.CleanupState
+  agent: {currentDirection: north, directional: true, name: agent0, x: 2, y: 5}
+  blocks: *id002
+  doors: *id005
+  rooms: *id004
+- !!amdp.cleanup.state.CleanupState
+  agent: {currentDirection: north, directional: true, name: agent0, x: 2, y: 6}
+  blocks: *id002
+  doors: *id005
+  rooms: *id004

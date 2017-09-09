@@ -1,0 +1,75 @@
+!!burlap.behavior.singleagent.Episode
+actionSequence:
+- &id001 !!burlap.mdp.core.action.SimpleAction {name: south}
+- *id001
+- *id001
+- &id002 !!burlap.mdp.core.action.SimpleAction {name: west}
+- *id002
+- *id002
+- *id002
+- &id003 !!burlap.mdp.core.action.SimpleAction {name: north}
+- *id003
+rewardSequence: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0]
+stateSequence:
+- !!amdp.cleanup.state.CleanupState
+  agent: {currentDirection: south, directional: true, name: agent0, x: 6, y: 6}
+  blocks: &id004
+  - {colour: blue, name: block0, shape: chair, x: 2, y: 6}
+  doors: &id005
+  - {bottom: 4, canBeLocked: false, left: 6, locked: 0, name: door0, right: 6, top: 4}
+  - &id007 {bottom: 4, canBeLocked: false, left: 2, locked: 0, name: door1, right: 2,
+    top: 4}
+  rooms: &id006
+  - {bottom: 0, colour: red, left: 0, name: room0, right: 8, top: 4}
+  - {bottom: 4, colour: green, left: 0, name: room1, right: 4, top: 8}
+  - {bottom: 4, colour: blue, left: 4, name: room2, right: 8, top: 8}
+- !!amdp.cleanup.state.CleanupState
+  agent: {currentDirection: south, directional: true, name: agent0, x: 6, y: 5}
+  blocks: *id004
+  doors: *id005
+  rooms: *id006
+- !!amdp.cleanup.state.CleanupState
+  agent: {currentDirection: south, directional: true, name: agent0, x: 6, y: 4}
+  blocks: *id004
+  doors: &id008
+  - &id009 {bottom: 4, canBeLocked: false, left: 6, locked: 0, name: door0, right: 6,
+    top: 4}
+  - *id007
+  rooms: *id006
+- !!amdp.cleanup.state.CleanupState
+  agent: {currentDirection: south, directional: true, name: agent0, x: 6, y: 3}
+  blocks: *id004
+  doors: *id008
+  rooms: *id006
+- !!amdp.cleanup.state.CleanupState
+  agent: {currentDirection: west, directional: true, name: agent0, x: 5, y: 3}
+  blocks: *id004
+  doors: *id008
+  rooms: *id006
+- !!amdp.cleanup.state.CleanupState
+  agent: {currentDirection: west, directional: true, name: agent0, x: 4, y: 3}
+  blocks: *id004
+  doors: *id008
+  rooms: *id006
+- !!amdp.cleanup.state.CleanupState
+  agent: {currentDirection: west, directional: true, name: agent0, x: 3, y: 3}
+  blocks: *id004
+  doors: *id008
+  rooms: *id006
+- !!amdp.cleanup.state.CleanupState
+  agent: {currentDirection: west, directional: true, name: agent0, x: 2, y: 3}
+  blocks: *id004
+  doors: *id008
+  rooms: *id006
+- !!amdp.cleanup.state.CleanupState
+  agent: {currentDirection: north, directional: true, name: agent0, x: 2, y: 4}
+  blocks: *id004
+  doors: &id010
+  - *id009
+  - {bottom: 4, canBeLocked: false, left: 2, locked: 0, name: door1, right: 2, top: 4}
+  rooms: *id006
+- !!amdp.cleanup.state.CleanupState
+  agent: {currentDirection: north, directional: true, name: agent0, x: 2, y: 5}
+  blocks: *id004
+  doors: *id010
+  rooms: *id006
