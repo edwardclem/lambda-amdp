@@ -184,7 +184,7 @@
                 (if ((predicate (.name (.get (shuffleList) i))) state)
                         (set! correctObj (.name (.get (shuffleList) i)))))))))
 
-(define satisfiesPredicate
+(define definiteDeterminer
     (lambda (state)
         (lambda (predicate)
             (do ( (i 0 (+ i 1)) (correctObj {}))

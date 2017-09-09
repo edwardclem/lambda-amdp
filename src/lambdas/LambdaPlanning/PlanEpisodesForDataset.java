@@ -87,16 +87,17 @@ public class PlanEpisodesForDataset {
 
 
 
-        String fileName = "/home/nakul/workspace/lambda-amdp/data/amt/amt_allforward/trainFixed.bdm";
+        String fileName = "/home/nakul/workspace/lambda-amdp/data/baseline_dataset_50/test.bdm";
+//        String fileName = "/home/nakul/workspace/lambda-amdp/data/amt/amt_allforward/trainSmall.bdm";
 
         try{
 //            FileReader f = new java.io.FileReader(preds);
 //            js.load(f);
 
-            String basePath = "/home/nakul/workspace/lambda-amdp/data/episodesFromDataTrain/";
+            String basePath = "/home/nakul/workspace/lambda-amdp/data/baseline_dataset_50_episodes_test/";
 
             try (Writer writer = new BufferedWriter(new OutputStreamWriter(
-                    new FileOutputStream(basePath+"BDMWithEpisodeFilePath.txt"), "utf-8"))) {
+                    new FileOutputStream(basePath+"BDMWithEpisodeFilePath.bdm"), "utf-8"))) {
 
 
                 FileReader fileReader = new java.io.FileReader(fileName);
@@ -149,8 +150,8 @@ public class PlanEpisodesForDataset {
                 }
 
 
-//                Visualizer v = CleanupVisualiser.getVisualizer("data/robotImages");
-//                new EpisodeSequenceVisualizer(v, domain, basePath);
+                Visualizer v = CleanupVisualiser.getVisualizer("data/robotImages");
+                new EpisodeSequenceVisualizer(v, domain, basePath);
 
 
             }

@@ -1,5 +1,6 @@
 package experiments.explat;
 
+import data.BurlapTerminalStatePlanDataset;
 import data.archive.BurlapDemonstration;
 import data.archive.BurlapDemonstrationDataset;
 import data.BurlapMultiDemonstrationDataset;
@@ -35,6 +36,7 @@ import genlex.TemplateCoarseGenlexWeakLabel;
 import test.ValidationTester;
 import validation.BurlapMultiValidator;
 import validation.BurlapSingleValidator;
+import validation.BurlapTerminalStatePlanValidator;
 
 /**
  * Created by edwardwilliams on 6/22/17.
@@ -47,6 +49,9 @@ public class LambdaResourceRepo extends ResourceCreatorRepository {
         registerResourceCreator(new BurlapDemonstrationDataset.Creator());
 
         registerResourceCreator(new BurlapMultiDemonstrationDataset.Creator());
+
+        registerResourceCreator(new BurlapTerminalStatePlanDataset.Creator());
+
 
         //register parsing resources
         registerResourceCreator(new ApplicationCreator<LogicalExpression>());
@@ -88,6 +93,8 @@ public class LambdaResourceRepo extends ResourceCreatorRepository {
         //register validator
         registerResourceCreator(new BurlapSingleValidator.Creator());
         registerResourceCreator(new BurlapMultiValidator.Creator());
+        registerResourceCreator(new BurlapTerminalStatePlanValidator.Creator());
+
 
         //register genlex resources
         //registerResourceCreator(new TemplateCoarseGenlex.Creator<>());

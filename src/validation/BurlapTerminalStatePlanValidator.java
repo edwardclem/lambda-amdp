@@ -51,7 +51,7 @@ public class BurlapTerminalStatePlanValidator<DI extends ILabeledDataItem<Senten
         this.maxPlanLength=maxPlanLength;
     }
 
-    public int maxPlanLength = 100;
+    public int maxPlanLength = 25;
 
     public BurlapTerminalStatePlanValidator() {
         js = new JScheme();
@@ -159,7 +159,7 @@ public class BurlapTerminalStatePlanValidator<DI extends ILabeledDataItem<Senten
 //        Policy policy = vi.planFromState(startState);
         ConstantValueFunction heuristic = new ConstantValueFunction(1.);
         BoundedRTDP brtd = new BoundedRTDP(domain, 0.99, new SimpleHashableStateFactory(false), new ConstantValueFunction(0.0), heuristic, 0.01, 500);
-        brtd.setMaxRolloutDepth(50);
+        brtd.setMaxRolloutDepth(maxPlanLength);
         brtd.toggleDebugPrinting(false);
         Policy policy = brtd.planFromState(startState);
 

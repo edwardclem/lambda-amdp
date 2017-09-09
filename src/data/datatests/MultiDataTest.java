@@ -10,7 +10,7 @@ public class MultiDataTest {
     public static void main(String[] args) {
         File testData = new File("data/amt/amt_test_1_multi/test.bdm");
         try {
-            BurlapMultiDemonstrationDataset test = BurlapMultiDemonstrationDataset.readFromFile(testData);
+            BurlapMultiDemonstrationDataset test = BurlapMultiDemonstrationDataset.readFromFile(testData,1);
             System.out.print(test);
         } catch(IOException i) {
             i.printStackTrace();

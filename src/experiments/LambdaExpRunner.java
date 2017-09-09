@@ -21,7 +21,10 @@ public class LambdaExpRunner {
             System.exit(-1);
         }
         try {
+            System.out.println("here!!!");
+            long start = System.currentTimeMillis();
             new LambdaExperiment(new File(args[0])).start();
+            System.out.println("\t" + (System.currentTimeMillis() - start));
         } catch (final IOException e) {
             e.printStackTrace();
         } catch (final SAXException e) {

@@ -33,7 +33,8 @@ public class BurlapMultiValidator<DI extends ILabeledDataItem<Sentence,List<Trip
     private static JScheme js;
     //updated to use java-based predicates
     //TODO: load this from the ExPlat file
-    private String preds = "src/CleanupPredicatesJava.scm";
+//    private String preds = "src/CleanupPredicatesJava.scm";
+    private String preds = "src/CleanupPredicates.scm";
     public static final ILogger LOG = LoggerFactory.create(BurlapMultiValidator.class);
 
     public BurlapMultiValidator() {
@@ -65,8 +66,8 @@ public class BurlapMultiValidator<DI extends ILabeledDataItem<Sentence,List<Trip
                 //NOTE:using strict definite determiner
                 js.eval("(define the (definiteDeterminer initialState))");
                 //define argmin and argmax wrt initial state
-                js.eval("(define argmax (argmaxState initialState))");
-                js.eval("(define argmin (argminState initialState))");
+//                js.eval("(define argmax (argmaxState initialState))");
+//                js.eval("(define argmin (argminState initialState))");
                 CleanupState after = (CleanupState) triple.second();
                 SchemeProcedure pf = (SchemeProcedure)js.eval(pred);
                 Boolean istrue = (boolean) js.call(pf,after);
