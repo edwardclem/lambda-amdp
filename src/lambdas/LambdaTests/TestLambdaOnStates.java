@@ -1,9 +1,11 @@
 package lambdas.LambdaTests;
 
+import burlap.mdp.core.oo.state.OOState;
 import burlap.mdp.core.state.State;
 import data.DataHelpers;
 import jscheme.JScheme;
 import jscheme.SchemeProcedure;
+import lambdas.LambdaFunctions.Determiners;
 import lambdas.LambdaPlanning.LambdaConverter;
 
 import java.io.FileNotFoundException;
@@ -25,16 +27,24 @@ public class TestLambdaOnStates {
 //        String precond = "{agent0 (agent): [x: {3} y: {15} direction: {south} ] , door0 (door): [locked: {0} top: {8} left: {12} bottom: {8} right: {12} canBeLocked: {false} ] , door1 (door): [locked: {0} top: {8} left: {4} bottom: {8} right: {4} canBeLocked: {false} ] , block0 (block): [x: {2} y: {2} shape: {chair} colour: {red} ] , block1 (block): [x: {2} y: {3} shape: {chair} colour: {blue} ] , block3 (block): [x: {3} y: {10} shape: {chair} colour: {green} ] , room0 (room): [top: {8} left: {0} bottom: {0} right: {16} colour: {red} ] , room1 (room): [top: {16} left: {0} bottom: {8} right: {8} colour: {green} ] , room2 (room): [top: {16} left: {8} bottom: {8} right: {16} colour: {blue} ] , }";
 //        String postcond = "{agent0 (agent): [x: {12} y: {10} direction: {north} ] , door0 (door): [locked: {0} top: {8} left: {12} bottom: {8} right: {12} canBeLocked: {false} ] , door1 (door): [locked: {0} top: {8} left: {4} bottom: {8} right: {4} canBeLocked: {false} ] , block0 (block): [x: {2} y: {2} shape: {chair} colour: {red} ] , block1 (block): [x: {12} y: {11} shape: {chair} colour: {blue} ] , block3 (block): [x: {3} y: {10} shape: {chair} colour: {green} ] , room0 (room): [top: {8} left: {0} bottom: {0} right: {16} colour: {red} ] , room1 (room): [top: {16} left: {0} bottom: {8} right: {8} colour: {green} ] , room2 (room): [top: {16} left: {8} bottom: {8} right: {16} colour: {blue} ] , }";
 
-        String precond = "{agent0 (agent): [x: {6} y: {6} direction: {south} ] , door0 (door): [locked: {0} top: {2} left: {4} bottom: {2} right: {4} canBeLocked: {false} ] , door1 (door): [locked: {0} top: {5} left: {4} bottom: {5} right: {4} canBeLocked: {false} ] , block0 (block): [x: {5} y: {6} shape: {chair} colour: {red} ] , block1 (block): [x: {3} y: {6} shape: {chair} colour: {red} ] , room0 (room): [top: {8} left: {0} bottom: {0} right: {4} colour: {green} ] , room1 (room): [top: {3} left: {4} bottom: {0} right: {8} colour: {red} ] , room2 (room): [top: {8} left: {4} bottom: {4} right: {8} colour: {green} ] , }";
-        String postcond = "{agent0 (agent): [x: {6} y: {2} direction: {south} ] , door0 (door): [locked: {0} top: {2} left: {4} bottom: {2} right: {4} canBeLocked: {false} ] , door1 (door): [locked: {0} top: {5} left: {4} bottom: {5} right: {4} canBeLocked: {false} ] , block0 (block): [x: {5} y: {6} shape: {chair} colour: {red} ] , block1 (block): [x: {3} y: {6} shape: {chair} colour: {red} ] , room0 (room): [top: {8} left: {0} bottom: {0} right: {4} colour: {green} ] , room1 (room): [top: {3} left: {4} bottom: {0} right: {8} colour: {red} ] , room2 (room): [top: {8} left: {4} bottom: {4} right: {8} colour: {green} ] , }";
+//        String precond = "{agent0 (agent): [x: {6} y: {6} direction: {south} ] , door0 (door): [locked: {0} top: {2} left: {4} bottom: {2} right: {4} canBeLocked: {false} ] , door1 (door): [locked: {0} top: {5} left: {4} bottom: {5} right: {4} canBeLocked: {false} ] , block0 (block): [x: {5} y: {6} shape: {chair} colour: {red} ] , block1 (block): [x: {3} y: {6} shape: {chair} colour: {red} ] , room0 (room): [top: {8} left: {0} bottom: {0} right: {4} colour: {green} ] , room1 (room): [top: {3} left: {4} bottom: {0} right: {8} colour: {red} ] , room2 (room): [top: {8} left: {4} bottom: {4} right: {8} colour: {green} ] , }";
+//        String postcond = "{agent0 (agent): [x: {6} y: {2} direction: {south} ] , door0 (door): [locked: {0} top: {2} left: {4} bottom: {2} right: {4} canBeLocked: {false} ] , door1 (door): [locked: {0} top: {5} left: {4} bottom: {5} right: {4} canBeLocked: {false} ] , block0 (block): [x: {5} y: {6} shape: {chair} colour: {red} ] , block1 (block): [x: {3} y: {6} shape: {chair} colour: {red} ] , room0 (room): [top: {8} left: {0} bottom: {0} right: {4} colour: {green} ] , room1 (room): [top: {3} left: {4} bottom: {0} right: {8} colour: {red} ] , room2 (room): [top: {8} left: {4} bottom: {4} right: {8} colour: {green} ] , }";
+//
+
+        String precond = "{agent0 (agent): [x: {6} y: {6} direction: {south} ] , door0 (door): [locked: {0} top: {3} left: {4} bottom: {3} right: {4} canBeLocked: {false} ] , door1 (door): [locked: {0} top: {5} left: {4} bottom: {5} right: {4} canBeLocked: {false} ] , block0 (block): [x: {2} y: {6} shape: {chair} colour: {red} ] , room0 (room): [top: {8} left: {0} bottom: {0} right: {4} colour: {green} ] , room1 (room): [top: {4} left: {4} bottom: {0} right: {8} colour: {green} ] , room2 (room): [top: {8} left: {4} bottom: {4} right: {8} colour: {red} ] , }\n";
+
+        String postcond = "{agent0 (agent): [x: {3} y: {5} direction: {south} ] , door0 (door): [locked: {0} top: {3} left: {4} bottom: {3} right: {4} canBeLocked: {false} ] , door1 (door): [locked: {0} top: {5} left: {4} bottom: {5} right: {4} canBeLocked: {false} ] , block0 (block): [x: {2} y: {6} shape: {chair} colour: {red} ] , room0 (room): [top: {8} left: {0} bottom: {0} right: {4} colour: {green} ] , room1 (room): [top: {4} left: {4} bottom: {0} right: {8} colour: {green} ] , room2 (room): [top: {8} left: {4} bottom: {4} right: {8} colour: {red} ] , }\n";
 
 
         //String parse = "(in:<e,<e,t>> (the:<<e,t>,e> (lambda $0:e (block:<e,t> $0))) (argmax:<<e,t>,<<e,n>,e>> (lambda $1:e (and:<t*,t> (blue:<e,t> $1) (room:<e,t> $1) (room:<e,t> $1))) (lambda $2:e (size:<e,n> $2))))";
 
-        String parse = "(near:<e,<e,t>> (the:<<e,t>,e> (lambda $0:e (agent:<e,t> $0))) (argmin:<<e,t>,<<e,n>,e>> (lambda $1:e (and:<t*,t> (room:<e,t> $1) (room:<e,t> $1) (room:<e,t> $1) (room:<e,t> $1) (room:<e,t> $1) (room:<e,t> $1))) (lambda $2:e (size:<e,n> $2))))";
+//        String parse = "(near:<e,<e,t>> (the:<<e,t>,e> (lambda $0:e (agent:<e,t> $0))) (argmin:<<e,t>,<<e,n>,e>> (lambda $1:e (and:<t*,t> (room:<e,t> $1) (room:<e,t> $1) (room:<e,t> $1) (room:<e,t> $1) (room:<e,t> $1) (room:<e,t> $1))) (lambda $2:e (size:<e,n> $2))))";
 
-        State pre = DataHelpers.loadStateFromStringCompact(precond);
-        State post = DataHelpers.loadStateFromStringCompact(postcond);
+        String parse = "(in:<e,<e,t>> (the:<<e,t>,e> (lambda $0:e (agent:<e,t> $0))) (the:<<e,t>,e> (lambda $1:e (eq:<e,<e,t>> $1 (argmax:<<e,t>,<<e,n>,e>> (lambda $2:e (green:<e,t> $2)) (lambda $3:e (size:<e,n> $3)))))))";
+
+
+        OOState pre = DataHelpers.loadStateFromStringCompact(precond);
+        OOState post = DataHelpers.loadStateFromStringCompact(postcond);
 
         String preds = "src/CleanupPredicatesJava.scm";
 
@@ -58,13 +68,15 @@ public class TestLambdaOnStates {
 
             Boolean falseOnPre = !(boolean) js.call(pf,pre);
 
+            //System.out.println(Determiners.argmax(pre, (SchemeProcedure)js.eval("(lambda $3 (size $3))"), (SchemeProcedure)js.eval("(lambda $2 (green $2))")));
+
 
             System.out.println(falseOnPre);
             System.out.println(trueOnPost);
 
             //System.out.println(js.eval(LambdaConverter.convert("(argmin:<<e,t>,<<e,n>,e>> (lambda $1:e (and:<t*,t> (room:<e,t> $1) (room:<e,t> $1) (room:<e,t> $1) (room:<e,t> $1) (room:<e,t> $1) (room:<e,t> $1))) (lambda $2:e (size:<e,n> $2)))")));
 
-            System.out.println(js.eval("((near {agent0} {room1}) finalState)"));
+
 
 
         } catch(FileNotFoundException e){

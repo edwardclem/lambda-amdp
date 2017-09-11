@@ -118,7 +118,11 @@ public class Determiners{
         Set<String> inputTypes = new HashSet<>();
         for(ObjectInstance ob: inputList){
             inputTypes.add(ob.className());
+            //System.out.println(ob.className());
         }
+
+        System.out.println(inputTypes.size());
+
         return inputTypes.size()==1;
     }
 
@@ -139,11 +143,12 @@ public class Determiners{
         JScheme js = new JScheme();
 
         List<ObjectInstance> objectsSatisfying = getObjectsSatsifyingPredicate(state, predicate);
+        System.out.println(objectsSatisfying.size());
 
         //avoid accidental satisfaction
         Collections.shuffle(objectsSatisfying);
 
-        if (objectsSatisfying.size() == 1 || checkTypeList(objectsSatisfying)){
+        if (objectsSatisfying.size() == 1 || !checkTypeList(objectsSatisfying)){
             return ""; // don't use argmax if there's only one
         }
 
