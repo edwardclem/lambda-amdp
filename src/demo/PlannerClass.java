@@ -41,11 +41,11 @@ public class PlannerClass {
     public static void main(String[] args){
 
 
-        String path = "/home/nakul/workspace/lambda-amdp/experiments/weakly/baseline_50/model.sp";
+        String path = "experiments/weakly/baseline_50/model.sp";
 
         ParserWrapper pw = new ParserWrapper(path);
 
-        String sentence = "Proceed to the pink colored room";
+        String sentence = "Proceed to the green colored room";
 
 //        System.out.println(pw.parseSentence(sentence));
 

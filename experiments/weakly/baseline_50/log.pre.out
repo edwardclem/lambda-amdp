@@ -1,0 +1,191 @@
+Lexical entries [93]:
+[20.0000] green :- N/N : (lambda $0:<e,t> (lambda $1:e (and:<t*,t> (green:<e,t> $1) ($0 $1)))) {FACLEX#LEX#7#0=10.000(1.000),FACLEX#TMP#0=0.000(0.100),FACLEX#XEME#7=10.000(1.000)} {origin=fixed_domain}
+[10.0000] green :- N : (lambda $0:e (green:<e,t> $0)) {FACLEX#LEX#7#1=0.000(1.000),FACLEX#TMP#1=0.000(0.100),FACLEX#XEME#7=10.000(1.000)} {origin=fixed_domain}
+[10.0000] green :- S/NP : (lambda $0:e (in:<e,<e,t>> (the:<<e,t>,e> (lambda $1:e (green:<e,t> $1))) $0)) {FACLEX#LEX#7#10=0.0(1.000),FACLEX#TMP#10=0.000(0.100),FACLEX#XEME#7=10.000(1.000)} {origin=fixed_domain}
+[10.0000] green :- S/NP : (lambda $0:e (near:<e,<e,t>> (the:<<e,t>,e> (lambda $1:e (green:<e,t> $1))) $0)) {FACLEX#LEX#7#7=0.0(1.000),FACLEX#TMP#7=0.000(0.100),FACLEX#XEME#7=10.000(1.000)} {origin=fixed_domain}
+[20.0000] door :- N : (lambda $0:e (door:<e,t> $0)) {FACLEX#LEX#14#1=10.000(1.000),FACLEX#TMP#1=0.000(0.100),FACLEX#XEME#14=10.000(1.000)} {origin=fixed_domain}
+[10.0000] door :- N/N : (lambda $0:<e,t> (lambda $1:e (and:<t*,t> (door:<e,t> $1) ($0 $1)))) {FACLEX#LEX#14#0=0.0(1.000),FACLEX#TMP#0=0.000(0.100),FACLEX#XEME#14=10.000(1.000)} {origin=fixed_domain}
+[10.0000] door :- S/NP : (lambda $0:e (in:<e,<e,t>> (the:<<e,t>,e> (lambda $1:e (door:<e,t> $1))) $0)) {FACLEX#LEX#14#10=0.0(1.000),FACLEX#TMP#10=0.000(0.100),FACLEX#XEME#14=10.000(1.000)} {origin=fixed_domain}
+[10.0000] door :- S/NP : (lambda $0:e (near:<e,<e,t>> (the:<<e,t>,e> (lambda $1:e (door:<e,t> $1))) $0)) {FACLEX#LEX#14#7=0.0(1.000),FACLEX#TMP#7=0.000(0.100),FACLEX#XEME#14=10.000(1.000)} {origin=fixed_domain}
+[20.0000] in :- PP/NP\NP : (lambda $0:e (lambda $1:e (in:<e,<e,t>> $1 $0))) {FACLEX#LEX#24#4=10.000(1.000),FACLEX#TMP#4=0.000(0.100),FACLEX#XEME#24=10.000(1.000)} {origin=fixed_domain}
+[10.0000] in :- S/NP : (lambda $0:e (in:<e,<e,t>> (the:<<e,t>,e> (lambda $1:e (agent:<e,t> $1))) $0)) {FACLEX#LEX#24#3=0.000(1.000),FACLEX#TMP#3=0.000(0.100),FACLEX#XEME#24=10.000(1.000)} {origin=fixed_domain}
+[20.0000] agent :- N : (lambda $0:e (agent:<e,t> $0)) {FACLEX#LEX#0#1=10.000(1.000),FACLEX#TMP#1=0.000(0.100),FACLEX#XEME#0=10.000(1.000)} {origin=fixed_domain}
+[10.0000] agent :- N/N : (lambda $0:<e,t> (lambda $1:e (and:<t*,t> (agent:<e,t> $1) ($0 $1)))) {FACLEX#LEX#0#0=0.000(1.000),FACLEX#TMP#0=0.000(0.100),FACLEX#XEME#0=10.000(1.000)} {origin=fixed_domain}
+[10.0000] agent :- S/NP : (lambda $0:e (in:<e,<e,t>> (the:<<e,t>,e> (lambda $1:e (agent:<e,t> $1))) $0)) {FACLEX#LEX#0#10=0.0(1.000),FACLEX#TMP#10=0.000(0.100),FACLEX#XEME#0=10.000(1.000)} {origin=fixed_domain}
+[10.0000] agent :- S/NP : (lambda $0:e (near:<e,<e,t>> (the:<<e,t>,e> (lambda $1:e (agent:<e,t> $1))) $0)) {FACLEX#LEX#0#7=0.0(1.000),FACLEX#TMP#7=0.000(0.100),FACLEX#XEME#0=10.000(1.000)} {origin=fixed_domain}
+[20.0000] please :- S\S : (lambda $0:t $0) {FACLEX#LEX#11#6=10.000(1.000),FACLEX#TMP#6=0.000(0.100),FACLEX#XEME#11=10.000(1.000)} {origin=fixed_domain}
+[10.0000] please :- NP/N : (lambda $0:<e,t> (the:<<e,t>,e> (lambda $1:e ($0 $1)))) {FACLEX#LEX#11#8=0.000(1.000),FACLEX#TMP#8=0.000(0.100),FACLEX#XEME#11=10.000(1.000)} {origin=fixed_domain}
+[10.0000] please :- S/S : (lambda $0:<e,t> (lambda $1:e ($0 $1))) {FACLEX#LEX#11#12=0.000(1.000),FACLEX#TMP#12=0.000(0.100),FACLEX#XEME#11=10.000(1.000)} {origin=fixed_domain}
+[10.0000] please :- S/S : (lambda $0:t $0) {FACLEX#LEX#11#11=0.0(1.000),FACLEX#TMP#11=0.000(0.100),FACLEX#XEME#11=10.000(1.000)} {origin=fixed_domain}
+[10.0000] please :- S/PP/NP : (lambda $0:e (lambda $1:<e,t> ($1 $0))) {FACLEX#LEX#11#9=0.0(1.000),FACLEX#TMP#9=0.000(0.100),FACLEX#XEME#11=10.000(1.000)} {origin=fixed_domain}
+[10.0000] please :- N/N : (lambda $0:<e,t> (lambda $1:e ($0 $1))) {FACLEX#LEX#11#5=0.0(1.000),FACLEX#TMP#5=0.000(0.100),FACLEX#XEME#11=10.000(1.000)} {origin=fixed_domain}
+[20.0000] put :- S/PP/NP : (lambda $0:e (lambda $1:<e,t> ($1 $0))) {FACLEX#LEX#18#9=10.000(1.000),FACLEX#TMP#9=0.000(0.100),FACLEX#XEME#18=10.000(1.000)} {origin=fixed_domain}
+[10.0000] put :- N/N : (lambda $0:<e,t> (lambda $1:e ($0 $1))) {FACLEX#LEX#18#5=0.0(1.000),FACLEX#TMP#5=0.000(0.100),FACLEX#XEME#18=10.000(1.000)} {origin=fixed_domain}
+[10.0000] put :- S\S : (lambda $0:t $0) {FACLEX#LEX#18#6=0.0(1.000),FACLEX#TMP#6=0.000(0.100),FACLEX#XEME#18=10.000(1.000)} {origin=fixed_domain}
+[10.0000] put :- S/S : (lambda $0:t $0) {FACLEX#LEX#18#11=0.0(1.000),FACLEX#TMP#11=0.000(0.100),FACLEX#XEME#18=10.000(1.000)} {origin=fixed_domain}
+[10.0000] put :- S/S : (lambda $0:<e,t> (lambda $1:e ($0 $1))) {FACLEX#LEX#18#12=0.0(1.000),FACLEX#TMP#12=0.000(0.100),FACLEX#XEME#18=10.000(1.000)} {origin=fixed_domain}
+[10.0000] put :- NP/N : (lambda $0:<e,t> (the:<<e,t>,e> (lambda $1:e ($0 $1)))) {FACLEX#LEX#18#8=0.0(1.000),FACLEX#TMP#8=0.000(0.100),FACLEX#XEME#18=10.000(1.000)} {origin=fixed_domain}
+[20.0000] room :- N : (lambda $0:e (room:<e,t> $0)) {FACLEX#LEX#20#1=10.000(1.000),FACLEX#TMP#1=0.000(0.100),FACLEX#XEME#20=10.000(1.000)} {origin=fixed_domain}
+[10.0000] room :- S/NP : (lambda $0:e (near:<e,<e,t>> (the:<<e,t>,e> (lambda $1:e (room:<e,t> $1))) $0)) {FACLEX#LEX#20#7=0.000(1.000),FACLEX#TMP#7=0.000(0.100),FACLEX#XEME#20=10.000(1.000)} {origin=fixed_domain}
+[10.0000] room :- N/N : (lambda $0:<e,t> (lambda $1:e (and:<t*,t> (room:<e,t> $1) ($0 $1)))) {FACLEX#LEX#20#0=0.0(1.000),FACLEX#TMP#0=0.000(0.100),FACLEX#XEME#20=10.000(1.000)} {origin=fixed_domain}
+[10.0000] room :- S/NP : (lambda $0:e (in:<e,<e,t>> (the:<<e,t>,e> (lambda $1:e (room:<e,t> $1))) $0)) {FACLEX#LEX#20#10=0.0(1.000),FACLEX#TMP#10=0.000(0.100),FACLEX#XEME#20=10.000(1.000)} {origin=fixed_domain}
+[20.0000] right :- PP/NP\NP : (lambda $0:e (lambda $1:e (right:<e,<e,t>> $1 $0))) {FACLEX#LEX#27#4=10.000(1.000),FACLEX#TMP#4=0.000(0.100),FACLEX#XEME#27=10.000(1.000)} {origin=fixed_domain}
+[10.0000] right :- S/NP : (lambda $0:e (right:<e,<e,t>> (the:<<e,t>,e> (lambda $1:e (agent:<e,t> $1))) $0)) {FACLEX#LEX#27#3=0.0(1.000),FACLEX#TMP#3=0.000(0.100),FACLEX#XEME#27=10.000(1.000)} {origin=fixed_domain}
+[20.0000] red :- N/N : (lambda $0:<e,t> (lambda $1:e (and:<t*,t> (red:<e,t> $1) ($0 $1)))) {FACLEX#LEX#19#0=10.000(1.000),FACLEX#TMP#0=0.000(0.100),FACLEX#XEME#19=10.000(1.000)} {origin=fixed_domain}
+[10.0000] red :- S/NP : (lambda $0:e (in:<e,<e,t>> (the:<<e,t>,e> (lambda $1:e (red:<e,t> $1))) $0)) {FACLEX#LEX#19#10=0.000(1.000),FACLEX#TMP#10=0.000(0.100),FACLEX#XEME#19=10.000(1.000)} {origin=fixed_domain}
+[10.0000] red :- N : (lambda $0:e (red:<e,t> $0)) {FACLEX#LEX#19#1=0.0(1.000),FACLEX#TMP#1=0.000(0.100),FACLEX#XEME#19=10.000(1.000)} {origin=fixed_domain}
+[10.0000] red :- S/NP : (lambda $0:e (near:<e,<e,t>> (the:<<e,t>,e> (lambda $1:e (red:<e,t> $1))) $0)) {FACLEX#LEX#19#7=0.0(1.000),FACLEX#TMP#7=0.000(0.100),FACLEX#XEME#19=10.000(1.000)} {origin=fixed_domain}
+[20.0000] the :- N/N : (lambda $0:<e,t> (lambda $1:e ($0 $1))) {FACLEX#LEX#22#5=10.000(1.000),FACLEX#TMP#5=0.000(0.100),FACLEX#XEME#22=10.000(1.000)} {origin=fixed_domain}
+[20.0000] the :- NP/N : (lambda $0:<e,t> (the:<<e,t>,e> (lambda $1:e ($0 $1)))) {FACLEX#LEX#22#8=10.000(1.000),FACLEX#TMP#8=0.000(0.100),FACLEX#XEME#22=10.000(1.000)} {origin=fixed_domain}
+[10.0000] the :- S/S : (lambda $0:<e,t> (lambda $1:e ($0 $1))) {FACLEX#LEX#22#12=0.0(1.000),FACLEX#TMP#12=0.000(0.100),FACLEX#XEME#22=10.000(1.000)} {origin=fixed_domain}
+[10.0000] the :- S\S : (lambda $0:t $0) {FACLEX#LEX#22#6=0.0(1.000),FACLEX#TMP#6=0.000(0.100),FACLEX#XEME#22=10.000(1.000)} {origin=fixed_domain}
+[10.0000] the :- S/S : (lambda $0:t $0) {FACLEX#LEX#22#11=0.0(1.000),FACLEX#TMP#11=0.000(0.100),FACLEX#XEME#22=10.000(1.000)} {origin=fixed_domain}
+[10.0000] the :- S/PP/NP : (lambda $0:e (lambda $1:<e,t> ($1 $0))) {FACLEX#LEX#22#9=0.0(1.000),FACLEX#TMP#9=0.000(0.100),FACLEX#XEME#22=10.000(1.000)} {origin=fixed_domain}
+[20.0000] into :- PP/NP\NP : (lambda $0:e (lambda $1:e (in:<e,<e,t>> $1 $0))) {FACLEX#LEX#10#4=10.000(1.000),FACLEX#TMP#4=0.000(0.100),FACLEX#XEME#10=10.000(1.000)} {origin=fixed_domain}
+[10.0000] into :- S/NP : (lambda $0:e (in:<e,<e,t>> (the:<<e,t>,e> (lambda $1:e (agent:<e,t> $1))) $0)) {FACLEX#LEX#10#3=0.000(1.000),FACLEX#TMP#3=0.000(0.100),FACLEX#XEME#10=10.000(1.000)} {origin=fixed_domain}
+[31.4355] move near :- S/NP : (lambda $0:e (near:<e,<e,t>> (the:<<e,t>,e> (lambda $1:e (agent:<e,t> $1))) $0)) {FACLEX#LEX#2#2=21.435(1.000),FACLEX#TMP#2=0.000(0.100),FACLEX#XEME#2=10.000(1.000)} {origin=fixed_domain}
+[31.4355] move near :- S/NP : (lambda $0:e (near:<e,<e,t>> (the:<<e,t>,e> (lambda $1:e (agent:<e,t> $1))) $0)) {FACLEX#LEX#6#3=21.435(1.000),FACLEX#TMP#3=0.000(0.100),FACLEX#XEME#6=10.000(1.000)} {origin=fixed_domain}
+[31.4355] move near :- S/NP : (lambda $0:e (near:<e,<e,t>> (the:<<e,t>,e> (lambda $1:e (agent:<e,t> $1))) $0)) {FACLEX#LEX#12#7=21.435(1.000),FACLEX#TMP#7=0.000(0.100),FACLEX#XEME#12=10.000(1.000)} {origin=fixed_domain}
+[10.0000] move near :- N/N : (lambda $0:<e,t> (lambda $1:e (and:<t*,t> (agent:<e,t> $1) ($0 $1)))) {FACLEX#LEX#12#0=0.0(1.000),FACLEX#TMP#0=0.000(0.100),FACLEX#XEME#12=10.000(1.000)} {origin=fixed_domain}
+[10.0000] move near :- S/NP : (lambda $0:e (in:<e,<e,t>> (the:<<e,t>,e> (lambda $1:e (agent:<e,t> $1))) $0)) {FACLEX#LEX#12#10=0.0(1.000),FACLEX#TMP#10=0.000(0.100),FACLEX#XEME#12=10.000(1.000)} {origin=fixed_domain}
+[10.0000] move near :- N : (lambda $0:e (agent:<e,t> $0)) {FACLEX#LEX#12#1=0.0(1.000),FACLEX#TMP#1=0.000(0.100),FACLEX#XEME#12=10.000(1.000)} {origin=fixed_domain}
+[10.0000] move near :- PP/NP\NP : (lambda $0:e (lambda $1:e (near:<e,<e,t>> $1 $0))) {FACLEX#LEX#6#4=0.0(1.000),FACLEX#TMP#4=0.000(0.100),FACLEX#XEME#6=10.000(1.000)} {origin=fixed_domain}
+[31.4355] go to :- S/NP : (lambda $0:e (in:<e,<e,t>> (the:<<e,t>,e> (lambda $1:e (agent:<e,t> $1))) $0)) {FACLEX#LEX#4#3=21.435(1.000),FACLEX#TMP#3=0.000(0.100),FACLEX#XEME#4=10.000(1.000)} {origin=fixed_domain}
+[31.4355] go to :- S/NP : (lambda $0:e (in:<e,<e,t>> (the:<<e,t>,e> (lambda $1:e (agent:<e,t> $1))) $0)) {FACLEX#LEX#5#2=21.435(1.000),FACLEX#TMP#2=0.000(0.100),FACLEX#XEME#5=10.000(1.000)} {origin=fixed_domain}
+[31.4355] go to :- S/NP : (lambda $0:e (near:<e,<e,t>> (the:<<e,t>,e> (lambda $1:e (agent:<e,t> $1))) $0)) {FACLEX#LEX#1#7=21.435(1.000),FACLEX#TMP#7=0.000(0.100),FACLEX#XEME#1=10.000(1.000)} {origin=fixed_domain}
+[31.4355] go to :- S/NP : (lambda $0:e (near:<e,<e,t>> (the:<<e,t>,e> (lambda $1:e (agent:<e,t> $1))) $0)) {FACLEX#LEX#29#2=21.435(1.000),FACLEX#TMP#2=0.000(0.100),FACLEX#XEME#29=10.000(1.000)} {origin=fixed_domain}
+[31.4355] go to :- S/NP : (lambda $0:e (near:<e,<e,t>> (the:<<e,t>,e> (lambda $1:e (agent:<e,t> $1))) $0)) {FACLEX#LEX#23#3=21.435(1.000),FACLEX#TMP#3=0.000(0.100),FACLEX#XEME#23=10.000(1.000)} {origin=fixed_domain}
+[31.4355] go to :- S/NP : (lambda $0:e (in:<e,<e,t>> (the:<<e,t>,e> (lambda $1:e (agent:<e,t> $1))) $0)) {FACLEX#LEX#1#10=21.435(1.000),FACLEX#TMP#10=0.000(0.100),FACLEX#XEME#1=10.000(1.000)} {origin=fixed_domain}
+[10.0000] go to :- N : (lambda $0:e (agent:<e,t> $0)) {FACLEX#LEX#1#1=0.000(1.000),FACLEX#TMP#1=0.000(0.100),FACLEX#XEME#1=10.000(1.000)} {origin=fixed_domain}
+[10.0000] go to :- PP/NP\NP : (lambda $0:e (lambda $1:e (near:<e,<e,t>> $1 $0))) {FACLEX#LEX#23#4=0.000(1.000),FACLEX#TMP#4=0.000(0.100),FACLEX#XEME#23=10.000(1.000)} {origin=fixed_domain}
+[10.0000] go to :- N/N : (lambda $0:<e,t> (lambda $1:e (and:<t*,t> (agent:<e,t> $1) ($0 $1)))) {FACLEX#LEX#1#0=0.0(1.000),FACLEX#TMP#0=0.000(0.100),FACLEX#XEME#1=10.000(1.000)} {origin=fixed_domain}
+[10.0000] go to :- PP/NP\NP : (lambda $0:e (lambda $1:e (in:<e,<e,t>> $1 $0))) {FACLEX#LEX#4#4=0.0(1.000),FACLEX#TMP#4=0.000(0.100),FACLEX#XEME#4=10.000(1.000)} {origin=fixed_domain}
+[31.4355] next to :- PP/NP\NP : (lambda $0:e (lambda $1:e (near:<e,<e,t>> $1 $0))) {FACLEX#LEX#8#4=21.435(1.000),FACLEX#TMP#4=0.000(0.100),FACLEX#XEME#8=10.000(1.000)} {origin=fixed_domain}
+[10.0000] next to :- S/NP : (lambda $0:e (near:<e,<e,t>> (the:<<e,t>,e> (lambda $1:e (agent:<e,t> $1))) $0)) {FACLEX#LEX#8#3=0.0(1.000),FACLEX#TMP#3=0.000(0.100),FACLEX#XEME#8=10.000(1.000)} {origin=fixed_domain}
+[20.0000] near :- PP/NP\NP : (lambda $0:e (lambda $1:e (near:<e,<e,t>> $1 $0))) {FACLEX#LEX#15#4=10.000(1.000),FACLEX#TMP#4=0.000(0.100),FACLEX#XEME#15=10.000(1.000)} {origin=fixed_domain}
+[10.0000] near :- S/NP : (lambda $0:e (near:<e,<e,t>> (the:<<e,t>,e> (lambda $1:e (agent:<e,t> $1))) $0)) {FACLEX#LEX#15#3=0.0(1.000),FACLEX#TMP#3=0.000(0.100),FACLEX#XEME#15=10.000(1.000)} {origin=fixed_domain}
+[20.0000] by :- PP/NP\NP : (lambda $0:e (lambda $1:e (near:<e,<e,t>> $1 $0))) {FACLEX#LEX#25#4=10.000(1.000),FACLEX#TMP#4=0.000(0.100),FACLEX#XEME#25=10.000(1.000)} {origin=fixed_domain}
+[10.0000] by :- S/NP : (lambda $0:e (near:<e,<e,t>> (the:<<e,t>,e> (lambda $1:e (agent:<e,t> $1))) $0)) {FACLEX#LEX#25#3=0.0(1.000),FACLEX#TMP#3=0.000(0.100),FACLEX#XEME#25=10.000(1.000)} {origin=fixed_domain}
+[20.0000] blue :- N/N : (lambda $0:<e,t> (lambda $1:e (and:<t*,t> (blue:<e,t> $1) ($0 $1)))) {FACLEX#LEX#16#0=10.000(1.000),FACLEX#TMP#0=0.000(0.100),FACLEX#XEME#16=10.000(1.000)} {origin=fixed_domain}
+[10.0000] blue :- N : (lambda $0:e (blue:<e,t> $0)) {FACLEX#LEX#16#1=0.000(1.000),FACLEX#TMP#1=0.000(0.100),FACLEX#XEME#16=10.000(1.000)} {origin=fixed_domain}
+[10.0000] blue :- S/NP : (lambda $0:e (in:<e,<e,t>> (the:<<e,t>,e> (lambda $1:e (blue:<e,t> $1))) $0)) {FACLEX#LEX#16#10=0.0(1.000),FACLEX#TMP#10=0.000(0.100),FACLEX#XEME#16=10.000(1.000)} {origin=fixed_domain}
+[10.0000] blue :- S/NP : (lambda $0:e (near:<e,<e,t>> (the:<<e,t>,e> (lambda $1:e (blue:<e,t> $1))) $0)) {FACLEX#LEX#16#7=0.0(1.000),FACLEX#TMP#7=0.000(0.100),FACLEX#XEME#16=10.000(1.000)} {origin=fixed_domain}
+[20.0000] left :- PP/NP\NP : (lambda $0:e (lambda $1:e (left:<e,<e,t>> $1 $0))) {FACLEX#LEX#21#4=10.000(1.000),FACLEX#TMP#4=0.000(0.100),FACLEX#XEME#21=10.000(1.000)} {origin=fixed_domain}
+[10.0000] left :- S/NP : (lambda $0:e (left:<e,<e,t>> (the:<<e,t>,e> (lambda $1:e (agent:<e,t> $1))) $0)) {FACLEX#LEX#21#3=0.0(1.000),FACLEX#TMP#3=0.000(0.100),FACLEX#XEME#21=10.000(1.000)} {origin=fixed_domain}
+[20.0000] block :- N : (lambda $0:e (block:<e,t> $0)) {FACLEX#LEX#3#1=10.000(1.000),FACLEX#TMP#1=0.000(0.100),FACLEX#XEME#3=10.000(1.000)} {origin=fixed_domain}
+[10.0000] block :- N/N : (lambda $0:<e,t> (lambda $1:e (and:<t*,t> (block:<e,t> $1) ($0 $1)))) {FACLEX#LEX#3#0=0.0(1.000),FACLEX#TMP#0=0.000(0.100),FACLEX#XEME#3=10.000(1.000)} {origin=fixed_domain}
+[10.0000] block :- S/NP : (lambda $0:e (near:<e,<e,t>> (the:<<e,t>,e> (lambda $1:e (block:<e,t> $1))) $0)) {FACLEX#LEX#3#7=0.0(1.000),FACLEX#TMP#7=0.000(0.100),FACLEX#XEME#3=10.000(1.000)} {origin=fixed_domain}
+[10.0000] block :- S/NP : (lambda $0:e (in:<e,<e,t>> (the:<<e,t>,e> (lambda $1:e (block:<e,t> $1))) $0)) {FACLEX#LEX#3#10=0.0(1.000),FACLEX#TMP#10=0.000(0.100),FACLEX#XEME#3=10.000(1.000)} {origin=fixed_domain}
+[31.4355] move to :- S/NP : (lambda $0:e (near:<e,<e,t>> (the:<<e,t>,e> (lambda $1:e (agent:<e,t> $1))) $0)) {FACLEX#LEX#13#3=21.435(1.000),FACLEX#TMP#3=0.000(0.100),FACLEX#XEME#13=10.000(1.000)} {origin=fixed_domain}
+[31.4355] move to :- S/NP : (lambda $0:e (near:<e,<e,t>> (the:<<e,t>,e> (lambda $1:e (agent:<e,t> $1))) $0)) {FACLEX#LEX#26#7=21.435(1.000),FACLEX#TMP#7=0.000(0.100),FACLEX#XEME#26=10.000(1.000)} {origin=fixed_domain}
+[31.4355] move to :- S/NP : (lambda $0:e (in:<e,<e,t>> (the:<<e,t>,e> (lambda $1:e (agent:<e,t> $1))) $0)) {FACLEX#LEX#17#3=21.435(1.000),FACLEX#TMP#3=0.000(0.100),FACLEX#XEME#17=10.000(1.000)} {origin=fixed_domain}
+[31.4355] move to :- S/NP : (lambda $0:e (in:<e,<e,t>> (the:<<e,t>,e> (lambda $1:e (agent:<e,t> $1))) $0)) {FACLEX#LEX#28#2=21.435(1.000),FACLEX#TMP#2=0.000(0.100),FACLEX#XEME#28=10.000(1.000)} {origin=fixed_domain}
+[31.4355] move to :- S/NP : (lambda $0:e (near:<e,<e,t>> (the:<<e,t>,e> (lambda $1:e (agent:<e,t> $1))) $0)) {FACLEX#LEX#30#2=21.435(1.000),FACLEX#TMP#2=0.000(0.100),FACLEX#XEME#30=10.000(1.000)} {origin=fixed_domain}
+[31.4355] move to :- S/NP : (lambda $0:e (in:<e,<e,t>> (the:<<e,t>,e> (lambda $1:e (agent:<e,t> $1))) $0)) {FACLEX#LEX#26#10=21.435(1.000),FACLEX#TMP#10=0.000(0.100),FACLEX#XEME#26=10.000(1.000)} {origin=fixed_domain}
+[10.0000] move to :- PP/NP\NP : (lambda $0:e (lambda $1:e (in:<e,<e,t>> $1 $0))) {FACLEX#LEX#17#4=0.000(1.000),FACLEX#TMP#4=0.000(0.100),FACLEX#XEME#17=10.000(1.000)} {origin=fixed_domain}
+[10.0000] move to :- PP/NP\NP : (lambda $0:e (lambda $1:e (near:<e,<e,t>> $1 $0))) {FACLEX#LEX#13#4=0.0(1.000),FACLEX#TMP#4=0.000(0.100),FACLEX#XEME#13=10.000(1.000)} {origin=fixed_domain}
+[10.0000] move to :- N/N : (lambda $0:<e,t> (lambda $1:e (and:<t*,t> (agent:<e,t> $1) ($0 $1)))) {FACLEX#LEX#26#0=0.0(1.000),FACLEX#TMP#0=0.000(0.100),FACLEX#XEME#26=10.000(1.000)} {origin=fixed_domain}
+[10.0000] move to :- N : (lambda $0:e (agent:<e,t> $0)) {FACLEX#LEX#26#1=0.0(1.000),FACLEX#TMP#1=0.000(0.100),FACLEX#XEME#26=10.000(1.000)} {origin=fixed_domain}
+[31.4355] can you :- S/S : (lambda $0:t $0) {FACLEX#LEX#9#11=21.435(1.000),FACLEX#TMP#11=0.000(0.100),FACLEX#XEME#9=10.000(1.000)} {origin=fixed_domain}
+[31.4355] can you :- S/S : (lambda $0:<e,t> (lambda $1:e ($0 $1))) {FACLEX#LEX#9#12=21.435(1.000),FACLEX#TMP#12=0.000(0.100),FACLEX#XEME#9=10.000(1.000)} {origin=fixed_domain}
+[10.0000] can you :- N/N : (lambda $0:<e,t> (lambda $1:e ($0 $1))) {FACLEX#LEX#9#5=0.000(1.000),FACLEX#TMP#5=0.000(0.100),FACLEX#XEME#9=10.000(1.000)} {origin=fixed_domain}
+[10.0000] can you :- NP/N : (lambda $0:<e,t> (the:<<e,t>,e> (lambda $1:e ($0 $1)))) {FACLEX#LEX#9#8=0.0(1.000),FACLEX#TMP#8=0.000(0.100),FACLEX#XEME#9=10.000(1.000)} {origin=fixed_domain}
+[10.0000] can you :- S\S : (lambda $0:t $0) {FACLEX#LEX#9#6=0.0(1.000),FACLEX#TMP#6=0.000(0.100),FACLEX#XEME#9=10.000(1.000)} {origin=fixed_domain}
+[10.0000] can you :- S/PP/NP : (lambda $0:e (lambda $1:<e,t> ($1 $0))) {FACLEX#LEX#9#9=0.0(1.000),FACLEX#TMP#9=0.000(0.100),FACLEX#XEME#9=10.000(1.000)} {origin=fixed_domain}
+Feature weights [96]:
+DYNSKIP=-1.0
+FACLEX#LEX#0#0=0.0
+FACLEX#LEX#0#1=10.0
+FACLEX#LEX#1#1=0.0
+FACLEX#LEX#1#10=21.435469250725863
+FACLEX#LEX#1#7=21.435469250725863
+FACLEX#LEX#10#3=0.0
+FACLEX#LEX#10#4=10.0
+FACLEX#LEX#11#12=0.0
+FACLEX#LEX#11#6=10.0
+FACLEX#LEX#11#8=0.0
+FACLEX#LEX#12#7=21.435469250725863
+FACLEX#LEX#13#3=21.435469250725863
+FACLEX#LEX#14#1=10.0
+FACLEX#LEX#15#4=10.0
+FACLEX#LEX#16#0=10.0
+FACLEX#LEX#16#1=0.0
+FACLEX#LEX#17#3=21.435469250725863
+FACLEX#LEX#17#4=0.0
+FACLEX#LEX#18#9=10.0
+FACLEX#LEX#19#0=10.0
+FACLEX#LEX#19#10=0.0
+FACLEX#LEX#2#2=21.435469250725863
+FACLEX#LEX#20#1=10.0
+FACLEX#LEX#20#7=0.0
+FACLEX#LEX#21#4=10.0
+FACLEX#LEX#22#5=10.0
+FACLEX#LEX#22#8=10.0
+FACLEX#LEX#23#3=21.435469250725863
+FACLEX#LEX#23#4=0.0
+FACLEX#LEX#24#3=0.0
+FACLEX#LEX#24#4=10.0
+FACLEX#LEX#25#4=10.0
+FACLEX#LEX#26#10=21.435469250725863
+FACLEX#LEX#26#7=21.435469250725863
+FACLEX#LEX#27#4=10.0
+FACLEX#LEX#28#2=21.435469250725863
+FACLEX#LEX#29#2=21.435469250725863
+FACLEX#LEX#3#1=10.0
+FACLEX#LEX#30#2=21.435469250725863
+FACLEX#LEX#4#3=21.435469250725863
+FACLEX#LEX#5#2=21.435469250725863
+FACLEX#LEX#6#3=21.435469250725863
+FACLEX#LEX#7#0=10.0
+FACLEX#LEX#7#1=0.0
+FACLEX#LEX#8#4=21.435469250725863
+FACLEX#LEX#9#11=21.435469250725863
+FACLEX#LEX#9#12=21.435469250725863
+FACLEX#LEX#9#5=0.0
+FACLEX#LEXDEFAULT=1.0
+FACLEX#TMP#0=0.0
+FACLEX#TMP#1=0.0
+FACLEX#TMP#10=0.0
+FACLEX#TMP#11=0.0
+FACLEX#TMP#12=0.0
+FACLEX#TMP#2=0.0
+FACLEX#TMP#3=0.0
+FACLEX#TMP#4=0.0
+FACLEX#TMP#5=0.0
+FACLEX#TMP#6=0.0
+FACLEX#TMP#7=0.0
+FACLEX#TMP#8=0.0
+FACLEX#TMP#9=0.0
+FACLEX#TMPDEFAULT=1.0
+FACLEX#XEME#0=10.0
+FACLEX#XEME#1=10.0
+FACLEX#XEME#10=10.0
+FACLEX#XEME#11=10.0
+FACLEX#XEME#12=10.0
+FACLEX#XEME#13=10.0
+FACLEX#XEME#14=10.0
+FACLEX#XEME#15=10.0
+FACLEX#XEME#16=10.0
+FACLEX#XEME#17=10.0
+FACLEX#XEME#18=10.0
+FACLEX#XEME#19=10.0
+FACLEX#XEME#2=10.0
+FACLEX#XEME#20=10.0
+FACLEX#XEME#21=10.0
+FACLEX#XEME#22=10.0
+FACLEX#XEME#23=10.0
+FACLEX#XEME#24=10.0
+FACLEX#XEME#25=10.0
+FACLEX#XEME#26=10.0
+FACLEX#XEME#27=10.0
+FACLEX#XEME#28=10.0
+FACLEX#XEME#29=10.0
+FACLEX#XEME#3=10.0
+FACLEX#XEME#30=10.0
+FACLEX#XEME#4=10.0
+FACLEX#XEME#5=10.0
+FACLEX#XEME#6=10.0
+FACLEX#XEME#7=10.0
+FACLEX#XEME#8=10.0
+FACLEX#XEME#9=10.0
+FACLEX#XEMEDEFAULT=1.0

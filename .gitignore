@@ -1,7 +1,5 @@
 *.class
 target/
 *.log
-*.out
-*.sp
 .idea/*
 .idea/workspace.xml

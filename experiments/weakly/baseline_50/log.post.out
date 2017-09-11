@@ -1,0 +1,777 @@
+Lexical entries [384]:
+[0.1543] pink :- N/N : (lambda $0:<e,t> (lambda $1:e (and:<t*,t> (red:<e,t> $1) ($0 $1)))) {FACLEX#LEX#45#0=0.000(1.000),FACLEX#TMP#0=1.543(0.100),FACLEX#XEME#45=0.000(1.000)} {origin=genlex}
+[0.0350] pink :- S/NP : (lambda $0:e (near:<e,<e,t>> (the:<<e,t>,e> (lambda $1:e (red:<e,t> $1))) $0)) {FACLEX#LEX#45#7=0.0(1.000),FACLEX#TMP#7=0.350(0.100),FACLEX#XEME#45=0.000(1.000)} {origin=genlex}
+[0.0000] pink :- N : (lambda $0:e (red:<e,t> $0)) {FACLEX#LEX#45#1=0.0(1.000),FACLEX#TMP#1=0.000(0.100),FACLEX#XEME#45=0.000(1.000)} {origin=genlex}
+[-0.3561] pink :- S/NP : (lambda $0:e (in:<e,<e,t>> (the:<<e,t>,e> (lambda $1:e (red:<e,t> $1))) $0)) {FACLEX#LEX#45#10=0.0(1.000),FACLEX#TMP#10=-3.561(0.100),FACLEX#XEME#45=0.000(1.000)} {origin=genlex}
+[10.7793] next :- S/NP : (lambda $0:e (near:<e,<e,t>> (the:<<e,t>,e> (lambda $1:e (block:<e,t> $1))) $0)) {FACLEX#LEX#62#2=5.350(1.000),FACLEX#TMP#2=0.787(0.100),FACLEX#XEME#62=5.350(1.000)} {origin=genlex}
+[8.3055] next :- S/NP : (lambda $0:e (near:<e,<e,t>> (the:<<e,t>,e> (lambda $1:e (agent:<e,t> $1))) $0)) {FACLEX#LEX#53#2=4.113(1.000),FACLEX#TMP#2=0.787(0.100),FACLEX#XEME#53=4.113(1.000)} {origin=genlex}
+[-9.4094] next :- N/N : (lambda $0:<e,t> (lambda $1:e ($0 $1))) {FACLEX#LEX#84#5=0.0(1.000),FACLEX#TMP#5=0.543(0.100),FACLEX#XEME#84=-9.464(1.000)} {origin=genlex}
+[-9.4348] next :- S\S : (lambda $0:t $0) {FACLEX#LEX#84#6=0.0(1.000),FACLEX#TMP#6=0.289(0.100),FACLEX#XEME#84=-9.464(1.000)} {origin=genlex}
+[-9.4637] next :- S/PP/NP : (lambda $0:e (lambda $1:<e,t> ($1 $0))) {FACLEX#LEX#84#9=0.0(1.000),FACLEX#TMP#9=0.000(0.100),FACLEX#XEME#84=-9.464(1.000)} {origin=genlex}
+[-9.4637] next :- S/S : (lambda $0:<e,t> (lambda $1:e ($0 $1))) {FACLEX#LEX#84#12=0.0(1.000),FACLEX#TMP#12=0.000(0.100),FACLEX#XEME#84=-9.464(1.000)} {origin=genlex}
+[-10.0348] next :- S/S : (lambda $0:t $0) {FACLEX#LEX#84#11=-0.525(1.000),FACLEX#TMP#11=-0.459(0.100),FACLEX#XEME#84=-9.464(1.000)} {origin=genlex}
+[-18.4021] next :- NP/N : (lambda $0:<e,t> (the:<<e,t>,e> (lambda $1:e ($0 $1)))) {FACLEX#LEX#84#8=-8.938(1.000),FACLEX#TMP#8=0.000(0.100),FACLEX#XEME#84=-9.464(1.000)} {origin=genlex}
+[0.0787] Proceed :- S/NP : (lambda $0:e (in:<e,<e,t>> (the:<<e,t>,e> (lambda $1:e (agent:<e,t> $1))) $0)) {FACLEX#LEX#59#2=0.000(1.000),FACLEX#TMP#2=0.787(0.100),FACLEX#XEME#59=0.000(1.000)} {origin=genlex}
+[31.2834] Move :- S/NP : (lambda $0:e (in:<e,<e,t>> (the:<<e,t>,e> (lambda $1:e (agent:<e,t> $1))) $0)) {FACLEX#LEX#39#2=15.602(1.000),FACLEX#TMP#2=0.787(0.100),FACLEX#XEME#39=15.602(1.000)} {origin=genlex}
+[-0.0945] Move :- S/NP : (lambda $0:e (near:<e,<e,t>> (the:<<e,t>,e> (lambda $1:e (agent:<e,t> $1))) $0)) {FACLEX#LEX#37#2=-0.087(1.000),FACLEX#TMP#2=0.787(0.100),FACLEX#XEME#37=-0.087(1.000)} {origin=genlex}
+[-8.6058] Move :- N/N : (lambda $0:<e,t> (lambda $1:e ($0 $1))) {FACLEX#LEX#31#5=0.0(1.000),FACLEX#TMP#5=0.543(0.100),FACLEX#XEME#31=-8.660(1.000)} {origin=genlex}
+[-8.6312] Move :- S\S : (lambda $0:t $0) {FACLEX#LEX#31#6=0.0(1.000),FACLEX#TMP#6=0.289(0.100),FACLEX#XEME#31=-8.660(1.000)} {origin=genlex}
+[-8.6600] Move :- S/S : (lambda $0:<e,t> (lambda $1:e ($0 $1))) {FACLEX#LEX#31#12=0.0(1.000),FACLEX#TMP#12=0.000(0.100),FACLEX#XEME#31=-8.660(1.000)} {origin=genlex}
+[-8.6600] Move :- NP/N : (lambda $0:<e,t> (the:<<e,t>,e> (lambda $1:e ($0 $1)))) {FACLEX#LEX#31#8=0.000(1.000),FACLEX#TMP#8=0.000(0.100),FACLEX#XEME#31=-8.660(1.000)} {origin=genlex}
+[-8.6600] Move :- S/PP/NP : (lambda $0:e (lambda $1:<e,t> ($1 $0))) {FACLEX#LEX#31#9=0.0(1.000),FACLEX#TMP#9=0.000(0.100),FACLEX#XEME#31=-8.660(1.000)} {origin=genlex}
+[-13.6326] Move :- S/NP : (lambda $0:e (right:<e,<e,t>> (the:<<e,t>,e> (lambda $1:e (agent:<e,t> $1))) $0)) {FACLEX#LEX#57#2=-6.856(1.000),FACLEX#TMP#2=0.787(0.100),FACLEX#XEME#57=-6.856(1.000)} {origin=genlex}
+[-17.3660] Move :- S/S : (lambda $0:t $0) {FACLEX#LEX#31#11=-8.660(1.000),FACLEX#TMP#11=-0.459(0.100),FACLEX#XEME#31=-8.660(1.000)} {origin=genlex}
+[0.0543] not :- N/N : (lambda $0:<e,t> (lambda $1:e ($0 $1))) {FACLEX#LEX#61#5=0.000(1.000),FACLEX#TMP#5=0.543(0.100),FACLEX#XEME#61=0.000(1.000)} {origin=genlex}
+[0.0289] not :- S\S : (lambda $0:t $0) {FACLEX#LEX#61#6=0.0(1.000),FACLEX#TMP#6=0.289(0.100),FACLEX#XEME#61=0.000(1.000)} {origin=genlex}
+[0.0000] not :- NP/N : (lambda $0:<e,t> (the:<<e,t>,e> (lambda $1:e ($0 $1)))) {FACLEX#LEX#61#8=0.0(1.000),FACLEX#TMP#8=0.000(0.100),FACLEX#XEME#61=0.000(1.000)} {origin=genlex}
+[0.0000] not :- S/S : (lambda $0:<e,t> (lambda $1:e ($0 $1))) {FACLEX#LEX#61#12=0.0(1.000),FACLEX#TMP#12=0.000(0.100),FACLEX#XEME#61=0.000(1.000)} {origin=genlex}
+[0.0000] not :- S/PP/NP : (lambda $0:e (lambda $1:<e,t> ($1 $0))) {FACLEX#LEX#61#9=0.0(1.000),FACLEX#TMP#9=0.000(0.100),FACLEX#XEME#61=0.000(1.000)} {origin=genlex}
+[-0.0459] not :- S/S : (lambda $0:t $0) {FACLEX#LEX#61#11=0.0(1.000),FACLEX#TMP#11=-0.459(0.100),FACLEX#XEME#61=0.000(1.000)} {origin=genlex}
+[4.0787] close :- S/NP : (lambda $0:e (near:<e,<e,t>> (the:<<e,t>,e> (lambda $1:e (agent:<e,t> $1))) $0)) {FACLEX#LEX#56#2=2.000(1.000),FACLEX#TMP#2=0.787(0.100),FACLEX#XEME#56=2.000(1.000)} {origin=genlex}
+[-1.9711] close :- S\S : (lambda $0:t $0) {FACLEX#LEX#87#6=0.000(1.000),FACLEX#TMP#6=0.289(0.100),FACLEX#XEME#87=-2.000(1.000)} {origin=genlex}
+[-2.0000] close :- S/PP/NP : (lambda $0:e (lambda $1:<e,t> ($1 $0))) {FACLEX#LEX#87#9=0.0(1.000),FACLEX#TMP#9=0.000(0.100),FACLEX#XEME#87=-2.000(1.000)} {origin=genlex}
+[-2.0000] close :- S/S : (lambda $0:<e,t> (lambda $1:e ($0 $1))) {FACLEX#LEX#87#12=0.0(1.000),FACLEX#TMP#12=0.000(0.100),FACLEX#XEME#87=-2.000(1.000)} {origin=genlex}
+[-2.0459] close :- S/S : (lambda $0:t $0) {FACLEX#LEX#87#11=0.0(1.000),FACLEX#TMP#11=-0.459(0.100),FACLEX#XEME#87=-2.000(1.000)} {origin=genlex}
+[-2.9457] close :- N/N : (lambda $0:<e,t> (lambda $1:e ($0 $1))) {FACLEX#LEX#87#5=-1.000(1.000),FACLEX#TMP#5=0.543(0.100),FACLEX#XEME#87=-2.000(1.000)} {origin=genlex}
+[-3.0000] close :- NP/N : (lambda $0:<e,t> (the:<<e,t>,e> (lambda $1:e ($0 $1)))) {FACLEX#LEX#87#8=-1.000(1.000),FACLEX#TMP#8=0.000(0.100),FACLEX#XEME#87=-2.000(1.000)} {origin=genlex}
+[1.0186] and :- N/N : (lambda $0:<e,t> (lambda $1:e ($0 $1))) {FACLEX#LEX#94#5=0.964(1.000),FACLEX#TMP#5=0.543(0.100),FACLEX#XEME#94=0.000(1.000)} {origin=genlex}
+[0.0289] and :- S\S : (lambda $0:t $0) {FACLEX#LEX#94#6=0.0(1.000),FACLEX#TMP#6=0.289(0.100),FACLEX#XEME#94=0.000(1.000)} {origin=genlex}
+[0.0000] and :- S/S : (lambda $0:<e,t> (lambda $1:e ($0 $1))) {FACLEX#LEX#94#12=0.0(1.000),FACLEX#TMP#12=0.000(0.100),FACLEX#XEME#94=0.000(1.000)} {origin=genlex}
+[0.0000] and :- S/PP/NP : (lambda $0:e (lambda $1:<e,t> ($1 $0))) {FACLEX#LEX#94#9=0.000(1.000),FACLEX#TMP#9=0.000(0.100),FACLEX#XEME#94=0.000(1.000)} {origin=genlex}
+[0.0000] and :- NP/N : (lambda $0:<e,t> (the:<<e,t>,e> (lambda $1:e ($0 $1)))) {FACLEX#LEX#94#8=0.0(1.000),FACLEX#TMP#8=0.000(0.100),FACLEX#XEME#94=0.000(1.000)} {origin=genlex}
+[-1.0101] and :- S/S : (lambda $0:t $0) {FACLEX#LEX#94#11=-0.964(1.000),FACLEX#TMP#11=-0.459(0.100),FACLEX#XEME#94=0.000(1.000)} {origin=genlex}
+[6.4259] of :- N/N : (lambda $0:<e,t> (lambda $1:e (and:<t*,t> (red:<e,t> $1) ($0 $1)))) {FACLEX#LEX#51#0=7.112(1.000),FACLEX#TMP#0=1.543(0.100),FACLEX#XEME#51=-0.840(1.000)} {origin=genlex}
+[5.3421] of :- N/N : (lambda $0:<e,t> (lambda $1:e (and:<t*,t> (block:<e,t> $1) ($0 $1)))) {FACLEX#LEX#52#0=2.596(1.000),FACLEX#TMP#0=1.543(0.100),FACLEX#XEME#52=2.592(1.000)} {origin=genlex}
+[5.1083] of :- S/NP : (lambda $0:e (near:<e,<e,t>> (the:<<e,t>,e> (lambda $1:e (block:<e,t> $1))) $0)) {FACLEX#LEX#52#7=2.481(1.000),FACLEX#TMP#7=0.350(0.100),FACLEX#XEME#52=2.592(1.000)} {origin=genlex}
+[1.8349] of :- N : (lambda $0:e (block:<e,t> $0)) {FACLEX#LEX#52#1=-0.757(1.000),FACLEX#TMP#1=0.000(0.100),FACLEX#XEME#52=2.592(1.000)} {origin=genlex}
+[1.4096] of :- N/N : (lambda $0:<e,t> (lambda $1:e ($0 $1))) {FACLEX#LEX#33#5=3.107(1.000),FACLEX#TMP#5=0.543(0.100),FACLEX#XEME#33=-1.752(1.000)} {origin=genlex}
+[0.5078] of :- S/NP : (lambda $0:e (in:<e,<e,t>> (the:<<e,t>,e> (lambda $1:e (block:<e,t> $1))) $0)) {FACLEX#LEX#52#10=-1.728(1.000),FACLEX#TMP#10=-3.561(0.100),FACLEX#XEME#52=2.592(1.000)} {origin=genlex}
+[-1.1309] of :- S/S : (lambda $0:t $0) {FACLEX#LEX#33#11=0.667(1.000),FACLEX#TMP#11=-0.459(0.100),FACLEX#XEME#33=-1.752(1.000)} {origin=genlex}
+[-1.7232] of :- S\S : (lambda $0:t $0) {FACLEX#LEX#33#6=0.0(1.000),FACLEX#TMP#6=0.289(0.100),FACLEX#XEME#33=-1.752(1.000)} {origin=genlex}
+[-1.7521] of :- S/S : (lambda $0:<e,t> (lambda $1:e ($0 $1))) {FACLEX#LEX#33#12=0.0(1.000),FACLEX#TMP#12=0.000(0.100),FACLEX#XEME#33=-1.752(1.000)} {origin=genlex}
+[-1.7521] of :- S/PP/NP : (lambda $0:e (lambda $1:<e,t> ($1 $0))) {FACLEX#LEX#33#9=0.0(1.000),FACLEX#TMP#9=0.000(0.100),FACLEX#XEME#33=-1.752(1.000)} {origin=genlex}
+[-1.7800] of :- S/NP : (lambda $0:e (in:<e,<e,t>> (the:<<e,t>,e> (lambda $1:e (red:<e,t> $1))) $0)) {FACLEX#LEX#51#10=-0.584(1.000),FACLEX#TMP#10=-3.561(0.100),FACLEX#XEME#51=-0.840(1.000)} {origin=genlex}
+[-3.5342] of :- S/NP : (lambda $0:e (near:<e,<e,t>> (the:<<e,t>,e> (lambda $1:e (red:<e,t> $1))) $0)) {FACLEX#LEX#51#7=-2.729(1.000),FACLEX#TMP#7=0.350(0.100),FACLEX#XEME#51=-0.840(1.000)} {origin=genlex}
+[-5.4784] of :- N : (lambda $0:e (red:<e,t> $0)) {FACLEX#LEX#51#1=-4.638(1.000),FACLEX#TMP#1=0.000(0.100),FACLEX#XEME#51=-0.840(1.000)} {origin=genlex}
+[-7.2785] of :- NP/N : (lambda $0:<e,t> (the:<<e,t>,e> (lambda $1:e ($0 $1)))) {FACLEX#LEX#33#8=-5.526(1.000),FACLEX#TMP#8=0.000(0.100),FACLEX#XEME#33=-1.752(1.000)} {origin=genlex}
+[20.0000] by :- PP/NP\NP : (lambda $0:e (lambda $1:e (near:<e,<e,t>> $1 $0))) {FACLEX#LEX#25#4=10.000(1.000),FACLEX#TMP#4=0.000(0.100),FACLEX#XEME#25=10.000(1.000)} {origin=fixed_domain}
+[10.0504] by :- S/NP : (lambda $0:e (near:<e,<e,t>> (the:<<e,t>,e> (lambda $1:e (agent:<e,t> $1))) $0)) {FACLEX#LEX#25#3=0.0(1.000),FACLEX#TMP#3=0.504(0.100),FACLEX#XEME#25=10.000(1.000)} {origin=fixed_domain}
+[0.0543] by :- N/N : (lambda $0:<e,t> (lambda $1:e ($0 $1))) {FACLEX#LEX#79#5=0.0(1.000),FACLEX#TMP#5=0.543(0.100),FACLEX#XEME#79=0.000(1.000)} {origin=genlex}
+[0.0289] by :- S\S : (lambda $0:t $0) {FACLEX#LEX#79#6=0.0(1.000),FACLEX#TMP#6=0.289(0.100),FACLEX#XEME#79=0.000(1.000)} {origin=genlex}
+[0.0000] by :- S/S : (lambda $0:<e,t> (lambda $1:e ($0 $1))) {FACLEX#LEX#79#12=0.000(1.000),FACLEX#TMP#12=0.000(0.100),FACLEX#XEME#79=0.000(1.000)} {origin=genlex}
+[0.0000] by :- S/PP/NP : (lambda $0:e (lambda $1:<e,t> ($1 $0))) {FACLEX#LEX#79#9=0.0(1.000),FACLEX#TMP#9=0.000(0.100),FACLEX#XEME#79=0.000(1.000)} {origin=genlex}
+[0.0000] by :- NP/N : (lambda $0:<e,t> (the:<<e,t>,e> (lambda $1:e ($0 $1)))) {FACLEX#LEX#79#8=0.0(1.000),FACLEX#TMP#8=0.000(0.100),FACLEX#XEME#79=0.000(1.000)} {origin=genlex}
+[-0.0459] by :- S/S : (lambda $0:t $0) {FACLEX#LEX#79#11=0.0(1.000),FACLEX#TMP#11=-0.459(0.100),FACLEX#XEME#79=0.000(1.000)} {origin=genlex}
+[0.2787] positioned :- S/NP : (lambda $0:e (near:<e,<e,t>> (the:<<e,t>,e> (lambda $1:e (agent:<e,t> $1))) $0)) {FACLEX#LEX#91#2=0.100(1.000),FACLEX#TMP#2=0.787(0.100),FACLEX#XEME#91=0.100(1.000)} {origin=genlex}
+[-0.1213] positioned :- S/NP : (lambda $0:e (right:<e,<e,t>> (the:<<e,t>,e> (lambda $1:e (agent:<e,t> $1))) $0)) {FACLEX#LEX#78#2=-0.100(1.000),FACLEX#TMP#2=0.787(0.100),FACLEX#XEME#78=-0.100(1.000)} {origin=genlex}
+[5.4463] colored :- N : (lambda $0:e (room:<e,t> $0)) {FACLEX#LEX#44#1=4.112(1.000),FACLEX#TMP#1=0.000(0.100),FACLEX#XEME#44=1.334(1.000)} {origin=genlex}
+[2.6820] colored :- N/N : (lambda $0:<e,t> (lambda $1:e (and:<t*,t> (red:<e,t> $1) ($0 $1)))) {FACLEX#LEX#43#0=3.862(1.000),FACLEX#TMP#0=1.543(0.100),FACLEX#XEME#43=-1.334(1.000)} {origin=genlex}
+[1.3694] colored :- S/NP : (lambda $0:e (near:<e,<e,t>> (the:<<e,t>,e> (lambda $1:e (room:<e,t> $1))) $0)) {FACLEX#LEX#44#7=0.0(1.000),FACLEX#TMP#7=0.350(0.100),FACLEX#XEME#44=1.334(1.000)} {origin=genlex}
+[0.9783] colored :- S/NP : (lambda $0:e (in:<e,<e,t>> (the:<<e,t>,e> (lambda $1:e (room:<e,t> $1))) $0)) {FACLEX#LEX#44#10=0.000(1.000),FACLEX#TMP#10=-3.561(0.100),FACLEX#XEME#44=1.334(1.000)} {origin=genlex}
+[-1.2890] colored :- N/N : (lambda $0:<e,t> (lambda $1:e (and:<t*,t> (room:<e,t> $1) ($0 $1)))) {FACLEX#LEX#44#0=-2.778(1.000),FACLEX#TMP#0=1.543(0.100),FACLEX#XEME#44=1.334(1.000)} {origin=genlex}
+[-1.2994] colored :- S/NP : (lambda $0:e (near:<e,<e,t>> (the:<<e,t>,e> (lambda $1:e (red:<e,t> $1))) $0)) {FACLEX#LEX#43#7=0.0(1.000),FACLEX#TMP#7=0.350(0.100),FACLEX#XEME#43=-1.334(1.000)} {origin=genlex}
+[-1.6905] colored :- S/NP : (lambda $0:e (in:<e,<e,t>> (the:<<e,t>,e> (lambda $1:e (red:<e,t> $1))) $0)) {FACLEX#LEX#43#10=0.0(1.000),FACLEX#TMP#10=-3.561(0.100),FACLEX#XEME#43=-1.334(1.000)} {origin=genlex}
+[-6.5308] colored :- N : (lambda $0:e (red:<e,t> $0)) {FACLEX#LEX#43#1=-5.196(1.000),FACLEX#TMP#1=0.000(0.100),FACLEX#XEME#43=-1.334(1.000)} {origin=genlex}
+[0.0543] so :- N/N : (lambda $0:<e,t> (lambda $1:e ($0 $1))) {FACLEX#LEX#75#5=0.0(1.000),FACLEX#TMP#5=0.543(0.100),FACLEX#XEME#75=0.000(1.000)} {origin=genlex}
+[0.0289] so :- S\S : (lambda $0:t $0) {FACLEX#LEX#75#6=0.0(1.000),FACLEX#TMP#6=0.289(0.100),FACLEX#XEME#75=0.000(1.000)} {origin=genlex}
+[0.0000] so :- S/PP/NP : (lambda $0:e (lambda $1:<e,t> ($1 $0))) {FACLEX#LEX#75#9=0.000(1.000),FACLEX#TMP#9=0.000(0.100),FACLEX#XEME#75=0.000(1.000)} {origin=genlex}
+[0.0000] so :- NP/N : (lambda $0:<e,t> (the:<<e,t>,e> (lambda $1:e ($0 $1)))) {FACLEX#LEX#75#8=0.0(1.000),FACLEX#TMP#8=0.000(0.100),FACLEX#XEME#75=0.000(1.000)} {origin=genlex}
+[0.0000] so :- S/S : (lambda $0:<e,t> (lambda $1:e ($0 $1))) {FACLEX#LEX#75#12=0.0(1.000),FACLEX#TMP#12=0.000(0.100),FACLEX#XEME#75=0.000(1.000)} {origin=genlex}
+[-0.0459] so :- S/S : (lambda $0:t $0) {FACLEX#LEX#75#11=0.0(1.000),FACLEX#TMP#11=-0.459(0.100),FACLEX#XEME#75=0.000(1.000)} {origin=genlex}
+[1.6585] on :- NP/N : (lambda $0:<e,t> (the:<<e,t>,e> (lambda $1:e ($0 $1)))) {FACLEX#LEX#93#8=1.658(1.000),FACLEX#TMP#8=0.000(0.100),FACLEX#XEME#93=0.000(1.000)} {origin=genlex}
+[0.0543] on :- N/N : (lambda $0:<e,t> (lambda $1:e ($0 $1))) {FACLEX#LEX#93#5=0.000(1.000),FACLEX#TMP#5=0.543(0.100),FACLEX#XEME#93=0.000(1.000)} {origin=genlex}
+[0.0289] on :- S\S : (lambda $0:t $0) {FACLEX#LEX#93#6=0.0(1.000),FACLEX#TMP#6=0.289(0.100),FACLEX#XEME#93=0.000(1.000)} {origin=genlex}
+[0.0000] on :- S/PP/NP : (lambda $0:e (lambda $1:<e,t> ($1 $0))) {FACLEX#LEX#93#9=0.0(1.000),FACLEX#TMP#9=0.000(0.100),FACLEX#XEME#93=0.000(1.000)} {origin=genlex}
+[0.0000] on :- S/S : (lambda $0:<e,t> (lambda $1:e ($0 $1))) {FACLEX#LEX#93#12=0.0(1.000),FACLEX#TMP#12=0.000(0.100),FACLEX#XEME#93=0.000(1.000)} {origin=genlex}
+[-1.7043] on :- S/S : (lambda $0:t $0) {FACLEX#LEX#93#11=-1.658(1.000),FACLEX#TMP#11=-0.459(0.100),FACLEX#XEME#93=0.000(1.000)} {origin=genlex}
+[31.5142] move to :- S/NP : (lambda $0:e (near:<e,<e,t>> (the:<<e,t>,e> (lambda $1:e (agent:<e,t> $1))) $0)) {FACLEX#LEX#30#2=21.435(1.000),FACLEX#TMP#2=0.787(0.100),FACLEX#XEME#30=10.000(1.000)} {origin=fixed_domain}
+[31.5142] move to :- S/NP : (lambda $0:e (in:<e,<e,t>> (the:<<e,t>,e> (lambda $1:e (agent:<e,t> $1))) $0)) {FACLEX#LEX#28#2=21.435(1.000),FACLEX#TMP#2=0.787(0.100),FACLEX#XEME#28=10.000(1.000)} {origin=fixed_domain}
+[31.4859] move to :- S/NP : (lambda $0:e (in:<e,<e,t>> (the:<<e,t>,e> (lambda $1:e (agent:<e,t> $1))) $0)) {FACLEX#LEX#17#3=21.435(1.000),FACLEX#TMP#3=0.504(0.100),FACLEX#XEME#17=10.000(1.000)} {origin=fixed_domain}
+[31.4859] move to :- S/NP : (lambda $0:e (near:<e,<e,t>> (the:<<e,t>,e> (lambda $1:e (agent:<e,t> $1))) $0)) {FACLEX#LEX#13#3=21.435(1.000),FACLEX#TMP#3=0.504(0.100),FACLEX#XEME#13=10.000(1.000)} {origin=fixed_domain}
+[31.4705] move to :- S/NP : (lambda $0:e (near:<e,<e,t>> (the:<<e,t>,e> (lambda $1:e (agent:<e,t> $1))) $0)) {FACLEX#LEX#26#7=21.435(1.000),FACLEX#TMP#7=0.350(0.100),FACLEX#XEME#26=10.000(1.000)} {origin=fixed_domain}
+[31.0794] move to :- S/NP : (lambda $0:e (in:<e,<e,t>> (the:<<e,t>,e> (lambda $1:e (agent:<e,t> $1))) $0)) {FACLEX#LEX#26#10=21.435(1.000),FACLEX#TMP#10=-3.561(0.100),FACLEX#XEME#26=10.000(1.000)} {origin=fixed_domain}
+[10.1543] move to :- N/N : (lambda $0:<e,t> (lambda $1:e (and:<t*,t> (agent:<e,t> $1) ($0 $1)))) {FACLEX#LEX#26#0=0.0(1.000),FACLEX#TMP#0=1.543(0.100),FACLEX#XEME#26=10.000(1.000)} {origin=fixed_domain}
+[10.0000] move to :- PP/NP\NP : (lambda $0:e (lambda $1:e (near:<e,<e,t>> $1 $0))) {FACLEX#LEX#13#4=0.0(1.000),FACLEX#TMP#4=0.000(0.100),FACLEX#XEME#13=10.000(1.000)} {origin=fixed_domain}
+[10.0000] move to :- N : (lambda $0:e (agent:<e,t> $0)) {FACLEX#LEX#26#1=0.0(1.000),FACLEX#TMP#1=0.000(0.100),FACLEX#XEME#26=10.000(1.000)} {origin=fixed_domain}
+[10.0000] move to :- PP/NP\NP : (lambda $0:e (lambda $1:e (in:<e,<e,t>> $1 $0))) {FACLEX#LEX#17#4=0.000(1.000),FACLEX#TMP#4=0.000(0.100),FACLEX#XEME#17=10.000(1.000)} {origin=fixed_domain}
+[5.2513] stand :- S/S : (lambda $0:t $0) {FACLEX#LEX#36#11=8.395(1.000),FACLEX#TMP#11=-0.459(0.100),FACLEX#XEME#36=-3.098(1.000)} {origin=genlex}
+[3.3322] stand :- S/NP : (lambda $0:e (near:<e,<e,t>> (the:<<e,t>,e> (lambda $1:e (agent:<e,t> $1))) $0)) {FACLEX#LEX#83#2=1.627(1.000),FACLEX#TMP#2=0.787(0.100),FACLEX#XEME#83=1.627(1.000)} {origin=genlex}
+[3.0204] stand :- S/NP : (lambda $0:e (right:<e,<e,t>> (the:<<e,t>,e> (lambda $1:e (agent:<e,t> $1))) $0)) {FACLEX#LEX#54#2=1.471(1.000),FACLEX#TMP#2=0.787(0.100),FACLEX#XEME#54=1.471(1.000)} {origin=genlex}
+[-3.0433] stand :- N/N : (lambda $0:<e,t> (lambda $1:e ($0 $1))) {FACLEX#LEX#36#5=0.000(1.000),FACLEX#TMP#5=0.543(0.100),FACLEX#XEME#36=-3.098(1.000)} {origin=genlex}
+[-3.0687] stand :- S\S : (lambda $0:t $0) {FACLEX#LEX#36#6=0.0(1.000),FACLEX#TMP#6=0.289(0.100),FACLEX#XEME#36=-3.098(1.000)} {origin=genlex}
+[-3.0976] stand :- S/S : (lambda $0:<e,t> (lambda $1:e ($0 $1))) {FACLEX#LEX#36#12=0.0(1.000),FACLEX#TMP#12=0.000(0.100),FACLEX#XEME#36=-3.098(1.000)} {origin=genlex}
+[-3.0976] stand :- S/PP/NP : (lambda $0:e (lambda $1:<e,t> ($1 $0))) {FACLEX#LEX#36#9=0.0(1.000),FACLEX#TMP#9=0.000(0.100),FACLEX#XEME#36=-3.098(1.000)} {origin=genlex}
+[-14.5899] stand :- NP/N : (lambda $0:<e,t> (the:<<e,t>,e> (lambda $1:e ($0 $1)))) {FACLEX#LEX#36#8=-11.492(1.000),FACLEX#TMP#8=0.000(0.100),FACLEX#XEME#36=-3.098(1.000)} {origin=genlex}
+[1.0000] a :- NP/N : (lambda $0:<e,t> (the:<<e,t>,e> (lambda $1:e ($0 $1)))) {FACLEX#LEX#70#8=1.000(1.000),FACLEX#TMP#8=0.000(0.100),FACLEX#XEME#70=0.000(1.000)} {origin=genlex}
+[0.9541] a :- S/S : (lambda $0:t $0) {FACLEX#LEX#70#11=1.000(1.000),FACLEX#TMP#11=-0.459(0.100),FACLEX#XEME#70=0.000(1.000)} {origin=genlex}
+[0.0289] a :- S\S : (lambda $0:t $0) {FACLEX#LEX#70#6=0.0(1.000),FACLEX#TMP#6=0.289(0.100),FACLEX#XEME#70=0.000(1.000)} {origin=genlex}
+[0.0000] a :- S/PP/NP : (lambda $0:e (lambda $1:<e,t> ($1 $0))) {FACLEX#LEX#70#9=0.0(1.000),FACLEX#TMP#9=0.000(0.100),FACLEX#XEME#70=0.000(1.000)} {origin=genlex}
+[0.0000] a :- S/S : (lambda $0:<e,t> (lambda $1:e ($0 $1))) {FACLEX#LEX#70#12=0.000(1.000),FACLEX#TMP#12=0.000(0.100),FACLEX#XEME#70=0.000(1.000)} {origin=genlex}
+[-1.9457] a :- N/N : (lambda $0:<e,t> (lambda $1:e ($0 $1))) {FACLEX#LEX#70#5=-2.000(1.000),FACLEX#TMP#5=0.543(0.100),FACLEX#XEME#70=0.000(1.000)} {origin=genlex}
+[31.4355] can you :- S/S : (lambda $0:<e,t> (lambda $1:e ($0 $1))) {FACLEX#LEX#9#12=21.435(1.000),FACLEX#TMP#12=0.000(0.100),FACLEX#XEME#9=10.000(1.000)} {origin=fixed_domain}
+[31.3896] can you :- S/S : (lambda $0:t $0) {FACLEX#LEX#9#11=21.435(1.000),FACLEX#TMP#11=-0.459(0.100),FACLEX#XEME#9=10.000(1.000)} {origin=fixed_domain}
+[10.0543] can you :- N/N : (lambda $0:<e,t> (lambda $1:e ($0 $1))) {FACLEX#LEX#9#5=0.000(1.000),FACLEX#TMP#5=0.543(0.100),FACLEX#XEME#9=10.000(1.000)} {origin=fixed_domain}
+[10.0289] can you :- S\S : (lambda $0:t $0) {FACLEX#LEX#9#6=0.0(1.000),FACLEX#TMP#6=0.289(0.100),FACLEX#XEME#9=10.000(1.000)} {origin=fixed_domain}
+[10.0000] can you :- S/PP/NP : (lambda $0:e (lambda $1:<e,t> ($1 $0))) {FACLEX#LEX#9#9=0.0(1.000),FACLEX#TMP#9=0.000(0.100),FACLEX#XEME#9=10.000(1.000)} {origin=fixed_domain}
+[10.0000] can you :- NP/N : (lambda $0:<e,t> (the:<<e,t>,e> (lambda $1:e ($0 $1)))) {FACLEX#LEX#9#8=0.0(1.000),FACLEX#TMP#8=0.000(0.100),FACLEX#XEME#9=10.000(1.000)} {origin=fixed_domain}
+[34.6329] chair :- N : (lambda $0:e (block:<e,t> $0)) {FACLEX#LEX#34#1=15.658(1.000),FACLEX#TMP#1=0.000(0.100),FACLEX#XEME#34=18.974(1.000)} {origin=genlex}
+[27.2914] chair :- S/NP : (lambda $0:e (near:<e,<e,t>> (the:<<e,t>,e> (lambda $1:e (block:<e,t> $1))) $0)) {FACLEX#LEX#34#7=8.282(1.000),FACLEX#TMP#7=0.350(0.100),FACLEX#XEME#34=18.974(1.000)} {origin=genlex}
+[22.7874] chair :- N/N : (lambda $0:<e,t> (lambda $1:e (and:<t*,t> (block:<e,t> $1) ($0 $1)))) {FACLEX#LEX#34#0=3.659(1.000),FACLEX#TMP#0=1.543(0.100),FACLEX#XEME#34=18.974(1.000)} {origin=genlex}
+[9.9936] chair :- S/NP : (lambda $0:e (in:<e,<e,t>> (the:<<e,t>,e> (lambda $1:e (block:<e,t> $1))) $0)) {FACLEX#LEX#34#10=-8.625(1.000),FACLEX#TMP#10=-3.561(0.100),FACLEX#XEME#34=18.974(1.000)} {origin=genlex}
+[-19.6282] chair :- S/NP : (lambda $0:e (in:<e,<e,t>> (the:<<e,t>,e> (lambda $1:e (red:<e,t> $1))) $0)) {FACLEX#LEX#89#10=-0.298(1.000),FACLEX#TMP#10=-3.561(0.100),FACLEX#XEME#89=-18.974(1.000)} {origin=genlex}
+[-20.7658] chair :- S/NP : (lambda $0:e (near:<e,<e,t>> (the:<<e,t>,e> (lambda $1:e (red:<e,t> $1))) $0)) {FACLEX#LEX#89#7=-1.826(1.000),FACLEX#TMP#7=0.350(0.100),FACLEX#XEME#89=-18.974(1.000)} {origin=genlex}
+[-21.5146] chair :- N/N : (lambda $0:<e,t> (lambda $1:e (and:<t*,t> (red:<e,t> $1) ($0 $1)))) {FACLEX#LEX#89#0=-2.694(1.000),FACLEX#TMP#0=1.543(0.100),FACLEX#XEME#89=-18.974(1.000)} {origin=genlex}
+[-33.1304] chair :- N : (lambda $0:e (red:<e,t> $0)) {FACLEX#LEX#89#1=-14.156(1.000),FACLEX#TMP#1=0.000(0.100),FACLEX#XEME#89=-18.974(1.000)} {origin=genlex}
+[11.7422] side :- NP/N : (lambda $0:<e,t> (the:<<e,t>,e> (lambda $1:e ($0 $1)))) {FACLEX#LEX#50#8=8.482(1.000),FACLEX#TMP#8=0.000(0.100),FACLEX#XEME#50=3.260(1.000)} {origin=genlex}
+[3.2886] side :- S\S : (lambda $0:t $0) {FACLEX#LEX#50#6=0.0(1.000),FACLEX#TMP#6=0.289(0.100),FACLEX#XEME#50=3.260(1.000)} {origin=genlex}
+[3.2597] side :- S/S : (lambda $0:<e,t> (lambda $1:e ($0 $1))) {FACLEX#LEX#50#12=0.0(1.000),FACLEX#TMP#12=0.000(0.100),FACLEX#XEME#50=3.260(1.000)} {origin=genlex}
+[3.2597] side :- S/PP/NP : (lambda $0:e (lambda $1:<e,t> ($1 $0))) {FACLEX#LEX#50#9=0.000(1.000),FACLEX#TMP#9=0.000(0.100),FACLEX#XEME#50=3.260(1.000)} {origin=genlex}
+[3.2139] side :- S/S : (lambda $0:t $0) {FACLEX#LEX#50#11=0.0(1.000),FACLEX#TMP#11=-0.459(0.100),FACLEX#XEME#50=3.260(1.000)} {origin=genlex}
+[-1.1195] side :- S/NP : (lambda $0:e (near:<e,<e,t>> (the:<<e,t>,e> (lambda $1:e (block:<e,t> $1))) $0)) {FACLEX#LEX#82#7=0.0(1.000),FACLEX#TMP#7=0.350(0.100),FACLEX#XEME#82=-1.154(1.000)} {origin=genlex}
+[-1.1544] side :- N : (lambda $0:e (block:<e,t> $0)) {FACLEX#LEX#82#1=0.000(1.000),FACLEX#TMP#1=0.000(0.100),FACLEX#XEME#82=-1.154(1.000)} {origin=genlex}
+[-1.5106] side :- S/NP : (lambda $0:e (in:<e,<e,t>> (the:<<e,t>,e> (lambda $1:e (block:<e,t> $1))) $0)) {FACLEX#LEX#82#10=0.0(1.000),FACLEX#TMP#10=-3.561(0.100),FACLEX#XEME#82=-1.154(1.000)} {origin=genlex}
+[-1.9087] side :- N/N : (lambda $0:<e,t> (lambda $1:e ($0 $1))) {FACLEX#LEX#50#5=-5.223(1.000),FACLEX#TMP#5=0.543(0.100),FACLEX#XEME#50=3.260(1.000)} {origin=genlex}
+[-2.1053] side :- N : (lambda $0:e (red:<e,t> $0)) {FACLEX#LEX#88#1=0.0(1.000),FACLEX#TMP#1=0.000(0.100),FACLEX#XEME#88=-2.105(1.000)} {origin=genlex}
+[-2.1546] side :- N/N : (lambda $0:<e,t> (lambda $1:e (and:<t*,t> (block:<e,t> $1) ($0 $1)))) {FACLEX#LEX#82#0=-1.154(1.000),FACLEX#TMP#0=1.543(0.100),FACLEX#XEME#82=-1.154(1.000)} {origin=genlex}
+[-2.4614] side :- S/NP : (lambda $0:e (in:<e,<e,t>> (the:<<e,t>,e> (lambda $1:e (red:<e,t> $1))) $0)) {FACLEX#LEX#88#10=0.000(1.000),FACLEX#TMP#10=-3.561(0.100),FACLEX#XEME#88=-2.105(1.000)} {origin=genlex}
+[-2.6398] side :- S/NP : (lambda $0:e (near:<e,<e,t>> (the:<<e,t>,e> (lambda $1:e (red:<e,t> $1))) $0)) {FACLEX#LEX#88#7=-0.569(1.000),FACLEX#TMP#7=0.350(0.100),FACLEX#XEME#88=-2.105(1.000)} {origin=genlex}
+[-3.4869] side :- N/N : (lambda $0:<e,t> (lambda $1:e (and:<t*,t> (red:<e,t> $1) ($0 $1)))) {FACLEX#LEX#88#0=-1.536(1.000),FACLEX#TMP#0=1.543(0.100),FACLEX#XEME#88=-2.105(1.000)} {origin=genlex}
+[20.1543] green :- N/N : (lambda $0:<e,t> (lambda $1:e (and:<t*,t> (green:<e,t> $1) ($0 $1)))) {FACLEX#LEX#7#0=10.000(1.000),FACLEX#TMP#0=1.543(0.100),FACLEX#XEME#7=10.000(1.000)} {origin=fixed_domain}
+[10.0350] green :- S/NP : (lambda $0:e (near:<e,<e,t>> (the:<<e,t>,e> (lambda $1:e (green:<e,t> $1))) $0)) {FACLEX#LEX#7#7=0.0(1.000),FACLEX#TMP#7=0.350(0.100),FACLEX#XEME#7=10.000(1.000)} {origin=fixed_domain}
+[10.0000] green :- N : (lambda $0:e (green:<e,t> $0)) {FACLEX#LEX#7#1=0.000(1.000),FACLEX#TMP#1=0.000(0.100),FACLEX#XEME#7=10.000(1.000)} {origin=fixed_domain}
+[9.6439] green :- S/NP : (lambda $0:e (in:<e,<e,t>> (the:<<e,t>,e> (lambda $1:e (green:<e,t> $1))) $0)) {FACLEX#LEX#7#10=0.0(1.000),FACLEX#TMP#10=-3.561(0.100),FACLEX#XEME#7=10.000(1.000)} {origin=fixed_domain}
+[41.3353] room :- N : (lambda $0:e (room:<e,t> $0)) {FACLEX#LEX#20#1=26.883(1.000),FACLEX#TMP#1=0.000(0.100),FACLEX#XEME#20=14.453(1.000)} {origin=fixed_domain}
+[13.0349] room :- S/NP : (lambda $0:e (in:<e,<e,t>> (the:<<e,t>,e> (lambda $1:e (room:<e,t> $1))) $0)) {FACLEX#LEX#20#10=-1.062(1.000),FACLEX#TMP#10=-3.561(0.100),FACLEX#XEME#20=14.453(1.000)} {origin=fixed_domain}
+[11.6334] room :- S/NP : (lambda $0:e (near:<e,<e,t>> (the:<<e,t>,e> (lambda $1:e (room:<e,t> $1))) $0)) {FACLEX#LEX#20#7=-2.854(1.000),FACLEX#TMP#7=0.350(0.100),FACLEX#XEME#20=14.453(1.000)} {origin=fixed_domain}
+[6.8951] room :- S\S : (lambda $0:t $0) {FACLEX#LEX#99#6=2.886(1.000),FACLEX#TMP#6=0.289(0.100),FACLEX#XEME#99=3.980(1.000)} {origin=genlex}
+[6.0923] room :- N/N : (lambda $0:<e,t> (lambda $1:e (and:<t*,t> (room:<e,t> $1) ($0 $1)))) {FACLEX#LEX#20#0=-8.515(1.000),FACLEX#TMP#0=1.543(0.100),FACLEX#XEME#20=14.453(1.000)} {origin=fixed_domain}
+[5.1293] room :- N/N : (lambda $0:<e,t> (lambda $1:e ($0 $1))) {FACLEX#LEX#99#5=1.095(1.000),FACLEX#TMP#5=0.543(0.100),FACLEX#XEME#99=3.980(1.000)} {origin=genlex}
+[3.9804] room :- NP/N : (lambda $0:<e,t> (the:<<e,t>,e> (lambda $1:e ($0 $1)))) {FACLEX#LEX#99#8=0.0(1.000),FACLEX#TMP#8=0.000(0.100),FACLEX#XEME#99=3.980(1.000)} {origin=genlex}
+[3.9804] room :- S/S : (lambda $0:<e,t> (lambda $1:e ($0 $1))) {FACLEX#LEX#99#12=0.0(1.000),FACLEX#TMP#12=0.000(0.100),FACLEX#XEME#99=3.980(1.000)} {origin=genlex}
+[3.9804] room :- S/PP/NP : (lambda $0:e (lambda $1:<e,t> ($1 $0))) {FACLEX#LEX#99#9=0.0(1.000),FACLEX#TMP#9=0.000(0.100),FACLEX#XEME#99=3.980(1.000)} {origin=genlex}
+[3.9346] room :- S/S : (lambda $0:t $0) {FACLEX#LEX#99#11=0.0(1.000),FACLEX#TMP#11=-0.459(0.100),FACLEX#XEME#99=3.980(1.000)} {origin=genlex}
+[-0.3967] room :- N/N : (lambda $0:<e,t> (lambda $1:e (and:<t*,t> (block:<e,t> $1) ($0 $1)))) {FACLEX#LEX#73#0=7.882(1.000),FACLEX#TMP#0=1.543(0.100),FACLEX#XEME#73=-8.433(1.000)} {origin=genlex}
+[-8.8204] room :- S/NP : (lambda $0:e (in:<e,<e,t>> (the:<<e,t>,e> (lambda $1:e (block:<e,t> $1))) $0)) {FACLEX#LEX#73#10=-0.031(1.000),FACLEX#TMP#10=-3.561(0.100),FACLEX#XEME#73=-8.433(1.000)} {origin=genlex}
+[-9.9186] room :- S/NP : (lambda $0:e (near:<e,<e,t>> (the:<<e,t>,e> (lambda $1:e (block:<e,t> $1))) $0)) {FACLEX#LEX#73#7=-1.521(1.000),FACLEX#TMP#7=0.350(0.100),FACLEX#XEME#73=-8.433(1.000)} {origin=genlex}
+[-23.1962] room :- N : (lambda $0:e (block:<e,t> $0)) {FACLEX#LEX#73#1=-14.763(1.000),FACLEX#TMP#1=0.000(0.100),FACLEX#XEME#73=-8.433(1.000)} {origin=genlex}
+[30.7614] right :- S/NP : (lambda $0:e (near:<e,<e,t>> (the:<<e,t>,e> (lambda $1:e (block:<e,t> $1))) $0)) {FACLEX#LEX#58#7=23.502(1.000),FACLEX#TMP#7=0.350(0.100),FACLEX#XEME#58=7.224(1.000)} {origin=genlex}
+[25.0636] right :- PP/NP\NP : (lambda $0:e (lambda $1:e (right:<e,<e,t>> $1 $0))) {FACLEX#LEX#27#4=10.000(1.000),FACLEX#TMP#4=0.000(0.100),FACLEX#XEME#27=15.064(1.000)} {origin=fixed_domain}
+[20.1776] right :- S/NP : (lambda $0:e (right:<e,<e,t>> (the:<<e,t>,e> (lambda $1:e (agent:<e,t> $1))) $0)) {FACLEX#LEX#27#3=5.064(1.000),FACLEX#TMP#3=0.504(0.100),FACLEX#XEME#27=15.064(1.000)} {origin=fixed_domain}
+[6.2373] right :- N : (lambda $0:e (block:<e,t> $0)) {FACLEX#LEX#58#1=-0.987(1.000),FACLEX#TMP#1=0.000(0.100),FACLEX#XEME#58=7.224(1.000)} {origin=genlex}
+[4.7319] right :- N/N : (lambda $0:<e,t> (lambda $1:e (and:<t*,t> (block:<e,t> $1) ($0 $1)))) {FACLEX#LEX#58#0=-2.647(1.000),FACLEX#TMP#0=1.543(0.100),FACLEX#XEME#58=7.224(1.000)} {origin=genlex}
+[-3.0550] right :- S\S : (lambda $0:t $0) {FACLEX#LEX#102#6=0.0(1.000),FACLEX#TMP#6=0.289(0.100),FACLEX#XEME#102=-3.084(1.000)} {origin=genlex}
+[-3.0839] right :- NP/N : (lambda $0:<e,t> (the:<<e,t>,e> (lambda $1:e ($0 $1)))) {FACLEX#LEX#102#8=0.0(1.000),FACLEX#TMP#8=0.000(0.100),FACLEX#XEME#102=-3.084(1.000)} {origin=genlex}
+[-3.0839] right :- S/PP/NP : (lambda $0:e (lambda $1:<e,t> ($1 $0))) {FACLEX#LEX#102#9=0.0(1.000),FACLEX#TMP#9=0.000(0.100),FACLEX#XEME#102=-3.084(1.000)} {origin=genlex}
+[-3.0839] right :- S/S : (lambda $0:<e,t> (lambda $1:e ($0 $1))) {FACLEX#LEX#102#12=0.000(1.000),FACLEX#TMP#12=0.000(0.100),FACLEX#XEME#102=-3.084(1.000)} {origin=genlex}
+[-3.6992] right :- S/S : (lambda $0:t $0) {FACLEX#LEX#102#11=-0.569(1.000),FACLEX#TMP#11=-0.459(0.100),FACLEX#XEME#102=-3.084(1.000)} {origin=genlex}
+[-5.2819] right :- N/N : (lambda $0:<e,t> (lambda $1:e (and:<t*,t> (red:<e,t> $1) ($0 $1)))) {FACLEX#LEX#55#0=3.768(1.000),FACLEX#TMP#0=1.543(0.100),FACLEX#XEME#55=-9.204(1.000)} {origin=genlex}
+[-5.5440] right :- N/N : (lambda $0:<e,t> (lambda $1:e ($0 $1))) {FACLEX#LEX#102#5=-2.514(1.000),FACLEX#TMP#5=0.543(0.100),FACLEX#XEME#102=-3.084(1.000)} {origin=genlex}
+[-5.7757] right :- S/NP : (lambda $0:e (in:<e,<e,t>> (the:<<e,t>,e> (lambda $1:e (block:<e,t> $1))) $0)) {FACLEX#LEX#58#10=-12.644(1.000),FACLEX#TMP#10=-3.561(0.100),FACLEX#XEME#58=7.224(1.000)} {origin=genlex}
+[-10.1099] right :- N : (lambda $0:e (red:<e,t> $0)) {FACLEX#LEX#55#1=-0.906(1.000),FACLEX#TMP#1=0.000(0.100),FACLEX#XEME#55=-9.204(1.000)} {origin=genlex}
+[-12.3211] right :- S/NP : (lambda $0:e (in:<e,<e,t>> (the:<<e,t>,e> (lambda $1:e (red:<e,t> $1))) $0)) {FACLEX#LEX#55#10=-2.761(1.000),FACLEX#TMP#10=-3.561(0.100),FACLEX#XEME#55=-9.204(1.000)} {origin=genlex}
+[-18.4743] right :- S/NP : (lambda $0:e (near:<e,<e,t>> (the:<<e,t>,e> (lambda $1:e (red:<e,t> $1))) $0)) {FACLEX#LEX#55#7=-9.305(1.000),FACLEX#TMP#7=0.350(0.100),FACLEX#XEME#55=-9.204(1.000)} {origin=genlex}
+[34.5020] the :- N/N : (lambda $0:<e,t> (lambda $1:e ($0 $1))) {FACLEX#LEX#22#5=24.448(1.000),FACLEX#TMP#5=0.543(0.100),FACLEX#XEME#22=10.000(1.000)} {origin=fixed_domain}
+[14.0901] the :- S/S : (lambda $0:t $0) {FACLEX#LEX#22#11=4.136(1.000),FACLEX#TMP#11=-0.459(0.100),FACLEX#XEME#22=10.000(1.000)} {origin=fixed_domain}
+[10.0289] the :- S\S : (lambda $0:t $0) {FACLEX#LEX#22#6=0.0(1.000),FACLEX#TMP#6=0.289(0.100),FACLEX#XEME#22=10.000(1.000)} {origin=fixed_domain}
+[10.0000] the :- S/PP/NP : (lambda $0:e (lambda $1:<e,t> ($1 $0))) {FACLEX#LEX#22#9=0.0(1.000),FACLEX#TMP#9=0.000(0.100),FACLEX#XEME#22=10.000(1.000)} {origin=fixed_domain}
+[10.0000] the :- S/S : (lambda $0:<e,t> (lambda $1:e ($0 $1))) {FACLEX#LEX#22#12=0.0(1.000),FACLEX#TMP#12=0.000(0.100),FACLEX#XEME#22=10.000(1.000)} {origin=fixed_domain}
+[1.4162] the :- NP/N : (lambda $0:<e,t> (the:<<e,t>,e> (lambda $1:e ($0 $1)))) {FACLEX#LEX#22#8=-8.584(1.000),FACLEX#TMP#8=0.000(0.100),FACLEX#XEME#22=10.000(1.000)} {origin=fixed_domain}
+[20.0000] into :- PP/NP\NP : (lambda $0:e (lambda $1:e (in:<e,<e,t>> $1 $0))) {FACLEX#LEX#10#4=10.000(1.000),FACLEX#TMP#4=0.000(0.100),FACLEX#XEME#10=10.000(1.000)} {origin=fixed_domain}
+[10.0504] into :- S/NP : (lambda $0:e (in:<e,<e,t>> (the:<<e,t>,e> (lambda $1:e (agent:<e,t> $1))) $0)) {FACLEX#LEX#10#3=0.000(1.000),FACLEX#TMP#3=0.504(0.100),FACLEX#XEME#10=10.000(1.000)} {origin=fixed_domain}
+[0.0543] into :- N/N : (lambda $0:<e,t> (lambda $1:e ($0 $1))) {FACLEX#LEX#66#5=0.0(1.000),FACLEX#TMP#5=0.543(0.100),FACLEX#XEME#66=0.000(1.000)} {origin=genlex}
+[0.0289] into :- S\S : (lambda $0:t $0) {FACLEX#LEX#66#6=0.000(1.000),FACLEX#TMP#6=0.289(0.100),FACLEX#XEME#66=0.000(1.000)} {origin=genlex}
+[0.0000] into :- NP/N : (lambda $0:<e,t> (the:<<e,t>,e> (lambda $1:e ($0 $1)))) {FACLEX#LEX#66#8=0.0(1.000),FACLEX#TMP#8=0.000(0.100),FACLEX#XEME#66=0.000(1.000)} {origin=genlex}
+[0.0000] into :- S/PP/NP : (lambda $0:e (lambda $1:<e,t> ($1 $0))) {FACLEX#LEX#66#9=0.0(1.000),FACLEX#TMP#9=0.000(0.100),FACLEX#XEME#66=0.000(1.000)} {origin=genlex}
+[0.0000] into :- S/S : (lambda $0:<e,t> (lambda $1:e ($0 $1))) {FACLEX#LEX#66#12=0.0(1.000),FACLEX#TMP#12=0.000(0.100),FACLEX#XEME#66=0.000(1.000)} {origin=genlex}
+[-0.0459] into :- S/S : (lambda $0:t $0) {FACLEX#LEX#66#11=0.0(1.000),FACLEX#TMP#11=-0.459(0.100),FACLEX#XEME#66=0.000(1.000)} {origin=genlex}
+[31.5142] move near :- S/NP : (lambda $0:e (near:<e,<e,t>> (the:<<e,t>,e> (lambda $1:e (agent:<e,t> $1))) $0)) {FACLEX#LEX#2#2=21.435(1.000),FACLEX#TMP#2=0.787(0.100),FACLEX#XEME#2=10.000(1.000)} {origin=fixed_domain}
+[31.4859] move near :- S/NP : (lambda $0:e (near:<e,<e,t>> (the:<<e,t>,e> (lambda $1:e (agent:<e,t> $1))) $0)) {FACLEX#LEX#6#3=21.435(1.000),FACLEX#TMP#3=0.504(0.100),FACLEX#XEME#6=10.000(1.000)} {origin=fixed_domain}
+[31.4705] move near :- S/NP : (lambda $0:e (near:<e,<e,t>> (the:<<e,t>,e> (lambda $1:e (agent:<e,t> $1))) $0)) {FACLEX#LEX#12#7=21.435(1.000),FACLEX#TMP#7=0.350(0.100),FACLEX#XEME#12=10.000(1.000)} {origin=fixed_domain}
+[10.1543] move near :- N/N : (lambda $0:<e,t> (lambda $1:e (and:<t*,t> (agent:<e,t> $1) ($0 $1)))) {FACLEX#LEX#12#0=0.0(1.000),FACLEX#TMP#0=1.543(0.100),FACLEX#XEME#12=10.000(1.000)} {origin=fixed_domain}
+[10.0000] move near :- PP/NP\NP : (lambda $0:e (lambda $1:e (near:<e,<e,t>> $1 $0))) {FACLEX#LEX#6#4=0.0(1.000),FACLEX#TMP#4=0.000(0.100),FACLEX#XEME#6=10.000(1.000)} {origin=fixed_domain}
+[10.0000] move near :- N : (lambda $0:e (agent:<e,t> $0)) {FACLEX#LEX#12#1=0.0(1.000),FACLEX#TMP#1=0.000(0.100),FACLEX#XEME#12=10.000(1.000)} {origin=fixed_domain}
+[9.6439] move near :- S/NP : (lambda $0:e (in:<e,<e,t>> (the:<<e,t>,e> (lambda $1:e (agent:<e,t> $1))) $0)) {FACLEX#LEX#12#10=0.0(1.000),FACLEX#TMP#10=-3.561(0.100),FACLEX#XEME#12=10.000(1.000)} {origin=fixed_domain}
+[2.1908] with :- N/N : (lambda $0:<e,t> (lambda $1:e (and:<t*,t> (red:<e,t> $1) ($0 $1)))) {FACLEX#LEX#103#0=1.018(1.000),FACLEX#TMP#0=1.543(0.100),FACLEX#XEME#103=1.018(1.000)} {origin=genlex}
+[1.0825] with :- N/N : (lambda $0:<e,t> (lambda $1:e ($0 $1))) {FACLEX#LEX#100#5=0.745(1.000),FACLEX#TMP#5=0.543(0.100),FACLEX#XEME#100=0.283(1.000)} {origin=genlex}
+[1.0532] with :- S/NP : (lambda $0:e (near:<e,<e,t>> (the:<<e,t>,e> (lambda $1:e (red:<e,t> $1))) $0)) {FACLEX#LEX#103#7=0.0(1.000),FACLEX#TMP#7=0.350(0.100),FACLEX#XEME#103=1.018(1.000)} {origin=genlex}
+[1.0183] with :- N : (lambda $0:e (red:<e,t> $0)) {FACLEX#LEX#103#1=0.0(1.000),FACLEX#TMP#1=0.000(0.100),FACLEX#XEME#103=1.018(1.000)} {origin=genlex}
+[0.6621] with :- S/NP : (lambda $0:e (in:<e,<e,t>> (the:<<e,t>,e> (lambda $1:e (red:<e,t> $1))) $0)) {FACLEX#LEX#103#10=0.0(1.000),FACLEX#TMP#10=-3.561(0.100),FACLEX#XEME#103=1.018(1.000)} {origin=genlex}
+[0.3119] with :- S\S : (lambda $0:t $0) {FACLEX#LEX#100#6=0.000(1.000),FACLEX#TMP#6=0.289(0.100),FACLEX#XEME#100=0.283(1.000)} {origin=genlex}
+[0.2830] with :- S/S : (lambda $0:<e,t> (lambda $1:e ($0 $1))) {FACLEX#LEX#100#12=0.0(1.000),FACLEX#TMP#12=0.000(0.100),FACLEX#XEME#100=0.283(1.000)} {origin=genlex}
+[0.2830] with :- S/PP/NP : (lambda $0:e (lambda $1:<e,t> ($1 $0))) {FACLEX#LEX#100#9=0.0(1.000),FACLEX#TMP#9=0.000(0.100),FACLEX#XEME#100=0.283(1.000)} {origin=genlex}
+[0.0359] with :- NP/N : (lambda $0:<e,t> (the:<<e,t>,e> (lambda $1:e ($0 $1)))) {FACLEX#LEX#100#8=-0.247(1.000),FACLEX#TMP#8=0.000(0.100),FACLEX#XEME#100=0.283(1.000)} {origin=genlex}
+[0.0222] with :- S/S : (lambda $0:t $0) {FACLEX#LEX#100#11=-0.215(1.000),FACLEX#TMP#11=-0.459(0.100),FACLEX#XEME#100=0.283(1.000)} {origin=genlex}
+[-1.2663] with :- S/NP : (lambda $0:e (near:<e,<e,t>> (the:<<e,t>,e> (lambda $1:e (block:<e,t> $1))) $0)) {FACLEX#LEX#107#7=0.000(1.000),FACLEX#TMP#7=0.350(0.100),FACLEX#XEME#107=-1.301(1.000)} {origin=genlex}
+[-1.3013] with :- N : (lambda $0:e (block:<e,t> $0)) {FACLEX#LEX#107#1=0.0(1.000),FACLEX#TMP#1=0.000(0.100),FACLEX#XEME#107=-1.301(1.000)} {origin=genlex}
+[-1.6574] with :- S/NP : (lambda $0:e (in:<e,<e,t>> (the:<<e,t>,e> (lambda $1:e (block:<e,t> $1))) $0)) {FACLEX#LEX#107#10=0.0(1.000),FACLEX#TMP#10=-3.561(0.100),FACLEX#XEME#107=-1.301(1.000)} {origin=genlex}
+[-2.4483] with :- N/N : (lambda $0:<e,t> (lambda $1:e (and:<t*,t> (block:<e,t> $1) ($0 $1)))) {FACLEX#LEX#107#0=-1.301(1.000),FACLEX#TMP#0=1.543(0.100),FACLEX#XEME#107=-1.301(1.000)} {origin=genlex}
+[4.2872] Stand :- S/NP : (lambda $0:e (near:<e,<e,t>> (the:<<e,t>,e> (lambda $1:e (agent:<e,t> $1))) $0)) {FACLEX#LEX#92#2=2.104(1.000),FACLEX#TMP#2=0.787(0.100),FACLEX#XEME#92=2.104(1.000)} {origin=genlex}
+[3.9015] Stand :- S/NP : (lambda $0:e (right:<e,<e,t>> (the:<<e,t>,e> (lambda $1:e (agent:<e,t> $1))) $0)) {FACLEX#LEX#65#2=1.911(1.000),FACLEX#TMP#2=0.787(0.100),FACLEX#XEME#65=1.911(1.000)} {origin=genlex}
+[-3.9613] Stand :- N/N : (lambda $0:<e,t> (lambda $1:e ($0 $1))) {FACLEX#LEX#49#5=0.0(1.000),FACLEX#TMP#5=0.543(0.100),FACLEX#XEME#49=-4.016(1.000)} {origin=genlex}
+[-3.9868] Stand :- S\S : (lambda $0:t $0) {FACLEX#LEX#49#6=0.0(1.000),FACLEX#TMP#6=0.289(0.100),FACLEX#XEME#49=-4.016(1.000)} {origin=genlex}
+[-4.0156] Stand :- S/S : (lambda $0:<e,t> (lambda $1:e ($0 $1))) {FACLEX#LEX#49#12=0.0(1.000),FACLEX#TMP#12=0.000(0.100),FACLEX#XEME#49=-4.016(1.000)} {origin=genlex}
+[-4.0156] Stand :- S/PP/NP : (lambda $0:e (lambda $1:<e,t> ($1 $0))) {FACLEX#LEX#49#9=0.000(1.000),FACLEX#TMP#9=0.000(0.100),FACLEX#XEME#49=-4.016(1.000)} {origin=genlex}
+[-4.0156] Stand :- NP/N : (lambda $0:<e,t> (the:<<e,t>,e> (lambda $1:e ($0 $1)))) {FACLEX#LEX#49#8=0.0(1.000),FACLEX#TMP#8=0.000(0.100),FACLEX#XEME#49=-4.016(1.000)} {origin=genlex}
+[-8.0771] Stand :- S/S : (lambda $0:t $0) {FACLEX#LEX#49#11=-4.016(1.000),FACLEX#TMP#11=-0.459(0.100),FACLEX#XEME#49=-4.016(1.000)} {origin=genlex}
+[0.0787] Find :- S/NP : (lambda $0:e (near:<e,<e,t>> (the:<<e,t>,e> (lambda $1:e (agent:<e,t> $1))) $0)) {FACLEX#LEX#108#2=0.000(1.000),FACLEX#TMP#2=0.787(0.100),FACLEX#XEME#108=0.000(1.000)} {origin=genlex}
+[20.1543] blue :- N/N : (lambda $0:<e,t> (lambda $1:e (and:<t*,t> (blue:<e,t> $1) ($0 $1)))) {FACLEX#LEX#16#0=10.000(1.000),FACLEX#TMP#0=1.543(0.100),FACLEX#XEME#16=10.000(1.000)} {origin=fixed_domain}
+[10.0350] blue :- S/NP : (lambda $0:e (near:<e,<e,t>> (the:<<e,t>,e> (lambda $1:e (blue:<e,t> $1))) $0)) {FACLEX#LEX#16#7=0.0(1.000),FACLEX#TMP#7=0.350(0.100),FACLEX#XEME#16=10.000(1.000)} {origin=fixed_domain}
+[10.0000] blue :- N : (lambda $0:e (blue:<e,t> $0)) {FACLEX#LEX#16#1=0.000(1.000),FACLEX#TMP#1=0.000(0.100),FACLEX#XEME#16=10.000(1.000)} {origin=fixed_domain}
+[9.6439] blue :- S/NP : (lambda $0:e (in:<e,<e,t>> (the:<<e,t>,e> (lambda $1:e (blue:<e,t> $1))) $0)) {FACLEX#LEX#16#10=0.0(1.000),FACLEX#TMP#10=-3.561(0.100),FACLEX#XEME#16=10.000(1.000)} {origin=fixed_domain}
+[26.2756] to :- NP/N : (lambda $0:<e,t> (the:<<e,t>,e> (lambda $1:e ($0 $1)))) {FACLEX#LEX#32#8=12.178(1.000),FACLEX#TMP#8=0.000(0.100),FACLEX#XEME#32=14.097(1.000)} {origin=genlex}
+[19.4188] to :- S/S : (lambda $0:t $0) {FACLEX#LEX#32#11=5.367(1.000),FACLEX#TMP#11=-0.459(0.100),FACLEX#XEME#32=14.097(1.000)} {origin=genlex}
+[14.1263] to :- S\S : (lambda $0:t $0) {FACLEX#LEX#32#6=0.0(1.000),FACLEX#TMP#6=0.289(0.100),FACLEX#XEME#32=14.097(1.000)} {origin=genlex}
+[14.0974] to :- S/PP/NP : (lambda $0:e (lambda $1:<e,t> ($1 $0))) {FACLEX#LEX#32#9=0.000(1.000),FACLEX#TMP#9=0.000(0.100),FACLEX#XEME#32=14.097(1.000)} {origin=genlex}
+[14.0974] to :- S/S : (lambda $0:<e,t> (lambda $1:e ($0 $1))) {FACLEX#LEX#32#12=0.0(1.000),FACLEX#TMP#12=0.000(0.100),FACLEX#XEME#32=14.097(1.000)} {origin=genlex}
+[10.7036] to :- N/N : (lambda $0:<e,t> (lambda $1:e ($0 $1))) {FACLEX#LEX#32#5=-3.448(1.000),FACLEX#TMP#5=0.543(0.100),FACLEX#XEME#32=14.097(1.000)} {origin=genlex}
+[3.9569] to :- S/NP : (lambda $0:e (near:<e,<e,t>> (the:<<e,t>,e> (lambda $1:e (agent:<e,t> $1))) $0)) {FACLEX#LEX#38#2=1.939(1.000),FACLEX#TMP#2=0.787(0.100),FACLEX#XEME#38=1.939(1.000)} {origin=genlex}
+[-6.9769] to :- N/N : (lambda $0:<e,t> (lambda $1:e (and:<t*,t> (room:<e,t> $1) ($0 $1)))) {FACLEX#LEX#48#0=1.725(1.000),FACLEX#TMP#0=1.543(0.100),FACLEX#XEME#48=-8.856(1.000)} {origin=genlex}
+[-8.8562] to :- N : (lambda $0:e (room:<e,t> $0)) {FACLEX#LEX#48#1=0.000(1.000),FACLEX#TMP#1=0.000(0.100),FACLEX#XEME#48=-8.856(1.000)} {origin=genlex}
+[-14.1156] to :- S/NP : (lambda $0:e (in:<e,<e,t>> (the:<<e,t>,e> (lambda $1:e (room:<e,t> $1))) $0)) {FACLEX#LEX#48#10=-4.903(1.000),FACLEX#TMP#10=-3.561(0.100),FACLEX#XEME#48=-8.856(1.000)} {origin=genlex}
+[-14.2819] to :- S/NP : (lambda $0:e (in:<e,<e,t>> (the:<<e,t>,e> (lambda $1:e (agent:<e,t> $1))) $0)) {FACLEX#LEX#40#2=-7.180(1.000),FACLEX#TMP#2=0.787(0.100),FACLEX#XEME#40=-7.180(1.000)} {origin=genlex}
+[-14.4991] to :- S/NP : (lambda $0:e (near:<e,<e,t>> (the:<<e,t>,e> (lambda $1:e (room:<e,t> $1))) $0)) {FACLEX#LEX#48#7=-5.678(1.000),FACLEX#TMP#7=0.350(0.100),FACLEX#XEME#48=-8.856(1.000)} {origin=genlex}
+[0.0543] he :- N/N : (lambda $0:<e,t> (lambda $1:e ($0 $1))) {FACLEX#LEX#76#5=0.0(1.000),FACLEX#TMP#5=0.543(0.100),FACLEX#XEME#76=0.000(1.000)} {origin=genlex}
+[0.0289] he :- S\S : (lambda $0:t $0) {FACLEX#LEX#76#6=0.000(1.000),FACLEX#TMP#6=0.289(0.100),FACLEX#XEME#76=0.000(1.000)} {origin=genlex}
+[0.0000] he :- NP/N : (lambda $0:<e,t> (the:<<e,t>,e> (lambda $1:e ($0 $1)))) {FACLEX#LEX#76#8=0.0(1.000),FACLEX#TMP#8=0.000(0.100),FACLEX#XEME#76=0.000(1.000)} {origin=genlex}
+[0.0000] he :- S/PP/NP : (lambda $0:e (lambda $1:<e,t> ($1 $0))) {FACLEX#LEX#76#9=0.0(1.000),FACLEX#TMP#9=0.000(0.100),FACLEX#XEME#76=0.000(1.000)} {origin=genlex}
+[0.0000] he :- S/S : (lambda $0:<e,t> (lambda $1:e ($0 $1))) {FACLEX#LEX#76#12=0.0(1.000),FACLEX#TMP#12=0.000(0.100),FACLEX#XEME#76=0.000(1.000)} {origin=genlex}
+[-0.0459] he :- S/S : (lambda $0:t $0) {FACLEX#LEX#76#11=0.0(1.000),FACLEX#TMP#11=-0.459(0.100),FACLEX#XEME#76=0.000(1.000)} {origin=genlex}
+[27.8112] move :- NP/N : (lambda $0:<e,t> (the:<<e,t>,e> (lambda $1:e ($0 $1)))) {FACLEX#LEX#47#8=15.200(1.000),FACLEX#TMP#8=0.000(0.100),FACLEX#XEME#47=12.611(1.000)} {origin=genlex}
+[14.9525] move :- S/NP : (lambda $0:e (near:<e,<e,t>> (the:<<e,t>,e> (lambda $1:e (agent:<e,t> $1))) $0)) {FACLEX#LEX#85#2=7.437(1.000),FACLEX#TMP#2=0.787(0.100),FACLEX#XEME#85=7.437(1.000)} {origin=genlex}
+[12.6655] move :- N/N : (lambda $0:<e,t> (lambda $1:e ($0 $1))) {FACLEX#LEX#47#5=0.0(1.000),FACLEX#TMP#5=0.543(0.100),FACLEX#XEME#47=12.611(1.000)} {origin=genlex}
+[12.6401] move :- S\S : (lambda $0:t $0) {FACLEX#LEX#47#6=0.0(1.000),FACLEX#TMP#6=0.289(0.100),FACLEX#XEME#47=12.611(1.000)} {origin=genlex}
+[12.6112] move :- S/PP/NP : (lambda $0:e (lambda $1:<e,t> ($1 $0))) {FACLEX#LEX#47#9=0.000(1.000),FACLEX#TMP#9=0.000(0.100),FACLEX#XEME#47=12.611(1.000)} {origin=genlex}
+[12.6112] move :- S/S : (lambda $0:<e,t> (lambda $1:e ($0 $1))) {FACLEX#LEX#47#12=0.0(1.000),FACLEX#TMP#12=0.000(0.100),FACLEX#XEME#47=12.611(1.000)} {origin=genlex}
+[9.9766] move :- S/S : (lambda $0:t $0) {FACLEX#LEX#47#11=-2.589(1.000),FACLEX#TMP#11=-0.459(0.100),FACLEX#XEME#47=12.611(1.000)} {origin=genlex}
+[-2.8134] move :- S/NP : (lambda $0:e (right:<e,<e,t>> (the:<<e,t>,e> (lambda $1:e (agent:<e,t> $1))) $0)) {FACLEX#LEX#67#2=-1.446(1.000),FACLEX#TMP#2=0.787(0.100),FACLEX#XEME#67=-1.446(1.000)} {origin=genlex}
+[-37.1253] move :- S/NP : (lambda $0:e (in:<e,<e,t>> (the:<<e,t>,e> (lambda $1:e (agent:<e,t> $1))) $0)) {FACLEX#LEX#64#2=-18.602(1.000),FACLEX#TMP#2=0.787(0.100),FACLEX#XEME#64=-18.602(1.000)} {origin=genlex}
+[0.0787] Robot :- S/NP : (lambda $0:e (near:<e,<e,t>> (the:<<e,t>,e> (lambda $1:e (agent:<e,t> $1))) $0)) {FACLEX#LEX#72#2=0.000(1.000),FACLEX#TMP#2=0.787(0.100),FACLEX#XEME#72=0.000(1.000)} {origin=genlex}
+[20.0000] door :- N : (lambda $0:e (door:<e,t> $0)) {FACLEX#LEX#14#1=10.000(1.000),FACLEX#TMP#1=0.000(0.100),FACLEX#XEME#14=10.000(1.000)} {origin=fixed_domain}
+[10.1543] door :- N/N : (lambda $0:<e,t> (lambda $1:e (and:<t*,t> (door:<e,t> $1) ($0 $1)))) {FACLEX#LEX#14#0=0.0(1.000),FACLEX#TMP#0=1.543(0.100),FACLEX#XEME#14=10.000(1.000)} {origin=fixed_domain}
+[10.0350] door :- S/NP : (lambda $0:e (near:<e,<e,t>> (the:<<e,t>,e> (lambda $1:e (door:<e,t> $1))) $0)) {FACLEX#LEX#14#7=0.0(1.000),FACLEX#TMP#7=0.350(0.100),FACLEX#XEME#14=10.000(1.000)} {origin=fixed_domain}
+[9.6439] door :- S/NP : (lambda $0:e (in:<e,<e,t>> (the:<<e,t>,e> (lambda $1:e (door:<e,t> $1))) $0)) {FACLEX#LEX#14#10=0.0(1.000),FACLEX#TMP#10=-3.561(0.100),FACLEX#XEME#14=10.000(1.000)} {origin=fixed_domain}
+[20.0000] agent :- N : (lambda $0:e (agent:<e,t> $0)) {FACLEX#LEX#0#1=10.000(1.000),FACLEX#TMP#1=0.000(0.100),FACLEX#XEME#0=10.000(1.000)} {origin=fixed_domain}
+[10.1543] agent :- N/N : (lambda $0:<e,t> (lambda $1:e (and:<t*,t> (agent:<e,t> $1) ($0 $1)))) {FACLEX#LEX#0#0=0.000(1.000),FACLEX#TMP#0=1.543(0.100),FACLEX#XEME#0=10.000(1.000)} {origin=fixed_domain}
+[10.0350] agent :- S/NP : (lambda $0:e (near:<e,<e,t>> (the:<<e,t>,e> (lambda $1:e (agent:<e,t> $1))) $0)) {FACLEX#LEX#0#7=0.0(1.000),FACLEX#TMP#7=0.350(0.100),FACLEX#XEME#0=10.000(1.000)} {origin=fixed_domain}
+[9.6439] agent :- S/NP : (lambda $0:e (in:<e,<e,t>> (the:<<e,t>,e> (lambda $1:e (agent:<e,t> $1))) $0)) {FACLEX#LEX#0#10=0.0(1.000),FACLEX#TMP#10=-3.561(0.100),FACLEX#XEME#0=10.000(1.000)} {origin=fixed_domain}
+[18.1030] Go :- S/NP : (lambda $0:e (in:<e,<e,t>> (the:<<e,t>,e> (lambda $1:e (agent:<e,t> $1))) $0)) {FACLEX#LEX#41#2=9.012(1.000),FACLEX#TMP#2=0.787(0.100),FACLEX#XEME#41=9.012(1.000)} {origin=genlex}
+[14.9388] Go :- S/S : (lambda $0:t $0) {FACLEX#LEX#35#11=7.492(1.000),FACLEX#TMP#11=-0.459(0.100),FACLEX#XEME#35=7.492(1.000)} {origin=genlex}
+[7.5466] Go :- N/N : (lambda $0:<e,t> (lambda $1:e ($0 $1))) {FACLEX#LEX#35#5=0.0(1.000),FACLEX#TMP#5=0.543(0.100),FACLEX#XEME#35=7.492(1.000)} {origin=genlex}
+[7.5212] Go :- S\S : (lambda $0:t $0) {FACLEX#LEX#35#6=0.000(1.000),FACLEX#TMP#6=0.289(0.100),FACLEX#XEME#35=7.492(1.000)} {origin=genlex}
+[7.4924] Go :- S/PP/NP : (lambda $0:e (lambda $1:<e,t> ($1 $0))) {FACLEX#LEX#35#9=0.0(1.000),FACLEX#TMP#9=0.000(0.100),FACLEX#XEME#35=7.492(1.000)} {origin=genlex}
+[7.4924] Go :- S/S : (lambda $0:<e,t> (lambda $1:e ($0 $1))) {FACLEX#LEX#35#12=0.0(1.000),FACLEX#TMP#12=0.000(0.100),FACLEX#XEME#35=7.492(1.000)} {origin=genlex}
+[7.4924] Go :- NP/N : (lambda $0:<e,t> (the:<<e,t>,e> (lambda $1:e ($0 $1)))) {FACLEX#LEX#35#8=0.0(1.000),FACLEX#TMP#8=0.000(0.100),FACLEX#XEME#35=7.492(1.000)} {origin=genlex}
+[-32.9303] Go :- S/NP : (lambda $0:e (near:<e,<e,t>> (the:<<e,t>,e> (lambda $1:e (agent:<e,t> $1))) $0)) {FACLEX#LEX#80#2=-16.505(1.000),FACLEX#TMP#2=0.787(0.100),FACLEX#XEME#80=-16.505(1.000)} {origin=genlex}
+[20.0000] put :- S/PP/NP : (lambda $0:e (lambda $1:<e,t> ($1 $0))) {FACLEX#LEX#18#9=10.000(1.000),FACLEX#TMP#9=0.000(0.100),FACLEX#XEME#18=10.000(1.000)} {origin=fixed_domain}
+[10.0543] put :- N/N : (lambda $0:<e,t> (lambda $1:e ($0 $1))) {FACLEX#LEX#18#5=0.0(1.000),FACLEX#TMP#5=0.543(0.100),FACLEX#XEME#18=10.000(1.000)} {origin=fixed_domain}
+[10.0289] put :- S\S : (lambda $0:t $0) {FACLEX#LEX#18#6=0.0(1.000),FACLEX#TMP#6=0.289(0.100),FACLEX#XEME#18=10.000(1.000)} {origin=fixed_domain}
+[10.0000] put :- S/S : (lambda $0:<e,t> (lambda $1:e ($0 $1))) {FACLEX#LEX#18#12=0.0(1.000),FACLEX#TMP#12=0.000(0.100),FACLEX#XEME#18=10.000(1.000)} {origin=fixed_domain}
+[10.0000] put :- NP/N : (lambda $0:<e,t> (the:<<e,t>,e> (lambda $1:e ($0 $1)))) {FACLEX#LEX#18#8=0.0(1.000),FACLEX#TMP#8=0.000(0.100),FACLEX#XEME#18=10.000(1.000)} {origin=fixed_domain}
+[9.9541] put :- S/S : (lambda $0:t $0) {FACLEX#LEX#18#11=0.0(1.000),FACLEX#TMP#11=-0.459(0.100),FACLEX#XEME#18=10.000(1.000)} {origin=fixed_domain}
+[24.3352] red :- N/N : (lambda $0:<e,t> (lambda $1:e (and:<t*,t> (red:<e,t> $1) ($0 $1)))) {FACLEX#LEX#19#0=14.181(1.000),FACLEX#TMP#0=1.543(0.100),FACLEX#XEME#19=10.000(1.000)} {origin=fixed_domain}
+[13.7866] red :- N : (lambda $0:e (red:<e,t> $0)) {FACLEX#LEX#19#1=3.787(1.000),FACLEX#TMP#1=0.000(0.100),FACLEX#XEME#19=10.000(1.000)} {origin=fixed_domain}
+[8.2067] red :- S/NP : (lambda $0:e (in:<e,<e,t>> (the:<<e,t>,e> (lambda $1:e (red:<e,t> $1))) $0)) {FACLEX#LEX#19#10=-1.437(1.000),FACLEX#TMP#10=-3.561(0.100),FACLEX#XEME#19=10.000(1.000)} {origin=fixed_domain}
+[3.5046] red :- S/NP : (lambda $0:e (near:<e,<e,t>> (the:<<e,t>,e> (lambda $1:e (red:<e,t> $1))) $0)) {FACLEX#LEX#19#7=-6.530(1.000),FACLEX#TMP#7=0.350(0.100),FACLEX#XEME#19=10.000(1.000)} {origin=fixed_domain}
+[14.7275] robot :- NP/N : (lambda $0:<e,t> (the:<<e,t>,e> (lambda $1:e ($0 $1)))) {FACLEX#LEX#74#8=7.269(1.000),FACLEX#TMP#8=0.000(0.100),FACLEX#XEME#74=7.458(1.000)} {origin=genlex}
+[9.3633] robot :- S/S : (lambda $0:t $0) {FACLEX#LEX#74#11=1.951(1.000),FACLEX#TMP#11=-0.459(0.100),FACLEX#XEME#74=7.458(1.000)} {origin=genlex}
+[7.7256] robot :- S/NP : (lambda $0:e (near:<e,<e,t>> (the:<<e,t>,e> (lambda $1:e (agent:<e,t> $1))) $0)) {FACLEX#LEX#104#2=3.823(1.000),FACLEX#TMP#2=0.787(0.100),FACLEX#XEME#104=3.823(1.000)} {origin=genlex}
+[7.4873] robot :- S\S : (lambda $0:t $0) {FACLEX#LEX#74#6=0.000(1.000),FACLEX#TMP#6=0.289(0.100),FACLEX#XEME#74=7.458(1.000)} {origin=genlex}
+[7.4584] robot :- S/S : (lambda $0:<e,t> (lambda $1:e ($0 $1))) {FACLEX#LEX#74#12=0.0(1.000),FACLEX#TMP#12=0.000(0.100),FACLEX#XEME#74=7.458(1.000)} {origin=genlex}
+[7.4584] robot :- S/PP/NP : (lambda $0:e (lambda $1:<e,t> ($1 $0))) {FACLEX#LEX#74#9=0.0(1.000),FACLEX#TMP#9=0.000(0.100),FACLEX#XEME#74=7.458(1.000)} {origin=genlex}
+[5.7513] robot :- N/N : (lambda $0:<e,t> (lambda $1:e ($0 $1))) {FACLEX#LEX#74#5=-1.761(1.000),FACLEX#TMP#5=0.543(0.100),FACLEX#XEME#74=7.458(1.000)} {origin=genlex}
+[4.8126] robot :- S/NP : (lambda $0:e (right:<e,<e,t>> (the:<<e,t>,e> (lambda $1:e (agent:<e,t> $1))) $0)) {FACLEX#LEX#69#2=2.367(1.000),FACLEX#TMP#2=0.787(0.100),FACLEX#XEME#69=2.367(1.000)} {origin=genlex}
+[-27.2189] robot :- S/NP : (lambda $0:e (in:<e,<e,t>> (the:<<e,t>,e> (lambda $1:e (agent:<e,t> $1))) $0)) {FACLEX#LEX#42#2=-13.649(1.000),FACLEX#TMP#2=0.787(0.100),FACLEX#XEME#42=-13.649(1.000)} {origin=genlex}
+[1.7043] far :- N/N : (lambda $0:<e,t> (lambda $1:e (and:<t*,t> (red:<e,t> $1) ($0 $1)))) {FACLEX#LEX#86#0=0.775(1.000),FACLEX#TMP#0=1.543(0.100),FACLEX#XEME#86=0.775(1.000)} {origin=genlex}
+[0.8100] far :- S/NP : (lambda $0:e (near:<e,<e,t>> (the:<<e,t>,e> (lambda $1:e (red:<e,t> $1))) $0)) {FACLEX#LEX#86#7=0.0(1.000),FACLEX#TMP#7=0.350(0.100),FACLEX#XEME#86=0.775(1.000)} {origin=genlex}
+[0.7750] far :- N : (lambda $0:e (red:<e,t> $0)) {FACLEX#LEX#86#1=0.000(1.000),FACLEX#TMP#1=0.000(0.100),FACLEX#XEME#86=0.775(1.000)} {origin=genlex}
+[0.4189] far :- S/NP : (lambda $0:e (in:<e,<e,t>> (the:<<e,t>,e> (lambda $1:e (red:<e,t> $1))) $0)) {FACLEX#LEX#86#10=0.0(1.000),FACLEX#TMP#10=-3.561(0.100),FACLEX#XEME#86=0.775(1.000)} {origin=genlex}
+[0.2187] far :- N/N : (lambda $0:<e,t> (lambda $1:e ($0 $1))) {FACLEX#LEX#105#5=0.082(1.000),FACLEX#TMP#5=0.543(0.100),FACLEX#XEME#105=0.082(1.000)} {origin=genlex}
+[0.1111] far :- S\S : (lambda $0:t $0) {FACLEX#LEX#105#6=0.0(1.000),FACLEX#TMP#6=0.289(0.100),FACLEX#XEME#105=0.082(1.000)} {origin=genlex}
+[0.0822] far :- S/S : (lambda $0:<e,t> (lambda $1:e ($0 $1))) {FACLEX#LEX#105#12=0.0(1.000),FACLEX#TMP#12=0.000(0.100),FACLEX#XEME#105=0.082(1.000)} {origin=genlex}
+[0.0822] far :- S/PP/NP : (lambda $0:e (lambda $1:<e,t> ($1 $0))) {FACLEX#LEX#105#9=0.0(1.000),FACLEX#TMP#9=0.000(0.100),FACLEX#XEME#105=0.082(1.000)} {origin=genlex}
+[0.0822] far :- NP/N : (lambda $0:<e,t> (the:<<e,t>,e> (lambda $1:e ($0 $1)))) {FACLEX#LEX#105#8=0.000(1.000),FACLEX#TMP#8=0.000(0.100),FACLEX#XEME#105=0.082(1.000)} {origin=genlex}
+[0.0787] far :- S/NP : (lambda $0:e (near:<e,<e,t>> (the:<<e,t>,e> (lambda $1:e (agent:<e,t> $1))) $0)) {FACLEX#LEX#106#2=0.000(1.000),FACLEX#TMP#2=0.787(0.100),FACLEX#XEME#106=0.000(1.000)} {origin=genlex}
+[0.0364] far :- S/S : (lambda $0:t $0) {FACLEX#LEX#105#11=0.0(1.000),FACLEX#TMP#11=-0.459(0.100),FACLEX#XEME#105=0.082(1.000)} {origin=genlex}
+[-0.8572] far :- N : (lambda $0:e (block:<e,t> $0)) {FACLEX#LEX#90#1=0.000(1.000),FACLEX#TMP#1=0.000(0.100),FACLEX#XEME#90=-0.857(1.000)} {origin=genlex}
+[-1.1524] far :- S/NP : (lambda $0:e (near:<e,<e,t>> (the:<<e,t>,e> (lambda $1:e (block:<e,t> $1))) $0)) {FACLEX#LEX#90#7=-0.330(1.000),FACLEX#TMP#7=0.350(0.100),FACLEX#XEME#90=-0.857(1.000)} {origin=genlex}
+[-1.2134] far :- S/NP : (lambda $0:e (in:<e,<e,t>> (the:<<e,t>,e> (lambda $1:e (block:<e,t> $1))) $0)) {FACLEX#LEX#90#10=0.0(1.000),FACLEX#TMP#10=-3.561(0.100),FACLEX#XEME#90=-0.857(1.000)} {origin=genlex}
+[-1.2301] far :- N/N : (lambda $0:<e,t> (lambda $1:e (and:<t*,t> (block:<e,t> $1) ($0 $1)))) {FACLEX#LEX#90#0=-0.527(1.000),FACLEX#TMP#0=1.543(0.100),FACLEX#XEME#90=-0.857(1.000)} {origin=genlex}
+[20.0000] near :- PP/NP\NP : (lambda $0:e (lambda $1:e (near:<e,<e,t>> $1 $0))) {FACLEX#LEX#15#4=10.000(1.000),FACLEX#TMP#4=0.000(0.100),FACLEX#XEME#15=10.000(1.000)} {origin=fixed_domain}
+[10.0504] near :- S/NP : (lambda $0:e (near:<e,<e,t>> (the:<<e,t>,e> (lambda $1:e (agent:<e,t> $1))) $0)) {FACLEX#LEX#15#3=0.0(1.000),FACLEX#TMP#3=0.504(0.100),FACLEX#XEME#15=10.000(1.000)} {origin=fixed_domain}
+[7.8301] me :- S/NP : (lambda $0:e (near:<e,<e,t>> (the:<<e,t>,e> (lambda $1:e (block:<e,t> $1))) $0)) {FACLEX#LEX#97#7=3.716(1.000),FACLEX#TMP#7=0.350(0.100),FACLEX#XEME#97=4.079(1.000)} {origin=genlex}
+[5.9029] me :- N : (lambda $0:e (block:<e,t> $0)) {FACLEX#LEX#97#1=1.824(1.000),FACLEX#TMP#1=0.000(0.100),FACLEX#XEME#97=4.079(1.000)} {origin=genlex}
+[4.2331] me :- N/N : (lambda $0:<e,t> (lambda $1:e (and:<t*,t> (block:<e,t> $1) ($0 $1)))) {FACLEX#LEX#97#0=0.000(1.000),FACLEX#TMP#0=1.543(0.100),FACLEX#XEME#97=4.079(1.000)} {origin=genlex}
+[2.2612] me :- S/NP : (lambda $0:e (in:<e,<e,t>> (the:<<e,t>,e> (lambda $1:e (block:<e,t> $1))) $0)) {FACLEX#LEX#97#10=-1.462(1.000),FACLEX#TMP#10=-3.561(0.100),FACLEX#XEME#97=4.079(1.000)} {origin=genlex}
+[-3.9246] me :- N/N : (lambda $0:<e,t> (lambda $1:e (and:<t*,t> (red:<e,t> $1) ($0 $1)))) {FACLEX#LEX#98#0=0.0(1.000),FACLEX#TMP#0=1.543(0.100),FACLEX#XEME#98=-4.079(1.000)} {origin=genlex}
+[-4.5118] me :- S/NP : (lambda $0:e (in:<e,<e,t>> (the:<<e,t>,e> (lambda $1:e (red:<e,t> $1))) $0)) {FACLEX#LEX#98#10=-0.077(1.000),FACLEX#TMP#10=-3.561(0.100),FACLEX#XEME#98=-4.079(1.000)} {origin=genlex}
+[-4.9386] me :- N : (lambda $0:e (red:<e,t> $0)) {FACLEX#LEX#98#1=-0.860(1.000),FACLEX#TMP#1=0.000(0.100),FACLEX#XEME#98=-4.079(1.000)} {origin=genlex}
+[-7.1859] me :- S/NP : (lambda $0:e (near:<e,<e,t>> (the:<<e,t>,e> (lambda $1:e (red:<e,t> $1))) $0)) {FACLEX#LEX#98#7=-3.142(1.000),FACLEX#TMP#7=0.350(0.100),FACLEX#XEME#98=-4.079(1.000)} {origin=genlex}
+[20.0000] block :- N : (lambda $0:e (block:<e,t> $0)) {FACLEX#LEX#3#1=10.000(1.000),FACLEX#TMP#1=0.000(0.100),FACLEX#XEME#3=10.000(1.000)} {origin=fixed_domain}
+[10.1543] block :- N/N : (lambda $0:<e,t> (lambda $1:e (and:<t*,t> (block:<e,t> $1) ($0 $1)))) {FACLEX#LEX#3#0=0.0(1.000),FACLEX#TMP#0=1.543(0.100),FACLEX#XEME#3=10.000(1.000)} {origin=fixed_domain}
+[10.0350] block :- S/NP : (lambda $0:e (near:<e,<e,t>> (the:<<e,t>,e> (lambda $1:e (block:<e,t> $1))) $0)) {FACLEX#LEX#3#7=0.0(1.000),FACLEX#TMP#7=0.350(0.100),FACLEX#XEME#3=10.000(1.000)} {origin=fixed_domain}
+[9.6439] block :- S/NP : (lambda $0:e (in:<e,<e,t>> (the:<<e,t>,e> (lambda $1:e (block:<e,t> $1))) $0)) {FACLEX#LEX#3#10=0.0(1.000),FACLEX#TMP#10=-3.561(0.100),FACLEX#XEME#3=10.000(1.000)} {origin=fixed_domain}
+[20.0000] in :- PP/NP\NP : (lambda $0:e (lambda $1:e (in:<e,<e,t>> $1 $0))) {FACLEX#LEX#24#4=10.000(1.000),FACLEX#TMP#4=0.000(0.100),FACLEX#XEME#24=10.000(1.000)} {origin=fixed_domain}
+[10.0504] in :- S/NP : (lambda $0:e (in:<e,<e,t>> (the:<<e,t>,e> (lambda $1:e (agent:<e,t> $1))) $0)) {FACLEX#LEX#24#3=0.000(1.000),FACLEX#TMP#3=0.504(0.100),FACLEX#XEME#24=10.000(1.000)} {origin=fixed_domain}
+[0.0543] in :- N/N : (lambda $0:<e,t> (lambda $1:e ($0 $1))) {FACLEX#LEX#81#5=0.0(1.000),FACLEX#TMP#5=0.543(0.100),FACLEX#XEME#81=0.000(1.000)} {origin=genlex}
+[0.0289] in :- S\S : (lambda $0:t $0) {FACLEX#LEX#81#6=0.000(1.000),FACLEX#TMP#6=0.289(0.100),FACLEX#XEME#81=0.000(1.000)} {origin=genlex}
+[0.0000] in :- S/S : (lambda $0:<e,t> (lambda $1:e ($0 $1))) {FACLEX#LEX#81#12=0.0(1.000),FACLEX#TMP#12=0.000(0.100),FACLEX#XEME#81=0.000(1.000)} {origin=genlex}
+[0.0000] in :- NP/N : (lambda $0:<e,t> (the:<<e,t>,e> (lambda $1:e ($0 $1)))) {FACLEX#LEX#81#8=0.0(1.000),FACLEX#TMP#8=0.000(0.100),FACLEX#XEME#81=0.000(1.000)} {origin=genlex}
+[0.0000] in :- S/PP/NP : (lambda $0:e (lambda $1:<e,t> ($1 $0))) {FACLEX#LEX#81#9=0.0(1.000),FACLEX#TMP#9=0.000(0.100),FACLEX#XEME#81=0.000(1.000)} {origin=genlex}
+[-0.0459] in :- S/S : (lambda $0:t $0) {FACLEX#LEX#81#11=0.0(1.000),FACLEX#TMP#11=-0.459(0.100),FACLEX#XEME#81=0.000(1.000)} {origin=genlex}
+[20.0289] please :- S\S : (lambda $0:t $0) {FACLEX#LEX#11#6=10.000(1.000),FACLEX#TMP#6=0.289(0.100),FACLEX#XEME#11=10.000(1.000)} {origin=fixed_domain}
+[10.0543] please :- N/N : (lambda $0:<e,t> (lambda $1:e ($0 $1))) {FACLEX#LEX#11#5=0.0(1.000),FACLEX#TMP#5=0.543(0.100),FACLEX#XEME#11=10.000(1.000)} {origin=fixed_domain}
+[10.0000] please :- NP/N : (lambda $0:<e,t> (the:<<e,t>,e> (lambda $1:e ($0 $1)))) {FACLEX#LEX#11#8=0.000(1.000),FACLEX#TMP#8=0.000(0.100),FACLEX#XEME#11=10.000(1.000)} {origin=fixed_domain}
+[10.0000] please :- S/S : (lambda $0:<e,t> (lambda $1:e ($0 $1))) {FACLEX#LEX#11#12=0.000(1.000),FACLEX#TMP#12=0.000(0.100),FACLEX#XEME#11=10.000(1.000)} {origin=fixed_domain}
+[10.0000] please :- S/PP/NP : (lambda $0:e (lambda $1:<e,t> ($1 $0))) {FACLEX#LEX#11#9=0.0(1.000),FACLEX#TMP#9=0.000(0.100),FACLEX#XEME#11=10.000(1.000)} {origin=fixed_domain}
+[9.9541] please :- S/S : (lambda $0:t $0) {FACLEX#LEX#11#11=0.0(1.000),FACLEX#TMP#11=-0.459(0.100),FACLEX#XEME#11=10.000(1.000)} {origin=fixed_domain}
+[0.0543] is :- N/N : (lambda $0:<e,t> (lambda $1:e ($0 $1))) {FACLEX#LEX#77#5=0.0(1.000),FACLEX#TMP#5=0.543(0.100),FACLEX#XEME#77=0.000(1.000)} {origin=genlex}
+[0.0289] is :- S\S : (lambda $0:t $0) {FACLEX#LEX#77#6=0.000(1.000),FACLEX#TMP#6=0.289(0.100),FACLEX#XEME#77=0.000(1.000)} {origin=genlex}
+[0.0000] is :- NP/N : (lambda $0:<e,t> (the:<<e,t>,e> (lambda $1:e ($0 $1)))) {FACLEX#LEX#77#8=0.0(1.000),FACLEX#TMP#8=0.000(0.100),FACLEX#XEME#77=0.000(1.000)} {origin=genlex}
+[0.0000] is :- S/PP/NP : (lambda $0:e (lambda $1:<e,t> ($1 $0))) {FACLEX#LEX#77#9=0.0(1.000),FACLEX#TMP#9=0.000(0.100),FACLEX#XEME#77=0.000(1.000)} {origin=genlex}
+[0.0000] is :- S/S : (lambda $0:<e,t> (lambda $1:e ($0 $1))) {FACLEX#LEX#77#12=0.0(1.000),FACLEX#TMP#12=0.000(0.100),FACLEX#XEME#77=0.000(1.000)} {origin=genlex}
+[-0.0459] is :- S/S : (lambda $0:t $0) {FACLEX#LEX#77#11=0.0(1.000),FACLEX#TMP#11=-0.459(0.100),FACLEX#XEME#77=0.000(1.000)} {origin=genlex}
+[0.0543] Do :- N/N : (lambda $0:<e,t> (lambda $1:e ($0 $1))) {FACLEX#LEX#60#5=0.0(1.000),FACLEX#TMP#5=0.543(0.100),FACLEX#XEME#60=0.000(1.000)} {origin=genlex}
+[0.0289] Do :- S\S : (lambda $0:t $0) {FACLEX#LEX#60#6=0.0(1.000),FACLEX#TMP#6=0.289(0.100),FACLEX#XEME#60=0.000(1.000)} {origin=genlex}
+[0.0000] Do :- NP/N : (lambda $0:<e,t> (the:<<e,t>,e> (lambda $1:e ($0 $1)))) {FACLEX#LEX#60#8=0.0(1.000),FACLEX#TMP#8=0.000(0.100),FACLEX#XEME#60=0.000(1.000)} {origin=genlex}
+[0.0000] Do :- S/PP/NP : (lambda $0:e (lambda $1:<e,t> ($1 $0))) {FACLEX#LEX#60#9=0.0(1.000),FACLEX#TMP#9=0.000(0.100),FACLEX#XEME#60=0.000(1.000)} {origin=genlex}
+[0.0000] Do :- S/S : (lambda $0:<e,t> (lambda $1:e ($0 $1))) {FACLEX#LEX#60#12=0.000(1.000),FACLEX#TMP#12=0.000(0.100),FACLEX#XEME#60=0.000(1.000)} {origin=genlex}
+[-0.0459] Do :- S/S : (lambda $0:t $0) {FACLEX#LEX#60#11=0.0(1.000),FACLEX#TMP#11=-0.459(0.100),FACLEX#XEME#60=0.000(1.000)} {origin=genlex}
+[3.4769] Position :- S/S : (lambda $0:t $0) {FACLEX#LEX#68#11=1.761(1.000),FACLEX#TMP#11=-0.459(0.100),FACLEX#XEME#68=1.761(1.000)} {origin=genlex}
+[1.8156] Position :- N/N : (lambda $0:<e,t> (lambda $1:e ($0 $1))) {FACLEX#LEX#68#5=0.000(1.000),FACLEX#TMP#5=0.543(0.100),FACLEX#XEME#68=1.761(1.000)} {origin=genlex}
+[1.7902] Position :- S\S : (lambda $0:t $0) {FACLEX#LEX#68#6=0.0(1.000),FACLEX#TMP#6=0.289(0.100),FACLEX#XEME#68=1.761(1.000)} {origin=genlex}
+[1.7614] Position :- S/PP/NP : (lambda $0:e (lambda $1:<e,t> ($1 $0))) {FACLEX#LEX#68#9=0.0(1.000),FACLEX#TMP#9=0.000(0.100),FACLEX#XEME#68=1.761(1.000)} {origin=genlex}
+[1.7614] Position :- S/S : (lambda $0:<e,t> (lambda $1:e ($0 $1))) {FACLEX#LEX#68#12=0.0(1.000),FACLEX#TMP#12=0.000(0.100),FACLEX#XEME#68=1.761(1.000)} {origin=genlex}
+[1.7614] Position :- NP/N : (lambda $0:<e,t> (the:<<e,t>,e> (lambda $1:e ($0 $1)))) {FACLEX#LEX#68#8=0.0(1.000),FACLEX#TMP#8=0.000(0.100),FACLEX#XEME#68=1.761(1.000)} {origin=genlex}
+[-3.4440] Position :- S/NP : (lambda $0:e (near:<e,<e,t>> (the:<<e,t>,e> (lambda $1:e (agent:<e,t> $1))) $0)) {FACLEX#LEX#101#2=-1.761(1.000),FACLEX#TMP#2=0.787(0.100),FACLEX#XEME#101=-1.761(1.000)} {origin=genlex}
+[30.4787] Please :- S/NP : (lambda $0:e (in:<e,<e,t>> (the:<<e,t>,e> (lambda $1:e (agent:<e,t> $1))) $0)) {FACLEX#LEX#46#2=15.200(1.000),FACLEX#TMP#2=0.787(0.100),FACLEX#XEME#46=15.200(1.000)} {origin=genlex}
+[-15.1457] Please :- N/N : (lambda $0:<e,t> (lambda $1:e ($0 $1))) {FACLEX#LEX#63#5=0.0(1.000),FACLEX#TMP#5=0.543(0.100),FACLEX#XEME#63=-15.200(1.000)} {origin=genlex}
+[-15.1711] Please :- S\S : (lambda $0:t $0) {FACLEX#LEX#63#6=0.0(1.000),FACLEX#TMP#6=0.289(0.100),FACLEX#XEME#63=-15.200(1.000)} {origin=genlex}
+[-15.2000] Please :- NP/N : (lambda $0:<e,t> (the:<<e,t>,e> (lambda $1:e ($0 $1)))) {FACLEX#LEX#63#8=0.0(1.000),FACLEX#TMP#8=0.000(0.100),FACLEX#XEME#63=-15.200(1.000)} {origin=genlex}
+[-15.2000] Please :- S/S : (lambda $0:<e,t> (lambda $1:e ($0 $1))) {FACLEX#LEX#63#12=0.000(1.000),FACLEX#TMP#12=0.000(0.100),FACLEX#XEME#63=-15.200(1.000)} {origin=genlex}
+[-15.2000] Please :- S/PP/NP : (lambda $0:e (lambda $1:<e,t> ($1 $0))) {FACLEX#LEX#63#9=0.0(1.000),FACLEX#TMP#9=0.000(0.100),FACLEX#XEME#63=-15.200(1.000)} {origin=genlex}
+[-30.4459] Please :- S/S : (lambda $0:t $0) {FACLEX#LEX#63#11=-15.200(1.000),FACLEX#TMP#11=-0.459(0.100),FACLEX#XEME#63=-15.200(1.000)} {origin=genlex}
+[1.0186] towards :- N/N : (lambda $0:<e,t> (lambda $1:e ($0 $1))) {FACLEX#LEX#96#5=0.964(1.000),FACLEX#TMP#5=0.543(0.100),FACLEX#XEME#96=0.000(1.000)} {origin=genlex}
+[0.0289] towards :- S\S : (lambda $0:t $0) {FACLEX#LEX#96#6=0.000(1.000),FACLEX#TMP#6=0.289(0.100),FACLEX#XEME#96=0.000(1.000)} {origin=genlex}
+[0.0000] towards :- S/S : (lambda $0:<e,t> (lambda $1:e ($0 $1))) {FACLEX#LEX#96#12=0.0(1.000),FACLEX#TMP#12=0.000(0.100),FACLEX#XEME#96=0.000(1.000)} {origin=genlex}
+[0.0000] towards :- NP/N : (lambda $0:<e,t> (the:<<e,t>,e> (lambda $1:e ($0 $1)))) {FACLEX#LEX#96#8=0.0(1.000),FACLEX#TMP#8=0.000(0.100),FACLEX#XEME#96=0.000(1.000)} {origin=genlex}
+[0.0000] towards :- S/PP/NP : (lambda $0:e (lambda $1:<e,t> ($1 $0))) {FACLEX#LEX#96#9=0.0(1.000),FACLEX#TMP#9=0.000(0.100),FACLEX#XEME#96=0.000(1.000)} {origin=genlex}
+[-1.0101] towards :- S/S : (lambda $0:t $0) {FACLEX#LEX#96#11=-0.964(1.000),FACLEX#TMP#11=-0.459(0.100),FACLEX#XEME#96=0.000(1.000)} {origin=genlex}
+[1.0186] look :- N/N : (lambda $0:<e,t> (lambda $1:e ($0 $1))) {FACLEX#LEX#95#5=0.964(1.000),FACLEX#TMP#5=0.543(0.100),FACLEX#XEME#95=0.000(1.000)} {origin=genlex}
+[0.0289] look :- S\S : (lambda $0:t $0) {FACLEX#LEX#95#6=0.0(1.000),FACLEX#TMP#6=0.289(0.100),FACLEX#XEME#95=0.000(1.000)} {origin=genlex}
+[0.0000] look :- S/S : (lambda $0:<e,t> (lambda $1:e ($0 $1))) {FACLEX#LEX#95#12=0.000(1.000),FACLEX#TMP#12=0.000(0.100),FACLEX#XEME#95=0.000(1.000)} {origin=genlex}
+[0.0000] look :- S/PP/NP : (lambda $0:e (lambda $1:<e,t> ($1 $0))) {FACLEX#LEX#95#9=0.0(1.000),FACLEX#TMP#9=0.000(0.100),FACLEX#XEME#95=0.000(1.000)} {origin=genlex}
+[0.0000] look :- NP/N : (lambda $0:<e,t> (the:<<e,t>,e> (lambda $1:e ($0 $1)))) {FACLEX#LEX#95#8=0.0(1.000),FACLEX#TMP#8=0.000(0.100),FACLEX#XEME#95=0.000(1.000)} {origin=genlex}
+[-1.0101] look :- S/S : (lambda $0:t $0) {FACLEX#LEX#95#11=-0.964(1.000),FACLEX#TMP#11=-0.459(0.100),FACLEX#XEME#95=0.000(1.000)} {origin=genlex}
+[31.5142] go to :- S/NP : (lambda $0:e (in:<e,<e,t>> (the:<<e,t>,e> (lambda $1:e (agent:<e,t> $1))) $0)) {FACLEX#LEX#5#2=21.435(1.000),FACLEX#TMP#2=0.787(0.100),FACLEX#XEME#5=10.000(1.000)} {origin=fixed_domain}
+[31.5142] go to :- S/NP : (lambda $0:e (near:<e,<e,t>> (the:<<e,t>,e> (lambda $1:e (agent:<e,t> $1))) $0)) {FACLEX#LEX#29#2=21.435(1.000),FACLEX#TMP#2=0.787(0.100),FACLEX#XEME#29=10.000(1.000)} {origin=fixed_domain}
+[31.4859] go to :- S/NP : (lambda $0:e (in:<e,<e,t>> (the:<<e,t>,e> (lambda $1:e (agent:<e,t> $1))) $0)) {FACLEX#LEX#4#3=21.435(1.000),FACLEX#TMP#3=0.504(0.100),FACLEX#XEME#4=10.000(1.000)} {origin=fixed_domain}
+[31.4859] go to :- S/NP : (lambda $0:e (near:<e,<e,t>> (the:<<e,t>,e> (lambda $1:e (agent:<e,t> $1))) $0)) {FACLEX#LEX#23#3=21.435(1.000),FACLEX#TMP#3=0.504(0.100),FACLEX#XEME#23=10.000(1.000)} {origin=fixed_domain}
+[31.4705] go to :- S/NP : (lambda $0:e (near:<e,<e,t>> (the:<<e,t>,e> (lambda $1:e (agent:<e,t> $1))) $0)) {FACLEX#LEX#1#7=21.435(1.000),FACLEX#TMP#7=0.350(0.100),FACLEX#XEME#1=10.000(1.000)} {origin=fixed_domain}
+[31.0794] go to :- S/NP : (lambda $0:e (in:<e,<e,t>> (the:<<e,t>,e> (lambda $1:e (agent:<e,t> $1))) $0)) {FACLEX#LEX#1#10=21.435(1.000),FACLEX#TMP#10=-3.561(0.100),FACLEX#XEME#1=10.000(1.000)} {origin=fixed_domain}
+[10.1543] go to :- N/N : (lambda $0:<e,t> (lambda $1:e (and:<t*,t> (agent:<e,t> $1) ($0 $1)))) {FACLEX#LEX#1#0=0.0(1.000),FACLEX#TMP#0=1.543(0.100),FACLEX#XEME#1=10.000(1.000)} {origin=fixed_domain}
+[10.0000] go to :- PP/NP\NP : (lambda $0:e (lambda $1:e (in:<e,<e,t>> $1 $0))) {FACLEX#LEX#4#4=0.0(1.000),FACLEX#TMP#4=0.000(0.100),FACLEX#XEME#4=10.000(1.000)} {origin=fixed_domain}
+[10.0000] go to :- N : (lambda $0:e (agent:<e,t> $0)) {FACLEX#LEX#1#1=0.000(1.000),FACLEX#TMP#1=0.000(0.100),FACLEX#XEME#1=10.000(1.000)} {origin=fixed_domain}
+[10.0000] go to :- PP/NP\NP : (lambda $0:e (lambda $1:e (near:<e,<e,t>> $1 $0))) {FACLEX#LEX#23#4=0.000(1.000),FACLEX#TMP#4=0.000(0.100),FACLEX#XEME#23=10.000(1.000)} {origin=fixed_domain}
+[0.9541] spot :- S/S : (lambda $0:t $0) {FACLEX#LEX#71#11=1.000(1.000),FACLEX#TMP#11=-0.459(0.100),FACLEX#XEME#71=0.000(1.000)} {origin=genlex}
+[0.0289] spot :- S\S : (lambda $0:t $0) {FACLEX#LEX#71#6=0.0(1.000),FACLEX#TMP#6=0.289(0.100),FACLEX#XEME#71=0.000(1.000)} {origin=genlex}
+[0.0000] spot :- NP/N : (lambda $0:<e,t> (the:<<e,t>,e> (lambda $1:e ($0 $1)))) {FACLEX#LEX#71#8=0.0(1.000),FACLEX#TMP#8=0.000(0.100),FACLEX#XEME#71=0.000(1.000)} {origin=genlex}
+[0.0000] spot :- S/PP/NP : (lambda $0:e (lambda $1:<e,t> ($1 $0))) {FACLEX#LEX#71#9=0.000(1.000),FACLEX#TMP#9=0.000(0.100),FACLEX#XEME#71=0.000(1.000)} {origin=genlex}
+[0.0000] spot :- S/S : (lambda $0:<e,t> (lambda $1:e ($0 $1))) {FACLEX#LEX#71#12=0.0(1.000),FACLEX#TMP#12=0.000(0.100),FACLEX#XEME#71=0.000(1.000)} {origin=genlex}
+[-0.9457] spot :- N/N : (lambda $0:<e,t> (lambda $1:e ($0 $1))) {FACLEX#LEX#71#5=-1.000(1.000),FACLEX#TMP#5=0.543(0.100),FACLEX#XEME#71=0.000(1.000)} {origin=genlex}
+[31.4355] next to :- PP/NP\NP : (lambda $0:e (lambda $1:e (near:<e,<e,t>> $1 $0))) {FACLEX#LEX#8#4=21.435(1.000),FACLEX#TMP#4=0.000(0.100),FACLEX#XEME#8=10.000(1.000)} {origin=fixed_domain}
+[10.0504] next to :- S/NP : (lambda $0:e (near:<e,<e,t>> (the:<<e,t>,e> (lambda $1:e (agent:<e,t> $1))) $0)) {FACLEX#LEX#8#3=0.0(1.000),FACLEX#TMP#3=0.504(0.100),FACLEX#XEME#8=10.000(1.000)} {origin=fixed_domain}
+[0.0787] Enter :- S/NP : (lambda $0:e (near:<e,<e,t>> (the:<<e,t>,e> (lambda $1:e (agent:<e,t> $1))) $0)) {FACLEX#LEX#109#2=0.000(1.000),FACLEX#TMP#2=0.787(0.100),FACLEX#XEME#109=0.000(1.000)} {origin=genlex}
+[20.0000] left :- PP/NP\NP : (lambda $0:e (lambda $1:e (left:<e,<e,t>> $1 $0))) {FACLEX#LEX#21#4=10.000(1.000),FACLEX#TMP#4=0.000(0.100),FACLEX#XEME#21=10.000(1.000)} {origin=fixed_domain}
+[10.0504] left :- S/NP : (lambda $0:e (left:<e,<e,t>> (the:<<e,t>,e> (lambda $1:e (agent:<e,t> $1))) $0)) {FACLEX#LEX#21#3=0.0(1.000),FACLEX#TMP#3=0.504(0.100),FACLEX#XEME#21=10.000(1.000)} {origin=fixed_domain}
+Feature weights [391]:
+DYNSKIP=-1.0
+FACLEX#LEX#0#0=0.0
+FACLEX#LEX#0#1=10.0
+FACLEX#LEX#1#1=0.0
+FACLEX#LEX#1#10=21.435469250725863
+FACLEX#LEX#1#7=21.435469250725863
+FACLEX#LEX#10#3=0.0
+FACLEX#LEX#10#4=10.0
+FACLEX#LEX#100#11=-0.21496212121212122
+FACLEX#LEX#100#5=0.7451515602144796
+FACLEX#LEX#100#6=0.0
+FACLEX#LEX#100#8=-0.2471590909090909
+FACLEX#LEX#101#2=-1.7613636363636362
+FACLEX#LEX#102#11=-0.5694444444444444
+FACLEX#LEX#102#12=0.0
+FACLEX#LEX#102#5=-2.514435710470144
+FACLEX#LEX#103#0=1.0182527341495697
+FACLEX#LEX#104#2=3.8234432234432236
+FACLEX#LEX#105#5=0.08221987775763556
+FACLEX#LEX#105#8=0.0
+FACLEX#LEX#106#2=0.0
+FACLEX#LEX#107#0=-1.3012830822428345
+FACLEX#LEX#107#7=0.0
+FACLEX#LEX#108#2=0.0
+FACLEX#LEX#109#2=0.0
+FACLEX#LEX#11#12=0.0
+FACLEX#LEX#11#6=10.0
+FACLEX#LEX#11#8=0.0
+FACLEX#LEX#12#7=21.435469250725863
+FACLEX#LEX#13#3=21.435469250725863
+FACLEX#LEX#14#1=10.0
+FACLEX#LEX#15#4=10.0
+FACLEX#LEX#16#0=10.0
+FACLEX#LEX#16#1=0.0
+FACLEX#LEX#17#3=21.435469250725863
+FACLEX#LEX#17#4=0.0
+FACLEX#LEX#18#9=10.0
+FACLEX#LEX#19#0=14.18091251906215
+FACLEX#LEX#19#1=3.786602354693464
+FACLEX#LEX#19#10=-1.4371783065213437
+FACLEX#LEX#19#7=-6.530336567234275
+FACLEX#LEX#2#2=21.435469250725863
+FACLEX#LEX#20#0=-8.514533123533921
+FACLEX#LEX#20#1=26.882779026529025
+FACLEX#LEX#20#10=-1.0615530303030303
+FACLEX#LEX#20#7=-2.854127816627817
+FACLEX#LEX#21#4=10.0
+FACLEX#LEX#22#11=4.136012416831782
+FACLEX#LEX#22#5=24.44774559686422
+FACLEX#LEX#22#8=-8.583758013695984
+FACLEX#LEX#23#3=21.435469250725863
+FACLEX#LEX#23#4=0.0
+FACLEX#LEX#24#3=0.0
+FACLEX#LEX#24#4=10.0
+FACLEX#LEX#25#4=10.0
+FACLEX#LEX#26#10=21.435469250725863
+FACLEX#LEX#26#7=21.435469250725863
+FACLEX#LEX#27#3=5.063596430610065
+FACLEX#LEX#27#4=10.0
+FACLEX#LEX#28#2=21.435469250725863
+FACLEX#LEX#29#2=21.435469250725863
+FACLEX#LEX#3#1=10.0
+FACLEX#LEX#30#2=21.435469250725863
+FACLEX#LEX#31#11=-8.660047150301864
+FACLEX#LEX#31#8=0.0
+FACLEX#LEX#32#11=5.367284589267138
+FACLEX#LEX#32#5=-3.4481149271302707
+FACLEX#LEX#32#8=12.178229974216102
+FACLEX#LEX#32#9=0.0
+FACLEX#LEX#33#11=0.6669821304759428
+FACLEX#LEX#33#5=3.1074111182093826
+FACLEX#LEX#33#8=-5.526453581092885
+FACLEX#LEX#34#0=3.658726790450928
+FACLEX#LEX#34#1=15.658458399326648
+FACLEX#LEX#34#10=-8.624735269282414
+FACLEX#LEX#34#7=8.281967712429363
+FACLEX#LEX#35#11=7.492352424500762
+FACLEX#LEX#35#6=0.0
+FACLEX#LEX#36#11=8.394764065147697
+FACLEX#LEX#36#5=0.0
+FACLEX#LEX#36#8=-11.492352424500762
+FACLEX#LEX#37#2=-0.0866193986027195
+FACLEX#LEX#38#2=1.9390713775388697
+FACLEX#LEX#39#2=15.60235217009997
+FACLEX#LEX#4#3=21.435469250725863
+FACLEX#LEX#40#2=-7.18029495014789
+FACLEX#LEX#41#2=9.012154016770385
+FACLEX#LEX#42#2=-13.648809523809524
+FACLEX#LEX#43#0=3.8620879120879117
+FACLEX#LEX#43#1=-5.1964590964590975
+FACLEX#LEX#44#0=-2.777594627594628
+FACLEX#LEX#44#1=4.111965811965812
+FACLEX#LEX#44#10=0.0
+FACLEX#LEX#45#0=0.0
+FACLEX#LEX#46#2=15.2
+FACLEX#LEX#47#11=-2.5887764657385115
+FACLEX#LEX#47#8=15.2
+FACLEX#LEX#47#9=0.0
+FACLEX#LEX#48#0=1.7249947409793966
+FACLEX#LEX#48#1=0.0
+FACLEX#LEX#48#10=-4.903282830037738
+FACLEX#LEX#48#7=-5.677887974685583
+FACLEX#LEX#49#11=-4.015624850636595
+FACLEX#LEX#49#9=0.0
+FACLEX#LEX#5#2=21.435469250725863
+FACLEX#LEX#50#5=-5.222699538531031
+FACLEX#LEX#50#8=8.482439406862984
+FACLEX#LEX#50#9=0.0
+FACLEX#LEX#51#0=7.111635029803103
+FACLEX#LEX#51#1=-4.638449037309573
+FACLEX#LEX#51#10=-0.5839105038145639
+FACLEX#LEX#51#7=-2.7292156296061743
+FACLEX#LEX#52#0=2.595842685471304
+FACLEX#LEX#52#1=-0.757075910265809
+FACLEX#LEX#52#10=-1.728064773171066
+FACLEX#LEX#52#7=2.4812984713003363
+FACLEX#LEX#53#2=4.1134071810542405
+FACLEX#LEX#54#2=1.4708519258519264
+FACLEX#LEX#55#0=3.7679517149135324
+FACLEX#LEX#55#1=-0.9058610111631299
+FACLEX#LEX#55#10=-2.760967774859439
+FACLEX#LEX#55#7=-9.30518691726938
+FACLEX#LEX#56#2=2.0
+FACLEX#LEX#57#2=-6.855685621195379
+FACLEX#LEX#58#0=-2.6467364529341966
+FACLEX#LEX#58#1=-0.9870492936523949
+FACLEX#LEX#58#10=-12.643909436580133
+FACLEX#LEX#58#7=23.50204289584967
+FACLEX#LEX#59#2=0.0
+FACLEX#LEX#6#3=21.435469250725863
+FACLEX#LEX#60#12=0.0
+FACLEX#LEX#61#5=0.0
+FACLEX#LEX#62#2=5.350267379679145
+FACLEX#LEX#63#11=-15.2
+FACLEX#LEX#63#12=0.0
+FACLEX#LEX#64#2=-18.60203257649369
+FACLEX#LEX#65#2=1.91140838223909
+FACLEX#LEX#66#6=0.0
+FACLEX#LEX#67#2=-1.4460775444403913
+FACLEX#LEX#68#11=1.7613636363636354
+FACLEX#LEX#68#5=0.0
+FACLEX#LEX#69#2=2.366938616938617
+FACLEX#LEX#7#0=10.0
+FACLEX#LEX#7#1=0.0
+FACLEX#LEX#70#11=1.0
+FACLEX#LEX#70#12=0.0
+FACLEX#LEX#70#5=-2.0
+FACLEX#LEX#70#8=1.0
+FACLEX#LEX#71#11=1.0
+FACLEX#LEX#71#5=-1.0
+FACLEX#LEX#71#9=0.0
+FACLEX#LEX#72#2=0.0
+FACLEX#LEX#73#0=7.882056047265655
+FACLEX#LEX#73#1=-14.763247863247866
+FACLEX#LEX#73#10=-0.03125
+FACLEX#LEX#73#7=-1.5205579143079144
+FACLEX#LEX#74#11=1.9507437007437003
+FACLEX#LEX#74#5=-1.7613636363636362
+FACLEX#LEX#74#6=0.0
+FACLEX#LEX#74#8=7.269047619047622
+FACLEX#LEX#75#9=0.0
+FACLEX#LEX#76#6=0.0
+FACLEX#LEX#77#6=0.0
+FACLEX#LEX#78#2=-0.09999999999999998
+FACLEX#LEX#79#12=0.0
+FACLEX#LEX#8#4=21.435469250725863
+FACLEX#LEX#80#2=-16.50450644127115
+FACLEX#LEX#81#6=0.0
+FACLEX#LEX#82#0=-1.1544419321286472
+FACLEX#LEX#82#1=0.0
+FACLEX#LEX#83#2=1.6267364335011398
+FACLEX#LEX#84#11=-0.525222816399287
+FACLEX#LEX#84#8=-8.938451744334097
+FACLEX#LEX#85#2=7.436886586672592
+FACLEX#LEX#86#0=0.7750297103100308
+FACLEX#LEX#86#1=0.0
+FACLEX#LEX#87#5=-1.0
+FACLEX#LEX#87#6=0.0
+FACLEX#LEX#87#8=-1.0
+FACLEX#LEX#88#0=-1.5358534917588613
+FACLEX#LEX#88#10=0.0
+FACLEX#LEX#88#7=-0.5694444444444444
+FACLEX#LEX#89#0=-2.694444444444444
+FACLEX#LEX#89#1=-14.155945726423562
+FACLEX#LEX#89#10=-0.2976827094474153
+FACLEX#LEX#89#7=-1.8263447526090997
+FACLEX#LEX#9#11=21.435469250725863
+FACLEX#LEX#9#12=21.435469250725863
+FACLEX#LEX#9#5=0.0
+FACLEX#LEX#90#0=-0.5271046605314338
+FACLEX#LEX#90#1=0.0
+FACLEX#LEX#90#7=-0.33014492753623187
+FACLEX#LEX#91#2=0.10000000000000009
+FACLEX#LEX#92#2=2.104216468397503
+FACLEX#LEX#93#11=-1.6584578544061301
+FACLEX#LEX#93#5=0.0
+FACLEX#LEX#93#8=1.6584578544061306
+FACLEX#LEX#94#11=-0.9642823460064838
+FACLEX#LEX#94#5=0.9642823460064838
+FACLEX#LEX#94#9=0.0
+FACLEX#LEX#95#11=-0.9642823460064838
+FACLEX#LEX#95#12=0.0
+FACLEX#LEX#95#5=0.9642823460064838
+FACLEX#LEX#96#11=-0.9642823460064838
+FACLEX#LEX#96#5=0.9642823460064838
+FACLEX#LEX#96#6=0.0
+FACLEX#LEX#97#0=0.0
+FACLEX#LEX#97#1=1.8240815649867375
+FACLEX#LEX#97#10=-1.4615384615384615
+FACLEX#LEX#97#7=3.7162732095490716
+FACLEX#LEX#98#1=-0.8597992189802534
+FACLEX#LEX#98#10=-0.07692307692307693
+FACLEX#LEX#98#7=-3.142094017094017
+FACLEX#LEX#99#5=1.0945982883894865
+FACLEX#LEX#99#6=2.885836385836386
+FACLEX#LEXDEFAULT=1.0
+FACLEX#TMP#0=1.5425498069324624
+FACLEX#TMP#1=0.0
+FACLEX#TMP#10=-3.5610996172478666
+FACLEX#TMP#11=-0.4586399258347219
+FACLEX#TMP#12=0.0
+FACLEX#TMP#2=0.7872344069862314
+FACLEX#TMP#3=0.5038153004304567
+FACLEX#TMP#4=0.0
+FACLEX#TMP#5=0.5427660742228372
+FACLEX#TMP#6=0.28858363858363867
+FACLEX#TMP#7=0.3498459391175952
+FACLEX#TMP#8=0.0
+FACLEX#TMP#9=0.0
+FACLEX#TMPDEFAULT=1.0
+FACLEX#XEME#0=10.0
+FACLEX#XEME#1=10.0
+FACLEX#XEME#10=10.0
+FACLEX#XEME#100=0.283030348093267
+FACLEX#XEME#101=-1.7613636363636362
+FACLEX#XEME#102=-3.0838801549145876
+FACLEX#XEME#103=1.0182527341495697
+FACLEX#XEME#104=3.8234432234432236
+FACLEX#XEME#105=0.08221987775763556
+FACLEX#XEME#106=0.0
+FACLEX#XEME#107=-1.3012830822428345
+FACLEX#XEME#108=0.0
+FACLEX#XEME#109=0.0
+FACLEX#XEME#11=10.0
+FACLEX#XEME#12=10.0
+FACLEX#XEME#13=10.0
+FACLEX#XEME#14=10.0
+FACLEX#XEME#15=10.0
+FACLEX#XEME#16=10.0
+FACLEX#XEME#17=10.0
+FACLEX#XEME#18=10.0
+FACLEX#XEME#19=10.0
+FACLEX#XEME#2=10.0
+FACLEX#XEME#20=14.452565056064252
+FACLEX#XEME#21=10.0
+FACLEX#XEME#22=10.0
+FACLEX#XEME#23=10.0
+FACLEX#XEME#24=10.0
+FACLEX#XEME#25=10.0
+FACLEX#XEME#26=10.0
+FACLEX#XEME#27=15.063596430610058
+FACLEX#XEME#28=10.0
+FACLEX#XEME#29=10.0
+FACLEX#XEME#3=10.0
+FACLEX#XEME#30=10.0
+FACLEX#XEME#31=-8.660047150301864
+FACLEX#XEME#32=14.09739963635295
+FACLEX#XEME#33=-1.7520603324075585
+FACLEX#XEME#34=18.97441763292452
+FACLEX#XEME#35=7.492352424500762
+FACLEX#XEME#36=-3.097588359353066
+FACLEX#XEME#37=-0.0866193986027195
+FACLEX#XEME#38=1.9390713775388697
+FACLEX#XEME#39=15.60235217009997
+FACLEX#XEME#4=10.0
+FACLEX#XEME#40=-7.18029495014789
+FACLEX#XEME#41=9.012154016770385
+FACLEX#XEME#42=-13.648809523809524
+FACLEX#XEME#43=-1.3343711843711838
+FACLEX#XEME#44=1.3343711843711845
+FACLEX#XEME#45=0.0
+FACLEX#XEME#46=15.2
+FACLEX#XEME#47=12.61122353426149
+FACLEX#XEME#48=-8.856176063743932
+FACLEX#XEME#49=-4.015624850636595
+FACLEX#XEME#5=10.0
+FACLEX#XEME#50=3.259739868331954
+FACLEX#XEME#51=-0.8399401409272043
+FACLEX#XEME#52=2.592000473334765
+FACLEX#XEME#53=4.1134071810542405
+FACLEX#XEME#54=1.4708519258519264
+FACLEX#XEME#55=-9.204063988378417
+FACLEX#XEME#56=2.0
+FACLEX#XEME#57=-6.855685621195379
+FACLEX#XEME#58=7.224347712682942
+FACLEX#XEME#59=0.0
+FACLEX#XEME#6=10.0
+FACLEX#XEME#60=0.0
+FACLEX#XEME#61=0.0
+FACLEX#XEME#62=5.350267379679145
+FACLEX#XEME#63=-15.2
+FACLEX#XEME#64=-18.60203257649369
+FACLEX#XEME#65=1.91140838223909
+FACLEX#XEME#66=0.0
+FACLEX#XEME#67=-1.4460775444403913
+FACLEX#XEME#68=1.7613636363636354
+FACLEX#XEME#69=2.366938616938617
+FACLEX#XEME#7=10.0
+FACLEX#XEME#70=0.0
+FACLEX#XEME#71=0.0
+FACLEX#XEME#72=0.0
+FACLEX#XEME#73=-8.432999730290133
+FACLEX#XEME#74=7.4584276834276855
+FACLEX#XEME#75=0.0
+FACLEX#XEME#76=0.0
+FACLEX#XEME#77=0.0
+FACLEX#XEME#78=-0.09999999999999998
+FACLEX#XEME#79=0.0
+FACLEX#XEME#8=10.0
+FACLEX#XEME#80=-16.50450644127115
+FACLEX#XEME#81=0.0
+FACLEX#XEME#82=-1.1544419321286472
+FACLEX#XEME#83=1.6267364335011398
+FACLEX#XEME#84=-9.463674560733384
+FACLEX#XEME#85=7.436886586672592
+FACLEX#XEME#86=0.7750297103100308
+FACLEX#XEME#87=-2.0
+FACLEX#XEME#88=-2.1052979362033053
+FACLEX#XEME#89=-18.97441763292452
+FACLEX#XEME#9=10.0
+FACLEX#XEME#90=-0.8572495880676656
+FACLEX#XEME#91=0.10000000000000009
+FACLEX#XEME#92=2.104216468397503
+FACLEX#XEME#93=0.0
+FACLEX#XEME#94=0.0
+FACLEX#XEME#95=0.0
+FACLEX#XEME#96=0.0
+FACLEX#XEME#97=4.078816312997348
+FACLEX#XEME#98=-4.078816312997347
+FACLEX#XEME#99=3.9804346742258727
+FACLEX#XEMEDEFAULT=1.0
+LOGCOOC#ARGARG#block:<e,t>#block:<e,t>=0.23947000649893313
+LOGCOOC#ARGARG#in:<e,<e,t>>#block:<e,t>=-10.84043651371045
+LOGCOOC#ARGARG#in:<e,<e,t>>#in:<e,<e,t>>=-0.21014492753623187
+LOGCOOC#ARGARG#near:<e,<e,t>>#block:<e,t>=9.289502099618465
+LOGCOOC#ARGARG#near:<e,<e,t>>#in:<e,<e,t>>=-3.7056753226374086
+LOGCOOC#ARGARG#near:<e,<e,t>>#near:<e,<e,t>>=-5.876428328714715
+LOGCOOC#ARGARG#red:<e,t>#block:<e,t>=7.310231431014618
+LOGCOOC#ARGARG#red:<e,t>#in:<e,<e,t>>=-10.980694661080776
+LOGCOOC#ARGARG#red:<e,t>#near:<e,<e,t>>=3.4238507418522692
+LOGCOOC#ARGARG#red:<e,t>#red:<e,t>=-2.0096297866471873
+LOGCOOC#ARGARG#room:<e,t>#block:<e,t>=-15.799309347674164
+LOGCOOC#ARGARG#room:<e,t>#in:<e,<e,t>>=-0.3106060606060606
+LOGCOOC#ARGARG#room:<e,t>#near:<e,<e,t>>=-4.2489861274609835
+LOGCOOC#ARGARG#room:<e,t>#red:<e,t>=1.8520367090205683
+LOGCOOC#ARGARG#room:<e,t>#room:<e,t>=9.790537240537244
+LOGCOOC#ARGARG#var#the:<<e,t>,e>=-8.651407035245713
+LOGCOOC#PREDARG#agent:<e,t>#var=7.58567312079323
+LOGCOOC#PREDARG#and:<t*,t>#block:<e,t>=6.783576030127155
+LOGCOOC#PREDARG#and:<t*,t>#in:<e,<e,t>>=-14.999888173162107
+LOGCOOC#PREDARG#and:<t*,t>#near:<e,<e,t>>=2.642805815278982
+LOGCOOC#PREDARG#and:<t*,t>#red:<e,t>=0.21320888910100785
+LOGCOOC#PREDARG#and:<t*,t>#room:<e,t>=1.6370745878084472
+LOGCOOC#PREDARG#block:<e,t>#var=-1.4857941798740928
+LOGCOOC#PREDARG#in:<e,<e,t>>#the:<<e,t>,e>=-30.832430680936888
+LOGCOOC#PREDARG#in:<e,<e,t>>#var=-14.999888173162107
+LOGCOOC#PREDARG#near:<e,<e,t>>#the:<<e,t>,e>=13.402770718932311
+LOGCOOC#PREDARG#near:<e,<e,t>>#var=2.642805815278982
+LOGCOOC#PREDARG#red:<e,t>#var=-9.86312879316257
+LOGCOOC#PREDARG#right:<e,<e,t>>#the:<<e,t>,e>=2.411032190003925
+LOGCOOC#PREDARG#room:<e,t>#var=-10.27893984550851
+LOGCOOC#PREDARG#the:<<e,t>,e>#agent:<e,t>=7.58567312079323
+LOGCOOC#PREDARG#the:<<e,t>,e>#and:<t*,t>=-0.5284086329985737
+LOGCOOC#PREDARG#the:<<e,t>,e>#block:<e,t>=-0.13404594638345246
+LOGCOOC#PREDARG#the:<<e,t>,e>#red:<e,t>=-30.196956144474644
+LOGCOOC#PREDARG#the:<<e,t>,e>#room:<e,t>=-14.496851651654167
+LOGEXP#CPAP#and:<t*,t>#in:<e,<e,t>>#1=-0.16666666666666666
+LOGEXP#CPAP#and:<t*,t>#near:<e,<e,t>>#1=-9.092885530173783
+LOGEXP#CPP1#and:<t*,t>#near:<e,<e,t>>#in:<e,<e,t>>=-1.684586512301501
+LOGEXP#CPP1#and:<t*,t>#red:<e,t>#block:<e,t>=7.310231431014618
+LOGEXP#CPP1#and:<t*,t>#room:<e,t>#block:<e,t>=-15.799309347674164
+LOGEXP#CPP1#and:<t*,t>#room:<e,t>#red:<e,t>=1.8520367090205683
+LOGEXP#REPT#and:<t*,t>#block:<e,t>=0.23947000649893313
+LOGEXP#REPT#and:<t*,t>#in:<e,<e,t>>=-0.043478260869565216
+LOGEXP#REPT#and:<t*,t>#near:<e,<e,t>>=2.4812984713003363
+LOGEXP#REPT#and:<t*,t>#red:<e,t>=-2.0096297866471873
+LOGEXP#REPT#and:<t*,t>#room:<e,t>=9.790537240537244
+RULE#<apply=1.442918192918193
+RULE#>apply=9.533991470802452
+RULE#>comp1=-1.387502491574248
+RULE#>thatless=-9.589407172146409
