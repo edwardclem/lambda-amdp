@@ -1,10 +1,10 @@
 #global parameters
 include=../params.inc
-outputDir=../logs/dataset_2_validation_genlex
-globalLog=../logs/dataset_2_validation_genlex/global.log
+outputDir=../logs/dataset_1_validation_genlex
+globalLog=../logs/dataset_1_validation_genlex/global.log
 
 #resources
-#parser - same feature set but no supervised parser filter
+#parser - same feature set but no archive.supervised parser filter
 include=inc/parser.inc
 #model, with cooc features
 include=inc/model.inc
@@ -13,8 +13,8 @@ include=inc/validation.inc
 #genlex
 include=inc/genlex_validation.inc
 #data
-type=data.multi.bdm id=train file=../../data/dataset_2_edited/train.bdm num=3
-type=data.multi.bdm id=test file=../../data/dataset_2_edited/test.bdm num=3
+type=data.multi.bdm id=train file=../../data/dataset_1_edited/train.bdm num=3
+type=data.multi.bdm id=test file=../../data/dataset_1_edited/test.bdm num=3
 #learner
 include=inc/learn.inc
 #initializer

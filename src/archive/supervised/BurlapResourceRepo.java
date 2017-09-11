@@ -14,7 +14,7 @@
  * this program; if not, write to the Free Software Foundation, Inc., 51
  * Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
  *******************************************************************************/
-package supervised;
+package archive.supervised;
 
 import edu.cornell.cs.nlp.spf.ccg.lexicon.factored.lambda.FactoredLexicon;
 import edu.cornell.cs.nlp.spf.data.collection.CompositeDataCollection;
@@ -83,8 +83,10 @@ public class BurlapResourceRepo extends ResourceCreatorRepository {
 				new FactoredLexicalFeatureSet.Creator<Sentence>());
 		registerResourceCreator(
 				new SkippingSensitiveLexicalEntryScorer.Creator<LogicalExpression>());
-		registerResourceCreator(
-				new LogicalExpressionCoordinationFeatureSet.Creator<Sentence>());
+		registerResourceCreator(new LogicalExpressionCoordinationFeatureSet.Creator<Sentence>());
+
+
+
 		registerResourceCreator(new FactoredLexicon.Creator());
 		registerResourceCreator(
 				new TemplateSupervisedGenlex.Creator<Sentence, SingleSentence>());

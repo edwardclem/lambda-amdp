@@ -1,10 +1,10 @@
 #global parameters
 include=../params.inc
-outputDir=../logs/dataset_2_edited
-globalLog=../logs/dataset_2_edited/global.log
+outputDir=../logs/dataset_2_validation_genlex
+globalLog=../logs/dataset_2_validation_genlex/global.log
 
 #resources
-#parser - same feature set but no supervised parser filter
+#parser - same feature set but no archive.supervised parser filter
 include=inc/parser.inc
 #model, with cooc features
 include=inc/model.inc

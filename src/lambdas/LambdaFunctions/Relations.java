@@ -10,7 +10,7 @@ import edu.cornell.cs.nlp.utils.composites.Pair;
  */
 public class Relations {
 
-    static double NEAR_THRESHOLD = 1.0; //threshold for "near" cutoff, also used for "left" and "right"
+    static double NEAR_THRESHOLD = 1.5; //threshold for "near" cutoff, also used for "left" and "right"
 
     public static double dist(String obj1, String obj2, OOState state){
         Pair<Double, Double> obj1Coords = Attributes.location(obj1, state);
@@ -22,7 +22,7 @@ public class Relations {
 
         //Check if any objects are null, return false if so
         //also check if any of the attributes are a region
-        return !obj1.equals("") && !obj2.equals("")  && !Attributes.isRegion(obj1, state) && !Attributes.isRegion(obj2, state) && dist(obj1, obj2, state) <= NEAR_THRESHOLD;
+        return !obj1.equals("") && !obj2.equals("")  && !Attributes.isRegion(obj1, state) && !Attributes.isRegion(obj2, state) && dist(obj1, obj2, state) <= NEAR_THRESHOLD &&  dist(obj1, obj2, state) > 0;
 
     }
 
@@ -40,10 +40,6 @@ public class Relations {
 
     /**
      * returns true if obj1 is left of obj2
-     * TODO: is this ordering a problem?
-     * Return "false" if any of the objects is a region for now (TODO: handle this case)
-     * Defined "left of" to mean that x_1 - x_2 = -1 and y-coordinates are equal
-     *TODO: this is a very restrictive definition
      * @param obj1
      * @param obj2
      * @param state
@@ -53,7 +49,7 @@ public class Relations {
         if (!obj1.equals("") && !obj2.equals("") && !Attributes.isRegion(obj1, state) && !Attributes.isRegion(obj2, state)){
             Pair<Double, Double> loc1 = Attributes.location(obj1, state);
             Pair<Double, Double> loc2 = Attributes.location(obj2, state);
-            return (loc1.first() - loc2.first() == -NEAR_THRESHOLD) && (loc1.second().equals(loc2.second()));
+            return loc1.first() < loc2.first() && dist(obj1, obj2, state) <= NEAR_THRESHOLD &&  dist(obj1, obj2, state) > 0 && (loc1.second().equals(loc2.second()));
         } else{
             return false;
         }
@@ -70,8 +66,7 @@ public class Relations {
         if (!obj1.equals("") && !obj2.equals("") && !Attributes.isRegion(obj1, state) && !Attributes.isRegion(obj2, state)){
             Pair<Double, Double> loc1 = Attributes.location(obj1, state);
             Pair<Double, Double> loc2 = Attributes.location(obj2, state);
-
-            return (loc1.first() - loc2.first() == NEAR_THRESHOLD) && (loc1.second().equals(loc2.second()));
+            return loc1.first() > loc2.first() && dist(obj1, obj2, state) <= NEAR_THRESHOLD && dist(obj1, obj2, state) > 0 && (loc1.second().equals(loc2.second()));
         } else{
             return false;
         }

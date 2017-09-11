@@ -14,7 +14,7 @@
  * this program; if not, write to the Free Software Foundation, Inc., 51
  * Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
  *******************************************************************************/
-package supervised;
+package archive.supervised;
 
 import edu.cornell.cs.nlp.spf.base.hashvector.HashVectorFactory;
 import edu.cornell.cs.nlp.spf.base.hashvector.HashVectorFactory.Type;
@@ -330,7 +330,7 @@ public class BurlapExpSimple {
 		// However, we use 4 iterations here to make this example faster to run.
 		builder.setNumIterations(10);
 
-		// We are doing supervised learning, so we will use a supervised filter.
+		// We are doing archive.supervised learning, so we will use a archive.supervised filter.
 		// See the filter factory for an explanation.
 		builder.setParsingFilterFactory(
 				new SupervisedFilterFactory<>(PredicateUtils.alwaysTrue()));

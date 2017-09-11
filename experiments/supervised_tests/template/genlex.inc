@@ -1,2 +1,2 @@
 ## GENLEX method
-type=genlex.template.supervised id=genlex maxTokens=4
+type=genlex.template.archive.supervised id=genlex maxTokens=4

@@ -1,21 +1,21 @@
 #global parameters
 include=../params.inc
-outputDir=../logs/dataset_1_2_demos
-globalLog=../logs/dataset_1_2_demos/global.log
+outputDir=../logs/dataset_combined_edited_predpairs
+globalLog=../logs/dataset_combined_edited_predpairs/global.log
 
 #resources
 #parser - same feature set but no archive.supervised parser filter
 include=inc/parser.inc
 #model, with cooc features
-include=inc/model.inc
+include=inc/model_predpairs.inc
 #validation function
 include=inc/validation.inc
 #genlex
 #not sure the impact that this will have on performance. possibly speed?
 include=inc/genlex.inc
-#data
-type=data.multi.bdm id=train file=../../data/dataset_1/train.bdm num=2
-type=data.multi.bdm id=test file=../../data/dataset_1/test.bdm num=2
+#data, full demonstrations
+type=data.multi.bdm id=train file=../../data/combined_edited/train.bdm num=3
+type=data.multi.bdm id=test file=../../data/combined_edited/test.bdm num=3
 #learner
 include=inc/learn.inc
 #initializer

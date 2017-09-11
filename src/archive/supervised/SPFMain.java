@@ -1,4 +1,4 @@
-package supervised;
+package archive.supervised;
 
 import edu.cornell.cs.nlp.utils.log.ILogger;
 import edu.cornell.cs.nlp.utils.log.LoggerFactory;

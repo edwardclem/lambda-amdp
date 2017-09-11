@@ -10,7 +10,7 @@ import test.stats.IValidationTestingStatistics;
  *
  * SAMPLE - unlabeled data used for model inference.
  *
- * LABEL - label type of weakly supervised data.
+ * LABEL - label type of weakly archive.supervised data.
  *
  * MR - meaning representation type.
  *

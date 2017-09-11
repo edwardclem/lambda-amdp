@@ -13,4 +13,4 @@ type=parsefilter.lambda.simple id=parseFilter syntax=S
 #removed preChartPruning=true, shouldn't use for gradient descent
 type=parser.cky.multi id=parser parseFilter=parseFilter beam=%{gBeam} pruneLexicalCells=true rules=ruleComp,ruleApp,ruleRaiseComp,ruleThatless,rulePluralExists,shiftPP executor=executor nfValidator=nfValidator wordSkipping=simple
 # Parsing filter
-type=parser.filter.supervised id=filterFactory
+type=parser.filter.archive.supervised id=filterFactory

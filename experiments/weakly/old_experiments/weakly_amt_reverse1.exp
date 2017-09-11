@@ -4,7 +4,7 @@ outputDir=reverselog1
 globalLog=reverselog1/global.log
 
 #resources
-#parser - same feature set but no supervised parser filter
+#parser - same feature set but no archive.supervised parser filter
 include=parser.inc
 #model
 include=model.inc

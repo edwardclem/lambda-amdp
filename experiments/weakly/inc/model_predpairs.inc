@@ -11,6 +11,6 @@ type=feat.logexp.predpairs id=featPairs
 ## Lexicon
 type=lexicon.factored id=lexicon
 ## Actual model
-type=model id=model lexicon=lexicon features=featLex,featLogexpCoordination,featRules,featSkip,featCooc
+type=model id=model lexicon=lexicon features=featLex,featLogexpCoordination,featRules,featSkip,featCooc,featPairs
 ## Debug model logger
 type=logger.model id=loggerModel cluster=true

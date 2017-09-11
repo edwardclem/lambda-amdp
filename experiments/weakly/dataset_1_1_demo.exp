@@ -4,7 +4,7 @@ outputDir=../logs/dataset_1_1_demo
 globalLog=../logs/dataset_1_1_demo/global.log
 
 #resources
-#parser - same feature set but no supervised parser filter
+#parser - same feature set but no archive.supervised parser filter
 include=inc/parser.inc
 #model, with cooc features
 include=inc/model.inc

@@ -2,10 +2,7 @@ package validation;
 
 
 import amdp.cleanup.state.CleanupState;
-import burlap.mdp.core.oo.state.OOState;
 import burlap.mdp.core.state.State;
-import data.BurlapMultiDemonstration;
-import data.DataHelpers;
 import edu.cornell.cs.nlp.spf.data.ILabeledDataItem;
 import edu.cornell.cs.nlp.spf.data.sentence.Sentence;
 import edu.cornell.cs.nlp.spf.data.utils.IValidator;
@@ -14,15 +11,13 @@ import edu.cornell.cs.nlp.spf.explat.ParameterizedExperiment;
 import edu.cornell.cs.nlp.spf.explat.resources.IResourceObjectCreator;
 import edu.cornell.cs.nlp.spf.explat.resources.usage.ResourceUsage;
 import edu.cornell.cs.nlp.spf.mr.lambda.LogicalExpression;
-import edu.cornell.cs.nlp.utils.composites.Pair;
 import edu.cornell.cs.nlp.utils.composites.Triplet;
 import edu.cornell.cs.nlp.utils.log.ILogger;
 import edu.cornell.cs.nlp.utils.log.LoggerFactory;
 import jscheme.JScheme;
 import jscheme.SchemeProcedure;
 import lambdas.LambdaPlanning.LambdaConverter;
-import supervised.BurlapResourceRepo;
-import test.ValidationTester;
+import archive.supervised.BurlapResourceRepo;
 
 import java.io.FileNotFoundException;
 import java.io.FileReader;

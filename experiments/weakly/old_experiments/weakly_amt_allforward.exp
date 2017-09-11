@@ -6,7 +6,7 @@ outputDir=amtlogs_allforward_nakul_2
 globalLog=amtlogs_allforward_nakul_2/global.log
 
 #resources
-#parser - same feature set but no supervised parser filter
+#parser - same feature set but no archive.supervised parser filter
 include=parser.inc
 #model
 include=model.inc

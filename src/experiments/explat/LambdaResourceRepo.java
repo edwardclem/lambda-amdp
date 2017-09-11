@@ -31,6 +31,8 @@ import edu.cornell.cs.nlp.spf.parser.ccg.rules.lambda.typeraising.ForwardTypeRai
 import edu.cornell.cs.nlp.spf.parser.ccg.rules.lambda.typeshifting.PrepositionTypeShifting;
 import edu.cornell.cs.nlp.spf.parser.ccg.rules.primitivebinary.application.ApplicationCreator;
 import edu.cornell.cs.nlp.spf.parser.ccg.rules.primitivebinary.composition.CompositionCreator;
+import features.LogicalExpressionPairwisePredicateFeatureSet;
+import features.LogicalExpressionRootPredicateFeatureSet;
 import genlex.TemplateCoarseGenlexWeakLabel;
 import genlex.TemplateCoarseValidationGenlex;
 import test.ValidationTester;
@@ -82,6 +84,10 @@ public class LambdaResourceRepo extends ResourceCreatorRepository {
         registerResourceCreator(
                 new LexiconModelInit.Creator<Sentence, LogicalExpression>());
         registerResourceCreator(new LogicalExpressionCooccurrenceFeatureSet.Creator<Sentence>());
+
+        registerResourceCreator(new LogicalExpressionPairwisePredicateFeatureSet.Creator<Sentence>());
+
+        registerResourceCreator(new LogicalExpressionRootPredicateFeatureSet.Creator<Sentence>());
 
         //register lexicon resources
         registerResourceCreator(new FactoredLexicon.Creator());

@@ -4,7 +4,7 @@ outputDir=../logs/dataset_1_errordriven_2_demos
 globalLog=../logs/dataset_1_errordriven_2_demos/global.log
 
 #resources
-#parser - same feature set but no supervised parser filter
+#parser - same feature set but no archive.supervised parser filter
 include=inc/parser.inc
 #model
 include=inc/model.inc

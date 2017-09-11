@@ -7,7 +7,9 @@ import jscheme.JScheme;
 import jscheme.SchemeProcedure;
 
 import java.util.Collections;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 import java.util.stream.Collectors;
 
 public class Determiners{
@@ -112,6 +114,14 @@ public class Determiners{
 
     }
 
+    public static Boolean checkTypeList(List<ObjectInstance> inputList){
+        Set<String> inputTypes = new HashSet<>();
+        for(ObjectInstance ob: inputList){
+            inputTypes.add(ob.className());
+        }
+        return inputTypes.size()==1;
+    }
+
     /**
      * Returns the argmax over the set of objects satisfying the predicate.
      * measure takes an object and returns a double.
@@ -133,7 +143,7 @@ public class Determiners{
         //avoid accidental satisfaction
         Collections.shuffle(objectsSatisfying);
 
-        if (objectsSatisfying.size() == 1){
+        if (objectsSatisfying.size() == 1 || checkTypeList(objectsSatisfying)){
             return ""; // don't use argmax if there's only one
         }
 
@@ -163,6 +173,9 @@ public class Determiners{
         JScheme js = new JScheme();
 
         List<ObjectInstance> objectsSatisfying = getObjectsSatsifyingPredicate(state, predicate);
+
+        //avoid accidental satisfaction
+        Collections.shuffle(objectsSatisfying);
 
         if (objectsSatisfying.size() == 1){
             return ""; // don't use argmax if there's only one
