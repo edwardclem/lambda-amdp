@@ -2,6 +2,6 @@
 type=filter.sentence.length id=learningFilter length=%{trainingMaxSentenceLength}
 #learner
 #errorDriven=false for now. see how that affects the result.
-type=learner.validation.perceptron id=perceptron data=train genlexbeam=%{gBeam} iter=%{gIter} validator=validator filter=learningFilter genlex=genlex conflateParses=false errorDriven=false
+type=learner.validation.perceptron id=perceptronXX data=train genlexbeam=%{gBeam} iter=%{gIter} validator=validator filter=learningFilter genlex=genlex conflateParses=false errorDriven=false
 #validation driven tester
-type=tester.validation id=tester data=test parser=parser validator=validator
+type=tester.validation id=testerXX data=test parser=parser validator=validator

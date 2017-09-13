@@ -121,7 +121,7 @@ public class Determiners{
             //System.out.println(ob.className());
         }
 
-        System.out.println(inputTypes.size());
+        //System.out.println(inputTypes.size());
 
         return inputTypes.size()==1;
     }
@@ -143,7 +143,7 @@ public class Determiners{
         JScheme js = new JScheme();
 
         List<ObjectInstance> objectsSatisfying = getObjectsSatsifyingPredicate(state, predicate);
-        System.out.println(objectsSatisfying.size());
+        //System.out.println(objectsSatisfying.size());
 
         //avoid accidental satisfaction
         Collections.shuffle(objectsSatisfying);
