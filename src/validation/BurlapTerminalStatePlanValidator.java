@@ -163,7 +163,7 @@ public class BurlapTerminalStatePlanValidator<DI extends ILabeledDataItem<Senten
         brtd.toggleDebugPrinting(false);
         Policy policy = brtd.planFromState(startState);
 
-        Episode episode = PolicyUtils.rollout(policy,env,1);
+        Episode episode = PolicyUtils.rollout(policy,env,100);
 //        Visualizer v = CleanupVisualiser.getVisualizer("data/robotImages");
 //        new EpisodeSequenceVisualizer(v, domain, Arrays.asList(episode));
         return episode;
