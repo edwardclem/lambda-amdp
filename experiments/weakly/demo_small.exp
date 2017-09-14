@@ -1,0 +1,25 @@
+#global parameters
+include=../params.inc
+outputDir=../logs/demo_small
+globalLog=../logs/demo_small/global.log
+
+#resources
+#parser - same feature set but no archive.supervised parser filter
+include=inc/parser.inc
+#model, with cooc features
+include=inc/model_predpairs.inc
+#validation function
+include=inc/validation.inc
+#genlex
+#not sure the impact that this will have on performance. possibly speed?
+include=inc/genlex.inc
+#data, full demonstrations
+type=data.multi.bdm id=train file=../../data/demo_small/train.bdm num=3
+type=data.multi.bdm id=test file=../../data/demo_small/test.bdm num=3
+#learner
+include=inc/learn.inc
+#initializer
+include=inc/init.inc
+
+#jobs
+include=inc/jobs.inc

@@ -40,8 +40,9 @@ public class TestLambdaOnStates {
 
 //        String parse = "(near:<e,<e,t>> (the:<<e,t>,e> (lambda $0:e (agent:<e,t> $0))) (argmin:<<e,t>,<<e,n>,e>> (lambda $1:e (and:<t*,t> (room:<e,t> $1) (room:<e,t> $1) (room:<e,t> $1) (room:<e,t> $1) (room:<e,t> $1) (room:<e,t> $1))) (lambda $2:e (size:<e,n> $2))))";
 
-        String parse = "(in:<e,<e,t>> (the:<<e,t>,e> (lambda $0:e (agent:<e,t> $0))) (the:<<e,t>,e> (lambda $1:e (eq:<e,<e,t>> $1 (argmax:<<e,t>,<<e,n>,e>> (lambda $2:e (green:<e,t> $2)) (lambda $3:e (size:<e,n> $3)))))))";
+        //String parse = "(in:<e,<e,t>> (the:<<e,t>,e> (lambda $0:e (agent:<e,t> $0))) (the:<<e,t>,e> (lambda $1:e (eq:<e,<e,t>> $1 (argmax:<<e,t>,<<e,n>,e>> (lambda $2:e (green:<e,t> $2)) (lambda $3:e (size:<e,n> $3)))))))";
 
+        String parse = "(in:<e,<e,t>> (the:<<e,t>,e> (lambda $0:e (block:<e,t> $0))) (the:<<e,t>,e> (lambda $1:e (eq:<e,<e,t>> $1 (argmin:<<e,t>,<<e,n>,e>> (lambda $2:e (and:<t*,t> (eq:<e,<e,t>> $2 (argmax:<<e,t>,<<e,n>,e>> (lambda $3:e (green:<e,t> $3)) (lambda $4:e (size:<e,n> $4)))) (in:<e,<e,t>> (the:<<e,t>,e> (lambda $5:e (room:<e,t> $5))) $2))) (lambda $6:e (size:<e,n> $6)))))))";
 
         OOState pre = DataHelpers.loadStateFromStringCompact(precond);
         OOState post = DataHelpers.loadStateFromStringCompact(postcond);
