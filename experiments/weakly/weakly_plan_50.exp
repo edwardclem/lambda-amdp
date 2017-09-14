@@ -2,8 +2,8 @@
 include=../params.inc
 #outputDir=amtlogs_allforward_nakul_1
 #globalLog=amtlogs_allforward_nakul_1/global.log
-outputDir=baseline_50
-globalLog=baseline_50/global.log
+outputDir=baseline_50_1
+globalLog=baseline_50_1/global.log
 
 #resources
 #parser - same feature set but no supervised parser filter
@@ -16,8 +16,8 @@ include=inc/validatorplan.inc
 #not sure the impact that this will have on performance. possibly speed?
 include=inc/genlex.inc
 #data
-type=data.plan.state.bdm id=train file=/home/nakul/workspace/lambda-amdp/data/baseline_dataset_50_episodes_train/BDMWithEpisodeFilePath.bdm
-type=data.plan.state.bdm id=test file=/home/nakul/workspace/lambda-amdp/data/baseline_dataset_50_episodes_test/BDMWithEpisodeFilePath.bdm
+type=data.plan.state.bdm id=train file=../../data/baseline_dataset_50_episodes_train/BDMWithEpisodeFilePath.bdm
+type=data.plan.state.bdm id=test file=../../data/baseline_dataset_50_episodes_test/BDMWithEpisodeFilePath.bdm
 #learner
 include=inc/learn.inc
 #initializer

@@ -51,7 +51,7 @@ public class BurlapTerminalStatePlanValidator<DI extends ILabeledDataItem<Senten
         this.maxPlanLength=maxPlanLength;
     }
 
-    public int maxPlanLength = 25;
+    public int maxPlanLength = 1;
 
     public BurlapTerminalStatePlanValidator() {
         js = new JScheme();
