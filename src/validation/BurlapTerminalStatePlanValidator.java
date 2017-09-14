@@ -95,12 +95,12 @@ public class BurlapTerminalStatePlanValidator<DI extends ILabeledDataItem<Senten
 
                 StateConditionTest l0sc = new LambdaSC(pf, js);
                 Episode planOnEval = BurlapTerminalStatePlanValidator.getEpisode(initialState, l0sc,maxPlanLength);
-                if (planOnEval.stateSequence.size() >= maxPlanLength) {
-                    return false;
-                }
+//                if (planOnEval.stateSequence.size() >= maxPlanLength) {
+//                    return false;
+//                }
 
 
-                if (!l0sc.satisfies(e.stateSequence.get(e.stateSequence.size() - 1)) || !l0sc.satisfies(planOnEval.stateSequence.get(planOnEval.stateSequence.size() - 1))) {
+                if (!l0sc.satisfies(e.stateSequence.get(e.stateSequence.size() - 1)) || l0sc.satisfies(planOnEval.stateSequence.get(0))) {
                     return false;
                 }
 
@@ -163,7 +163,7 @@ public class BurlapTerminalStatePlanValidator<DI extends ILabeledDataItem<Senten
         brtd.toggleDebugPrinting(false);
         Policy policy = brtd.planFromState(startState);
 
-        Episode episode = PolicyUtils.rollout(policy,env,maxPlanLength);
+        Episode episode = PolicyUtils.rollout(policy,env,1);
 //        Visualizer v = CleanupVisualiser.getVisualizer("data/robotImages");
 //        new EpisodeSequenceVisualizer(v, domain, Arrays.asList(episode));
         return episode;
